@@ -38,7 +38,7 @@
     <td>u20231d637</td>
 </tr>
 <tr>
-    <td>Vidal Castro<, Miguel Angel</td>
+    <td>Vidal Castro, Miguel Angel</td>
     <td>u202314186</td>
 </tr>
 <tr>
