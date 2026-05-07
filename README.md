@@ -2,28 +2,56 @@
 
 ## Carátula
 
-- **Logo de la Universidad**: [Insertar logo]
-- **Universidad**: [Nombre de la Universidad]
-- **Carrera**: [Nombre de la Carrera]
-- **Ciclo**: [Ciclo]
-- **Código del Curso**: [Código]
-- **Nombre del Curso**: [Nombre del Curso]
-- **NRC**: [Número de Referencia de Curso]
-- **Sección**: [Sección]
-- **Profesor**: [Nombre del Profesor]
-- **Título**: Informe de Trabajo Final
-- **Startup**: [Nombre del Startup]
-- **Producto**: [Nombre del Producto]
+<p align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
+    <strong style="font-size: 1.7em;">Universidad Peruana de Ciencias Aplicadas</strong><br>
+    <strong style="font-size: 1.7em;">Ingeniería de Software</strong><br>
+    <strong>Periodo: 2026-10</strong>
+    <strong>1ASI0732 |  Diseño de Experimentos de Ingeniería de Software</strong><br>
+    <strong>NRC : 16879</strong>
+    <strong>Docente: Alex Humberto Sánchez Ponce</strong><br>
+    <br><strong>Informe del Trabajo Final</strong>
+</p>
 
-### Relación de Integrantes
+<p align="center">
+    <strong>Startup: ATG</strong><br>
+    <strong>Producto: Autonexo</strong>
+</p>
 
-| Código | Apellidos | Nombres |
-|--------|-----------|---------|
-| [Código] | [Apellidos] | [Nombres] |
-| [Código] | [Apellidos] | [Nombres] |
-| [Código] | [Apellidos] | [Nombres] |
+<div style="text-align:center;">
+    <h3>Team Members:</h3>
+    <table align="center">
+        <tr>
+            <th style="text-align:center;">Member</th>
+            <th style="text-align:center;">Code</th>
+        </tr>
+       <tr>
+    <td>Cruz Ibarra, Victor Andres</td>
+    <td>u202311053</td>
+</tr>
+<tr>
+    <td>Solis Chang, Santiago Valentino</td>
+    <td>u20231b475</td>
+</tr>
+<tr>
+    <td>Navarro Chang, Alicia Avril </td>
+    <td>u20231d637</td>
+</tr>
+<tr>
+    <td>Vidal Castro<, Miguel Angel</td>
+    <td>u202314186</td>
+</tr>
+<tr>
+    <td>Castro Sanchez, Amir Gabriel</td>
+    <td>u202310680</td>
+</tr>
+    </table>
+</div>
 
-**Mes y Año**: [Mes/Año]
+<p align="center">
+    <strong>Mayo, 2026</strong>
+</p>
+<br>
 
 <div style="page-break-after: always;"></div>
 
