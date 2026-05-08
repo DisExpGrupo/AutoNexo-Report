@@ -59,7 +59,7 @@
 
 | Versión | Fecha | Autor | Descripción |
 |---------|-------|-------|-------------|
-| 1.0 | [Fecha] | [Autor] | Versión inicial |
+| 1.0 | 11 de mayo | Cruz, V.; Solis, S.; Navarro, A.; Vidal, M.; Castro, A. | • Estructura y esqueleto del informe<br>• Definición de capítulos principales (3 partes)<br>• Carátula con información de startup y equipo<br>• Student Outcome y ABET SO 4<br>• Capítulo I: Introducción, Startup Profile, Solution Profile, Lean UX<br>• Capítulo II: Requirements Elicitation & Analysis<br>• Capítulo III: Requirements Specification<br>• Capítulo IV: Product Design<br>• Capítulo V: Product Implementation<br>• Capítulo VI: Product Verification & Validation<br>• Capítulo VII: DevOps Practices |
 
 <div style="page-break-after: always;"></div>
 
