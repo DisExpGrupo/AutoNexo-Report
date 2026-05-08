@@ -234,7 +234,7 @@ Convertirse en la aplicación líder en gestión automotriz en Latinoamérica, o
 El logotipo de ATG representa innovación, colaboración y tecnología aplicada al sector automotriz. Sus elementos visuales refuerzan la idea de conexión y dinamismo, pilares fundamentales de la identidad de AutoNexo.
 
 <p align="center">
-  <img src="assets/chapter-III-assets/Logo de ATG.png" alt="Logo de ATG" width="250px" />
+  <img src="assets/logos/ATG/Logo de ATG.png" alt="Logo de ATG" width="250px" />
 </p>
 
 **Brand Name**
@@ -244,7 +244,7 @@ El nombre AutoNexo combina los términos “Auto” (vehículo) y “Nexo” (co
 El nombre refleja también su visión de comunidad, en la que cada interacción entre taller, técnico y cliente contribuye a un sistema más inteligente, ordenado y conectado.
 
 <p align="center">
-  <img src="assets/chapter-II-assets/logo-1.png.jpg" alt="Logo de ATG" width="250px" />
+  <img src="assets/logos/ATG/logo-1.png.jpg" alt="Logo de ATG" width="250px" />
 </p>
 
 **Colores**
@@ -266,7 +266,7 @@ Los colores de texto mantienen un alto contraste para asegurar legibilidad: negr
 En conjunto, esta paleta cromática refuerza la identidad moderna, confiable y funcional de AutoNexo, creando una experiencia visual coherente con su propósito tecnológico y su enfoque en la eficiencia del servicio automotriz.
 
 <p align="center">
-  <img src="assets/chapter-III-assets/Paleta de colores.png" alt="Paleta de colores ATG" width="600px" />
+  <img src="assets/images/screenshots/Paleta de colores.png" alt="Paleta de colores ATG" width="600px" />
 </p>
 
 <section id="typography">
@@ -347,7 +347,7 @@ En conjunto, esta paleta cromática refuerza la identidad moderna, confiable y f
   </table>
 
 <p align="center">
-  <img src="assets/chapter-III-assets/tipography.png" alt="Tipografía SwiftPort" width="600px" />
+  <img src="assets/images/screenshots/typo-b.png" alt="Tipografía AutoNexo" width="600px" />
 </p>
 
   <p>
@@ -1221,36 +1221,813 @@ Este sistema de navegación integral asegura que los usuarios puedan moverse de 
 </section>
 
 <div>
-  <p align="center"><img src="assets/wireframes/Landing page wireframes.png" alt="open-landing-wireframe.png" width="700px" /></p>
+  <p align="center"><img src="assets/ux-ui/wireframes/Landing page wireframes.png" alt="open-landing-wireframe.png" width="700px" /></p>
 </div>
 
 #### 4.3.2. Landing Page Mock-up
 
-[Mockups de landing page]
+<section id="landing-mockups-autonexo">
+  <h2>Landing Page Mock-up (Desktop & Mobile) – AutoNexo</h2>
+  <p>
+    Esta sección presenta los <strong>mock-ups</strong> finales del Landing Page para
+    <em>Desktop Web Browser</em> y <em>Mobile Web Browser</em>. La propuesta evidencia la aplicación de
+    <strong>principios y elementos de diseño</strong>, <strong>diseño inclusivo</strong>,
+    <strong>arquitectura de información</strong> y la alineación con el <strong>Design System</strong> de AutoNexo.
+  </p>
+
+  <!-- Resumen visual -->
+  <h3>Resumen visual</h3>
+  <ul>
+    <li><strong>Hero</strong> con eslogan, párrafo de valor y CTA primario “Solicitar demo”.</li>
+    <li><strong>Valores</strong> y <strong>Características</strong> en tarjetas con icono + título + texto.</li>
+    <li><strong>Precios/Planes</strong> con comparación Básico vs. Pro.</li>
+    <li><strong>Testimonios</strong> en tarjetas compactas de una sola línea.</li>
+    <li><strong>FAQs</strong> con acordeones (+) expandibles.</li>
+    <li><strong>Equipo (ATG)</strong> con fichas de miembros.</li>
+    <li><strong>Contacto</strong> con formulario y datos directos.</li>
+    <li><strong>Footer</strong> con Términos, Privacidad, Soporte y redes sociales.</li>
+  </ul>
+
+  <!-- Desktop vs Mobile -->
+  <h3>Distribución · Desktop vs Mobile</h3>
+  <ul>
+    <li><strong>Desktop:</strong> secciones en grid (2–3 columnas), pares texto/imagen en paralelo, navegación fija en header.</li>
+    <li><strong>Mobile:</strong> flujo vertical apilado; CTAs centrados; tarjetas a 1 columna; acordeones ocupan ancho completo.</li>
+  </ul>
+
+  <!-- Principios y elementos -->
+  <h3>Principios y elementos de diseño aplicados</h3>
+  <ul>
+    <li><strong>Jerarquía visual:</strong> Inter Medium para H1/H2/H3 (70/40/25 px); contraste de CTAs para énfasis.</li>
+    <li><strong>Contraste:</strong> primario <code>#202D36</code> sobre fondos claros <code>#FFFFFF</code>; acentos <code>#800C1F</code>/<code>#3C0007</code>.</li>
+    <li><strong>Alineación y ritmo:</strong> rejilla base de 8 px; alineación izquierda para texto, centrado para acciones.</li>
+    <li><strong>Proximidad/repetición:</strong> patrón consistente de tarjeta (icono &gt; título &gt; texto &gt; acción).</li>
+    <li><strong>Espacio en blanco:</strong> márgenes/padding 16–24 px para escaneabilidad sin sobrecarga.</li>
+  </ul>
+
+  <!-- Inclusión / Accesibilidad -->
+  <h3>Diseño inclusivo y accesibilidad</h3>
+  <ul>
+    <li><strong>Contraste AA:</strong> texto normal ≥ 4.5:1; títulos grandes ≥ 3:1.</li>
+    <li><strong>Tipografía legible:</strong> base 16–18 px, line-height 1.5–1.6.</li>
+    <li><strong>Targets táctiles:</strong> mínimos de 44×44 px; estados <em>hover/focus/active</em> visibles.</li>
+    <li><strong>Lenguaje claro:</strong> microcopys directos (p. ej., “Solicitar demo”, “Ver detalles”).</li>
+    <li><strong>Internacionalización:</strong> selector ES/EN en header; textos preparados para distinta longitud.</li>
+    <li><strong>Responsive first:</strong> breakpoints ≤480, ≤768, ≤1024, ≥1280; imágenes fluidas (max-width:100%).</li>
+  </ul>
+
+  <!-- Arquitectura de Información -->
+  <h3>Arquitectura de información (mapeo de secciones)</h3>
+  <ol>
+    <li><strong>Hero</strong> → Descubrimiento y CTA principal.</li>
+    <li><strong>Valores</strong> → Principios de marca que guían el servicio.</li>
+    <li><strong>Características</strong> → Qué hace el producto (evidencia funcional).</li>
+    <li><strong>Precios/Planes</strong> → Decisión informada (Básico vs Pro).</li>
+    <li><strong>Testimonios</strong> → Prueba social y confianza.</li>
+    <li><strong>FAQs</strong> → Objeciones comunes y soporte inmediato.</li>
+    <li><strong>Equipo</strong> → Credibilidad del grupo ATG.</li>
+    <li><strong>Contacto</strong> → Conversión secundaria (formulario y datos directos).</li>
+    <li><strong>Footer</strong> → Enlaces legales y canales de soporte.</li>
+  </ol>
+
+  <!-- Design System -->
+  <h3>Alineación con el Design System de AutoNexo</h3>
+  <ul>
+    <li><strong>Colores:</strong> Primary Blue <code>#202D36</code>, Primary White <code>#FFFFFF</code>, Grays <code>#D9D9D9</code>/<code>#8E8E8E</code>, Acentos <code>#800C1F</code>/<code>#3C0007</code>.</li>
+    <li><strong>Tipografía:</strong> Inter (Medium/Bold) con escalas 70/40/25 y 16–18 px para cuerpo.</li>
+    <li><strong>Componentes:</strong> botones primarios/secundarios, tarjetas, acordeones, chips, formularios, navbar y footer.</li>
+    <li><strong>Tokens:</strong> espaciado 8 px, radios 10–12 px, sombras sutiles para elevación de tarjetas.</li>
+  </ul>
+
+  <!-- Criterios de aceptación -->
+  <h3>Criterios de aceptación</h3>
+  <ol>
+    <li>Header con logo, navegación y selector ES/EN en Desktop; menú accesible en Mobile.</li>
+    <li>CTA “Solicitar demo” visible en el primer pantallazo (ambas vistas) y con contraste AA.</li>
+    <li>Tarjetas de características/beneficios mantienen patrón y ritmo vertical/columnas según viewport.</li>
+    <li>Sección de planes presenta comparación clara (precio, beneficios, acción).</li>
+    <li>FAQs con acordeones expandibles; foco/teclado navegable.</li>
+    <li>Formulario con validación básica y confirmación de envío; campos etiquetados.</li>
+    <li>Footer con Términos, Privacidad, Soporte y redes sociales.</li>
+  </ol>
+
+  <p><em>
+    Los mock-ups consolidan la propuesta visual y funcional del Landing Page de AutoNexo, demostrando consistencia con el Design System,
+    cumplimiento de accesibilidad y una arquitectura de información orientada a la conversión.
+  </em></p>
+</section>
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/Landing page Mockup.png" alt="open-landing-wireframe.png" width="700px" /></p>
+</div>
 
 ### 4.4. Mobile Applications UX/UI Design
 
 #### 4.4.1. Mobile Applications Wireframes
 
-[Wireframes de aplicaciones móviles]
+**Register Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/mechanic/Register Mechanic W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Recover password**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/mechanic/Recover password Mechanic W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Register Workshop**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/mechanic/Register Workshop W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Home Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/mechanic/Home Mechanic W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Profile Mechanic and Edit**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/mechanic/Profile Mechanic and Edit W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Support and Assistance Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/mechanic/Support and Assitance Mechanic W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Request Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/mechanic/Request Mechanic W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Offer Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/mechanic/Offer W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Service Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/mechanic/Service Mechanic W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Payment Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/mechanic/Payment Mechanic W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+<!--__Subscription payment__
+
+<div>
+  <p align="center"><img src="assets/chapter-III-assets/Subscription payment.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+-->
+
+**Register Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Register Owner W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Recover Password Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Recover Password Owner W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Profile and Edit Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Profile and Edit Owner W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Support and Assistance Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Support and Assistance Owner W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Home Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Home Owner W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Vehicles**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Vehicles W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Register Vehicle**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Register Vehicle W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Edit Vehicle**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Edit Vehicle W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Maintenance Log**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Maintenance Log W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Add Maintenance**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Add Maintenance W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Edit Maintenance**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Edit Maintenance W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Workshop Details Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Workshop Details Owner W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Offer Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Offer Owner W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Request Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Request Owner W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Payment Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/wireframes/owner/Payment Owner W.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
 
 #### 4.4.2. Mobile Applications Wireflow Diagrams
 
-[Diagramas de wireflow]
+**User goal: Iniciar sesión y acceder al panel principal**
+
+**User persona: Mecánico o jefe de taller**
+
+El usuario inicia en la pantalla Login, donde introduce su correo electrónico y contraseña. En caso de error, el sistema muestra un mensaje de validación ("Invalid credentials").
+Al presionar "Login", se redirige al Home, que muestra las citas programadas, solicitudes pendientes y accesos rápidos a los módulos principales (Request, Offer, Workshop y Service).
+El flujo contempla el acceso al menú lateral mediante el ícono "hamburguesa", desde el cual se pueden abrir secciones secundarias como Profile, Payment, Support and Assistance o Logout.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Login.png" alt="Wireflow - Iniciar sesión y acceder al panel principal" width="800px" />
+</p>
+
+**User goal: Crear una nueva solicitud de servicio**
+
+**User persona: Propietario de vehículo**
+
+Desde la pantalla principal Home, el usuario selecciona la pestaña Request, accediendo al formulario de solicitud.
+Debe ingresar los datos del vehículo, seleccionar el tipo de servicio (Oil change, Brake check, Tire replacement, etc.) y añadir una breve descripción.
+Al presionar "Send Request", la solicitud se registra y aparece una pantalla de confirmación con el mensaje "Request sent successfully".
+Desde ahí, el flujo continúa hacia el estado Pending, donde el usuario puede visualizar el estado de respuesta de los talleres.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Request-owner.png" alt="Wireflow - Crear una nueva solicitud de servicio" width="800px" />
+</p>
+
+**User goal: Enviar una oferta de servicio**
+
+**User persona: Mecánico o jefe de taller**
+
+En la pestaña Request, el mecánico visualiza todas las solicitudes recibidas.
+Al seleccionar una, accede al detalle del vehículo y presiona "Make an Offer".
+El sistema muestra un formulario donde ingresa el precio estimado, fecha y hora de cita, y observaciones adicionales.
+Finalmente, al presionar "Send Offer", aparece la confirmación "Offer sent successfully" y el flujo retorna a la lista de solicitudes actualizada.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Request-Mechanic.png" alt="Wireflow - Enviar una oferta de servicio" width="800px" />
+</p>
+
+**User goal: Registrar mantenimiento completado**
+
+**User persona: Mecánico o jefe de taller**
+
+Desde la pantalla Service, el usuario selecciona "Register Service Order", visualizando un formulario con los campos del vehículo, tipo de mantenimiento, costo y observaciones.
+Tras completar los datos y presionar "Register", el flujo conduce a una pantalla de validación con el mensaje "Service successfully registered".
+Posteriormente, el servicio aparece en la lista de Done, permitiendo revisar los detalles del trabajo finalizado.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Maintenance.png" alt="Wireflow - Registrar mantenimiento completado" width="800px" />
+</p>
+
+**User goal: Consultar historial de mantenimiento**
+
+**User persona: Propietario de vehículo**
+
+El usuario accede desde el menú inferior a la pestaña Service, donde se muestra el historial de mantenimientos realizados.
+Cada tarjeta contiene información resumida del servicio (fecha, taller, costo y estado).
+Al seleccionar una tarjeta, se despliega la vista Service Detail, con datos completos y la opción "Add Maintenance" para registrar nuevas intervenciones.
+El flujo cierra con una confirmación visual ("Maintenance added successfully") y regresa a la vista principal del historial.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Service.png" alt="Wireflow - Consultar historial de mantenimiento" width="800px" />
+</p>
+
+**User goal: Gestionar perfil de usuario y taller**
+
+**User persona: Mecánico o jefe de taller**
+
+Desde el menú lateral, el usuario ingresa a Profile, donde puede editar sus datos personales, cambiar contraseña o acceder a la configuración del taller (Workshop Information).
+En la vista Edit Profile, el wireflow incluye las acciones "Save" y "Cancel", que redirigen respectivamente al perfil actualizado o al estado anterior.
+Si selecciona "Edit Workshop", se despliega el formulario de información comercial y servicios disponibles.
+Al guardar, el flujo muestra el mensaje "Workshop updated successfully", completando la iteración de configuración.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Profile.png" alt="Wireflow - Gestionar perfil de usuario y taller" width="800px" />
+</p>
 
 #### 4.4.3. Mobile Applications Mock-ups
 
-[Mockups de aplicaciones móviles]
+**Register Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/mechanic/Register Mechanic.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Recover password**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/mechanic/Recover password Mechanic.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Register Workshop**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/mechanic/Register Workshop.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Home Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/mechanic/Home Mechanic.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Profile Mechanic and Edit**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/mechanic/Profile Mechanic and Edit.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Support and Assitance Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/mechanic/Support and Assitance Mechanic.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Request Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/mechanic/Request Mechanic.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Offer Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/mechanic/Offer Mechanic.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Service Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/mechanic/Service Mechanic.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Payment Mechanic**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/mechanic/Payment Mechanic.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+<!--__Subscription payment__
+
+<div>
+  <p align="center"><img src="assets/chapter-III-assets/Subscription payment.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+-->
+
+**Register Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Register Owner.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Recover Password Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Recover Password Owner.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Profile and Edit Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Profile and Edit Owner.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Support and Assistance Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Support and Assistance Owner.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Home Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Home Owner.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Vehicles**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Vehicles.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Register Vehicle**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Register Vehicle.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Edit Vehicle**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Edit Vehicle.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Maintenance Log**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Maintenance Log.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Add Maintenance**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Add Maintenance.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Edit Maintenance**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Edit Maintenance.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Workshop Details Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Workshop Details Owner.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Offer Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Offer Owner.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Request Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Request Owner.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
+
+**Payment Owner**
+
+<div>
+  <p align="center"><img src="assets/ux-ui/mockups/owner/Payment Owner.png" alt="wireframe-desktop-1.png" width="700px" /></p>
+</div>
 
 #### 4.4.4. Mobile Applications User Flow Diagrams
 
-[Diagramas de flujo de usuario]
+**User goal: Registrarse como nuevo usuario**
+
+**User persona: Mecánico o jefe de taller**
+
+Al ingresar a la aplicación móvil, los usuarios pueden acceder con su correo y contraseña desde la pantalla Login. Si no tienen una cuenta, pueden seleccionar “Register”, pasando a la pantalla de Registro, donde deberán ingresar su nombre, correo, número de teléfono y contraseña.
+
+De manera opcional, pueden incluir un Workshop Code para asociarse a un taller existente. Si no saben qué es, pueden consultar la opción “What’s this?”, que muestra una breve explicación visual.
+
+Antes de finalizar, los usuarios deben aceptar los Términos y Condiciones y luego presionar “Register” para completar su registro. Una vez creado el usuario, la aplicación los redirige a su pantalla principal Home.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 1.jpg" alt="Registro del mecanico" width="720px" />
+</p>
+
+**User goal: Recuperar contraseña**
+
+**User persona: Mecánico o jefe de taller**
+
+Al ingresar a la aplicación, el usuario puede seleccionar la opción “Forgot Password?” desde la pantalla de Login. Luego, se le solicita ingresar su número de teléfono registrado para recibir un código de verificación (OTP).
+
+En la pantalla de OTP Verification, el usuario ingresa el código recibido por mensaje y selecciona “Verify & Proceed”. Una vez validado, pasa a la pantalla donde podrá establecer una nueva contraseña, confirmarla y presionar “Submit” para completar el proceso.
+
+Finalmente, el sistema confirma el cambio y redirige al usuario nuevamente a la pantalla de Login para acceder con sus nuevas credenciales.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 2.jpg" alt="Recuperar Contraseña" width="720px" />
+</p>
+
+**User goal: Iniciar sesión y acceder al panel principal**
+
+**User persona: Mecánico o Jefe de taller**
+
+Al ingresar a la aplicación, el usuario visualiza la pantalla de Login, donde puede acceder ingresando su correo y contraseña. Una vez autenticado, la aplicación lo redirige a la pantalla principal Home, donde se muestra su nombre, próximas citas y el calendario de trabajo con las solicitudes programadas.
+
+Desde el ícono de menú, el usuario puede abrir el panel lateral y acceder a diferentes secciones como Profile, Payment, Support and Assistance, Terms of use, Privacy Policy o Logout, además de cambiar el idioma y el tema de la aplicación.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 3.jpg" alt="Ingresar a la aplicación" width="720px" />
+</p>
+
+**User goal: Registrar y configurar un taller**
+
+**User persona: Mecánico o Jefe de taller**
+
+Al ingresar a la sección Workshop, el usuario puede registrar la información de su taller completando los campos de nombre comercial, RUC, distrito, ciudad y dirección. También puede añadir el logo, una imagen representativa y los servicios disponibles.
+
+En la siguiente pantalla, el usuario define los horarios de atención para cada día de la semana y, si lo desea, marca los días libres o la opción de atención las 24 horas.
+
+Finalmente, al presionar “Save”, la aplicación guarda la información y registra el taller correctamente dentro del sistema, quedando listo para ser visualizado o editado posteriormente.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 4.jpg" alt="Registrar taller" width="720px" />
+</p>
+
+**User goal: Visualizar y compartir el código del taller**
+
+**User persona: Propietario o jefe de taller**
+
+Desde la pantalla principal Home, el usuario puede acceder a la sección Workshop, donde visualiza la información completa de su taller, incluyendo nombre, ubicación, servicios y miembros del equipo.
+
+En esta vista, el usuario puede seleccionar la opción “Generate Code” para crear un Workshop Code, el cual se muestra en una ventana emergente con la opción de copiarlo para compartirlo con nuevos mecánicos que deseen unirse al taller.
+
+Una vez generado, el código puede ser utilizado por un solo usuario y posteriormente caduca. El propietario también puede editar los datos del taller seleccionando “Edit Workshop”.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 5.jpg" alt="Registrar taller" width="720px" />
+</p>
+
+**User goal: Visualizar y editar perfil de usuario**
+
+**User persona: Propietario o jefe de taller**
+
+Desde el menú lateral, el usuario puede acceder a la sección Profile, donde visualiza su información personal, como nombre, correo, número de teléfono y taller actual. También puede gestionar las notificaciones de mensajes y ofertas.
+
+Al seleccionar el ícono de edición, el usuario ingresa a la pantalla Edit Profile, donde puede actualizar sus datos personales o modificar su contraseña seleccionando la opción “Change Password”.
+
+En la pantalla New Password, debe ingresar y confirmar la nueva contraseña. Finalmente, al presionar “Save”, los cambios se guardan y el usuario regresa a su perfil actualizado.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 6.jpg" alt="Editar Perfil" width="720px" />
+</p>
+
+**User goal: Contactar con soporte técnico**
+
+**User persona: Propietario o jefe de taller**
+
+Desde el menú lateral, el usuario puede acceder a la sección Support and Assistance, donde se presentan distintas opciones de ayuda como Call Us, Mail Us, Frequently Asked Questions, Terms and Conditions y un tutorial en video.
+
+Al seleccionar Mail Us, se abre la pantalla Contact us via Gmail, donde el usuario puede escribir el asunto y el mensaje dirigido al equipo de soporte de Autonexo.
+
+Finalmente, al presionar “Send Email”, aparece una ventana de confirmación con el mensaje “Success!”, indicando que el correo fue enviado correctamente.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 7.jpg" alt="Asistencia y Soporte" width="720px" />
+</p>
+
+**User goal: Enviar una oferta al propietario del vehículo**
+
+**User persona: Propietario o jefe de taller**
+
+Desde la pantalla principal Home, el usuario puede ingresar a la sección Request, donde se muestran las solicitudes de mantenimiento enviadas por los propietarios de vehículos.
+
+Al seleccionar Offer en una solicitud, el mecánico puede revisar los detalles del vehículo y completar el formulario Make an Offer, indicando el precio estimado, fecha y hora de cita, además de observaciones adicionales sobre el servicio.
+
+Finalmente, al presionar “Send Offer”, aparece una ventana emergente con el mensaje “Success!”, confirmando que la oferta fue enviada exitosamente al cliente.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 8.jpg" alt="Oferta" width="720px" />
+</p>
+
+**User goal: Visualizar ofertas pendientes y realizadas**
+
+**User persona: Mecánico o jefe de taller**
+
+Desde la pantalla principal Home, el usuario puede acceder a la sección Offer, donde se muestran las ofertas enviadas a los propietarios de vehículos.
+
+En esta pantalla, las ofertas se organizan en dos categorías: Pending, que agrupa las propuestas aún no respondidas, y Realized, que muestra las ofertas aceptadas o completadas.
+
+De esta forma, el usuario puede realizar un seguimiento de sus propuestas y gestionar de manera eficiente sus servicios dentro de la plataforma.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 9.jpg" alt="Visualizar ofertas" width="720px" />
+</p>
+
+**User goal: Registrar y gestionar órdenes de servicio**
+
+**User persona: Mecánico o jefe de taller**
+
+Desde la pantalla principal Home, el usuario puede ingresar a la sección Service, donde se muestran las órdenes de servicio clasificadas como In progress, Done o Canceled.
+
+Al seleccionar Register Service Order, el mecánico puede crear una nueva orden, eligiendo la oferta asociada, la fecha y hora de entrega, y agregando las tareas específicas del mantenimiento.
+
+Finalmente, al presionar “Register”, la orden se guarda en el sistema y queda disponible para seguimiento dentro del listado de servicios activos.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 10.jpg" alt="Registrar y gestionar servicios" width="720px" />
+</p>
+
+**User goal: Suscribirse a un plan de pago**
+
+**User persona: Mecánico o jefe de taller**
+
+Desde el menú lateral, el usuario puede acceder a la sección Payment, donde visualiza los planes disponibles (Monthly y Annual) con sus respectivos precios y beneficios.
+
+Tras seleccionar el plan deseado, se muestra la pantalla Billing address, donde el usuario completa los datos de facturación. Luego, pasa a la pantalla Add Payment, en la que debe ingresar la información de su tarjeta o método de pago preferido.
+
+Finalmente, al presionar “Pay”, aparece una ventana de confirmación con el mensaje “Success!”, indicando que la suscripción se realizó correctamente.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 11.jpg" alt="Suscribirse a un plan" width="720px" />
+</p>
+
+**User goal: Registrarse como propietario de vehículo**
+
+**User persona: Propietario de vehículo**
+
+Al ingresar a la aplicación, el usuario propietario accede a la pantalla Login, donde puede iniciar sesión con su correo y contraseña. Si no tiene una cuenta, puede seleccionar la opción “Register” para continuar con el proceso de registro.
+
+En la pantalla Registration, el usuario debe completar los campos con su nombre, correo electrónico, número de teléfono y contraseña, la cual debe ser confirmada. Antes de finalizar, debe aceptar los Términos y Condiciones mostrados en una ventana emergente.
+
+Finalmente, al presionar “Register”, su cuenta se crea exitosamente, quedando listo para acceder a las funciones principales de la aplicación.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 1 Owner.jpg" alt="Registrarse como propietario de vehículo" width="720px" />
+</p>
+
+**User goal: Recuperar contraseña**
+
+**User persona: Propietario de vehículo**
+
+Desde la pantalla Login, el usuario selecciona la opción “Forgot Password?”, lo que lo dirige a una pantalla donde debe ingresar su número de teléfono registrado.
+
+A continuación, recibe un código de verificación (OTP) que debe ingresar en la pantalla OTP Verification para validar su identidad. Una vez verificado, se habilita la pantalla para establecer una nueva contraseña, la cual debe ser confirmada antes de presionar “Submit”.
+
+Finalmente, el sistema confirma la actualización de la contraseña, permitiendo al usuario volver al inicio de sesión con sus nuevas credenciales.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 2 Owner.jpg" alt="Recuperar contraseña" width="720px" />
+</p>
+
+**User goal: Iniciar sesión y acceder al panel principal**
+
+**User persona: Propietario de vehículo**
+
+Al ingresar a la aplicación, el usuario visualiza la pantalla Login, donde puede acceder ingresando su correo electrónico y contraseña. Una vez autenticado, es redirigido al Home, donde se muestra la información de su cita actual, el taller asignado y el mecánico encargado.
+
+Desde el menú lateral, el usuario puede acceder a secciones como Profile, Payment, Support and Assistance, Terms of use, Privacy Policy y Logout, además de cambiar el idioma y el tema de la aplicación.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 3 Owner.jpg" alt="Iniciar sesión y acceder al panel principal" width="720px" />
+</p>
+
+**User goal: Visualizar y editar perfil de usuario**
+
+**User persona: Propietario de vehículo**
+
+Desde el menú lateral, el usuario accede a la sección Profile, donde puede visualizar su información personal, como nombre, correo electrónico, número de teléfono, talleres favoritos y configuración de notificaciones.
+
+Al presionar el ícono de edición, se abre la pantalla Edit Profile, que permite modificar los datos personales o cambiar la contraseña seleccionando “Change Password”.
+
+En la pantalla New Password, el usuario ingresa y confirma su nueva contraseña. Finalmente, al presionar “Save”, los cambios se guardan correctamente, actualizando su perfil.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 4 Owner.jpg" alt="Visualizar y editar perfil de usuario" width="720px" />
+</p>
+
+**User goal: Contactar con soporte técnico**
+
+**User persona: Propietario de vehículo**
+
+Desde el menú lateral, el usuario puede acceder a la sección Support and Assistance, donde se muestran opciones de ayuda como Call Us, Mail Us, Frequently Asked Questions, Terms and Conditions y un tutorial en video.
+
+Al seleccionar Mail Us, se abre la pantalla Contact us via Gmail, donde el usuario puede escribir el asunto y el mensaje para comunicarse con el equipo de soporte.
+
+Finalmente, al presionar “Send Email”, aparece una ventana de confirmación con el mensaje “Success!”, indicando que el correo fue enviado correctamente.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 5 Owner.jpg" alt="Contactar con soporte técnico" width="720px" />
+</p>
+
+**User goal: Eliminar un vehículo registrado**
+
+**User persona: Propietario de vehículo**
+
+Desde el Home, el usuario selecciona la pestaña Vehicles, donde puede visualizar todos los vehículos registrados en su cuenta. Cada vehículo muestra las opciones Edit y Delete.
+
+Al presionar Delete, se muestra un mensaje de confirmación indicando “Success! Vehicle deleted successfully”, confirmando que la eliminación del vehículo se realizó correctamente.
+
+Este flujo permite mantener actualizada la información de los vehículos asociados a la cuenta del usuario, brindando un control fácil y rápido desde la aplicación.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 6 Owner.jpg" alt="Eliminar un vehículo registrado" width="720px" />
+</p>
+
+**User goal: Registrar un nuevo vehículo**
+
+**User persona: Propietario de vehículo**
+
+Desde la sección Vehicles, el usuario selecciona la opción Add New Vehicle para registrar un nuevo automóvil.
+En la pantalla Register Vehicle, ingresa la información del vehículo, incluyendo marca, modelo, año, placa, fotografía, y una breve descripción del estado o características del vehículo.
+
+Tras completar los campos requeridos, el usuario presiona Register, y el sistema confirma la operación con el mensaje:
+“Success! Vehicle registered successfully”, indicando que el vehículo se añadió correctamente a su cuenta.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 7 Owner.jpg" alt="Registrar un nuevo vehículo" width="720px" />
+</p>
+
+**User goal: Editar la información de un vehículo registrado**
+
+**User persona: Propietario de vehículo**
+
+Desde la sección Vehicles, el usuario selecciona la opción Edit en el vehículo que desea actualizar.
+En la pantalla Edit Vehicle, puede modificar los campos disponibles como marca, modelo, año, fotografía, placa y descripción.
+
+Una vez realizados los cambios, el usuario presiona Save, y el sistema muestra el mensaje de confirmación:
+“Success! Vehicle edited successfully”, indicando que la información fue actualizada correctamente.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 8 Owner.jpg" alt="Editar la información de un vehículo registrado" width="720px" />
+</p>
+
+**User goal: Registrar o editar un mantenimiento del vehículo**
+
+**User persona: Propietario de vehículo**
+
+Desde la pantalla Maintenance Log, el usuario puede visualizar el historial de mantenimientos realizados a su vehículo, con información como fecha y tipo de servicio.
+
+Al seleccionar Add Maintenance, se abre la pantalla Maintenance, donde el usuario puede ingresar o actualizar los datos del mantenimiento: nombre del servicio, fecha, costo, mecánico responsable y una breve descripción.
+
+Tras guardar los cambios con el botón Add Maintenance, el sistema muestra el mensaje de confirmación:
+“Success! Maintenance edited successfully”, indicando que el registro fue actualizado correctamente.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 9 Owner.jpg" alt="Registrar o editar un mantenimiento del vehículo" width="720px" />
+</p>
+
+**User goal: Buscar y visualizar información de talleres**
+
+**User persona: Propietario de vehículo**
+
+Desde la pantalla principal, el usuario selecciona la opción Workshop en la barra de navegación inferior.
+En la pantalla Workshop, puede aplicar filtros por departamento, provincia y distrito para visualizar los talleres disponibles cercanos a su ubicación.
+
+Al seleccionar un taller, se muestra la pantalla con su información detallada: nombre, dirección, teléfono, servicios ofrecidos, calificación promedio y la lista de mecánicos asociados.
+
+De esta manera, el usuario puede elegir el taller más conveniente antes de realizar una solicitud de servicio.
+
+<p align="center">
+  <img src="assets/diagrams/wireflow/Flujo 10 Owner.jpg" alt="Buscar y visualizar información de talleres" width="720px" />
+</p>
 
 ### 4.5. Mobile Applications Prototyping
 
 #### 4.5.1. Android Mobile Applications Prototyping
 
-[Prototipos Android]
+[Mechanic Prototype](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311064_upc_edu_pe/EUX747Y09zxIpXmVbkCaNYoBnK8niDY1xkbvNpeWkuXdHQ?e=sJjhMF&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+<p align="center">
+  <img src="assets/ux-ui/proto/mechanic-prototype.png" alt="Prototipo de la app del mecánico" width="720px" />
+</p>
+
+[Owner Prototype](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311064_upc_edu_pe/EbKcPfyzVzVEjt88tIi2edYBGt9elB7THGxPFwt44bkgxg?e=W0wZ8G&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+<p align="center">
+  <img src="assets/ux-ui/proto/owner-prototype.png" alt="Prototipo de la app del propietario" width="720px" />
+</p>
 
 #### 4.5.2. iOS Mobile Applications Prototyping
 
