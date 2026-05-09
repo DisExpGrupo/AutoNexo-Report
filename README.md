@@ -185,9 +185,60 @@
 
 ### 3.1. To-Be Scenario Mapping
 
-<br>
-<img alt="To-Be Scenario Mapping" src="assets\requirements\maps\tobe-mapping.png" />
-<br>
+En esta sección se presenta el desarrollo de los To-Be Scenario Mapping elaborados para los dos User Persona del proyecto Autonexo: el propietario de vehículo y el mecánico.
+
+El objetivo de este análisis fue visualizar cómo será la experiencia futura de los usuarios al interactuar con la aplicación propuesta, identificando mejoras frente al escenario actual (As-Is), especialmente en aspectos como organización, confianza, rapidez y comunicación.
+
+Para la elaboración de los mapas, el equipo realizó un proceso dividido en varias etapas. Primero, se revisaron las entrevistas, User Persona y hallazgos obtenidos durante la etapa de investigación. Luego, cada integrante realizó una lluvia de ideas individual sobre cómo debería ser la experiencia ideal del usuario utilizando la aplicación. Posteriormente, se revisaron y consolidaron las propuestas más relevantes, identificando las fases principales del recorrido del usuario y organizándolas como columnas dentro del mapa. Finalmente, se comparó el escenario futuro con el As-Is Scenario Mapping para reconocer mejoras potenciales y oportunidades de valor para los usuarios.
+
+A diferencia del escenario actual, donde los usuarios dependen de recomendaciones informales, mensajes por WhatsApp y registros manuales, el To-Be plantea una experiencia centralizada, transparente y mucho más organizada mediante el uso de una aplicación móvil intuitiva.
+
+#### To-Be Scenario Mapping – User Persona: Marina Salinas (Propietaria de vehículo)
+
+<img alt="To-Be Scenario Mapping" src="assets\requirements\maps\tobe-scenariomapping-owner.png" />
+
+**Cambios identificados respecto al As-Is**
+- Mayor transparencia en precios y servicios.
+- Reducción de la desconfianza hacia talleres.
+- Mejor comunicación entre cliente y mecánico.
+- Seguimiento en tiempo real del mantenimiento.
+- Historial digital accesible desde cualquier momento.
+- Menor dependencia de llamadas, mensajes informales o recomendaciones externas.
+
+**Áreas positivas esperadas**
+- Experiencia más rápida y simple.
+- Mayor control sobre el mantenimiento del vehículo.
+- Mejor organización de citas y pagos.
+- Confianza gracias a reseñas y seguimiento visual.
+
+**Blank Areas**
+- Conocer qué tan seguido los usuarios revisarían el historial del vehículo.
+- Identificar qué tipo de notificaciones consideran más útiles.
+- Evaluar qué tan importante es integrar promociones o programas de fidelización.
+
+#### To-Be Scenario Mapping – User Persona: José Quispe (Mecánico)
+
+<img alt="To-Be Scenario Mapping" src="assets\requirements\maps\tobe-scenariomapping-mechanic.png" />
+
+**Cambios identificados respecto al As-Is**
+- Reducción de la desorganización en citas y mantenimientos.
+- Menor dependencia de WhatsApp o registros manuales.
+- Mejor comunicación con los clientes.
+- Mayor profesionalismo y transparencia del taller.
+- Historial digital que facilita diagnósticos futuros.
+-Optimización del tiempo y priorización de trabajos.
+
+**Áreas positivas esperadas**
+- Mejor control de mantenimientos pendientes.
+- Incremento de confianza y reputación del taller.
+- Flujo de trabajo más ordenado.
+- Mejor experiencia tanto para el mecánico como para el cliente.
+
+**Blank Areas**
+- Determinar qué métricas visuales serían más útiles para los talleres.
+- Evaluar si los mecánicos prefieren alertas automáticas o manuales.
+- Analizar qué funciones adicionales podrían ayudar en diagnósticos rápidos.
+
 
 ### 3.2. User Stories
 
