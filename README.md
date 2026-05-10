@@ -545,10 +545,10 @@ Familiaridad básica con smartphones, uso de aplicaciones simples y rápidas, di
     <tr>
       <th></th>
       <th></th>
-      <th>AutoNexo <img src="assets\chapter-II-assets\logo-1.png.jpg" alt="Fleetio Logo" height="70" width="120"></th>
-      <th>Fleetio <img src="assets\chapter-II-assets\competidor_1.png" alt="Drivvo Logo" height="70" width="120"></th>
-      <th>Drivvo <img src="assets\chapter-II-assets\competidor_2.png" alt="Drivvo Logo" height="70" width="120"></th>
-      <th>Whip Around <img src="assets\chapter-II-assets\competidor_3.png" alt="Whip Around Logo" height="70" width="120"></th>
+      <th>AutoNexo <img src="assets/logos/logo-1.png.jpg" alt="Fleetio Logo" height="70" width="120"></th>
+      <th>Fleetio <img src="assets/logos/competidor_1.png" alt="Drivvo Logo" height="70" width="120"></th>
+      <th>Drivvo <img src="assets/logos/competidor_2.png" alt="Drivvo Logo" height="70" width="120"></th>
+      <th>Whip Around <img src="assets/logos/competidor_3.png" alt="Whip Around Logo" height="70" width="120"></th>
     </tr>
     <tr>
       <td><strong>Perfil</strong></td>
@@ -775,7 +775,7 @@ Se desarrollaron dos bloques de preguntas, diferenciados por el segmento objetiv
     <td>La molina </td>
   </tr>
   <tr>
-    <th>Captura de la entrevista: <img src="assets/chapter-II-assets/Entrevista 1 Propietario.jpg" alt="Captura de la entrevista" width="200"></th>
+    <th>Captura de la entrevista: <img src="assets/images/photos/Entrevista 1 Propietario.jpg" alt="Captura de la entrevista" width="200"></th>
     <td colspan="3">
         Diego Ricra, estudiante de 19 años, utiliza un CR-V 2012 y enfrenta problemas para encontrar talleres cercanos, confiables y con precios justos. Actualmente depende de un mecánico de confianza recomendado por terceros, pero valora la posibilidad de una app que le permita crear solicitudes personalizadas con fotos, ubicación y presupuesto. Prefiere comparar mecánicos por precio y cercanía, pagar con Yape/Plin o efectivo, y recibir actualizaciones constantes mediante fotos o checklist. Considera clave la confianza, la comunicación clara y las experiencias previas de otros usuarios. Espera que la app le brinde rapidez, transparencia y control en todo el proceso de mantenimiento
     </td>
@@ -811,7 +811,7 @@ Se desarrollaron dos bloques de preguntas, diferenciados por el segmento objetiv
     <td>Ate</td>
   </tr>
   <tr>
-    <th>Captura de la entrevista: <img src="assets/chapter-II-assets/Entrevista 2 Propietario.jpg" alt="Captura de la entrevista" width="200"></th>
+    <th>Captura de la entrevista: <img src="assets/images/photos/Entrevista 2 Propietario.jpg" alt="Captura de la entrevista" width="200"></th>
     <td colspan="3">
         Carlos Fredy Camayo, conductor de un Nissan Sunny 2001, enfrenta problemas al encontrar mecánicos confiables, ya que los precios varían y no tiene un taller de confianza. Actualmente se guía por referencias en Facebook, pero valora que una app le permita contactar rápidamente, comparar precios y acceder a soluciones rápidas para problemas comunes. Prefiere personalizar con mecánico favorito, historial de mantenimientos y comparador de repuestos. Pagaría con Yape/QR y espera funciones como buscador de repuestos, citas y soluciones rápidas. Considera esenciales las recomendaciones, precios justos y calificación simple con estrellas y etiquetas.
     </td>
@@ -850,7 +850,7 @@ Se desarrollaron dos bloques de preguntas, diferenciados por el segmento objetiv
     <td>San Luis</td>
   </tr>
   <tr>
-    <th>Captura de la entrevista: <img src="assets\chapter-II-assets\Entrevista 3 Mecánico.png" alt="Captura de la entrevista" width="200"></th>
+    <th>Captura de la entrevista: <img src="assets/images/photos/Entrevista 3 Mecánico.png" alt="Captura de la entrevista" width="200"></th>
     <td colspan="3">
         El entrevistado, ingeniero en mantenimiento mecánico, señaló como problemas principales la falta de planificación preventiva, la mala comunicación con los conductores y la ausencia de historial organizado de cada vehículo. Consideró esenciales procesos como registro de solicitudes, calendario de mantenimientos, alertas automáticas y reportes de avance. Prefiere interfaces visuales tipo panel con indicadores y acceso rápido al historial, así como notificaciones en tiempo real. También valoró funcionalidades de seguimiento de solicitudes, métodos de pago variados (digitales o tarjeta), retroalimentación clara mediante calificaciones y la posibilidad de organizar trabajos según especialidad y disponibilidad. 
     </td>
@@ -885,7 +885,7 @@ Se desarrollaron dos bloques de preguntas, diferenciados por el segmento objetiv
     <td>Suquillo</td>
   </tr>
   <tr>
-    <th>Captura de la entrevista: <img src="assets\chapter-II-assets\Entrevista 4 Mecánico.jpg" alt="Captura de la entrevista" width="200"></th>
+    <th>Captura de la entrevista: <img src="assets/images/photos/Entrevista 4 Mecánico.jpg" alt="Captura de la entrevista" width="200"></th>
     <td colspan="3">
         Rando Calero, mecánico especialista en la marca Scania y dueño de un taller con un año en el mercado, destacó que los principales problemas en la gestión del mantenimiento son la falta de planificación preventiva y la dependencia de recordatorios manuales o escáneres del vehículo. Actualmente utilizan WhatsApp y registros básicos para coordinar mantenimientos, pero considera que una app debería centralizar el historial por placa, facilitar la comunicación y agilizar el flujo de trabajo. También valoró que la aplicación sea sencilla, con lenguaje accesible, opciones de retroalimentación de clientes, alertas de mantenimientos próximos y reportes claros para dueños, conductores y talleres. Además, ve como oportunidad incluir funciones de promoción de talleres, estadísticas de satisfacción y un flujo automatizado que informe al cliente en cada etapa del servicio.
     </td>
@@ -998,14 +998,14 @@ Las siguientes User Persona representan a los diferentes tipos de usuarios que i
 <br>
 
 - User Persona de José Quispe (mecánico)
-<img alt="User-Persona-José-Quispe" src="assets\chapter-II-assets\user-persona-jose.jpg" />
+<img alt="User-Persona-José-Quispe" src="assets/requirements/personas/user-persona-jose.jpg" />
 
 [Ver mapa user persona hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/1Ng0UPewRqDezQuOSRunusah6vk5xM6lg?usp=sharing)
 
 <br>
 
 - User Persona de Marina Salinas (propietaria)
-<img alt="User-Persona-Marina-Salinas" src="assets\chapter-II-assets\user-persona-marina.jpg" />
+<img alt="User-Persona-Marina-Salinas" src="assets/requirements/personas/user-persona-marina.jpg" />
 
 [Ver mapa user persona hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/1Ng0UPewRqDezQuOSRunusah6vk5xM6lg?usp=sharing)
 
@@ -1188,7 +1188,7 @@ Los siguientes User Journey Maps corresponden a cada User Persona. Estos diagram
 - User Journey Map de José Quispe (mecánico)
 <br>
 
-<img alt="Journey-Map-José-Quispe" src="assets\chapter-II-assets\journey-map-jose.png" />
+<img alt="Journey-Map-José-Quispe" src="assets/requirements/maps/journey-map-jose.png" />
 
 [Ver mapa completo hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/10U-cHuHY3O-ueZ04tsT49D_9nUT28R7v?usp=drive_link)
 <br>
@@ -1196,7 +1196,7 @@ Los siguientes User Journey Maps corresponden a cada User Persona. Estos diagram
 - User Journey Map de Marina Salinas (propietaria)
 <br>
 
-<img alt="Journey-Map-Maria-Salinas" src="assets\chapter-II-assets\journey-map-marina.png" />
+<img alt="Journey-Map-Maria-Salinas" src="assets/requirements/maps/journey-map-marina.png" />
 
 [Ver mapa completo hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/10U-cHuHY3O-ueZ04tsT49D_9nUT28R7v?usp=drive_link)
 <br>
@@ -1235,7 +1235,7 @@ Para la construcción de los Empathy Maps, el equipo siguió los siguientes paso
 - Empathy Map de José Quispe (mecánico)
 <br>
 
-<img alt="Empathy-Map-José-Quispe" src="assets\chapter-II-assets\empathy-map-jose.png" />
+<img alt="Empathy-Map-José-Quispe" src="assets/requirements/maps/empathy-map-jose.png" />
 
 [Ver mapa completo hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/1SIQ263bxvb-gNEhv7TxBklQGdferWbHq?usp=sharing)
 <br>
@@ -1243,7 +1243,7 @@ Para la construcción de los Empathy Maps, el equipo siguió los siguientes paso
 - Empathy Map de Marina Salinas (propietaria)
 <br>
 
-<img alt="Empathy-Map-Maria-Salinas" src="assets\chapter-II-assets\empathy-map-marina.png" />
+<img alt="Empathy-Map-Maria-Salinas" src="assets/requirements/maps/empathy-map-marina.png" />
 
 [Ver mapa completo hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/1SIQ263bxvb-gNEhv7TxBklQGdferWbHq?usp=sharing)
 <br>
@@ -1251,7 +1251,16 @@ Para la construcción de los Empathy Maps, el equipo siguió los siguientes paso
 
 #### 2.3.5. As-is Scenario Mapping
 
-[Mapeo de escenarios actual]
+En esta sección se representan los escenarios actuales (“As-is”) de nuestros User Persona antes de utilizar la solución propuesta. Estos mapas permiten identificar cómo los usuarios realizan actualmente sus tareas relacionadas con el mantenimiento vehicular, así como las dificultades, frustraciones y limitaciones presentes en cada etapa del proceso. El análisis de estos escenarios nos ayuda a comprender con mayor profundidad los pain points de cada segmento y a justificar las funcionalidades planteadas para Autonexo.
+<br>
+- As-is Scenario Mapping de José Quispe (mecánico)
+<br>
+<img alt="As-Is-Scenario-Jose-Quispe" src="assets/requirements/maps/as-is-scenario-jose.png" />
+<br>
+- As-is Scenario Mapping de Marina Salinas (propietaria)
+<br>
+<img alt="As-Is-Scenario-Marina-Salinas" src="assets/requirements/maps/as-is-scenario-marina.png" />
+<br>
 
 ### 2.4. Ubiquitous Language
 
