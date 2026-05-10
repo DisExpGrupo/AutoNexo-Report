@@ -531,43 +531,723 @@ Familiaridad básica con smartphones, uso de aplicaciones simples y rápidas, di
 
 #### 2.1.1. Análisis Competitivo
 
-[Análisis de competidores]
+<table border="1">
+  <thead>
+    <tr>
+      <th colspan="7" style="text-align: center;"><b>Competitive Analysis Landscape</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" align="center">¿Por qué llevar a cabo este análisis?</td>
+      <td colspan="5" align="center">El objetivo es definir el posicionamiento de Autonexo frente a soluciones de gestión de flotas y mantenimiento vehicular, identificando diferenciadores de valor y riesgos competitivos para el mercado local.</td>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>AutoNexo <img src="assets\chapter-II-assets\logo-1.png.jpg" alt="Fleetio Logo" height="70" width="120"></th>
+      <th>Fleetio <img src="assets\chapter-II-assets\competidor_1.png" alt="Drivvo Logo" height="70" width="120"></th>
+      <th>Drivvo <img src="assets\chapter-II-assets\competidor_2.png" alt="Drivvo Logo" height="70" width="120"></th>
+      <th>Whip Around <img src="assets\chapter-II-assets\competidor_3.png" alt="Whip Around Logo" height="70" width="120"></th>
+    </tr>
+    <tr>
+      <td><strong>Perfil</strong></td>
+      <td>Overview</td>
+      <td>Autonexo es una aplicación móvil que conecta propietarios de vehículos con mecánicos especializados, facilitando la gestión integral del mantenimiento vehicular mediante un sistema centralizado que incluye registro de vehículos, historial de mantenimientos, búsqueda de servicios y comunicación directa entre usuarios.</td>
+      <td>Fleetio es una plataforma SaaS integral de gestión de flotas empresariales que ofrece herramientas avanzadas para el mantenimiento preventivo, seguimiento de combustible, gestión de activos, inspecciones digitales y análisis de datos para optimizar operaciones de flotas comerciales.</td>
+      <td>Drivvo es una aplicación móvil orientada a conductores particulares y pequeñas empresas que permite registrar gastos de vehículo, programar recordatorios de mantenimiento, controlar consumo de combustible y generar reportes básicos de costos vehiculares de forma simple e intuitiva.</td>
+      <td>Whip Around es una plataforma especializada en inspecciones digitales y mantenimiento para flotas comerciales, enfocada en cumplimiento regulatorio, inspecciones DVIR personalizables, gestión de órdenes de reparación y reporting para compliance con normas de seguridad vehicular.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><strong>Ventaja competitiva – ¿Qué valor ofrece al cliente?</strong></td>
+      <td>Digitaliza y automatiza el proceso de mantenimiento; conecta demanda (conductores) con oferta (mecánicos) y da trazabilidad del historial.</td>
+      <td>Gestión centralizada y basada en datos para reducir costos (mantenimiento, combustible) y mejorar decisiones; módulos de inspección, órdenes de trabajo y fuel tracking.</td>
+      <td>Accesibilidad y simplicidad móvil para controlar gastos y recordatorios de servicio; apta para usuarios individuales.</td>
+      <td>Cumplimiento y seguridad: inspecciones digitalizadas y flujos mecánico–conductor para atender defectos rápido y cumplir normas (CSA/DOT).</td>
+    </tr>
+    <tr>
+      <td><strong>Perfil de marketing</strong></td>
+      <td><strong>Mercado objetivo</strong></td>
+      <td>Dueños de flotas o conductores individuales y mecánicos/talleres.</td>
+      <td>Gestores de flota en transporte, construcción, servicios y sector público.</td>
+      <td>Conductores y pequeños negocios que desean controlar gastos/consumo del vehículo.</td>
+      <td>Gerentes de flota, supervisores de operaciones y conductores en flotas comerciales.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><strong>Estrategias de marketing</strong></td>
+      <td>Performance en redes, programa de referidos y alianzas con talleres.</td>
+      <td>Contenido y recursos para fleet managers (guías, plantillas, blog), demos y pruebas gratuitas.</td>
+      <td>Web/app store pages + educación ligera (contenido de uso, ventajas).</td>
+      <td>Campañas orientadas a cumplimiento y reducción de riesgos; trial/demo.</td>
+    </tr>
+    <tr>
+      <td><strong>Perfil de producto</strong></td>
+      <td><strong>Productos & servicios</strong></td>
+      <td>Registro de vehículos/usuarios, planificación y seguimiento de mantenimientos, búsqueda de mecánico, mensajería y presupuestos.</td>
+      <td>Gestión de activos, mantenimiento preventivo/WO, inspecciones, combustible, partes/inventario, reportes y mobile app Fleetio Go.</td>
+      <td>Registro de gastos, combustible, recordatorios de servicio, reportes; opciones de Fleet para múltiples vehículos.</td>
+      <td>Inspecciones DVIR personalizables, mantenimiento, órdenes de reparación y reporting para compliance.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><strong>Precios & costos</strong></td>
+      <td>Suscripción por plan (accesible) para talleres y mecánicos; conductor gratuito o incluido (definición interna).</td>
+      <td>Suscripción mensual por plan (Essential/Professional) con usuarios ilimitados; add-ons por herramienta/activo; precios varían por tamaño.</td>
+      <td>Gratis (básico) + in-app purchases para Pro; en App Store figuran opciones mensuales/anuales y tiers de flota.</td>
+      <td>Suscripción por plan; mínimo mensual publicado: USD $120 (Standard) y $220 (Pro) en mes a mes; opciones "FixedUnlimited" para activos ilimitados.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><strong>Canales de distribución</strong></td>
+      <td>Web y app móvil.</td>
+      <td>Web + app móvil; usuarios ilimitados incluidos.</td>
+      <td>App móvil (iOS/Android); web principalmente informativa.</td>
+      <td>Web y app móvil.</td>
+    </tr>
+    <tr>
+      <td><strong>Análisis SWOT</strong></td>
+      <td><strong>Fortalezas</strong></td>
+      <td>Enfoque local, matching conductor–mecánico, trazabilidad del historial.</td>
+      <td>Cobertura funcional amplia y ecosistema maduro; fuerte orientación a datos.</td>
+      <td>Barrera de entrada baja y usabilidad móvil para usuario individual.</td>
+      <td>Especialista en inspecciones y cumplimiento; valor claro para safety/compliance.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><strong>Debilidades</strong></td>
+      <td>Requiere onboarding/educación para talleres no digitalizados.</td>
+      <td>Coste total puede crecer con activos/add-ons en flotas grandes.</td>
+      <td>Menor cobertura "enterprise"; dependiente del móvil.</td>
+      <td>Menor foco en gestión integral de costos/combustible vs. suites completas.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><strong>Oportunidades</strong></td>
+      <td>Digitalización del sector y integraciones (facturación, GPS).</td>
+      <td>Creciente adopción SaaS en LATAM/SMBs.</td>
+      <td>Extender funciones de flota ligera/pequeñas empresas.</td>
+      <td>Integrarse con plataformas de gestión de flotas y TMS.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><strong>Amenazas</strong></td>
+      <td>UX inicial: si es compleja, podría afectar adopción temprana.</td>
+      <td>Competidores de menor costo o suites verticales.</td>
+      <td>Usuarios migran a soluciones más completas a medida que crecen.</td>
+      <td>Cambios normativos que reduzcan inspecciones obligatorias.</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 2.1.2. Estrategias y Tácticas Frente a Competidores
 
-[Estrategias competitivas]
+Para competir eficazmente frente a suites de gestión de flotas, apps personales de control vehicular y plataformas de inspecciones, Autonexo aplicará las siguientes estrategias y tácticas preliminares, considerando nuestras fortalezas (gestión integral del mantenimiento y conexión conductor–mecánico) y la oportunidad de mercado (demanda creciente de transparencia, trazabilidad y control).
+
+### Diferenciación por enfoque especializado en mantenimiento 
+
+**Estrategia:** Posicionar a Autonexo como la plataforma especializada en mantenimiento vehicular que conecta a conductores/flotas con mecánicos locales, y que centraliza historial, presupuestos y comunicación.
+
+**Tácticas:**
+- Desarrollar el buscador de mecánico con filtros por especialidad, SLA y calificación.
+- Ofrecer historial técnico unificado (diagnóstico, OT, evidencias) compartible entre taller y conductor.
+- Implementar mensajería in-app y cotizaciones rápidas con plantillas.
+
+### Modelo de precios escalables y accesibles
+
+**Estrategia:** Mantener un esquema competitivo con planes por taller/mecánico (nº de vehículos, módulos) y freemium para conductores, mejorando relación valor/precio frente a suites completas.
+
+**Tácticas:**
+- Prueba gratuita (n días) y descuento por anualidad; cupones por referidos.
+- Add-ons (p. ej., inventario, analítica avanzada, multi-sede).
+- Opción pay-per-lead para talleres en el marketplace.
+
+### Mejora progresiva del producto y adaptabilidad 
+
+**Estrategia:** Competir con un ritmo de entrega ágil y modular, priorizando feedback de talleres piloto.
+
+**Tácticas:**
+- Sprints mensuales con roadmap público y Beta Program.
+- Importadores desde Excel/WhatsApp para acelerar onboarding.
+
+### Seguridad, confianza y cumplimiento
+
+**Estrategia:** Reducir la percepción de riesgo y aumentar la confianza desde etapas tempranas.
+
+**Tácticas:**
+- Cifrado en tránsito y en reposo, backups automáticos, control de accesos por roles.
+- Auditoría básica externa y pruebas de penetración anuales.
+- Bitácora de cambios en historiales y descarga de datos (portabilidad) para transparencia.
+
+### Ecosistema e integraciones 
+
+**Estrategia:** Construir un ecosistema digital que conecte mantenimiento y operaciones para optimizar decisiones con datos.
+
+**Tácticas:**
+- APIs RESTful para módulos internos; conectores con facturación, pasarelas de pago, GPS/telemática y WhatsApp Business.
+- Alertas inteligentes (kilometraje/horas, tiempo, códigos OBD, garantías de repuesto).
+- Dashboard de salud de flota y forecasts de mantenimiento.
+
+### Alianzas estratégicas
+
+**Estrategia:** Acelerar adquisición con presencia local y pruebas guiadas.
+
+**Tácticas:**
+- Alianzas con cadenas de talleres, aseguradoras/SOAT y escuelas de mecánica.
+- Workshops "Digitaliza tu taller en 3 pasos con Autonexo" y casos de éxito locales.
+- Programa de Embajadores de Taller (beneficios por referidos y feedback).
+
+### Adquisición y retención por educación y valor continuo
+
+**Estrategia:** Minimizar barreras de adopción en segmentos poco digitalizados.
+
+**Tácticas:**
+- Onboarding guiado y centro de ayuda con micro-videos.
+- Plantillas de presupuestos, OT y checklist de inspección.
+- NPS trimestral y cohortes de retención con playbooks de reactivación.
 
 ### 2.2. Entrevistas
 
 #### 2.2.1. Diseño de Entrevistas
 
-[Diseño del proceso de entrevistas]
+Se realizó investigación cualitativa mediante entrevistas a los segmentos objetivo del proyecto: mecánicos/talleres y conductores de vehículos. El objetivo fue comprender las herramientas, procesos y problemas actuales en su gestión de mantenimiento vehicular, y validar posibles soluciones digitales basadas en sus experiencias.
+
+Se desarrollaron dos bloques de preguntas, diferenciados por el segmento objetivo. Las preguntas buscaron recopilar tanto información objetiva (contexto de trabajo, herramientas utilizadas) como información subjetiva (percepciones, frustraciones y expectativas respecto a posibles soluciones).
+
+#### Segmento 1: Propietarios de vehículos
+
+**Preguntas sobre la problemática**
+
+1. ¿Cuáles son tus principales problemas al buscar o gestionar mantenimientos de tu vehículo?
+2. ¿Cómo sueles pedir actualmente un mantenimiento y en qué parte del proceso se complica más?
+
+**Preguntas sobre la solución**
+
+1. ¿Cómo te gustaría crear la solicitud de mantenimiento en la app (voz, formulario, chat, llamada)?
+2. ¿Qué información mínima debería incluir tu solicitud (placa, síntomas, fotos/video, ubicación, presupuesto)?
+3. ¿Cómo preferirías ver y comparar mecánicos (lista, mapa, filtros) y qué criterios decidirían tu elección?
+4. ¿Qué datos o preferencias te gustaría poder personalizar (mecánico favorito, horarios, precio máximo)?
+5. ¿Qué formato de interfaz te resultaría más claro para revisar el estado del trabajo (checklist, porcentaje, fotos)?
+6. ¿Qué información debería guardarse en el historial de tu vehículo y cómo te gustaría consultarla?
+7. ¿Cómo prefieres realizar el pago de los servicios (Yape/Plin, tarjeta, efectivo) y en qué momento del proceso?
+8. ¿Qué criterios usarías para calificar al mecánico después de un servicio (puntualidad, precio, confianza, claridad)?
+9. Al abrir la app, ¿qué información te gustaría ver primero (urgencias, citas del día, presupuestos pendientes)?
+
+#### Segmento 2: Mecánicos
+
+**Preguntas sobre la problemática**
+
+1. ¿Cuáles son los problemas más comunes que enfrentas al gestionar los mantenimientos de los vehículos?
+2. ¿Qué dificultades actuales en el mantenimiento de vehículos crees que la app debería resolver primero para facilitar tu trabajo?
+
+**Preguntas sobre la solución**
+
+1. ¿Qué procesos consideras esenciales para que una app te ayude a administrar las solicitudes de mantenimiento?
+2. ¿Cómo te gustaría que la app recibiera las solicitudes de mantenimiento y qué información debería incluir cada solicitud?
+3. ¿Qué funcionalidades te gustaría que tuviera la app para organizar y asignar los trabajos de mantenimiento entre los mecánicos disponibles?
+4. ¿Qué opciones de personalización debería ofrecer la app para adaptarse a tus necesidades específicas como mecánico?
+5. ¿Qué tipo de interfaz te resultaría más fácil y eficiente para consultar el estado de un vehículo y las reparaciones necesarias?
+6. ¿Cómo debería la app manejar el seguimiento de los trabajos realizados y el historial de mantenimiento de cada vehículo?
+7. ¿Qué funcionalidades consideras necesarias para que los clientes puedan interactuar con la app de manera clara y efectiva?
+8. ¿Qué tipo de alertas o notificaciones serían más útiles para recordarte mantenimientos programados o trabajos pendientes?
+9. ¿Qué opciones de pago te gustaría que la app integrara para que el cobro de los servicios sea rápido y seguro?
+10. ¿Qué información o herramientas adicionales (p. ej., apoyo a diagnóstico) te gustaría que la app incluyera para hacer diagnósticos más rápidos y sugerir mantenimientos precisos?
+11. ¿Qué tipo de retroalimentación o valoraciones te gustaría que los clientes pudieran dejar sobre tu trabajo?
+12. ¿Qué información debería mostrar la app al inicio para ayudarte a priorizar los mantenimientos más urgentes?
+13. ¿Cómo debería la app ayudarte a coordinar trabajos entre varios mecánicos si un vehículo requiere más de un tipo de mantenimiento?
 
 #### 2.2.2. Registro de Entrevistas
 
-[Registro detallado de entrevistas]
+**Segmento 1: Propietarios de vehículos**
+
+<table border="1">
+  <tr>
+    <th>Entrevista</th>
+    <td>1</td>
+    <th>Nombre</th>
+    <td>Diego Ignacio Ricra Falla</td>
+  </tr>
+  <tr>
+    <th>Edad</th>
+    <td>20</td>
+    <th>Distrito</th>
+    <td>La molina </td>
+  </tr>
+  <tr>
+    <th>Captura de la entrevista: <img src="assets/chapter-II-assets/Entrevista 1 Propietario.jpg" alt="Captura de la entrevista" width="200"></th>
+    <td colspan="3">
+        Diego Ricra, estudiante de 19 años, utiliza un CR-V 2012 y enfrenta problemas para encontrar talleres cercanos, confiables y con precios justos. Actualmente depende de un mecánico de confianza recomendado por terceros, pero valora la posibilidad de una app que le permita crear solicitudes personalizadas con fotos, ubicación y presupuesto. Prefiere comparar mecánicos por precio y cercanía, pagar con Yape/Plin o efectivo, y recibir actualizaciones constantes mediante fotos o checklist. Considera clave la confianza, la comunicación clara y las experiencias previas de otros usuarios. Espera que la app le brinde rapidez, transparencia y control en todo el proceso de mantenimiento
+    </td>
+  </tr>
+  <tr>
+    <th>URL de la grabación</th>
+    <td colspan="3">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/ERJ8Xb5H93hGrCMlwwGrXAoBQhQYCzamRvJsaONqWyGJLw?e=NDdOwH&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">
+        Ver grabación
+      </a>
+    </td>
+  </tr>
+  <tr>
+   <th>Timing</th>
+    <td colspan="3">
+        00:00 -08:02
+    </td>
+  </tr>
+</table>
+<br>
+
+<table border="1">
+  <tr>
+    <th>Entrevista</th>
+    <td>2</td>
+    <th>Nombre</th>
+    <td>Freddy Fernandez Camacho</td>
+  </tr>
+  <tr>
+    <th>Edad</th>
+    <td>22</td>
+    <th>Distrito</th>
+    <td>Ate</td>
+  </tr>
+  <tr>
+    <th>Captura de la entrevista: <img src="assets/chapter-II-assets/Entrevista 2 Propietario.jpg" alt="Captura de la entrevista" width="200"></th>
+    <td colspan="3">
+        Carlos Fredy Camayo, conductor de un Nissan Sunny 2001, enfrenta problemas al encontrar mecánicos confiables, ya que los precios varían y no tiene un taller de confianza. Actualmente se guía por referencias en Facebook, pero valora que una app le permita contactar rápidamente, comparar precios y acceder a soluciones rápidas para problemas comunes. Prefiere personalizar con mecánico favorito, historial de mantenimientos y comparador de repuestos. Pagaría con Yape/QR y espera funciones como buscador de repuestos, citas y soluciones rápidas. Considera esenciales las recomendaciones, precios justos y calificación simple con estrellas y etiquetas.
+    </td>
+  </tr>
+  <tr>
+    <th>URL de la grabación</th>
+    <td colspan="3">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/ERJ8Xb5H93hGrCMlwwGrXAoBQhQYCzamRvJsaONqWyGJLw?e=NDdOwH&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">
+        Ver grabación
+      </a>
+    </td>
+  </tr>
+  <tr>
+   <th>Timing</th>
+    <td colspan="3">
+        08:07 - 14:58
+    </td>
+  </tr>
+</table>
+<br>
+
+
+**Segmento 2: Mecánicos**
+
+<table border="1">
+  <tr>
+    <th>Entrevista</th>
+    <td>3</td>
+    <th>Nombre</th>
+    <td>José Angel Castillo Miranda</td>
+  </tr>
+  <tr>
+    <th>Edad</th>
+    <td>40</td>
+    <th>Distrito</th>
+    <td>San Luis</td>
+  </tr>
+  <tr>
+    <th>Captura de la entrevista: <img src="assets\chapter-II-assets\Entrevista 3 Mecánico.png" alt="Captura de la entrevista" width="200"></th>
+    <td colspan="3">
+        El entrevistado, ingeniero en mantenimiento mecánico, señaló como problemas principales la falta de planificación preventiva, la mala comunicación con los conductores y la ausencia de historial organizado de cada vehículo. Consideró esenciales procesos como registro de solicitudes, calendario de mantenimientos, alertas automáticas y reportes de avance. Prefiere interfaces visuales tipo panel con indicadores y acceso rápido al historial, así como notificaciones en tiempo real. También valoró funcionalidades de seguimiento de solicitudes, métodos de pago variados (digitales o tarjeta), retroalimentación clara mediante calificaciones y la posibilidad de organizar trabajos según especialidad y disponibilidad. 
+    </td>
+  </tr>
+  <tr>
+    <th>URL de la grabación</th>
+    <td colspan="3">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/ERJ8Xb5H93hGrCMlwwGrXAoBQhQYCzamRvJsaONqWyGJLw?e=NDdOwH&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">
+        Ver grabación
+      </a>
+    </td>
+  </tr>
+  <tr>
+   <th>Timing</th>
+    <td colspan="3">
+        14:59 - 30:08
+    </td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Entrevista</th>
+    <td>4</td>
+    <th>Nombre</th>
+    <td>Rando Calero</td>
+  </tr>
+  <tr>
+    <th>Edad</th>
+    <td>45</td>
+    <th>Distrito</th>
+    <td>Suquillo</td>
+  </tr>
+  <tr>
+    <th>Captura de la entrevista: <img src="assets\chapter-II-assets\Entrevista 4 Mecánico.jpg" alt="Captura de la entrevista" width="200"></th>
+    <td colspan="3">
+        Rando Calero, mecánico especialista en la marca Scania y dueño de un taller con un año en el mercado, destacó que los principales problemas en la gestión del mantenimiento son la falta de planificación preventiva y la dependencia de recordatorios manuales o escáneres del vehículo. Actualmente utilizan WhatsApp y registros básicos para coordinar mantenimientos, pero considera que una app debería centralizar el historial por placa, facilitar la comunicación y agilizar el flujo de trabajo. También valoró que la aplicación sea sencilla, con lenguaje accesible, opciones de retroalimentación de clientes, alertas de mantenimientos próximos y reportes claros para dueños, conductores y talleres. Además, ve como oportunidad incluir funciones de promoción de talleres, estadísticas de satisfacción y un flujo automatizado que informe al cliente en cada etapa del servicio.
+    </td>
+  </tr>
+  <tr>
+    <th>URL de la grabación</th>
+    <td colspan="3">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/ERJ8Xb5H93hGrCMlwwGrXAoBQhQYCzamRvJsaONqWyGJLw?e=NDdOwH&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">
+        Ver grabación
+      </a>
+    </td>
+  </tr>
+  <tr>
+   <th>Timing</th>
+    <td colspan="3">
+        30:09 - 40:34
+    </td>
+  </tr>
+</table>
+
 
 #### 2.2.3. Análisis de Entrevistas
 
-[Análisis de resultados]
+Las entrevistas se realizaron entre el 5 y el 15 de septiembre de 2025 a un total de 4 participantes: dos conductores y dos mecánicos capacitados de Peru y Venezuela. El objetivo fue identificar patrones comunes en sus frustraciones, expectativas y criterios soluciones digitales en aplicaciones móviles.
+
+**Segmento: Propietarios de vehículos**
+
+**Total entrevistados**: 2
+
+**Edades**: 19 y 21 años
+
+**Distritos**: Ate y La Molina
+
+**Universidad**: Estudiantes universitarios de la UPC
+
+**Vehículos**: Honda CRV 2012 (familiar), Nissan Sunny 2001 (propio)
+
+**Fechas**: Entre el 5 y 9 de septiembre
+
+**Características objetivas**
+
+• Tienen dificultades para encontrar mecánicos de confianza con precios justos: 2/2 (100%)
+
+• Usan referencias de terceros / redes sociales (Facebook, recomendaciones boca a boca) para decidir mecánico: 2/2 (100%)
+
+• Prefieren medios de pago digitales o efectivos (Yape, Plin, QR o efectivo): 2/2 (100%)
+
+• Desean un historial digital de mantenimientos de su vehículo: 2/2 (100%)
+
+• Consideran importante comparar precios antes de aceptar el servicio: 2/2 (100%)
+
+• Valoran que la app permita personalizar opciones (mecánico favorito, horarios, precio máximo, repuestos): 2/2 (100%)
+
+**Características subjetivas**
+
+• Desconfianza hacia los talleres locales por precios inflados o falta de transparencia: 2/2 (100%)
+
+• Consideran que la ubicación del mecánico es un factor clave al decidir (cercanía): 1/2 (50%)
+
+• Priorizan la rapidez en la comunicación con el mecánico (chat, llamada, videollamada): 2/2 (100%)
+
+• Prefieren ver el avance del trabajo con fotos o checklist para mayor control: 2/2 (100%)
+
+• Desean que la plataforma incluya valoraciones y comentarios de otros usuarios como guía: 2/2 (100%)
+
+• Muestran disposición a usar una app siempre que sea intuitiva y rápida: 2/2 (100%)
+
+**Segmento: Mecánicos**
+
+**Total entrevistados**: 2
+
+**Edades**: 40 y 45 años
+
+**Distritos**: San Luis  y Surquillo
+
+
+**Experiencia**:
+- José Castillo: Ingeniero en mantenimiento mecánico con experiencia en diagnósticos, mantenimientos preventivos y gestión operativa.
+- Rando Calero: Mecánico especialista en Scania, dueño de taller con 1 año en el mercado.
+
+**Fechas**: Entre el 13 y 15 de septiembre
+
+**Características objetivas**
+
+• Identifican la falta de planificación preventiva como el principal problema de gestión: 2/2 (100%)  
+• Consideran esencial el historial digital de cada vehículo para diagnósticos más rápidos: 2/2 (100%)  
+• Utilizan actualmente métodos básicos de comunicación (WhatsApp, llamadas): 2/2 (100%)  
+• Valoran procesos como registro de solicitudes, seguimiento, alertas y reportes: 2/2 (100%)  
+• Prefieren una interfaz clara e intuitiva, con indicadores y paneles visuales: 2/2 (100%)  
+• Están abiertos a que los clientes dejen valoraciones y comentarios sobre el servicio: 2/2 (100%)  
+• Usan o han considerado usar herramientas digitales complementarias (escáner de vehículos, páginas web, redes sociales): 2/2 (100%)
+
+**Características subjetivas**
+
+• Perciben que la mala comunicación con conductores aumenta costos y retrasa soluciones: 2/2 (100%)  
+• Valoran la organización de solicitudes para evitar confusiones o duplicaciones: 2/2 (100%)  
+• Consideran clave las notificaciones automáticas de mantenimientos: 2/2 (100%)  
+• Desean que la app tenga lenguaje accesible y no excesivamente técnico, para facilitar la adopción: 1/2 (50%)  
+• Piensan que la plataforma debe incluir flujo automatizado de trabajo (inicio, mantenimiento en proceso, finalización): 1/2 (50%)  
+• Ven con buenos ojos la idea de un sistema de membresías o suscripción para cobros recurrentes: 1/2 (50%)  
+• Reconocen que las reseñas negativas pueden dañar la reputación, pero aun así valoran su utilidad para mejorar: 1/2 (50%)
 
 ### 2.3. Needfinding
 
+En el siguiente apartado, analizaremos a nuestros segmentos objetivos para identificar sus necesidades y en base a esto ofrecerles soluciones óptimas a sus problemas.
+
 #### 2.3.1. User Personas
 
-[Descripción de personas de usuario]
+Las siguientes User Persona representan a los diferentes tipos de usuarios que interactúan con nuestra aplicación. Estos perfiles nos permiten comprender sus características, motivaciones, necesidades y comportamientos, lo que facilita identificar cómo se relacionan con la solución desde su contexto personal hasta el uso activo de la misma.
+<br>
+
+- User Persona de José Quispe (mecánico)
+<img alt="User-Persona-José-Quispe" src="assets\chapter-II-assets\user-persona-jose.jpg" />
+
+[Ver mapa user persona hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/1Ng0UPewRqDezQuOSRunusah6vk5xM6lg?usp=sharing)
+
+<br>
+
+- User Persona de Marina Salinas (propietaria)
+<img alt="User-Persona-Marina-Salinas" src="assets\chapter-II-assets\user-persona-marina.jpg" />
+
+[Ver mapa user persona hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/1Ng0UPewRqDezQuOSRunusah6vk5xM6lg?usp=sharing)
+
 
 #### 2.3.2. User Task Matrix
 
-[Matriz de tareas de usuario]
+<p>En esta sección se presenta el User Task Matrix, que concentra las tareas que los User Persona (que representan a cada segmento) realizan para cumplir sus objetivos. No confundir tareas (tasks) con opciones o características de software, pues las tareas deben ser realizadas por los segmentos independientemente de la existencia de su solución de software.</p>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th rowspan="2">TASK</th>
+      <th colspan="2">Propietario de vehículo</th>
+      <th colspan="2">Mecánico</th>
+    </tr>
+    <tr>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Iniciar sesión en la app</td>
+      <td>Always</td>
+      <td>High</td>
+      <td>Always</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Consultar historial de mantenimiento</td>
+      <td>Often</td>
+      <td>High</td>
+      <td>Rarely</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Solicitar cita de mantenimiento</td>
+      <td>Always</td>
+      <td>High</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Confirmar cita de mantenimiento</td>
+      <td>Always</td>
+      <td>High</td>
+      <td>Always</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Ver estado de mantenimiento</td>
+      <td>Often</td>
+      <td>High</td>
+      <td>Always</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Dejar reseña de taller</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+      <td>Rarely</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Recibir notificación de avance de mantenimiento</td>
+      <td>Always</td>
+      <td>High</td>
+      <td>Always</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Consultar disponibilidad de mecánicos</td>
+      <td>Always</td>
+      <td>High</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Ver precios de servicios de taller</td>
+      <td>Often</td>
+      <td>High</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Recibir confirmación de cita</td>
+      <td>Always</td>
+      <td>High</td>
+      <td>Always</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Registrar un incidente o reclamo</td>
+      <td>Sometimes</td>
+      <td>High</td>
+      <td>Sometimes</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Consultar mapa de talleres cercanos</td>
+      <td>Often</td>
+      <td>Medium</td>
+      <td>Rarely</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Ver promociones de talleres favoritos</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+      <td>Rarely</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Confirmar disponibilidad de citas con mecánicos</td>
+      <td>Never</td>
+      <td>Low</td>
+      <td>Always</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Ver historial de calificaciones de talleres</td>
+      <td>Often</td>
+      <td>Medium</td>
+      <td>Rarely</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Ver detalles del mantenimiento realizado</td>
+      <td>Sometimes</td>
+      <td>High</td>
+      <td>Always</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Comunicación con el propietario (mensaje/chat)</td>
+      <td>Never</td>
+      <td>Low</td>
+      <td>Always</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Consultar disponibilidad de mecánicos por ubicación geográfica</td>
+      <td>Often</td>
+      <td>High</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Recibir alertas de cambios en mantenimiento o citas</td>
+      <td>Sometimes</td>
+      <td>High</td>
+      <td>Always</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Ver estado de pagos y facturación</td>
+      <td>Always</td>
+      <td>High</td>
+      <td>Never</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Actualizar datos personales (vehículo, dirección)</td>
+      <td>Rarely</td>
+      <td>Medium</td>
+      <td>Never</td>
+      <td>Low</td>
+    </tr>
+  </tbody>
+</table>
+
 
 #### 2.3.3. User Journey Mapping
 
-[Mapeo de viaje del usuario]
+Los siguientes User Journey Maps corresponden a cada User Persona. Estos diagramas nos ayudarán a identificar y comprender las dificultades que enfrentan en cada fase, desde el momento en que conocen nuestra aplicación hasta la etapa en la que comparten sus experiencias y opiniones sobre su uso.
+<br>
+
+- User Journey Map de José Quispe (mecánico)
+<br>
+
+<img alt="Journey-Map-José-Quispe" src="assets\chapter-II-assets\journey-map-jose.png" />
+
+[Ver mapa completo hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/10U-cHuHY3O-ueZ04tsT49D_9nUT28R7v?usp=drive_link)
+<br>
+
+- User Journey Map de Marina Salinas (propietaria)
+<br>
+
+<img alt="Journey-Map-Maria-Salinas" src="assets\chapter-II-assets\journey-map-marina.png" />
+
+[Ver mapa completo hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/10U-cHuHY3O-ueZ04tsT49D_9nUT28R7v?usp=drive_link)
+<br>
+
 
 #### 2.3.4. Empathy Mapping
 
-[Mapa de empatía]
+En esta sección, se elaboró un Empathy Map para analizar a nuestros usuarios, comprendiendo completamente el entorno en el que se desenvuelven. Este proceso nos permitirá profundizar en sus necesidades y orientarnos hacia la oferta de servicios que realmente les sean útiles.
+<br>
+
+Para la construcción de los Empathy Maps, el equipo siguió los siguientes pasos:
+
+1.-Preparación: Se revisó la ficha de cada User Persona creada previamente (José Quispe y María Salinas).
+
+2.-Colocar al centro el User Persona: Cada mapa fue desarrollado teniendo al usuario en el centro del análisis, asegurando que sus características, contexto y metas guíen el proceso.
+
+3.-Lluvia de ideas en equipo: Cada integrante compartió observaciones y percepciones sobre el comportamiento, necesidades y frustraciones de los usuarios.
+
+4.-Distribución en secciones: En la herramienta de mapeo se organizaron los aportes respondiendo las preguntas clave:
+
+- ¿Con quién estamos empatizando?
+- ¿Qué necesita hacer?
+- ¿Qué está diciendo?
+- ¿Qué está viendo?
+- ¿Qué está haciendo?
+- ¿Qué está escuchando?
+- ¿Cómo se siente y qué piensa?
+
+
+5.-Identificación de Pains y Gains: Se clasificaron las preocupaciones, frustraciones y motivaciones que influyen en la experiencia del usuario.
+
+6.-Síntesis: Se consolidaron los hallazgos en un mapa final para cada persona.
+
+<br>
+
+- Empathy Map de José Quispe (mecánico)
+<br>
+
+<img alt="Empathy-Map-José-Quispe" src="assets\chapter-II-assets\empathy-map-jose.png" />
+
+[Ver mapa completo hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/1SIQ263bxvb-gNEhv7TxBklQGdferWbHq?usp=sharing)
+<br>
+
+- Empathy Map de Marina Salinas (propietaria)
+<br>
+
+<img alt="Empathy-Map-Maria-Salinas" src="assets\chapter-II-assets\empathy-map-marina.png" />
+
+[Ver mapa completo hecho en UxPressia guardado en Drive](https://drive.google.com/drive/folders/1SIQ263bxvb-gNEhv7TxBklQGdferWbHq?usp=sharing)
+<br>
+
 
 #### 2.3.5. As-is Scenario Mapping
 
@@ -575,7 +1255,80 @@ Familiaridad básica con smartphones, uso de aplicaciones simples y rápidas, di
 
 ### 2.4. Ubiquitous Language
 
-[Lenguaje ubicuo del dominio]
+<br>
+1. Matching & Booking Context
+
+- Service Request (Solicitud de servicio): Pedido inicial que realiza un cliente para atender una necesidad de mantenimiento o reparación.
+
+- Offer (Oferta): Propuesta realizada por un taller (workshop) para cubrir un Service Request, incluyendo condiciones de precio y tiempo.
+
+- Booking (Reserva): Confirmación de una oferta aceptada por el cliente.
+
+- Booking Confirmation (Confirmación de reserva): Estado en el que el cliente valida definitivamente la reserva y queda registrada en el sistema.
+
+- Booking Reschedule (Reprogramación de reserva): Cambio de la fecha o franja horaria de una reserva existente.
+
+2. Trust & Reputation Context
+
+- Review (Reseña): Valoración escrita y numérica de un servicio recibido por parte de un cliente.
+
+- Trust Score (Puntaje de confianza): Métrica compuesta que refleja la reputación de un taller, un cliente o un servicio específico, en base a reseñas y comportamientos.
+
+- Reputation (Reputación): Percepción acumulada de la calidad y confiabilidad de un taller u oferente, basada en interacciones previas.
+
+3. Workshop Context
+
+- Workshop (Taller): Negocio o entidad que ofrece servicios de reparación y mantenimiento de vehículos.
+
+- Workshop Schedule (Agenda del taller): Plan de disponibilidad de un taller para aceptar reservas.
+
+- Service Order (Orden de servicio): Documento operativo que organiza y detalla el trabajo a realizar sobre un vehículo dentro de un taller.
+
+- Service Item (Ítem de servicio): Actividad o tarea específica incluida dentro de una orden de servicio (ej. cambio de aceite, alineación de ruedas).
+
+4. Vehicle & Maintenance Context
+
+- Vehicle (Vehículo): Bien físico perteneciente a un cliente, sobre el cual se realizan operaciones de mantenimiento o reparación.
+
+- Maintenance Record (Registro de mantenimiento): Histórico auditable de todas las intervenciones realizadas a un vehículo.
+
+- Check-in (Ingreso): Momento en el cual un vehículo es recibido en el taller para iniciar un servicio.
+
+- Check-out (Salida): Momento en el cual un vehículo es entregado de vuelta al cliente tras completar los servicios.
+
+5. Payment & Subscription Context
+
+- Subscription (Suscripción): Acuerdo recurrente mediante el cual un cliente paga para acceder a beneficios o servicios de la plataforma.
+
+- Payment (Pago): Transacción monetaria realizada por un cliente para activar o renovar una suscripción.
+
+- Invoice (Factura): Documento que refleja el detalle de un pago realizado por un cliente.
+
+- Billing Cycle (Ciclo de facturación): Periodo de tiempo que define cuándo corresponde realizar un cobro por la suscripción.
+
+6. IAM (Identity & Access Management) Context
+
+- User (Usuario): Persona que accede a la plataforma con credenciales únicas.
+
+- Role (Rol): Conjunto de permisos asignados a un usuario que define qué acciones puede realizar.
+
+- Permission (Permiso): Autorización concreta para ejecutar una acción en el sistema.
+
+- AuEntoncestication (Autenticación): Proceso de verificar la identidad de un usuario mediante credenciales.
+
+- Authorization (Autorización): Proceso de validar que un usuario tiene permisos para acceder a un recurso o realizar una acción.
+
+7. Notifications Context
+
+- Notification (Notificación): Mensaje enviado a uno o más destinatarios para informar sobre un evento o recordatorio.
+
+- Channel (Canal): Medio a través del cual se entrega una notificación (Push, Email, SMS).
+
+- Template (Plantilla): Formato predefinido de un mensaje utilizado en las notificaciones.
+
+- Reminder (Recordatorio): Tipo de notificación programada que recuerda al cliente un evento próximo (ej. revisión del vehículo).
+
+- Transactional Notification (Notificación transaccional): Mensaje generado automáticamente por un evento del sistema (ej. confirmación de reserva).
 
 <div style="page-break-after: always;"></div>
 
