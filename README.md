@@ -834,10 +834,10 @@ En esta fase, la aplicación alcanzó su estado operativo final, integrando pasa
 
 | Funcionalidad | Descripción | Evidencia Visual |
 |---------------|-------------|------------------|
-| **Autenticación Final** | Flujo de acceso y registro con diseño pulido y validaciones. | ![Login](assets/chapter-IV-assets/Iniciar.png) |
-| **Dashboard Principal** | Centro de control con navegación optimizada para el usuario. | ![Home](assets/chapter-IV-assets/Login.png) |
-| **Gestión de Perfil** | Configuración completa de datos de usuario y taller. | ![Perfil](assets/chapter-IV-assets/Perfil.png) |
-| **Módulo de Pagos** | Sistema de suscripciones para talleres y gestión de pagos. | ![Pagos](assets/chapter-IV-assets/Pagos.png) |
+| **Autenticación Final** | Flujo de acceso y registro con diseño pulido y validaciones. | ![Login](/AutoNexo-Report/assets/ux-ui/chapter-V/Iniciar.png) |
+| **Dashboard Principal** | Centro de control con navegación optimizada para el usuario. | ![Home](/AutoNexo-Report/assets/ux-ui/chapter-V/Home.png) |
+| **Gestión de Perfil** | Configuración completa de datos de usuario y taller. | ![Perfil](/AutoNexo-Report/assets/ux-ui/chapter-V/Perfil.png) |
+| **Módulo de Pagos** | Sistema de suscripciones para talleres y gestión de pagos. | ![Pagos](/AutoNexo-Report/assets/ux-ui/chapter-V/Pagos.png) |
 
 *   **Video de Demostración Final:** [AutoNexo Sprint 3 Demo](https://drive.google.com/drive/folders/1rQoI7fwtVrntl1jeGQ1cc_cXpP7fWdzK?usp=sharing)
 
@@ -863,7 +863,7 @@ La documentación técnica fue actualizada para reflejar los nuevos Bounded Cont
 *   **Entorno de Producción:** Azure App Services (Canada Central).
 
 **Evidencia de Documentación:**
-![Swagger Sprint 3](assets\chapter-IV-assets/Swagger.png)
+![Swagger Sprint 3](/AutoNexo-Report/assets/ux-ui/chapter-V/Swagger.png)
 
 ---
 
@@ -880,7 +880,7 @@ El equipo operó en un modelo de desarrollo paralelo para cubrir tres frentes: B
 #### Participación en Repositorios:
 | Repositorio | Evidencia de Contribución |
 |-------------|---------------------------|
-| **Backend** | ![Backend Participation](assets\chapter-IV-assets/Backend.png) |
+| **Backend** | ![Backend Participation](/AutoNexo-Report/assets/ux-ui/chapter-V/Backend.png) |
 | **Android** | ![Android Participation](assets\chapter-IV-assets/Andrroid.png) |
 | **Flutter** | ![Flutter Participation](assets\chapter-IV-assets/Flutter.png) |
 
@@ -893,13 +893,12 @@ El proyecto se encuentra desplegado y operativo en los siguientes puntos de acce
 1.  **API Backend:** [Azure App Services](https://autonexo-backend-akcsb5avacemdwh7.canadacentral-01.azurewebsites.net/swagger-ui/index.html)
 2.  **Landing Page:** [Azure Static Web Apps](https://mango-sea-0eee8590f.1.azurestaticapps.net/#)
 3.  **App Distribution:** Firebase App Distribution para pruebas Alpha/Beta.
-4.  
 
 ---
 
 ## 5.3. Video About-the-Product
 
-*(Espacio reservado para el video final de presentación del producto).*
+**Enlace al video:** [About the Product: https://drive.google.com/file/d/1jgXDsMEV_bvpwjJ2y6HXbz6BG4oDxSfh/view?usp=sharing](https://drive.google.com/file/d/1jgXDsMEV_bvpwjJ2y6HXbz6BG4oDxSfh/view?usp=sharing)
 
 <div style="page-break-after: always;"></div>
 
