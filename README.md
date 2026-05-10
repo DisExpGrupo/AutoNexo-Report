@@ -370,16 +370,16 @@
     - [5.1.2. Source Code Management](#512-source-code-management)
     - [5.1.3. Source Code Style Guide \& Conventions](#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-    - [5.2. Product Implementation \& Deployment](#52-product-implementation--deployment)
-      - [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
-      - [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
-      - [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
-      - [5.2.4. Acuerdo de Servicio - SaaS](#524-acuerdo-de-servicio---saas)
-      - [5.2.5. Implemented Native-Mobile Application Evidence](#525-implemented-native-mobile-application-evidence)
-      - [5.2.6. Implemented RESTful API and/or Serverless Backend Evidence](#526-implemented-restful-api-andor-serverless-backend-evidence)
-      - [5.2.7. RESTful API Documentation](#527-restful-api-documentation)
-      - [5.2.8. Team Collaboration Insights](#528-team-collaboration-insights)
-    - [5.3. Video About-the-Product](#53-video-about-the-product)
+  - [5.2. Product Implementation \& Deployment](#52-product-implementation--deployment)
+    - [5.2.1. Sprint Backlogs (Continuación)](#521-sprint-backlogs-continuación)
+      - [Sprint 3](#sprint-3)
+    - [5.2.5. Implemented Mobile Application Evidence (Sprint 3)](#525-implemented-mobile-application-evidence-sprint-3)
+    - [5.2.6. Implemented RESTful API Evidence (Sprint 3)](#526-implemented-restful-api-evidence-sprint-3)
+    - [5.2.7. RESTful API Documentation \& Deployment](#527-restful-api-documentation--deployment)
+    - [5.2.8. Team Collaboration Insights](#528-team-collaboration-insights)
+      - [Participación en Repositorios:](#participación-en-repositorios)
+    - [Final Deployment Summary](#final-deployment-summary)
+  - [5.3. Video About-the-Product](#53-video-about-the-product)
 - [PARTE II: VERIFICATION, VALIDATION \& PIPELINE](#parte-ii-verification-validation--pipeline)
   - [Capítulo VI: Product Verification \& Validation](#capítulo-vi-product-verification--validation)
     - [6.1. Testing Suites \& Validation](#61-testing-suites--validation)
@@ -2950,12 +2950,12 @@ Se han seleccionado herramientas líderes en la industria para cubrir cada etapa
 
 ### 5.1.2. Source Code Management
 
-El proyecto implementa el modelo **GitFlow** para gestionar el flujo de trabajo en los repositorios de la organización [ATG-UPC](https://github.com/ATG-UPC).
+El proyecto implementa el modelo **GitFlow** para gestionar el flujo de trabajo en los repositorios de la organización [ATG-UPC](https://github.com/DisExpGrupo).
 
 **Repositorios del Proyecto:**
 *   **Landing Page:** [AutoNexo-Landing-Page](https://github.com/ATG-UPC/AutoNexo-Landing-Page)
-*   **Frontend Mobile:** [AutoNexo-Android](https://github.com/ATG-UPC/AutoNexo-Android)
-*   **Backend Service:** [AutoNexo-Backend](https://github.com/ATG-UPC/AutoNexo-Backend)
+*   **Frontend Mobile:** [AutoNexo-Android](https://github.com/DisExpGrupo/AutoNexo-Frontend)
+*   **Backend Service:** [AutoNexo-Backend](https://github.com/DisExpGrupo/AutoNexo-Backend)
 
 **Estrategia de Ramificación:**
 1.  **Main:** Contiene el código productivo y versiones estables.
@@ -2986,43 +2986,101 @@ La estrategia de despliegue se divide según el componente del sistema para maxi
 *   **Landing Page:** Desplegada a través de **GitHub Pages**. El flujo de publicación se automatiza desde la carpeta `/docs` de la rama `main`.
 *   **Backend:** Alojado en la plataforma nube **Azure**, utilizando **App Services** para la ejecución de la API y **Azure SQL** para la gestión de la base de datos, garantizando escalabilidad y seguridad.
 
-### 5.2. Product Implementation & Deployment
+## 5.2. Product Implementation & Deployment
 
-#### 5.2.1. Sprint Backlogs
+### 5.2.1. Sprint Backlogs (Continuación)
 
-[Backlogs de sprints]
+#### Sprint 3
+*   **Sprint Goal:** Finalizar los Bounded Contexts críticos (Offer, Request, Booking, Payment), alcanzar la fidelidad visual total en Android y establecer la paridad funcional multiplataforma con Flutter.
+*   **Velocity:** 42 story points.
 
-#### 5.2.2. Implemented Landing Page Evidence
+**Sprint Backlog Table:**
+| ID | Title | Estimation (h) | Assigned To | Status | Story Points |
+|----|-------|----------------|-------------|--------|--------------|
+| US04 | Bounded Context: Offer Management | 5 | Victor Cruz | Done | 5 |
+| US05 | Bounded Context: Service Requests | 5 | Santiago Solis | Done | 5 |
+| US11 | Bounded Context: Service Booking | 6 | Amir Castro | Done | 8 |
+| US15 | Payment & Subscription System | 5 | Miguel Vidal | Done | 5 |
+| US17 | Workshop Management (Employees/Invites) | 6 | Alicia Navarro | Done | 8 |
+| US18 | UI/UX Final: Auth & Profile (Android) | 4 | Victor Cruz | Done | 5 |
+| US19 | Dashboard & Navigation UI (Android) | 3 | Santiago Solis | Done | 3 |
+| US20 | Request-Offer Matching Engine | 4 | Amir Castro | Done | 5 |
+| FL01 | Flutter Core Implementation | 8 | Miguel Vidal | Done | 8 |
 
-[Evidencia de landing page implementada]
+---
 
-#### 5.2.3. Implemented Frontend-Web Application Evidence
+### 5.2.5. Implemented Mobile Application Evidence (Sprint 3)
 
-[Evidencia de aplicación web frontend]
+En esta fase, la aplicación alcanzó su estado operativo final, integrando pasarelas de pago y el sistema de matching.
 
-#### 5.2.4. Acuerdo de Servicio - SaaS
+| Funcionalidad | Descripción | Evidencia Visual |
+|---------------|-------------|------------------|
+| **Autenticación Final** | Flujo de acceso y registro con diseño pulido y validaciones. | ![Login](assets/chapter-IV-assets/Iniciar.png) |
+| **Dashboard Principal** | Centro de control con navegación optimizada para el usuario. | ![Home](assets/chapter-IV-assets/Login.png) |
+| **Gestión de Perfil** | Configuración completa de datos de usuario y taller. | ![Perfil](assets/chapter-IV-assets/Perfil.png) |
+| **Módulo de Pagos** | Sistema de suscripciones para talleres y gestión de pagos. | ![Pagos](assets/chapter-IV-assets/Pagos.png) |
 
-[Acuerdo de servicio SaaS]
+*   **Video de Demostración Final:** [AutoNexo Sprint 3 Demo](https://drive.google.com/drive/folders/1rQoI7fwtVrntl1jeGQ1cc_cXpP7fWdzK?usp=sharing)
 
-#### 5.2.5. Implemented Native-Mobile Application Evidence
+---
 
-[Evidencia de aplicación móvil nativa]
+### 5.2.6. Implemented RESTful API Evidence (Sprint 3)
 
-#### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
+Se expandió el backend para soportar la lógica de negocio avanzada del ecosistema.
 
-[Evidencia de API RESTful y backend]
+*   **OfferController:** Gestión de presupuestos y propuestas comerciales de talleres.
+*   **RequestController:** Centralización de solicitudes de mantenimiento de conductores.
+*   **BookingController:** Orquestación de citas y reservas de servicios.
+*   **PaymentController:** Procesamiento de transacciones y membresías.
+*   **Workshop (Extended):** Control de empleados, activaciones y códigos de invitación.
 
-#### 5.2.7. RESTful API Documentation
+---
 
-[Documentación de API RESTful]
+### 5.2.7. RESTful API Documentation & Deployment
 
-#### 5.2.8. Team Collaboration Insights
+La documentación técnica fue actualizada para reflejar los nuevos Bounded Contexts y asegurar la integración con los clientes Android y Flutter.
 
-[Insights de colaboración del equipo]
+*   **URL de Swagger UI:** [AutoNexo API Documentation](https://autonexo-backend-akcsb5avacemdwh7.canadacentral-01.azurewebsites.net/swagger-ui/index.html)
+*   **Entorno de Producción:** Azure App Services (Canada Central).
 
-### 5.3. Video About-the-Product
+**Evidencia de Documentación:**
+![Swagger Sprint 3](assets\chapter-IV-assets/Swagger.png)
 
-[Enlace o descripción del video sobre el producto]
+---
+
+### 5.2.8. Team Collaboration Insights
+
+El equipo operó en un modelo de desarrollo paralelo para cubrir tres frentes: Backend, Android Nativo y Flutter.
+
+*   **Victor Cruz:** Lideró la implementación de **Offer Context** y el diseño de alta fidelidad para los flujos de identidad en Android.
+*   **Santiago Solis:** Responsable del **Request Context** y la arquitectura de navegación central de la aplicación móvil.
+*   **Alicia Navarro:** Especialista en **Workshop Operations**, desarrollando la lógica de gestión de personal y seguridad de invitaciones.
+*   **Miguel Vidal:** Encargado del **Payment Engine** y la implementación de la base de código multiplataforma en Flutter.
+*   **Amir Castro:** Desarrolló el **Matching System**, permitiendo la conexión inteligente entre necesidades del usuario y ofertas de talleres.
+
+#### Participación en Repositorios:
+| Repositorio | Evidencia de Contribución |
+|-------------|---------------------------|
+| **Backend** | ![Backend Participation](assets\chapter-IV-assets/Backend.png) |
+| **Android** | ![Android Participation](assets\chapter-IV-assets/Andrroid.png) |
+| **Flutter** | ![Flutter Participation](assets\chapter-IV-assets/Flutter.png) |
+
+---
+
+### Final Deployment Summary
+
+El proyecto se encuentra desplegado y operativo en los siguientes puntos de acceso:
+
+1.  **API Backend:** [Azure App Services](https://autonexo-backend-akcsb5avacemdwh7.canadacentral-01.azurewebsites.net/swagger-ui/index.html)
+2.  **Landing Page:** [Azure Static Web Apps](https://mango-sea-0eee8590f.1.azurestaticapps.net/#)
+3.  **App Distribution:** Firebase App Distribution para pruebas Alpha/Beta.
+4.  
+
+---
+
+## 5.3. Video About-the-Product
+
+*(Espacio reservado para el video final de presentación del producto).*
 
 <div style="page-break-after: always;"></div>
 
