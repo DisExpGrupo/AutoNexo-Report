@@ -2950,7 +2950,7 @@ Se han seleccionado herramientas líderes en la industria para cubrir cada etapa
 
 ### 5.1.2. Source Code Management
 
-El proyecto implementa el modelo **GitFlow** para gestionar el flujo de trabajo en los repositorios de la organización [ATG-UPC](https://github.com/DisExpGrupo).
+El proyecto implementa el modelo **GitFlow** para gestionar el flujo de trabajo en los repositorios de la organización [DisExpGrupo](https://github.com/DisExpGrupo).
 
 **Repositorios del Proyecto:**
 *   **Landing Page:** [AutoNexo-Landing-Page](https://github.com/DisExpGrupo/AutoNexo-Landing-Page)
@@ -3040,8 +3040,8 @@ Se expandió el backend para soportar la lógica de negocio avanzada del ecosist
 
 La documentación técnica fue actualizada para reflejar los nuevos Bounded Contexts y asegurar la integración con los clientes Android y Flutter.
 
-*   **URL de Swagger UI:** [AutoNexo API Documentation](https://autonexo-backend-akcsb5avacemdwh7.canadacentral-01.azurewebsites.net/swagger-ui/index.html)
-*   **Entorno de Producción:** Azure App Services (Canada Central).
+*   **URL de Swagger UI:** [AutoNexo API Documentation](https://autonexo-backend-zcy7.onrender.com/swagger-ui/index.html#/)
+*   **Entorno de Producción:** Render (Oregon. US West).
 
 **Evidencia de Documentación:**
 ![Swagger Sprint 3](./assets/ux-ui/chapter-V/Swagger.png)
@@ -3071,7 +3071,7 @@ El equipo operó en un modelo de desarrollo paralelo para cubrir tres frentes: B
 
 El proyecto se encuentra desplegado y operativo en los siguientes puntos de acceso:
 
-1.  **API Backend:** [Azure App Services](https://autonexo-backend-akcsb5avacemdwh7.canadacentral-01.azurewebsites.net/swagger-ui/index.html)
+1.  **API Backend:** [Render](https://autonexo-backend-zcy7.onrender.com/swagger-ui/index.html#/)
 2.  **Landing Page:** [Netlify App](https://splendorous-mooncake-980604.netlify.app/)
 3.  **App Distribution:** Firebase App Distribution para pruebas Alpha/Beta.
 
