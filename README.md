@@ -837,11 +837,11 @@ Panel de resultados de `WorkshopDomainUnitTest` mostrando **29 tests passed** co
 
 Árbol expandido mostrando los tests paramétricos desplegados — parte superior. Se aprecian los 4 sub-casos de `createWorkshop_WhenNameIsNullOrBlank` con sus valores: null, "", "   " y "". También se muestran los 2 sub-casos de `canAccessPremiumFeatures_WhenTierIsBasicOrPremium` con Tier BASIC y Tier PREMIUM.
 
-![unit-test-2_1](assets/images/screenshots/unit-test-2_1.png)
+![unit-test-2_1](assets/images/screenshots/unit-test-2.1.png)
 
 Árbol expandido mostrando los tests paramétricos desplegados — parte inferior. Se aprecian los 5 sub-casos de `createBusinessRegistration_WhenRucIsInvalid` con valores: "null", "12345", "123456789012", "ABCDE678901" y "".
 
-![unit-test-2_2](assets/images/screenshots/unit-test-2_2.png)
+![unit-test-2_2](assets/images/screenshots/unit-test-2.2.png)
 
 Código fuente de `WorkshopDomainUnitTest.java` con el método `setUp()` anotado con `@BeforeEach` visible, junto con los comentarios `ES: Riesgo cubierto` y `EN: Risk covered` del primer test. Se aprecia la ruta del archivo en la barra superior del editor.
 
@@ -877,11 +877,11 @@ Panel de resultados de `WorkshopApplicationIntegrationTest` mostrando **5 tests 
 
 Ejecución conjunta de todo el bounded context Workshop mostrando **34 tests passed** — vista con árbol completo expandido. Se aprecian ambas clases: `Workshop BC — Application Integration Tests` (5 pruebas) y `Workshop BC — Domain Unit Tests` (29 pruebas), todas en verde.
 
-![integration-test-2_1](assets/images/screenshots/integration-test-2_1.png)
+![integration-test-2_1](assets/images/screenshots/integration-test-2.1.png)
 
 Ejecución conjunta de todo el bounded context Workshop mostrando **34 tests passed** — vista con consola de ejecución visible. Se aprecia el `Process finished with exit code 0` confirmando que todas las pruebas pasaron correctamente.
 
-![integration-test-2_2](assets/images/screenshots/integration-test-2_2.png)
+![integration-test-2_2](assets/images/screenshots/integration-test-2.2.png)
 
 Código fuente de `WorkshopApplicationIntegrationTest.java` mostrando las anotaciones `@Mock` de los repositorios e infraestructura (`WorkshopRepository`, `WorkshopContextFacade`, `InvitationRepository`, `NotificationService`, `UserRepository`, `WorkshopReferenceRepository`) y el método `setUp()` con `@BeforeEach` realizando la inyección manual de dependencias via constructor.
 
