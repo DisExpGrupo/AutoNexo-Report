@@ -2057,17 +2057,138 @@ De esta manera, el usuario puede elegir el taller más conveniente antes de real
 
 ### 4.8. Domain-Driven Software Architecture
 
-#### 4.8.1. Software Architecture Context Diagram
+### 4.8.1. Event Storming
 
-[Diagrama de contexto]
+El objetivo de la sesión de EventStorming fue realizar una exploración amplia y colaborativa del dominio del problema de Autonexo. Mediante esta técnica buscamos representar de manera visual y comprensible los distintos eventos que ocurren dentro del flujo de interacción entre usuarios (propietarios de vehículos) y mecánicos, con el fin de identificar oportunidades de mejora, puntos críticos y posibles cambios de estado en el sistema.
+<br>
 
-#### 4.8.2. Software Architecture Container Diagrams
+- Step 1 – Unstructured Exploration: El equipo colocó en Miro todos los eventos relevantes sin ningún orden, con el fin de vaciar conocimiento y asegurar que ninguna parte del dominio quedara fuera.
 
-[Diagramas de contenedores]
+<img alt="step1_UnstructuredExploration" src="assets\diagrams\storming\step1_UnsExp.png" />
+<br>
 
-#### 4.8.3. Software Architecture Components Diagrams
+- Step 2 – Timelines: Los eventos fueron organizados en una línea de tiempo, lo que permitió identificar la secuencia lógica de las acciones
 
-[Diagramas de componentes]
+<img alt="step2_Timelines" src="assets\diagrams\storming\step2_Timelines.png" />
+<br>
+
+- Step 3 – Pain Points: Se marcaron las dificultades que enfrentan los usuarios, como la demora en la asignación de mecánicos o la falta de transparencia en los precios.
+
+<img alt="step3_PaintPoints" src="assets\diagrams\storming\step3_PaintPoints.png" />
+<br>
+
+- Step 4 – Pivotal Points: Finalmente, se destacaron los eventos clave que generan cambios de estado.
+  <br>
+
+<img alt="step4_PivotalPoints" src="assets\diagrams\storming\step4_PivotalPoints.png" />
+<br>
+<br>
+
+Esta dinámica permitió al equipo obtener una visión compartida del proceso, detectar problemas reales y reconocer eventos centrales que posteriormente servirían para delimitar los bounded contexts.
+<br>
+
+#### 4.8.1.1. Candidate Context Discovery
+
+El objetivo de la sesión de Candidate Context Discovery fue identificar y delimitar los bounded contexts del dominio a partir del EventStorming, con el fin de proponer una primera aproximación modular al sistema. Esto asegura que cada parte del dominio tenga responsabilidades claras, evitando la complejidad innecesaria y permitiendo un diseño más mantenible y escalable.
+<br>
+
+Se partió del resultado del EventStorming y se aplicó la técnica Look-for-pivotal-events, donde se tomaron como referencia los eventos clave mediante lineas secantes en los post-its (“Service request submitted”, “Offer accepted”, “Service completed”, etc) para determinar los límites naturales entre contextos.
+
+<img alt="step4_PivotalPoints" src="assets\diagrams\storming\step4_PivotalPoints.png" />
+
+<br>
+
+A partir de esto, se definieron los bounded contexts:
+
+- IAM Context: Abarca la lógica de registro/autenticación de usuario
+- Subscription context: Hace referencia al sistema de suscripción para acceder a las funcionalidades, mediante el cual la aplicación generará ingresos.
+- Workshop Context: Engloba la lógica de los mecánicos dentro de las talleres.
+- Trust: Hace referencia al sistema de calificación a los usuarios.
+- Maintenance: Engloba la lógica acerca de los vehículos y sus mantenimientos.
+- Booking Context: Engloba el proceso de búsqueda, booking y ejecución del servicio.
+- Notifications: Hace referencia a las notificaciones del sistema.
+
+#### 4.8.1.2. Domain Message Flows Modeling
+
+**Scenario 1**
+<img alt="scenario-1" src="assets\diagrams\scenario\scenario-1.jpg" />
+<br> <br>
+
+**Scenario 2**
+<img alt="scenario-2" src="assets\diagrams\scenario\scenario-2.jpg" />
+<br> <br>
+
+**Scenario 3**
+<img alt="scenario-3" src="assets\diagrams\scenario\scenario-3.jpg" />
+<br> <br>
+
+**Scenario 4**
+<img alt="scenario-4" src="assets\diagrams\scenario\scenario-4.jpg" />
+<br> <br>
+
+#### 4.8.1.3 Bounded Context Canvases
+
+**IAM bounded context canvas**
+
+<img alt="IAM" src="assets\diagrams\context-canvases\canvases-IAM-c.png" />
+<br> <br>
+
+**Booking bounded context canvas**
+
+<img alt="Matching" src="assets\diagrams\context-canvases\canvases-matching-c.png" />
+<br> <br>
+ 
+**Notifications bounded context canvas**
+
+<img alt="Notification" src="assets\diagrams\context-canvases\canvases-notification-c.png" />
+<br> <br>
+
+**Payment bounded context canvas**
+
+<img alt="Payment" src="assets\diagrams\context-canvases\canvases-payment-c.png" />
+<br> <br>
+
+**Trust bounded context canvas**
+
+<img alt="Trust" src="assets\diagrams\context-canvases\canvases-trust-c.png" />
+<br> <br>
+
+**Maintenance bounded context canvas**
+
+<img alt="Vehicle" src="assets\diagrams\context-canvases\canvases-vehicle-c.png" />
+<br> <br>
+
+**Workshop bounded context canvas**
+
+<img alt="Workshop" src="assets\diagrams\context-canvases\canvases-workshop-c.png" />
+<br> <br>
+
+### 4.8.2. Software Architecture Context Diagram
+
+El siguiente diagrama muestra de manera general Autonexo conectado con los sistemas externos y los usuarios que intervienen
+<br>
+<img alt="Context-Diagram" src="assets\chapter-II-assets\c4\structurizr-101398-SystemContext-001.png" />
+
+### 4.8.3. Software Architecture Container Diagrams
+
+El diagrama C2 profundiza en el sistema y representa la arquitectura general del software, destacando las principales tecnologías empleadas y la manera en que estas se interconectan.
+<br>
+<img alt="Container-Diagram" src="assets\chapter-II-assets\c4\structurizr-101398-Container-001.png" />
+
+### 4.8.4. Software Architecture Components Diagrams
+
+El siguiente diagrama muestra los contenedores del sistema Autonexo desplegados en el entorno de desarrollo y producción. Además, se muestran los servicios externos, la base de datos y el storage.
+<br>
+
+- Sistema en entorno de desarrollo:
+  <br>
+  <img alt="Deployment-Diagram-1" src="assets\chapter-II-assets\c4\structurizr-101398-SystemContext-001.png" />
+
+<br>
+
+- Sistema en entorno de producción:
+  <br>
+  <img alt="Deployment-Diagram-2" src="assets\chapter-II-assets\c4\structurizr-101398-Deployment-002.png" />
 
 ### 4.9. Software Object-Oriented Design
 
