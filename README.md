@@ -2249,7 +2249,63 @@ El siguiente diagrama muestra los contenedores del sistema Autonexo desplegados 
 
 #### 4.9.1. Class Diagrams
 
-[Diagramas de clases]
+**IAM:**
+
+- Context Class Diagram:
+
+<img alt="IAM Context Class Diagram" src="assets\diagrams\classes\class-iam.png" />
+
+- Context DB Diagram:
+
+<img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-iam.png" />
+
+**Matching:**
+
+- Context Class Diagram:
+  <img alt="IAM Context Class Diagram" src="assets\diagrams\classes\class-matching.png" />
+
+- Context DB Diagram:
+  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-matching.png" />
+
+**Notification:**
+
+- Context Class Diagram:
+  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\class-notification.png" />
+
+- Context DB Diagram:
+  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-notification.png" />
+
+**Payment:**
+
+- Context Class Diagram:
+  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\class-payment.png" />
+
+- Context DB Diagram:
+  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-payment.png" />
+
+**Trusting:**
+
+- Context Class Diagram:
+  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\class-trusting.png" />
+
+- Context DB Diagram:
+  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-trusting.png" />
+
+**Vehicle:**
+
+- Context Class Diagram:
+  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\class-vehicle.png" />
+
+- Context DB Diagram:
+  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-vehicle.png" />
+
+**Workshop:**
+
+- Context Class Diagram:
+  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\class-workshop.png" />
+
+- Context DB Diagram:
+  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-workshop.png" />
 
 #### 4.9.2. Class Dictionary
 
