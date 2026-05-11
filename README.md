@@ -2307,10 +2307,6 @@ El siguiente diagrama muestra los contenedores del sistema Autonexo desplegados 
 - Context DB Diagram:
   <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-workshop.png" />
 
-#### 4.9.2. Class Dictionary
-
-[Diccionario de clases]
-
 ### 4.10. Database Design
 
 #### 4.10.1. Relational/Non-Relational Database Diagram
