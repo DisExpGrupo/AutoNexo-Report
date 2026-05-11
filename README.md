@@ -772,8 +772,8 @@ Se han seleccionado herramientas líderes en la industria para cubrir cada etapa
 El proyecto implementa el modelo **GitFlow** para gestionar el flujo de trabajo en los repositorios de la organización [ATG-UPC](https://github.com/DisExpGrupo).
 
 **Repositorios del Proyecto:**
-*   **Landing Page:** [AutoNexo-Landing-Page](https://github.com/ATG-UPC/AutoNexo-Landing-Page)
-*   **Frontend Mobile:** [AutoNexo-Android](https://github.com/DisExpGrupo/AutoNexo-Frontend)
+*   **Landing Page:** [AutoNexo-Landing-Page](https://github.com/DisExpGrupo/AutoNexo-Landing-Page)
+*   **Frontend Mobile:** [AutoNexo-Android](https://github.com/DisExpGrupo/AutoNexo-Android)
 *   **Backend Service:** [AutoNexo-Backend](https://github.com/DisExpGrupo/AutoNexo-Backend)
 
 **Estrategia de Ramificación:**
@@ -834,10 +834,10 @@ En esta fase, la aplicación alcanzó su estado operativo final, integrando pasa
 
 | Funcionalidad | Descripción | Evidencia Visual |
 |---------------|-------------|------------------|
-| **Autenticación Final** | Flujo de acceso y registro con diseño pulido y validaciones. | ![Login](/AutoNexo-Report/assets/ux-ui/chapter-V/Iniciar.png) |
-| **Dashboard Principal** | Centro de control con navegación optimizada para el usuario. | ![Home](/AutoNexo-Report/assets/ux-ui/chapter-V/Home.png) |
-| **Gestión de Perfil** | Configuración completa de datos de usuario y taller. | ![Perfil](/AutoNexo-Report/assets/ux-ui/chapter-V/Perfil.png) |
-| **Módulo de Pagos** | Sistema de suscripciones para talleres y gestión de pagos. | ![Pagos](/AutoNexo-Report/assets/ux-ui/chapter-V/Pagos.png) |
+| **Autenticación Final** | Flujo de acceso y registro con diseño pulido y validaciones. | ![Login](./assets/ux-ui/chapter-V/Iniciar.png) |
+| **Dashboard Principal** | Centro de control con navegación optimizada para el usuario. | ![Home](./assets/ux-ui/chapter-V/Home.png) |
+| **Gestión de Perfil** | Configuración completa de datos de usuario y taller. | ![Perfil](./assets/ux-ui/chapter-V/Perfil.png) |
+| **Módulo de Pagos** | Sistema de suscripciones para talleres y gestión de pagos. | ![Pagos](./assets/ux-ui/chapter-V/Pagos.png) |
 
 *   **Video de Demostración Final:** [AutoNexo Sprint 3 Demo](https://drive.google.com/drive/folders/1rQoI7fwtVrntl1jeGQ1cc_cXpP7fWdzK?usp=sharing)
 
@@ -863,7 +863,7 @@ La documentación técnica fue actualizada para reflejar los nuevos Bounded Cont
 *   **Entorno de Producción:** Azure App Services (Canada Central).
 
 **Evidencia de Documentación:**
-![Swagger Sprint 3](/AutoNexo-Report/assets/ux-ui/chapter-V/Swagger.png)
+![Swagger Sprint 3](./assets/ux-ui/chapter-V/Swagger.png)
 
 ---
 
