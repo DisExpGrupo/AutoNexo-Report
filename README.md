@@ -2163,32 +2163,87 @@ A partir de esto, se definieron los bounded contexts:
 <img alt="Workshop" src="assets\diagrams\context-canvases\canvases-workshop-c.png" />
 <br> <br>
 
-### 4.8.2. Software Architecture Context Diagram
+### 4.8.2. Context Mapping
+
+El Context Mapping en Domain-Driven Design (DDD) representa explícitamente cómo interactúan los bounded contexts entre sí, definiendo contratos, direcciones de influencia (upstream/downstream) y patrones de integración. Este mapeo permite identificar qué contextos requieren estandarización, cuáles deben protegerse mediante traducción (Anti-Corruption Layer), y dónde preservar independencia para asegurar que cada contexto pueda evolucionar de forma predecible y segura.
+
+En Autonexo, los contexts se organizaron considerando los siguientes patrones:
+
+**Context Map Patterns**
+
+**1. Open Host Service (OHS)**
+Un contexto upstream expone servicios mediante contratos estables (APIs, endpoints o eventos), de forma que múltiples consumidores downstream pueden integrarse sin conocer su modelo interno.
+
+Uso en Autonexo:
+El IAM Context actúa como OHS, proveyendo autenticación, autorización y gestión de roles. Todos los contexts (Matching & Booking, Vehicle & Maintenance, Workshop, Subscription, Trust & Reputation, Notification) consumen estos servicios para validar identidad y permisos.
+
+<img alt="OHS" src="assets\diagrams\ctx-map\ctxMapPatt_OHS.png" />
+
+**2. Customer/Supplier (C/S)**
+Relación proveedor–cliente entre contextos. El Supplier prioriza parte de su backlog en función de las necesidades del Customer, adaptando sus capacidades para habilitar los objetivos del cliente.
+
+Uso en Autonexo:
+Matching & Booking (Customer) – Workshop (Supplier): el Workshop Context provee disponibilidad de agenda y catálogo de servicios, mientras el Booking Context depende de esos datos para confirmar reservas de manera confiable.
+
+Subscription (Customer) – Workshop (Supplier): las suscripciones otorgan beneficios como prioridad de agenda o descuentos, los cuales dependen de la configuración y condiciones publicadas por los talleres en el Workshop Context.
+
+<img alt="Customer/Supplier" src="assets\diagrams\ctx-map\ctxMapPatt_CS.png" />
+
+**3. Shared Kernel (SK)**
+Dos contexts comparten un submodelo común, usualmente entidades o identificadores críticos, que deben mantenerse consistentes para evitar duplicación y divergencia.
+
+Uso en Autonexo:
+El Matching & Booking Context y el Vehicle & Maintenance Context comparten identificadores de vehículos y mantenimientos confirmados, de modo que ambos contexts operan sobre la misma referencia, garantizando consistencia y evitando duplicación de datos.
+
+<img alt="ctxMapPatt_SharedKernel" src="assets\diagrams\ctx-map\ctxMapPatt_SK.png" />
+
+**4. Conformist (CF)**
+El downstream adopta el modelo del upstream sin traducción, lo que facilita una integración rápida, pero sacrifica independencia, ya que hereda sus decisiones de diseño.
+
+Uso en Autonexo:
+El Subscription Context se adapta directamente al modelo de Matching and Booking Context (ejemplo: estados de reserva como activa, cancelada, finalizada) sin redefinirlos ni transformarlos. Esto agiliza la integración, pero obliga a Subscription a depender de los cambios en Booking.
+
+<img alt="ctxMapPatt_Conformist" src="assets\diagrams\ctx-map\ctxMapPatt_CF.png" />
+
+**5. Publisher/Subscriber (Event-Driven)**
+Un contexto upstream publica eventos que otros contextos downstream consumen de manera asíncrona, desacoplando la integración. Esto permite que el publisher no dependa de los consumidores y que múltiples contexts reaccionen a un mismo evento.
+
+Uso en Autonexo:
+El Notification Context actúa como subscriber de eventos generados por otros contexts:
+-Matching and Booking Context → publica el evento Reserva Creada.
+-Vehicle and Maintenance Context → publica el evento Mantenimiento Finalizado.
+-Trust and Reputation Context → publica el evento Calificación Registrada.
+
+El Notification Context escucha estos eventos y envía notificaciones push a los usuarios afectados.
+
+<img alt="ctxMapPatt_Publisher/Subscriber" src="assets\diagrams\ctx-map\ctxMapPatt_PS.png" />
+
+### 4.8.3. Software Architecture Context Diagram
 
 El siguiente diagrama muestra de manera general Autonexo conectado con los sistemas externos y los usuarios que intervienen
 <br>
-<img alt="Context-Diagram" src="assets\chapter-II-assets\c4\structurizr-101398-SystemContext-001.png" />
+<img alt="Context-Diagram" src="assets\diagrams\c4\structurizr-101398-SystemContext-001.png" />
 
-### 4.8.3. Software Architecture Container Diagrams
+### 4.8.4. Software Architecture Container Diagrams
 
 El diagrama C2 profundiza en el sistema y representa la arquitectura general del software, destacando las principales tecnologías empleadas y la manera en que estas se interconectan.
 <br>
-<img alt="Container-Diagram" src="assets\chapter-II-assets\c4\structurizr-101398-Container-001.png" />
+<img alt="Container-Diagram" src="assets\diagrams\c4\structurizr-101398-Container-001.png" />
 
-### 4.8.4. Software Architecture Components Diagrams
+### 4.8.5. Software Architecture Components Diagrams
 
 El siguiente diagrama muestra los contenedores del sistema Autonexo desplegados en el entorno de desarrollo y producción. Además, se muestran los servicios externos, la base de datos y el storage.
 <br>
 
 - Sistema en entorno de desarrollo:
   <br>
-  <img alt="Deployment-Diagram-1" src="assets\chapter-II-assets\c4\structurizr-101398-SystemContext-001.png" />
+  <img alt="Deployment-Diagram-1" src="assets\diagrams\c4\structurizr-101398-SystemContext-001.png" />
 
 <br>
 
 - Sistema en entorno de producción:
   <br>
-  <img alt="Deployment-Diagram-2" src="assets\chapter-II-assets\c4\structurizr-101398-Deployment-002.png" />
+  <img alt="Deployment-Diagram-2" src="assets\diagrams\c4\structurizr-101398-Deployment-002.png" />
 
 ### 4.9. Software Object-Oriented Design
 
