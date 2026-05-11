@@ -891,7 +891,15 @@ Familiaridad básica con smartphones, uso de aplicaciones simples y rápidas, di
 
 #### 7.1.1. Tools and Practices
 
-[Herramientas y prácticas CI]
+La Integración Continua (Continuous Integration - CI) es una práctica de desarrollo de software que permite integrar cambios de código de manera frecuente en un repositorio compartido. Cada integración es verificada automáticamente mediante procesos de compilación, ejecución de pruebas y validaciones, con el objetivo de detectar errores tempranamente y garantizar la estabilidad del sistema.
+
+En el desarrollo del proyecto se emplearon diversas herramientas y metodologías que permitieron automatizar el proceso de construcción y validación del software, mejorando la calidad del código y facilitando el trabajo colaborativo del equipo.
+
+Asimismo, se aplicaron prácticas de Desarrollo Orientado por Comportamiento (BDD) y  Desarrollo Orientado por Pruebas (TDD) y pruebas automatizadas para asegurar que los componentes implementados funcionen correctamente antes de integrarse al entorno principal del proyecto.
+
+<img alt="test img" src="/assets/images/screenshots/devops-ci1.png"/>
+<br>
+<img alt="test img" src="/assets/images/screenshots/devops-ci2.png"/>
 
 #### 7.1.2. Build & Test Suite Pipeline Components
 
@@ -899,41 +907,220 @@ Familiaridad básica con smartphones, uso de aplicaciones simples y rápidas, di
 
 ### 7.2. Continuous Delivery
 
+La Entrega Continua (Continuous Delivery - CD) tiene como objetivo automatizar el proceso de preparación y validación del software para que siempre se encuentre en un estado listo para ser desplegado. Esta práctica permite reducir errores durante las entregas y agilizar la publicación de nuevas funcionalidades, manteniendo un flujo constante y controlado de integración y validación del código.
+
+En el proyecto se implementaron herramientas y prácticas que permitieron automatizar procesos de compilación, pruebas y validaciones previas al despliegue, asegurando la estabilidad del sistema antes de su publicación en entornos de producción.
+
 #### 7.2.1. Tools and Practices
 
-[Herramientas y prácticas CD]
+| Herramienta    | Tipo                 | Descripción                                                                                                          | Propósito                                                                                   |
+| -------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| GitHub Actions | Automatización CI/CD | Plataforma utilizada para automatizar procesos de compilación, pruebas y validación del proyecto mediante workflows. | Preparar automáticamente el sistema para su despliegue luego de cada integración de código. |
+| GitHub         | Control de versiones | Plataforma utilizada para gestionar ramas, pull requests y colaboración entre integrantes del equipo.                | Mantener control y trazabilidad sobre los cambios realizados en el proyecto.                |
+| Docker         | Contenedorización    | Herramienta utilizada para empaquetar la aplicación junto con sus dependencias en contenedores portables.            | Garantizar consistencia entre entornos de desarrollo, pruebas y despliegue.                 |
+| Trello         | Gestión de proyecto  | Herramienta utilizada para organizar tareas, seguimiento de avances y control del flujo de trabajo.                  | Coordinar aprobaciones y seguimiento del proceso de despliegue.                             |
+
+
+
+### Prácticas Implementadas
+#### Feature Branching y Pull Requests
+
+Las nuevas funcionalidades y correcciones fueron desarrolladas en ramas independientes, permitiendo trabajar de manera aislada sin afectar la estabilidad de la rama principal. Posteriormente, los cambios eran integrados mediante Pull Requests luego de superar validaciones automáticas y revisiones del equipo.
+
+#### Pipeline de Validación
+
+Cada vez que se realizaba un commit o merge request, el pipeline ejecutaba automáticamente procesos de compilación y pruebas, verificando que el sistema se mantuviera estable y libre de errores antes de continuar con el flujo de entrega.
+
+#### Validación en Entornos de Staging
+
+Antes de un despliegue final, la aplicación podía ser validada en entornos similares a producción, permitiendo realizar pruebas funcionales, revisiones manuales y verificaciones adicionales del comportamiento del sistema.
+
+#### Despliegue Semiautomático
+
+El pipeline automatizaba la preparación del despliegue, incluyendo compilación, validación y generación de artefactos. Sin embargo, el despliegue final requería aprobación manual del equipo responsable, asegurando mayor control sobre las versiones publicadas.
+
+#### Rollback Controlado
+
+En caso de detectar errores críticos posteriores a una actualización, el equipo podía revertir manualmente la versión desplegada para restaurar la estabilidad del sistema.
 
 #### 7.2.2. Stages Deployment Pipeline Components
 
-[Componentes de despliegue]
+El pipeline de Continuous Delivery estuvo compuesto por diversas etapas automatizadas que permitieron validar y preparar la aplicación antes de su despliegue.
+
+| Etapa                   | Descripción                                                          | Objetivo                                                     |
+| ----------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Source Control          | Gestión del código mediante ramas y repositorios Git.                | Facilitar el trabajo colaborativo y el control de versiones. |
+| Build Stage             | Compilación automática del proyecto luego de cada integración.       | Detectar errores de compilación tempranamente.               |
+| Automated Testing       | Ejecución de pruebas unitarias y pruebas automatizadas.              | Validar el correcto funcionamiento del sistema.              |
+| Staging Validation      | Validación del sistema en un entorno similar a producción.           | Realizar pruebas finales antes del despliegue.               |
+| Deployment Approval     | Aprobación manual previa al despliegue final.                        | Asegurar control y supervisión sobre las entregas.           |
+| Deployment Preparation  | Generación y empaquetado de artefactos desplegables.                 | Mantener la aplicación lista para producción.                |
+| Monitoring and Feedback | Supervisión básica del comportamiento del sistema tras validaciones. | Detectar posibles errores o problemas de rendimiento.        |
+
 
 ### 7.3. Continuous Deployment
 
+El Despliegue Continuo (Continuous Deployment) permite automatizar la publicación de nuevas versiones del sistema hacia producción una vez que las validaciones y pruebas han sido superadas satisfactoriamente. Esta práctica reduce la intervención manual durante el despliegue, mejora la rapidez de entrega y disminuye la probabilidad de errores humanos.
+
+En el proyecto se implementaron diversas herramientas y prácticas orientadas a automatizar el despliegue del backend, frontend y servicios asociados, asegurando estabilidad, disponibilidad y consistencia entre entornos.
+
 #### 7.3.1. Tools and Practices
 
-[Herramientas y prácticas de despliegue continuo]
+| Herramienta      | Tipo                            | Descripción                                                                                               | Propósito                                                                           |
+| ---------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| GitHub Actions   | Automatización CI/CD            | Plataforma utilizada para ejecutar workflows automáticos de integración, pruebas y despliegue.            | Automatizar el pipeline completo de construcción y despliegue del sistema.          |
+| Docker           | Contenedorización               | Herramienta utilizada para empaquetar la aplicación backend junto con sus dependencias.                   | Garantizar consistencia entre entornos de desarrollo y producción.                  |
+| Railway          | Plataforma de base de datos     | Servicio utilizado para alojar y gestionar la base de datos MySQL del proyecto.                           | Facilitar migraciones, backups y disponibilidad del servicio de base de datos.      |
+| Render           | Hosting backend                 | Plataforma utilizada para desplegar automáticamente el backend desarrollado con Spring Boot.              | Gestionar el despliegue y monitoreo continuo del backend.                           |
+| Firebase Hosting | Hosting frontend                | Servicio utilizado para desplegar la aplicación frontend y distribuir contenido de forma segura y rápida. | Automatizar la publicación de la aplicación web en producción.                      |
+| Netlify          | Hosting frontend y landing page | Plataforma utilizada para desplegar la landing page del proyecto.                                         | Facilitar despliegues rápidos y automatizados de la página informativa del sistema. |
+
+### Prácticas Implementadas
+#### Feature Branching
+
+El equipo utilizó una estrategia de ramas basada en Git, donde cada funcionalidad o corrección era desarrollada en ramas independientes. Posteriormente, los cambios eran integrados a ramas principales mediante procesos de revisión y validación.
+
+#### Commit-Based Deployment
+
+Cada vez que se realizaba un commit o merge hacia la rama principal de integración, el pipeline CI/CD se ejecutaba automáticamente, iniciando procesos de compilación, pruebas y despliegue del sistema.
+
+#### Despliegue Automatizado
+
+Una vez superadas las pruebas automáticas, las plataformas de hosting desplegaban automáticamente las nuevas versiones del backend y frontend, reduciendo tiempos de entrega y errores manuales.
+
+#### Rollback Controlado
+
+En caso de detectarse errores críticos posteriores al despliegue, el sistema permitía restaurar versiones previas de manera controlada para garantizar la continuidad del servicio.
+
+#### Monitoreo Posterior al Despliegue
+
+Después de cada despliegue, las plataformas utilizadas proporcionaban herramientas de monitoreo y verificación para detectar posibles fallos de rendimiento o disponibilidad.
 
 #### 7.3.2. Production Deployment Pipeline Components
 
-[Componentes de despliegue en producción]
+El pipeline de despliegue en producción estuvo compuesto por distintos componentes encargados de automatizar la actualización del backend, frontend y base de datos del sistema.
+
+#### Componentes del Pipeline de Base de Datos (Railway)
+
+| Componente                 | Descripción                                                                                                                         |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Gestión de Migraciones     | Spring Boot gestionaba automáticamente las migraciones y sincronización de entidades con la base de datos MySQL alojada en Railway. |
+| Backup Automático          | Railway realizaba copias de seguridad automáticas antes de aplicar cambios críticos en la base de datos.                            |
+| Monitoreo de Base de Datos | La plataforma permitía supervisar el estado y rendimiento de la base de datos en tiempo real.                                       |
+| Validación de Esquema      | Se verificaba que las migraciones aplicadas mantuvieran correctamente la estructura y relaciones de la base de datos.               |
+| Actualización Continua     | Los cambios aprobados eran reflejados automáticamente en el entorno de producción.                                                  |
+
+<img alt="railway" src="/assets/logos/railway-logo.png"/>
+
+#### Componentes del Pipeline del Backend (Render + Spring Boot)
+
+| Componente            | Descripción                                                                              |
+| --------------------- | ---------------------------------------------------------------------------------------- |
+| Integración Continua  | Render obtenía automáticamente el código actualizado desde el repositorio remoto.        |
+| Build del Backend     | El proyecto Spring Boot era compilado utilizando Maven.                                  |
+| Construcción Docker   | Se generaba automáticamente una imagen Docker del backend con todas sus dependencias.    |
+| Despliegue Automático | Render desplegaba la nueva versión del backend en producción.                            |
+| Monitoreo y Alertas   | La plataforma supervisaba el estado del servicio y notificaba posibles errores o caídas. |
+
+<img alt="render" src="/assets/logos/render-logo.png"/>
+
+#### Componentes del Pipeline del Frontend (Firebase Hosting)
+
+| Componente            | Descripción                                                                                          |
+| --------------------- | ---------------------------------------------------------------------------------------------------- |
+| Compilación Frontend  | La aplicación Angular era compilada automáticamente en modo producción.                              |
+| Ejecución de Pruebas  | Se ejecutaban pruebas automatizadas para validar el correcto funcionamiento de la interfaz.          |
+| Despliegue Automático | Firebase Hosting publicaba automáticamente la nueva versión del frontend.                            |
+| Distribución CDN      | El contenido era distribuido mediante una red CDN para mejorar el rendimiento global.                |
+| Invalidación de Caché | Firebase actualizaba automáticamente la caché para garantizar acceso a la última versión disponible. |
+
+<img alt="firebase" src="/assets/logos/firebase-logo.png"/>
+
+#### Componentes del Pipeline de Landing Page (Netlify)
+
+| Componente          | Descripción                                                                                    |
+| ------------------- | ---------------------------------------------------------------------------------------------- |
+| Build Automático    | Netlify compilaba automáticamente la landing page luego de detectar cambios en el repositorio. |
+| Despliegue Continuo | La landing page era publicada automáticamente en producción.                                   |
+| CDN Global          | Netlify distribuía el contenido mediante una red CDN para optimizar tiempos de carga.          |
+| Monitoreo Básico    | La plataforma permitía verificar el estado y disponibilidad de la página desplegada.           |
+
+<img alt="netlify" src="/assets/logos/netlify-logo.png"/>
 
 ### 7.4. Continuous Monitoring
 
+El Monitoreo Continuo (Continuous Monitoring) permite supervisar constantemente el comportamiento y rendimiento de la aplicación luego de su despliegue. Su objetivo principal es detectar errores, degradaciones de rendimiento o problemas de disponibilidad de manera temprana, garantizando una experiencia estable y confiable para los usuarios.
+
+Para el desarrollo del proyecto se emplearon diversas herramientas y prácticas orientadas al análisis del rendimiento, supervisión de servicios, monitoreo de experiencia de usuario y generación de alertas automáticas.
+
 #### 7.4.1. Tools and Practices
 
-[Herramientas y prácticas de monitoreo]
+Con el fin de mantener un monitoreo eficiente de la aplicación y de sus distintos componentes, se utilizaron herramientas especializadas para análisis de rendimiento, supervisión de APIs y evaluación de experiencia de usuario.
+
+| Herramienta       | Tipo                               | Descripción                                                                                     | Propósito                                                                  |
+| ----------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Apache JMeter     | Pruebas de carga y estrés          | Herramienta utilizada para simular múltiples usuarios y escenarios de alta demanda.             | Evaluar la estabilidad y rendimiento del sistema bajo cargas elevadas.     |
+| Google Analytics  | Analítica y experiencia de usuario | Plataforma utilizada para recopilar métricas de navegación e interacción de usuarios.           | Analizar el comportamiento de usuarios y mejorar la experiencia de uso.    |
+| Datadog           | Monitoreo de rendimiento           | Servicio de monitoreo en tiempo real que permite supervisar métricas de rendimiento y latencia. | Detectar problemas de rendimiento y monitorear la experiencia del usuario. |
+| Postman           | Supervisión de APIs                | Herramienta utilizada para validar y monitorear endpoints y servicios REST.                     | Verificar disponibilidad y correcto funcionamiento de APIs.                |
+| Pingdom           | Monitoreo de disponibilidad        | Plataforma utilizada para monitorear tiempos de respuesta y disponibilidad del sistema.         | Detectar interrupciones o degradaciones del servicio.                      |
+| Google Lighthouse | Auditoría de calidad web           | Herramienta utilizada para evaluar rendimiento, accesibilidad y buenas prácticas web.           | Mejorar la calidad general y optimización de la aplicación web.            |
+| Catchpoint        | Monitoreo de experiencia digital   | Plataforma enfocada en medir experiencia de usuario desde distintas ubicaciones y dispositivos. | Analizar rendimiento y disponibilidad en diferentes entornos.              |
+
 
 #### 7.4.2. Monitoring Pipeline Components
 
-[Componentes de monitoreo]
+El pipeline de monitoreo implementado estuvo conformado por diferentes etapas orientadas a recopilar, analizar y visualizar información relacionada con el estado y rendimiento del sistema.
+
+| Componente                          | Descripción                                                                                          |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Recolección de Métricas             | Obtención automática de datos de rendimiento, tiempos de respuesta y uso de recursos.                |
+| Monitoreo de Experiencia de Usuario | Supervisión del comportamiento de navegación y tiempos de carga experimentados por usuarios finales. |
+| Supervisión de APIs                 | Verificación continua de disponibilidad y funcionamiento de servicios y endpoints REST.              |
+| Auditoría de Calidad Web            | Evaluación de rendimiento, accesibilidad, SEO y buenas prácticas de la aplicación web.               |
+| Visualización de Datos              | Presentación de métricas y estadísticas mediante paneles de monitoreo en tiempo real.                |
+| Detección de Problemas              | Identificación temprana de errores, cuellos de botella y degradaciones de rendimiento.               |
+
+Además, herramientas como Google Lighthouse permitieron realizar auditorías periódicas para evaluar la optimización de la interfaz web, mientras que Catchpoint proporcionó monitoreo desde diferentes ubicaciones geográficas y dispositivos para garantizar una experiencia consistente para los usuarios.
 
 #### 7.4.3. Alerting Pipeline Components
 
-[Componentes de alertas]
+El sistema de alertas constituye un componente fundamental dentro del monitoreo continuo, ya que permite detectar incidentes y notificar al equipo de desarrollo de manera inmediata ante posibles fallos o anomalías.
+
+Para la implementación de alertas automáticas se consideraron herramientas especializadas de monitoreo y visualización.
+
+| Herramienta  | Funcionalidad                                                             |
+| ------------ | ------------------------------------------------------------------------- |
+| Prometheus   | Recolección y almacenamiento de métricas de rendimiento en tiempo real.   |
+| Alertmanager | Gestión, agrupamiento y distribución de alertas generadas por Prometheus. |
+| Grafana      | Visualización avanzada de métricas y configuración de alertas visuales.   |
+
+El sistema de alertas fue configurado para detectar situaciones críticas como:
+
+- Alto consumo de CPU o memoria.
+- Incremento excesivo de latencia.
+- Caídas de servicios o APIs.
+- Fallos durante despliegues o ejecuciones automáticas.
+- Problemas de disponibilidad del sistema.
+
+Asimismo, las alertas podían ser enviadas mediante distintos canales de comunicación para permitir una respuesta rápida ante incidentes y reducir tiempos de inactividad.
 
 #### 7.4.4. Notification Pipeline Components
 
-[Componentes de notificación]
+El pipeline de notificaciones permitió informar automáticamente al equipo sobre el estado de las ejecuciones del pipeline, resultados de pruebas y eventos importantes relacionados con la calidad del software.
+
+| Componente              | Descripción                                                               |
+| ----------------------- | ------------------------------------------------------------------------- |
+| Notificaciones de Build | Avisos automáticos sobre éxito o fallo de compilaciones.                  |
+| Reportes de Ejecución   | Generación de resúmenes con resultados de pruebas y validaciones.         |
+| Alertas de Incidentes   | Notificaciones relacionadas con errores críticos o fallos de despliegue.  |
+| Seguimiento de Pipeline | Supervisión continua del estado de workflows y tareas automatizadas.      |
+| Comunicación del Equipo | Distribución de información relevante hacia los integrantes del proyecto. |
+
+Herramientas como Jenkins permitieron automatizar el envío de notificaciones luego de cada ejecución del pipeline, proporcionando información detallada sobre errores detectados, tiempos de ejecución y estado general de las pruebas.
+
+De esta manera, el equipo pudo responder rápidamente ante incidentes y mantener un seguimiento continuo de la calidad y estabilidad del sistema.
+
 
 <div style="page-break-after: always;"></div>
 
