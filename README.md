@@ -2083,7 +2083,9 @@ De esta manera, el usuario puede elegir el taller más conveniente antes de real
 
 #### 4.10.1. Relational/Non-Relational Database Diagram
 
-[Diagrama de base de datos]
+<div>
+  <p align="center"><img src="assets/diagrams/db/db.jpeg" alt="db diagram.png" width="700px" /></p>
+</div>
 
 <div style="page-break-after: always;"></div>
 
