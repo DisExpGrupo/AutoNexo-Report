@@ -3061,9 +3061,9 @@ El equipo operó en un modelo de desarrollo paralelo para cubrir tres frentes: B
 #### Participación en Repositorios:
 | Repositorio | Evidencia de Contribución |
 |-------------|---------------------------|
-| **Backend** | ![Backend Participation](/AutoNexo-Report/assets/ux-ui/chapter-V/Backend.png) |
-| **Android** | ![Android Participation](assets\chapter-IV-assets/Andrroid.png) |
-| **Flutter** | ![Flutter Participation](assets\chapter-IV-assets/Flutter.png) |
+| **Backend** | ![Backend Participation](./assets/ux-ui/chapter-V/Backend.png) |
+| **Android** | ![Android Participation](./assets/ux-ui/chapter-V/Android.png) |
+| **Flutter** | ![Flutter Participation](./assets/ux-ui/chapter-V/Flutter.png) |
 
 ---
 
@@ -3072,7 +3072,7 @@ El equipo operó en un modelo de desarrollo paralelo para cubrir tres frentes: B
 El proyecto se encuentra desplegado y operativo en los siguientes puntos de acceso:
 
 1.  **API Backend:** [Azure App Services](https://autonexo-backend-akcsb5avacemdwh7.canadacentral-01.azurewebsites.net/swagger-ui/index.html)
-2.  **Landing Page:** [Azure Static Web Apps](https://mango-sea-0eee8590f.1.azurestaticapps.net/#)
+2.  **Landing Page:** [Netlify App](https://splendorous-mooncake-980604.netlify.app/)
 3.  **App Distribution:** Firebase App Distribution para pruebas Alpha/Beta.
 
 ---
