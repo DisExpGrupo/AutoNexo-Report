@@ -3044,7 +3044,13 @@ La documentación técnica fue actualizada para reflejar los nuevos Bounded Cont
 *   **Entorno de Producción:** Render (Oregon. US West).
 
 **Evidencia de Documentación:**
-![Swagger Sprint 3](./assets/ux-ui/chapter-V/Swagger.png)
+![Swagger](./assets/ux-ui/chapter-V/Swagger1.png)
+
+![Swagger](./assets/ux-ui/chapter-V/Swagger2.png)
+
+![Swagger](./assets/ux-ui/chapter-V/Swagger3.png)
+
+![Swagger](./assets/ux-ui/chapter-V/Swagger4.png)
 
 ---
 
