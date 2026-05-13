@@ -493,15 +493,19 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 #### 1.1.1. Descripción de la Startup
 
-Autonexo es una aplicación diseñada para conectar a los propietarios de vehículos con mecánicos especializados en todo tipo de mantenimiento vehicular, ya sea preventivo, correctivo o cualquier otro tipo de servicio automotriz. La aplicación actúa como un intermediario eficiente, proporcionando una solución integral que facilita la interacción entre los conductores y los profesionales del sector automotriz.
+Autonexo es una aplicación diseñada para conectar a los propietarios de vehículos con mecánicos especializados en distintos tipos de mantenimiento vehicular, ya sea preventivo o correctivo. La plataforma funciona como un intermediario digital que centraliza la oferta y demanda de servicios automotrices, facilitando la interacción entre usuarios y profesionales del sector.
 
-La plataforma permite a los propietarios acceder a un catálogo de mecánicos certificados y servicios disponibles, con la posibilidad de elegir en función de la especialización, reputación y proximidad del servicio. Por otro lado, los mecánicos tienen la oportunidad de promocionar sus servicios, gestionar su agenda de forma eficiente y recibir solicitudes de mantenimiento en tiempo real, lo que les permite maximizar su tiempo y la eficiencia de sus operaciones.
+Este modelo se basa en plataformas digitales de dos lados (two-sided markets), donde la tecnología mejora la eficiencia del mercado y reduce fricciones en la contratación de servicios (Rochet & Tirole, 2003). En la actualidad, la digitalización del sector automotriz ha crecido significativamente, impulsada por la adopción de soluciones móviles y sistemas en la nube.
 
-Según el estudio realizado por Innocar y Roshfrans (2022), solo el 23.5% de los talleres en América Latina utilizan software especializado para gestionar sus operaciones, lo que evidencia una escasa adopción tecnológica en el sector. Esta brecha tecnológica no solo limita la eficiencia interna de los talleres, sino que también reduce la calidad y transparencia percibida por los clientes..
+La plataforma permite a los usuarios acceder a un catálogo de mecánicos certificados, seleccionando según reputación, especialización y cercanía. Este tipo de soluciones responde a una tendencia global, donde aproximadamente el 73% de usuarios ya utiliza canales digitales para gestionar servicios automotrices (WorldMetrics, 2026).
 
-La plataforma no solo mejora la accesibilidad al servicio automotriz, sino que también permite un registro detallado del historial de mantenimiento de cada vehículo, optimizando la gestión preventiva y reduciendo los costos a largo plazo para los conductores. Además, la capacidad de recibir atención personalizada y el acceso a mecánicos especializados en diversas áreas del mantenimiento incrementan la confianza y la satisfacción del usuario.
+Por otro lado, los mecánicos pueden gestionar su agenda y servicios en tiempo real, lo que mejora la eficiencia operativa. Estudios recientes indican que la digitalización puede reducir costos operativos hasta en un 28% y aumentar la satisfacción del cliente en más del 60% (Gitnux, 2026).
 
-El objetivo de Autonexo es transformar la experiencia de mantenimiento vehicular, ofreciendo una solución accesible, transparente y efectiva tanto para los conductores como para los mecánicos. Al mismo tiempo, fomenta la adopción de la tecnología en un sector que históricamente ha dependido de métodos tradicionales y manuales, mejorando la eficiencia y el control sobre los costos de mantenimiento.
+En América Latina, la adopción tecnológica sigue siendo limitada, ya que solo el 23.5% de talleres mecánicos utiliza software especializado, lo que evidencia una importante brecha digital en el sector (Innocar & Roshfrans, 2024). Además, más del 30% aún no utiliza plataformas digitales, lo que refuerza la necesidad de soluciones como Autonexo.
+
+La plataforma también permite registrar el historial de mantenimiento del vehículo, facilitando estrategias de mantenimiento predictivo, lo que puede reducir fallas hasta en un 40% y disminuir costos de reparación en un 20% a 30% (WorldMetrics, 2026).
+
+El objetivo de Autonexo es modernizar el mantenimiento vehicular mediante una solución digital accesible, eficiente y transparente, reduciendo la brecha tecnológica en el sector automotriz.
 
 #### 1.1.2. Perfiles de Integrantes del Equipo
 
@@ -3641,28 +3645,47 @@ De esta manera, el equipo pudo responder rápidamente ante incidentes y mantener
 
 <div style="page-break-after: always;"></div>
 
-## Conclusiones
-
 ### Conclusiones y Recomendaciones
 
-[Conclusiones del proyecto]
+## Conclusiones
 
-### Video App Validation
+El desarrollo de Autonexo permite evidenciar el impacto positivo de la transformación digital en sectores tradicionales como el automotriz, donde aún existe una baja adopción de herramientas tecnológicas. A través de la implementación de una plataforma centralizada, se logra mejorar significativamente la conexión entre propietarios de vehículos y mecánicos, optimizando la búsqueda, selección y gestión de servicios de mantenimiento.
 
-[Enlace o descripción del video de validación]
+Se concluye que la solución propuesta cumple un rol importante como intermediario digital, reduciendo las fricciones existentes en el mercado de servicios automotrices y mejorando la eficiencia del proceso de contratación. Además, la plataforma contribuye a la transparencia del servicio al permitir la evaluación de mecánicos, la gestión de solicitudes en tiempo real y el registro del historial de mantenimiento de los vehículos.
 
-### Video About-the-Team
+Desde una perspectiva operativa, Autonexo demuestra que la digitalización de procesos puede generar mejoras en la eficiencia tanto para usuarios como para proveedores de servicio. Para los mecánicos, la posibilidad de gestionar su agenda digitalmente y recibir solicitudes en tiempo real permite una mejor organización del trabajo, mayor aprovechamiento del tiempo y potencial incremento de ingresos. Para los usuarios, la plataforma reduce tiempos de búsqueda, mejora la toma de decisiones y aumenta la confianza en el servicio contratado.
 
-[Enlace o descripción del video del equipo]
+Asimismo, la incorporación del historial de mantenimiento representa un valor agregado importante, ya que permite una gestión preventiva del vehículo. Esto no solo contribuye a la reducción de fallas inesperadas, sino que también optimiza los costos a largo plazo asociados al mantenimiento vehicular. En este sentido, el sistema se alinea con tendencias actuales de mantenimiento predictivo y digitalización de activos.
 
-<div style="page-break-after: always;"></div>
+En términos generales, el proyecto demuestra que existe una oportunidad clara para la modernización del sector automotriz en América Latina, donde la adopción tecnológica aún es limitada. Autonexo aporta una solución viable que responde a esta necesidad, integrando tecnologías modernas como plataformas web, móviles y servicios en la nube.
+
+## Recomendaciones
+
+A partir del desarrollo y análisis del sistema, se proponen las siguientes recomendaciones para la mejora y evolución futura del proyecto:
+
+Implementar un sistema de calificación y reputación más avanzado, basado en métricas como puntualidad, calidad del servicio y tasa de respuesta, con el fin de mejorar la confianza dentro de la plataforma.
+Integrar un sistema de pagos en línea seguro que permita cerrar el ciclo completo del servicio dentro de la aplicación, reduciendo la dependencia de procesos externos y mejorando la experiencia del usuario.
+Incorporar algoritmos de recomendación basados en datos, que sugieran mecánicos según historial del usuario, tipo de vehículo, ubicación y comportamiento previo dentro de la plataforma.
+Escalar la arquitectura del sistema para soportar un mayor volumen de usuarios concurrentes, considerando el crecimiento progresivo de la plataforma en entornos productivos.
+Mejorar el sistema de notificaciones en tiempo real para optimizar la comunicación entre mecánicos y usuarios, asegurando una respuesta más rápida a las solicitudes de servicio.
+Implementar analítica de datos para identificar patrones de fallas vehiculares, permitiendo evolucionar hacia un sistema de mantenimiento predictivo más robusto.
+Fortalecer la seguridad de la plataforma mediante autenticación multifactor, control de roles y protección de APIs para garantizar la integridad de la información.
+Expandir la cobertura geográfica del servicio, con el objetivo de aumentar la disponibilidad de mecánicos y mejorar la accesibilidad en distintas regiones.
 
 ## Bibliografía
 
-[Referencias bibliográficas]
+Innocar & Roshfrans. (2024). *Adopción de software en talleres mecánicos en América Latina*.
+
+WorldMetrics. (2026). *Automotive Aftermarket Digital Transformation Statistics*. https://worldmetrics.org/digital-transformation-in-the-automotive-aftermarket-industry-statistics/
+
+Gitnux. (2026). *Digital Transformation Automotive Report*. https://gitnux.org/digital-transformation-in-the-automotive-aftermarket-industry-statistics/
+
+Rochet, J. C., & Tirole, J. (2003). Platform competition in two-sided markets. *Journal of the European Economic Association*, 1(4), 990–1029. https://doi.org/10.1162/154247603322493212
+
+Porter, M. E., & Heppelmann, J. E. (2014). How smart, connected products are transforming competition. *Harvard Business Review*, 92(11), 64–88.
+
+International Organization for Standardization. (2022). *ISO 55000: Asset management — Overview, principles and terminology*. https://www.iso.org/standard/55088.html
 
 <div style="page-break-after: always;"></div>
 
 ## Anexos
-
-[Documentos anexos]
