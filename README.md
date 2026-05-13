@@ -2035,25 +2035,47 @@ De esta manera, el usuario puede elegir el taller más conveniente antes de real
 
 ### 4.6. Web Applications UX/UI Design
 
+<img width="1561" height="915" alt="image" src="https://github.com/user-attachments/assets/b436f84e-6f5d-4d45-9be5-c9d8a06bba84" />
+
+<img width="1197" height="819" alt="image" src="https://github.com/user-attachments/assets/49eea7ac-0bd6-49df-b93d-aef3d585c1de" />
+
 #### 4.6.1. Web Applications Wireframes
 
-[Wireframes de aplicaciones web]
+<img width="1195" height="822" alt="image" src="https://github.com/user-attachments/assets/0d027d07-9025-49bb-9e98-93f2da53fd9c" />
+
+<img width="1194" height="806" alt="image" src="https://github.com/user-attachments/assets/a4bdd5e6-656c-4343-a126-48dcd3ac63ab" />
+
+<img width="1194" height="828" alt="image" src="https://github.com/user-attachments/assets/542a22be-df34-4f0a-b660-7dbc8d671201" />
+
 
 #### 4.6.2. Web Applications Wireflow Diagrams
 
-[Diagramas de wireflow web]
+<img width="1195" height="807" alt="image" src="https://github.com/user-attachments/assets/0ac8aa60-7d37-42b3-bd66-ca77dc990d78" />
+
 
 #### 4.6.3. Web Applications Mock-ups
 
-[Mockups de aplicaciones web]
+<img width="1194" height="833" alt="image" src="https://github.com/user-attachments/assets/9ff3ebe8-c98f-457a-8964-d00218947c1f" />
+
 
 #### 4.6.4. Web Applications User Flow Diagrams
 
-[Diagramas de flujo web]
+<img width="1159" height="816" alt="image" src="https://github.com/user-attachments/assets/aa34f6c3-101a-47a5-a01a-19e528971e87" />
+
 
 ### 4.7. Web Applications Prototyping
 
-[Prototipos web]
+
+<img width="1192" height="804" alt="image" src="https://github.com/user-attachments/assets/8f75fed1-4d55-48eb-b01e-4d1e0eda9505" />
+
+<img width="1175" height="768" alt="image" src="https://github.com/user-attachments/assets/1619790e-e671-4cff-b577-a00527513e21" />
+
+<img width="1167" height="808" alt="image" src="https://github.com/user-attachments/assets/0d41fe84-422e-4752-a7de-952818f574f7" />
+
+<img width="1200" height="831" alt="image" src="https://github.com/user-attachments/assets/cfa7dde2-f2b6-4268-aa73-9c95d2e28592" />
+
+<img width="1224" height="816" alt="image" src="https://github.com/user-attachments/assets/c5c0b7e4-8ec3-4489-8728-6164415868c4" />
+
 
 ### 4.8. Domain-Driven Software Architecture
 
