@@ -2689,7 +2689,7 @@ El siguiente diagrama muestra los contenedores del sistema Autonexo desplegados 
 **Notification:**
 
 - Context Class Diagram:
-  <img alt="Notification Context DB Diagram" src="assets\diagrams\db\contexts\class-notification.png" />
+  <img alt="Notification Context Class Diagram" src="assets\diagrams\db\contexts\class-notification.png" />
 
 - Context DB Diagram:
   <img alt="Notification Context DB Diagram" src="assets\diagrams\db\contexts\db-notification.png" />
@@ -2697,7 +2697,7 @@ El siguiente diagrama muestra los contenedores del sistema Autonexo desplegados 
 **Payment:**
 
 - Context Class Diagram:
-  <img alt="Payment Context DB Diagram" src="assets\diagrams\db\contexts\class-payment.png" />
+  <img alt="Payment Context Class Diagram" src="assets\diagrams\db\contexts\class-payment.png" />
 
 - Context DB Diagram:
   <img alt="Payment Context DB Diagram" src="assets\diagrams\db\contexts\db-payment.png" />
@@ -2705,7 +2705,7 @@ El siguiente diagrama muestra los contenedores del sistema Autonexo desplegados 
 **Trusting:**
 
 - Context Class Diagram:
-  <img alt="Trusting Context DB Diagram" src="assets\diagrams\db\contexts\class-trusting.png" />
+  <img alt="Trusting Context Class Diagram" src="assets\diagrams\db\contexts\class-trusting.png" />
 
 - Context DB Diagram:
   <img alt="Trusting Context DB Diagram" src="assets\diagrams\db\contexts\db-trusting.png" />
@@ -2713,7 +2713,7 @@ El siguiente diagrama muestra los contenedores del sistema Autonexo desplegados 
 **Vehicle:**
 
 - Context Class Diagram:
-  <img alt="Vehicle Context DB Diagram" src="assets\diagrams\db\contexts\class-vehicle.png" />
+  <img alt="Vehicle Context Class Diagram" src="assets\diagrams\db\contexts\class-vehicle.png" />
 
 - Context DB Diagram:
   <img alt="Vehicle Context DB Diagram" src="assets\diagrams\db\contexts\db-vehicle.png" />
@@ -2721,7 +2721,7 @@ El siguiente diagrama muestra los contenedores del sistema Autonexo desplegados 
 **Workshop:**
 
 - Context Class Diagram:
-  <img alt="Workshop Context DB Diagram" src="assets\diagrams\db\contexts\class-workshop.png" />
+  <img alt="Workshop Context Class Diagram" src="assets\diagrams\db\contexts\class-workshop.png" />
 
 - Context DB Diagram:
   <img alt="Workshop Context DB Diagram" src="assets\diagrams\db\contexts\db-workshop.png" />
