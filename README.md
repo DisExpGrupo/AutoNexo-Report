@@ -279,10 +279,10 @@
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 4.
 
-| Criterio específico | Acciones realizadas | Conclusiones |
-|---|---|---|
-| 4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software | <i>Cruz Ibarra, Victor Andres</i><br><i>TB1</i><br>Participó en la definición del problema y el alcance inicial del proyecto.<br><i>TP1</i><br>Apoyó la validación de requerimientos y la documentación del avance.<br><br><i>Solis Chang, Santiago Valentino</i><br><i>TB1</i><br>Colaboró en el análisis inicial y en la redacción de artefactos base.<br><i>TP1</i><br>Apoyó la mejora de evidencias y la revisión de entregables.<br><br><i>Navarro Chang, Alicia Avril</i><br><i>TB1</i><br>Contribuyó con el levantamiento de información y la organización de materiales.<br><i>TP1</i><br>Participó en la actualización de contenidos y la consolidación de evidencias.<br><br><i>Vidal Castro, Miguel Angel</i><br><i>TB1</i><br>Apoyó la estructuración del informe y la revisión de secciones clave.<br><i>TP1</i><br>Colaboró en la integración de resultados y la verificación de avances.<br><br><i>Castro Sanchez, Amir Gabriel</i><br><i>TB1</i><br>Participó en la organización del contenido y en la síntesis de avances.<br><i>TP1</i><br>Apoyó la consolidación final de capítulos y la revisión de consistencia. | <i>TB1</i><br>El grupo mostró responsabilidad al organizar el trabajo y respetar criterios profesionales.<br><br><i>TP1</i><br>El grupo consolidó una ejecución más ordenada y ética del trabajo técnico. |
-| 4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales | <i>Cruz Ibarra, Victor Andres</i><br><i>TB1</i><br>Analizó el contexto de la startup y su impacto inicial en el entorno.<br><i>TP1</i><br>Participó en el análisis de mejoras con enfoque en valor, uso y viabilidad.<br><br><i>Solis Chang, Santiago Valentino</i><br><i>TB1</i><br>Apoyó la identificación de oportunidades y restricciones del proyecto.<br><i>TP1</i><br>Contribuyó a evaluar ajustes del producto según alcance y beneficio.<br><br><i>Navarro Chang, Alicia Avril</i><br><i>TB1</i><br>Revisó información del dominio para sustentar decisiones del equipo.<br><i>TP1</i><br>Colaboró en la valoración de entregables y mejoras del producto.<br><br><i>Vidal Castro, Miguel Angel</i><br><i>TB1</i><br>Apoyó el análisis de viabilidad y coherencia de los entregables.<br><i>TP1</i><br>Participó en la revisión de resultados y su impacto en la propuesta.<br><br><i>Castro Sanchez, Amir Gabriel</i><br><i>TB1</i><br>Sintetizó aportes para sustentar decisiones del informe.<br><i>TP1</i><br>Apoyó la evaluación final de coherencia entre solución y necesidades. | <i>TB1</i><br>El grupo tomó decisiones considerando necesidades reales del negocio y del usuario.<br><br><i>TP1</i><br>El grupo hizo juicios más sólidos sobre el impacto de la solución propuesta. |
+| Criterio específico                                                                                                                                          | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Conclusiones                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software                                                                  | <i>Cruz Ibarra, Victor Andres</i><br><i>TB1</i><br>Participó en la definición del problema y el alcance inicial del proyecto.<br><i>TP1</i><br>Apoyó la validación de requerimientos y la documentación del avance.<br><br><i>Solis Chang, Santiago Valentino</i><br><i>TB1</i><br>Colaboró en el análisis inicial y en la redacción de artefactos base.<br><i>TP1</i><br>Apoyó la mejora de evidencias y la revisión de entregables.<br><br><i>Navarro Chang, Alicia Avril</i><br><i>TB1</i><br>Contribuyó con el levantamiento de información y la organización de materiales.<br><i>TP1</i><br>Participó en la actualización de contenidos y la consolidación de evidencias.<br><br><i>Vidal Castro, Miguel Angel</i><br><i>TB1</i><br>Apoyó la estructuración del informe y la revisión de secciones clave.<br><i>TP1</i><br>Colaboró en la integración de resultados y la verificación de avances.<br><br><i>Castro Sanchez, Amir Gabriel</i><br><i>TB1</i><br>Participó en la organización del contenido y en la síntesis de avances.<br><i>TP1</i><br>Apoyó la consolidación final de capítulos y la revisión de consistencia. | <i>TB1</i><br>El grupo mostró responsabilidad al organizar el trabajo y respetar criterios profesionales.<br><br><i>TP1</i><br>El grupo consolidó una ejecución más ordenada y ética del trabajo técnico. |
+| 4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales | <i>Cruz Ibarra, Victor Andres</i><br><i>TB1</i><br>Analizó el contexto de la startup y su impacto inicial en el entorno.<br><i>TP1</i><br>Participó en el análisis de mejoras con enfoque en valor, uso y viabilidad.<br><br><i>Solis Chang, Santiago Valentino</i><br><i>TB1</i><br>Apoyó la identificación de oportunidades y restricciones del proyecto.<br><i>TP1</i><br>Contribuyó a evaluar ajustes del producto según alcance y beneficio.<br><br><i>Navarro Chang, Alicia Avril</i><br><i>TB1</i><br>Revisó información del dominio para sustentar decisiones del equipo.<br><i>TP1</i><br>Colaboró en la valoración de entregables y mejoras del producto.<br><br><i>Vidal Castro, Miguel Angel</i><br><i>TB1</i><br>Apoyó el análisis de viabilidad y coherencia de los entregables.<br><i>TP1</i><br>Participó en la revisión de resultados y su impacto en la propuesta.<br><br><i>Castro Sanchez, Amir Gabriel</i><br><i>TB1</i><br>Sintetizó aportes para sustentar decisiones del informe.<br><i>TP1</i><br>Apoyó la evaluación final de coherencia entre solución y necesidades.                                      | <i>TB1</i><br>El grupo tomó decisiones considerando necesidades reales del negocio y del usuario.<br><br><i>TP1</i><br>El grupo hizo juicios más sólidos sobre el impacto de la solución propuesta.       |
 
 <div style="page-break-after: always;"></div>
 
@@ -466,7 +466,7 @@ El diseño y comportamiento del producto deben reflejar un **diseño moderno, li
 ##### 1.2.2.4. Lean UX Canvas
 
 - Lean Ux Canvas
-<img alt="Lean Ux Canvas" src="assets/lean-ux/lean-ux-canvas.jpg"/>
+  <img alt="Lean Ux Canvas" src="assets/lean-ux/lean-ux-canvas.jpg"/>
 
 ### 1.3. Segmentos Objetivo
 
@@ -2681,50 +2681,50 @@ El siguiente diagrama muestra los contenedores del sistema Autonexo desplegados 
 **Matching:**
 
 - Context Class Diagram:
-  <img alt="IAM Context Class Diagram" src="assets\diagrams\classes\class-matching.png" />
+  <img alt="Matching Context Class Diagram" src="assets\diagrams\classes\class-matching.png" />
 
 - Context DB Diagram:
-  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-matching.png" />
+  <img alt="Matching Context DB Diagram" src="assets\diagrams\db\contexts\db-matching.png" />
 
 **Notification:**
 
 - Context Class Diagram:
-  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\class-notification.png" />
+  <img alt="Notification Context DB Diagram" src="assets\diagrams\db\contexts\class-notification.png" />
 
 - Context DB Diagram:
-  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-notification.png" />
+  <img alt="Notification Context DB Diagram" src="assets\diagrams\db\contexts\db-notification.png" />
 
 **Payment:**
 
 - Context Class Diagram:
-  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\class-payment.png" />
+  <img alt="Payment Context DB Diagram" src="assets\diagrams\db\contexts\class-payment.png" />
 
 - Context DB Diagram:
-  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-payment.png" />
+  <img alt="Payment Context DB Diagram" src="assets\diagrams\db\contexts\db-payment.png" />
 
 **Trusting:**
 
 - Context Class Diagram:
-  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\class-trusting.png" />
+  <img alt="Trusting Context DB Diagram" src="assets\diagrams\db\contexts\class-trusting.png" />
 
 - Context DB Diagram:
-  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-trusting.png" />
+  <img alt="Trusting Context DB Diagram" src="assets\diagrams\db\contexts\db-trusting.png" />
 
 **Vehicle:**
 
 - Context Class Diagram:
-  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\class-vehicle.png" />
+  <img alt="Vehicle Context DB Diagram" src="assets\diagrams\db\contexts\class-vehicle.png" />
 
 - Context DB Diagram:
-  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-vehicle.png" />
+  <img alt="Vehicle Context DB Diagram" src="assets\diagrams\db\contexts\db-vehicle.png" />
 
 **Workshop:**
 
 - Context Class Diagram:
-  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\class-workshop.png" />
+  <img alt="Workshop Context DB Diagram" src="assets\diagrams\db\contexts\class-workshop.png" />
 
 - Context DB Diagram:
-  <img alt="IAM Context DB Diagram" src="assets\diagrams\db\contexts\db-workshop.png" />
+  <img alt="Workshop Context DB Diagram" src="assets\diagrams\db\contexts\db-workshop.png" />
 
 ### 4.10. Database Design
 
