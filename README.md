@@ -57,15 +57,109 @@
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha   | Autor   | Descripción     |
-| ------- | ------- | ------- | --------------- |
-| 1.0     | [Fecha] | [Autor] | Versión inicial |
+| Versión | Fecha      | Autor                                                   | Descripción                                                                                                                                        |
+| ------- | ---------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.0.0   | 2026-04-11 | Cruz, V.; Solis, S.; Navarro, A.; Vidal, M.; Castro, A. | Creación de la estructura base del informe, carátula, organización inicial de capítulos y definición del Student Outcome (ABET SO4).               |
+| 1.1.0   | 2026-04-13 | Cruz, V.; Solis, S.                                     | Desarrollo del Capítulo I: Introducción, Startup Profile, Solution Profile y Lean UX Process.                                                      |
+| 1.1.1   | 2026-04-14 | Navarro, A.                                             | Integración de análisis de problemática, propuesta de valor y segmentos objetivo.                                                                  |
+| 1.2.0   | 2026-04-16 | Vidal, M.; Castro, A.                                   | Desarrollo del Capítulo II: Requirements Elicitation & Analysis, incluyendo entrevistas, identificación de necesidades y análisis de stakeholders. |
+| 1.2.1   | 2026-04-17 | Castro, A.                                              | Integración de User Personas, Empathy Maps y User Task Matrix.                                                                                     |
+| 1.2.2   | 2026-04-18 | Solis, S.                                               | Desarrollo de User Journey Maps y consolidación de hallazgos de investigación de usuarios.                                                         |
+| 1.3.0   | 2026-04-20 | Cruz, V.; Vidal, M.                                     | Desarrollo del Capítulo III: Requirements Specification, incluyendo User Stories, Product Backlog y criterios de aceptación.                       |
+| 1.3.1   | 2026-04-21 | Navarro, A.                                             | Incorporación de Software Requirements Specification (SRS) y trazabilidad de requerimientos funcionales y no funcionales.                          |
+| 1.3.2   | 2026-04-22 | Solis, S.                                               | Integración de Technical Stories y priorización del backlog del producto.                                                                          |
+| 1.4.0   | 2026-04-24 | Navarro, A.; Castro, A.                                 | Desarrollo del Capítulo IV: Product Design, incluyendo arquitectura de software, diagramas C4 y diseño de base de datos.                           |
+| 1.4.1   | 2026-04-25 | Cruz, V.                                                | Integración de diagramas de componentes, diseño UI/UX, wireframes y prototipos de interfaz del sistema.                                            |
+| 1.4.2   | 2026-04-26 | Vidal, M.                                               | Refinamiento del diseño arquitectónico, validación de interfaces y mejora de experiencia de usuario.                                               |
+| 1.5.0   | 2026-04-28 | Vidal, M.; Solis, S.                                    | Desarrollo del Capítulo V: Product Implementation, incluyendo frontend, backend, integración de APIs y estructura de microservicios.               |
+| 1.5.1   | 2026-04-29 | Castro, A.                                              | Implementación de autenticación, manejo de sesiones y configuración de persistencia de datos.                                                      |
+| 1.5.2   | 2026-04-30 | Cruz, V.                                                | Integración de funcionalidades principales del sistema y pruebas iniciales de funcionamiento.                                                      |
+| 1.6.0   | 2026-05-03 | Cruz, V.; Navarro, A.                                   | Desarrollo del Capítulo VI: Product Verification & Validation, incluyendo pruebas unitarias, pruebas de integración y evidencias de validación.    |
+| 1.6.1   | 2026-05-05 | Solis, S.                                               | Incorporación de resultados de testing, corrección de incidencias y validación de requisitos del sistema.                                          |
+| 1.7.0   | 2026-05-08 | Solis, S.; Vidal, M.                                    | Desarrollo del Capítulo VII: DevOps Practices, incluyendo CI/CD, estrategias de despliegue, monitoreo y control de versiones.                      |
+| 1.7.1   | 2026-05-09 | Castro, A.                                              | Integración de documentación técnica, configuración de repositorios y automatización de despliegues.                                               |
+| 1.8.0   | 2026-05-11 | Cruz, V.; Solis, S.; Navarro, A.; Vidal, M.; Castro, A. | Revisión general del informe, integración final de capítulos, corrección de formato, bibliografía, anexos y consolidación de evidencias finales.   |
+
 
 <div style="page-break-after: always;"></div>
 
 ## Project Report Collaboration Insights
 
-[Insertar insights de colaboración]
+**URL del repositorio para el Project Report:** [https://github.com/DisExpGrupo/AutoNexo-Report](https://github.com/DisExpGrupo/AutoNexo-Report)
+
+Se utilizó GitHub como plataforma de control de versiones y colaboración en equipo. Se siguió el flujo de trabajo **GitFlow** con las ramas principales `main` y `develop`, y ramas de trabajo `feature/<sección>` para cada contribución individual.
+ 
+Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes:
+
+| Integrante | Código | Nombre en GitHub |
+|---|---|---|
+| Solis Chang, Santiago Valentino | U20231b475 | TrEv0rRrRr |
+| Navarro Chang, Alicia Avril | U20231d637 | Alice-keys |
+| Vidal Castro, Miguel Angel | U202314186 | gossk |
+| Castro Sanchez, Amir Gabriel | U202310680 | AmirbarrabajaLeon |
+| Cruz Ibarra, Victor Andrés | U202311053 | elandrehs |
+
+# TB1
+
+## Tareas asignadas
+
+Para el desarrollo del TB1, cada integrante del equipo realizó las siguientes tareas:
+
+| Integrante | Tareas asignadas |
+|---|---|
+| **Solis Chang, Santiago Valentino** | - Capítulo I: Introducción, Startup Profile y Solution Profile<br>- Desarrollo de Lean UX Process y propuesta de valor<br>- Integración de Product Backlog y priorización de requerimientos |
+| **Navarro Chang, Alicia Avril** | - Capítulo II: Requirements Elicitation & Analysis<br>- Desarrollo de entrevistas, User Personas y Empathy Maps<br>- Elaboración de User Journey Maps y análisis de stakeholders |
+| **Vidal Castro, Miguel Angel** | - Capítulo III: Requirements Specification<br>- Desarrollo de User Stories, Technical Stories y criterios de aceptación<br>- Trazabilidad de requerimientos funcionales y no funcionales |
+| **Castro Sanchez, Amir Gabriel** | - Capítulo IV: Product Design<br>- Elaboración de diagramas C4, arquitectura de software y diseño de base de datos<br>- Diseño UI/UX, wireframes y prototipos del sistema |
+| **Cruz Ibarra, Victor Andrés** | - Capítulo V: Product Implementation<br>- Desarrollo de frontend, backend e integración de APIs<br>- Implementación de autenticación, manejo de sesiones y funcionalidades principales del sistema |
+
+## GitHub Collaboration Insights
+
+En GitHub se presenta un timeline de las principales ramas creadas por cada integrante del equipo, así como los procesos de merge realizados. Todas las ramas fueron gestionadas siguiendo un flujo de trabajo basado en GitFlow.
+
+### Gráfico de commits por integrante:
+
+![Commits Graph](./assets/images/screenshots/commitsgraph.png)
+
+### Gráfico de red (network graph) de ramas en el repositorio de GitHub:
+
+![Network Graph](./assets/images/screenshots/networkgraph.png)
+
+### Contribuciones de los integrantes:
+
+![Contributors Image](./assets/images/screenshots/contributorsimage.png)
+
+---
+
+# TP1
+
+## Tareas asignadas
+
+Para el desarrollo del TP1, cada integrante del equipo realizó las siguientes tareas:
+
+| Integrante | Tareas asignadas |
+|---|---|
+| **Solis Chang, Santiago Valentino** | - Desarrollo de prácticas DevOps y configuración de CI/CD<br>- Integración de documentación técnica y automatización de despliegues |
+| **Navarro Chang, Alicia Avril** | - Desarrollo de pruebas funcionales y validación de requisitos<br>- Elaboración de evidencias de testing y documentación QA |
+| **Vidal Castro, Miguel Angel** | - Implementación y refinamiento de servicios backend<br>- Integración de APIs y optimización de arquitectura de microservicios |
+| **Castro Sanchez, Amir Gabriel** | - Refinamiento del diseño UI/UX y experiencia de usuario<br>- Ajustes de interfaz, prototipos y validación visual del sistema |
+| **Cruz Ibarra, Victor Andrés** | - Desarrollo de pruebas unitarias e integración<br>- Implementación de funcionalidades backend y validación de servicios<br>- Configuración de persistencia de datos y soporte de despliegue |
+
+## GitHub Collaboration Insights
+
+En GitHub se evidencia la colaboración continua del equipo mediante ramas de desarrollo independientes, merges periódicos y control de versiones centralizado.
+
+### Gráfico de commits por integrante:
+
+![Commits Graph](./assets/images/screenshots/commitsgraph_tp.png)
+
+### Gráfico de red (network graph) de ramas en el repositorio de GitHub:
+
+![Network Graph](./assets/images/screenshots/networkgraph_tp.png)
+
+### Contribuciones de los integrantes:
+
+![Contributors Image](./assets/images/screenshots/contributorsimage_tp.png)
 
 <div style="page-break-after: always;"></div>
 
