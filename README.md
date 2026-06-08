@@ -203,8 +203,22 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
     - [2.1. Competidores](#21-competidores)
       - [2.1.1. Análisis Competitivo](#211-análisis-competitivo)
       - [2.1.2. Estrategias y Tácticas Frente a Competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+<<<<<<< HEAD
     - [2.2. Entrevistas](#22-entrevistas)
       - [2.2.1. Diseño de Entrevistas](#221-diseño-de-entrevistas)
+=======
+    - [Diferenciación por enfoque especializado en mantenimiento](#diferenciación-por-enfoque-especializado-en-mantenimiento)
+    - [Modelo de precios escalables y accesibles](#modelo-de-precios-escalables-y-accesibles)
+    - [Mejora progresiva del producto y adaptabilidad](#mejora-progresiva-del-producto-y-adaptabilidad)
+    - [Seguridad, confianza y cumplimiento](#seguridad-confianza-y-cumplimiento)
+    - [Ecosistema e integraciones](#ecosistema-e-integraciones)
+    - [Alianzas estratégicas](#alianzas-estratégicas)
+    - [Adquisición y retención por educación y valor continuo](#adquisición-y-retención-por-educación-y-valor-continuo)
+    - [2.2. Entrevistas](#22-entrevistas)
+      - [2.2.1. Diseño de Entrevistas](#221-diseño-de-entrevistas)
+      - [Segmento 1: Propietarios de vehículos](#segmento-1-propietarios-de-vehículos)
+      - [Segmento 2: Mecánicos](#segmento-2-mecánicos)
+>>>>>>> feature/chapter-II
       - [2.2.2. Registro de Entrevistas](#222-registro-de-entrevistas)
       - [2.2.3. Análisis de Entrevistas](#223-análisis-de-entrevistas)
     - [2.3. Needfinding](#23-needfinding)
@@ -258,6 +272,7 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
       - [4.9.2. Class Dictionary](#492-class-dictionary)
     - [4.10. Database Design](#410-database-design)
       - [4.10.1. Relational/Non-Relational Database Diagram](#4101-relationalnon-relational-database-diagram)
+<<<<<<< HEAD
 - [Capítulo V: Product Implementation](#capítulo-v-product-implementation)
   - [5.1. Software Configuration Management](#51-software-configuration-management)
     - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
@@ -274,6 +289,24 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
       - [Participación en Repositorios:](#participación-en-repositorios)
     - [Final Deployment Summary](#final-deployment-summary)
   - [5.3. Video About-the-Product](#53-video-about-the-product)
+=======
+  - [Capítulo V: Product Implementation](#capítulo-v-product-implementation)
+    - [5.1. Software Configuration Management](#51-software-configuration-management)
+      - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
+      - [5.1.2. Source Code Management](#512-source-code-management)
+      - [5.1.3. Source Code Style Guide \& Conventions](#513-source-code-style-guide--conventions)
+      - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
+    - [5.2. Product Implementation \& Deployment](#52-product-implementation--deployment)
+      - [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
+      - [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
+      - [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
+      - [5.2.4. Acuerdo de Servicio - SaaS](#524-acuerdo-de-servicio---saas)
+      - [5.2.5. Implemented Native-Mobile Application Evidence](#525-implemented-native-mobile-application-evidence)
+      - [5.2.6. Implemented RESTful API and/or Serverless Backend Evidence](#526-implemented-restful-api-andor-serverless-backend-evidence)
+      - [5.2.7. RESTful API Documentation](#527-restful-api-documentation)
+      - [5.2.8. Team Collaboration Insights](#528-team-collaboration-insights)
+    - [5.3. Video About-the-Product](#53-video-about-the-product)
+>>>>>>> feature/chapter-II
 - [PARTE II: VERIFICATION, VALIDATION \& PIPELINE](#parte-ii-verification-validation--pipeline)
   - [Capítulo VI: Product Verification \& Validation](#capítulo-vi-product-verification--validation)
     - [6.1. Testing Suites \& Validation](#61-testing-suites--validation)
@@ -1448,7 +1481,7 @@ En esta sección se representan los escenarios actuales (“As-is”) de nuestro
 
 - Reminder (Recordatorio): Tipo de notificación programada que recuerda al cliente un evento próximo (ej. revisión del vehículo).
 
-- Transactional Notification (Notificación transaccional): Mensaje generado automáticamente por un evento del sistema (ej. confirmación de reserva).
+- Transactional Notification (Notificación transaccional): Mensaje generado automáticamente por un evento del sistema (ej. confirmación de reserva). 
 
 <div style="page-break-after: always;"></div>
 
