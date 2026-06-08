@@ -3288,19 +3288,292 @@ En conjunto, esta paleta cromática refuerza la identidad moderna, confiable y f
   </p>
 </section>
 
-#### 4.1.2. Web Style Guidelines
+## 4.1.2. Web Style Guidelines
 
-[Guías de estilo para web]
+Las Web Style Guidelines de AutoNexo establecen los estándares visuales y de 
+interacción para la aplicación web, asegurando consistencia en toda la interfaz.
 
-#### 4.1.3. Mobile Style Guidelines
+### Paleta de Colores
 
-##### 4.1.3.1. iOS Mobile Style Guidelines
+| Token | Color | Hex | Uso |
+|-------|-------|-----|-----|
+| Primary | Azul AutoNexo | `#1A56DB` | Botones primarios, links, CTA |
+| Primary Dark | Azul oscuro | `#1E429F` | Hover en botones primarios |
+| Primary Light | Azul claro | `#E8F0FE` | Fondos de sección, badges |
+| Secondary | Naranja | `#FF6B35` | Acentos, destacados, precios |
+| Secondary Dark | Naranja oscuro | `#E55A25` | Hover en elementos secundarios |
+| Neutral 900 | Casi negro | `#111827` | Textos principales |
+| Neutral 600 | Gris medio | `#6B7280` | Textos secundarios, placeholders |
+| Neutral 200 | Gris claro | `#E5E7EB` | Bordes, divisores |
+| Neutral 50 | Fondo | `#F9FAFB` | Fondo general de la app |
+| Success | Verde | `#10B981` | Estados positivos, verificado |
+| Warning | Amarillo | `#F59E0B` | Alertas, pendientes |
+| Error | Rojo | `#EF4444` | Errores, validaciones |
+| White | Blanco | `#FFFFFF` | Fondos de cards, modales |
 
-[Guías de estilo iOS]
+### Tipografía Web
 
-##### 4.1.3.2. Android Mobile Style Guidelines
+| Elemento | Fuente | Peso | Tamaño | Line Height |
+|----------|--------|------|--------|-------------|
+| H1 | Inter | 700 (Bold) | 48px | 1.2 |
+| H2 | Inter | 700 (Bold) | 36px | 1.25 |
+| H3 | Inter | 600 (SemiBold) | 28px | 1.3 |
+| H4 | Inter | 600 (SemiBold) | 22px | 1.35 |
+| H5 | Inter | 600 (SemiBold) | 18px | 1.4 |
+| Body Large | Inter | 400 (Regular) | 16px | 1.6 |
+| Body | Inter | 400 (Regular) | 14px | 1.6 |
+| Body Small | Inter | 400 (Regular) | 12px | 1.5 |
+| Label | Inter | 500 (Medium) | 14px | 1.4 |
+| Caption | Inter | 400 (Regular) | 11px | 1.4 |
+| Button | Inter | 600 (SemiBold) | 14px | 1.2 |
 
-[Guías de estilo Android]
+### Espaciado (Spacing Scale)
+
+Sistema basado en múltiplos de 4px:
+
+| Token | Valor | Uso típico |
+|-------|-------|-----------|
+| space-1 | 4px | Gaps internos mínimos |
+| space-2 | 8px | Padding de badges, chips |
+| space-3 | 12px | Padding interno de inputs |
+| space-4 | 16px | Padding base de componentes |
+| space-6 | 24px | Separación entre elementos |
+| space-8 | 32px | Márgenes de sección |
+| space-12 | 48px | Separación entre secciones |
+| space-16 | 64px | Padding de secciones grandes |
+| space-24 | 96px | Separación de bloques hero |
+
+### Grid System Web
+
+- **Columnas:** 12 columnas
+- **Gutter:** 24px
+- **Breakpoints:**
+
+| Breakpoint | Ancho | Columnas activas |
+|------------|-------|-----------------|
+| Mobile | < 640px | 4 |
+| Tablet | 640px – 1024px | 8 |
+| Desktop | 1024px – 1280px | 12 |
+| Wide | > 1280px | 12 (max-width: 1280px) |
+
+### Componentes Web
+
+#### Botones
+
+| Variante | Fondo | Texto | Border | Uso |
+|----------|-------|-------|--------|-----|
+| Primary | `#1A56DB` | `#FFFFFF` | Ninguno | Acción principal |
+| Secondary | `#FFFFFF` | `#1A56DB` | `1px #1A56DB` | Acción secundaria |
+| Danger | `#EF4444` | `#FFFFFF` | Ninguno | Eliminar, cancelar |
+| Ghost | Transparente | `#1A56DB` | Ninguno | Acciones terciarias |
+| Disabled | `#E5E7EB` | `#9CA3AF` | Ninguno | Estado deshabilitado |
+
+- **Border radius:** 8px en todos los botones
+- **Padding:** 10px 20px (medium), 8px 16px (small), 14px 28px (large)
+- **Transición hover:** 200ms ease
+
+#### Inputs y Forms
+
+| Estado | Border | Background | Texto |
+|--------|--------|-----------|-------|
+| Default | `1px #D1D5DB` | `#FFFFFF` | `#111827` |
+| Focus | `2px #1A56DB` | `#FFFFFF` | `#111827` |
+| Error | `1px #EF4444` | `#FEF2F2` | `#111827` |
+| Disabled | `1px #E5E7EB` | `#F9FAFB` | `#9CA3AF` |
+| Success | `1px #10B981` | `#FFFFFF` | `#111827` |
+
+#### Navegación Web
+
+- **Navbar height:** 64px
+- **Logo:** izquierda, 140px ancho
+- **Links:** Inter Medium 14px, Neutral 600 → Primary en hover/active
+- **CTA en navbar:** Botón Primary "Publicar auto"
+- **Sticky:** sí, con `box-shadow` al hacer scroll
+- **Mobile:** colapsa en hamburger menu a partir de 768px
+
+### Iconografía Web
+
+- **Librería:** Heroicons (outline para navegación, solid para estados activos)
+- **Tamaños:** 16px (inline), 20px (botones), 24px (navegación), 32px (features)
+- **Color:** hereda del contexto (`currentColor`)
+
+### Feedback Visual
+
+| Acción | Feedback |
+|--------|---------|
+| Carga de página | Skeleton screens (no spinners) |
+| Envío de formulario | Botón con estado loading + spinner inline |
+| Éxito | Toast verde, duración 3s, esquina superior derecha |
+| Error | Toast rojo, duración 5s, con opción de retry |
+| Confirmación destructiva | Modal de confirmación obligatorio |
+
+
+## 4.1.3. Mobile Style Guidelines
+
+### 4.1.3.1. iOS Mobile Style Guidelines
+
+AutoNexo iOS sigue las directrices de Apple Human Interface Guidelines (HIG).
+
+#### Paleta de Colores iOS
+
+| Token | Color | Hex | Uso |
+|-------|-------|-----|-----|
+| Primary | Azul AutoNexo | `#1A56DB` | Botones, tint color global |
+| Background | Sistema iOS | `#FFFFFF` / `#000000` | Soporta Dark Mode |
+| Secondary Background | Sistema iOS | `#F2F2F7` / `#1C1C1E` | Fondos de listas |
+| Label | Sistema iOS | `#000000` / `#FFFFFF` | Textos (adapta Dark Mode) |
+| Secondary Label | Sistema iOS | `#3C3C43` 60% | Textos secundarios |
+| Separator | Sistema iOS | `#3C3C43` 29% | Divisores de listas |
+| Success | Verde sistema | `#34C759` | Verificado, éxito |
+| Warning | Amarillo sistema | `#FF9500` | Alertas |
+| Error | Rojo sistema | `#FF3B30` | Errores |
+
+> AutoNexo iOS usa `UIColor.systemBackground` y colores adaptativos del sistema 
+> para soporte nativo de Dark Mode.
+
+#### Tipografía iOS (San Francisco)
+
+| Estilo | Fuente | Peso | Tamaño | Uso |
+|--------|--------|------|--------|-----|
+| Large Title | SF Pro Display | Regular | 34pt | Títulos de pantalla principal |
+| Title 1 | SF Pro Display | Regular | 28pt | Títulos de sección |
+| Title 2 | SF Pro Display | Regular | 22pt | Subtítulos |
+| Title 3 | SF Pro Display | Regular | 20pt | Encabezados de card |
+| Headline | SF Pro Text | SemiBold | 17pt | Precios, nombres de vehículo |
+| Body | SF Pro Text | Regular | 17pt | Texto principal |
+| Callout | SF Pro Text | Regular | 16pt | Descripciones |
+| Subheadline | SF Pro Text | Regular | 15pt | Info secundaria |
+| Footnote | SF Pro Text | Regular | 13pt | Kilometraje, ubicación |
+| Caption 1 | SF Pro Text | Regular | 12pt | Etiquetas, badges |
+
+> Se usa `UIFontMetrics` para soporte de Dynamic Type (accesibilidad).
+
+#### Layout iOS
+
+| Dispositivo | Ancho de pantalla | Safe Area Top | Safe Area Bottom |
+|------------|-------------------|---------------|-----------------|
+| iPhone SE (3ra gen) | 375pt | 20pt | 0pt |
+| iPhone 14 | 390pt | 59pt | 34pt |
+| iPhone 14 Plus | 428pt | 59pt | 34pt |
+| iPhone 14 Pro | 393pt | 59pt | 34pt |
+| iPhone 14 Pro Max | 430pt | 59pt | 34pt |
+
+- **Margen horizontal estándar:** 16pt
+- **Separación entre secciones:** 24pt
+- **Altura de celdas de lista:** 72pt (con subtítulo), 44pt (simple)
+
+#### Componentes iOS Nativos Utilizados
+
+| Componente | Uso en AutoNexo |
+|-----------|----------------|
+| `UICollectionView` | Grid de publicaciones de vehículos |
+| `UITableView` | Listas de mensajes, favoritos, inventario |
+| `UISearchController` | Barra de búsqueda en pantalla principal |
+| `UITabBarController` | Navegación principal (5 tabs) |
+| `UINavigationController` | Navegación jerárquica dentro de cada tab |
+| `UISheetPresentationController` | Filtros de búsqueda (bottom sheet) |
+| `UIRefreshControl` | Pull-to-refresh en listas |
+| `WKWebView` | Vista de historial vehicular (SUNARP) |
+
+#### Gestos iOS
+
+| Gesto | Acción |
+|-------|--------|
+| Swipe derecha (edge) | Regresar a pantalla anterior |
+| Pull-to-refresh | Actualizar lista de publicaciones |
+| Long press en publicación | Guardar en favoritos rápido |
+| Pinch en imágenes | Zoom en fotos del vehículo |
+| Swipe left en favorito | Eliminar de favoritos |
+
+#### Dark Mode iOS
+
+AutoNexo iOS soporta Dark Mode completo mediante:
+- Colores adaptativos del sistema (`UIColor.systemBackground`, etc.)
+- Assets de imagen con variantes light/dark en el Asset Catalog
+- Sin hardcoded colors — todos los colores usan semantic colors
+
+### 4.1.3.2. Android Mobile Style Guidelines
+
+AutoNexo Android sigue Material Design 3 (Material You) de Google.
+
+#### Paleta de Colores Android (Material You)
+
+| Token M3 | Color AutoNexo | Hex | Uso |
+|----------|---------------|-----|-----|
+| `primary` | Azul AutoNexo | `#1A56DB` | Botones, FAB, navegación activa |
+| `onPrimary` | Blanco | `#FFFFFF` | Texto/icono sobre primary |
+| `primaryContainer` | Azul claro | `#D6E4FF` | Fondo de chips seleccionados |
+| `secondary` | Naranja | `#FF6B35` | Acentos, FAB secundario |
+| `surface` | Blanco/Gris oscuro | `#FFFFFF` / `#1C1B1F` | Fondos de cards |
+| `background` | Gris muy claro | `#F9FAFB` / `#121212` | Fondo general |
+| `error` | Rojo M3 | `#B3261E` | Estados de error |
+| `success` | Verde | `#146B2E` | Verificado, éxito |
+
+> Android soporta Dynamic Color (Material You) en Android 12+, 
+> usando los colores del wallpaper del usuario como base.
+
+#### Tipografía Android (Roboto / Google Fonts)
+
+| Estilo M3 | Fuente | Peso | Tamaño | Uso |
+|-----------|--------|------|--------|-----|
+| Display Large | Roboto | 400 | 57sp | Pantallas splash |
+| Display Medium | Roboto | 400 | 45sp | Títulos hero |
+| Headline Large | Roboto | 400 | 32sp | Títulos de pantalla |
+| Headline Medium | Roboto | 400 | 28sp | Subtítulos principales |
+| Headline Small | Roboto | 400 | 24sp | Encabezados de card |
+| Title Large | Roboto | 500 | 22sp | Toolbar titles |
+| Title Medium | Roboto | 500 | 16sp | Nombres de vehículo |
+| Body Large | Roboto | 400 | 16sp | Texto principal |
+| Body Medium | Roboto | 400 | 14sp | Descripciones |
+| Label Large | Roboto | 500 | 14sp | Botones |
+| Label Medium | Roboto | 500 | 12sp | Chips, tabs |
+| Label Small | Roboto | 500 | 11sp | Captions, badges |
+
+#### Layout Android
+
+| Dispositivo | Densidad | DP equivalente |
+|------------|----------|---------------|
+| Small (< 600dp) | mdpi–xxhdpi | 360dp ancho |
+| Medium (600-840dp) | Tablet pequeño | 600dp |
+| Large (> 840dp) | Tablet grande | 840dp+ |
+
+- **Margen horizontal:** 16dp (móvil), 24dp (tablet)
+- **Gutter entre columnas:** 16dp
+- **Columnas:** 4 (móvil), 8 (tablet), 12 (desktop/large tablet)
+
+#### Componentes Android (Material 3)
+
+| Componente M3 | Uso en AutoNexo |
+|--------------|----------------|
+| `NavigationBar` | Navegación principal (5 ítems) |
+| `TopAppBar` (CenterAligned) | Título de pantalla + acciones |
+| `SearchBar` / `SearchView` | Búsqueda de vehículos |
+| `Card` (Elevated/Filled/Outlined) | Cards de publicaciones |
+| `FloatingActionButton` | Acción de "Publicar vehículo" |
+| `BottomSheet` (Modal) | Filtros de búsqueda |
+| `Chip` (Filter/Input) | Filtros activos de búsqueda |
+| `Snackbar` | Feedback de acciones (guardado, error) |
+| `Dialog` | Confirmaciones, alertas |
+| `SwipeRefresh` | Actualizar listas |
+
+
+#### Gestos Android
+
+| Gesto | Acción |
+|-------|--------|
+| Back gesture (swipe desde borde) | Regresar (Predictive Back en Android 13+) |
+| Pull-to-refresh | Actualizar lista de publicaciones |
+| Long press en card | Menú contextual (guardar, compartir) |
+| Pinch en imágenes | Zoom en fotos del vehículo |
+| Swipe en item de lista | Eliminar favorito (con undo via Snackbar) |
+
+#### Dark Theme Android
+
+AutoNexo Android soporta Dark Theme mediante:
+- `DayNight` theme base en `themes.xml`
+- Colores definidos en `values/colors.xml` y `values-night/colors.xml`
+- Dynamic Color con `MaterialDynamicColors` en Android 12+
+- Elevation overlays automáticos en superficies dark
 
 ### 4.2. Information Architecture
 
