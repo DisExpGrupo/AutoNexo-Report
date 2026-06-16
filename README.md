@@ -71,183 +71,231 @@
 
 ## Contenido
 
-- [ **Carátula** ](#carátula)
-- [ **Registro de Versiones del Informe** ](#registro-de-versiones-del-informe)
-- [ **Project Report Collaboration Insights** ](#project-report-collaboration-insights)
-- [ **Contenido** ](#contenido)
-- [ **Student Outcome** ](#student-outcome)
-- [ **Part I: As-Is Software Project** ](#part-i-as-is-software-project)
-    - [**Capítulo I: Introducción**](#capítulo-i-introducción)
-        - [**1.1. Startup Profile**](#11-startup-profile)
-            - [**1.1.1. Descripción de la Startup**](#111-descripción-de-la-startup)
-            - [**1.1.2. Perfiles de integrantes del equipo**](#112-perfiles-de-integrantes-del-equipo)
-        - [**1.2. Solution Profile**](#12-solution-profile)
-            - [**1.2.1. Antecedentes y problemática**](#121-antecedentes-y-problemática)
-            - [**1.2.2. Lean UX Process**](#122-lean-ux-process)
-                - [**1.2.2.1. Lean UX Problem Statements**](#1221-lean-ux-problem-statements)
-                - [**1.2.2.2. Lean UX Assumptions**](#1222-lean-ux-assumptions)
-                - [**1.2.2.3. Lean UX Hypothesis Statements**](#1223-lean-ux-hypothesis-statements)
-                - [**1.2.2.4. Lean UX Canvas**](#1224-lean-ux-canvas)
-            - [**1.3. Segmentos objetivo**](#13-segmentos-objetivo)
-    - [**Capítulo II: Requirements Elicitation & Analysis**](#capítulo-ii-requirements-elicitation--analysis)
-        - [**2.1. Competidores**](#21-competidores)
-            - [**2.1.1. Análisis competitivo**](#211-análisis-competitivo)
-            - [**2.1.2. Estrategias y tácticas frente a competidores**](#212-estrategias-y-tácticas-frente-a-competidores)
-        - [**2.2. Entrevistas**](#22-entrevistas)
-            - [**2.2.1. Diseño de entrevistas**](#221-diseño-de-entrevistas)
-            - [**2.2.2. Registro de entrevistas**](#222-registro-de-entrevistas)
-            - [**2.2.3. Análisis de entrevistas**](#223-análisis-de-entrevistas)
-        - [**2.3. Needfinding**](#23-needfinding)
-            - [**2.3.1. User Personas**](#231-user-personas)
-            - [**2.3.2. User Task Matrix**](#232-user-task-matrix)
-            - [**2.3.3. User Journey Mapping**](#233-user-journey-mapping)
-            - [**2.3.4. Empathy Mapping**](#234-empathy-mapping)
-            - [**2.3.5. As-is Scenario Mapping**](#235-as-is-scenario-mapping)
-        - [**2.4. Ubiquitous Language**](#24-ubiquitous-language)
-    - [**Capítulo III: Requirements Specification**](#capítulo-iii-requirements-specification)
-        - [**3.1. To-Be Scenario Mapping**](#31-to-be-scenario-mapping)
-        - [**3.2. User Stories**](#32-user-stories)
-        - [**3.3. Product Backlog**](#33-product-backlog)
-        - [**3.4. Impact Mapping**](#34-impact-mapping)
-    - [**Capítulo IV: Product Design**](#capítulo-iv-product-design)
-        - [**4.1. Style Guidelines**](#41-style-guidelines)
-            - [**4.1.1. General Style Guidelines**](#411-general-style-guidelines)
-            - [**4.1.2. Web Style Guidelines**](#412-web-style-guidelines)
-            - [**4.1.3. Mobile Style Guidelines**](#413-mobile-style-guidelines)
-                - [**4.1.3.1. iOS Mobile Style Guidelines**](#4131-ios-mobile-style-guidelines)
-                - [**4.1.3.2. Android Mobile Style Guidelines**](#4132-android-mobile-style-guidelines)
-        - [**4.2. Information Architecture**](#42-information-architecture)
-            - [**4.2.1. Organization Systems**](#421-organization-systems)
-            - [**4.2.2. Labeling Systems**](#422-labeling-systems)
-            - [**4.2.3. SEO Tags and Meta Tags**](#423-seo-tags-and-meta-tags)
-            - [**4.2.4. Searching Systems**](#424-searching-systems)
-            - [**4.2.5. Navigation Systems**](#425-navigation-systems)
-        - [**4.3. Landing Page UI Design**](#43-landing-page-ui-design)
-            - [**4.3.1. Landing Page Wireframe**](#431-landing-page-wireframe)
-            - [**4.3.2. Landing Page Mock-up**](#432-landing-page-mock-up)
-        - [**4.4. Mobile Applications UX/UI Design**](#44-mobile-applications-uxui-design)
-            - [**4.4.1. Mobile Applications Wireframes**](#441-mobile-applications-wireframes)
-            - [**4.4.2. Mobile Applications Wireflow Diagrams**](#442-mobile-applications-wireflow-diagrams)
-            - [**4.4.3. Mobile Applications Mock-ups**](#443-mobile-applications-mock-ups)
-            - [**4.4.4. Mobile Applications User Flow Diagrams**](#444-mobile-applications-user-flow-diagrams)
-        - [**4.5. Mobile Applications Prototyping**](#45-mobile-applications-prototyping)
-            - [**4.5.1. Android Mobile Applications Prototyping**](#451-android-mobile-applications-prototyping)
-            - [**4.5.2. iOS Mobile Applications Prototyping**](#452-ios-mobile-applications-prototyping)
-        - [**4.6. Web Applications UX/UI Design**](#46-web-applications-uxui-design)
-            - [**4.6.1. Web Applications Wireframes**](#461-web-applications-wireframes)
-            - [**4.6.2. Web Applications Wireflow Diagrams**](#462-web-applications-wireflow-diagrams)
-            - [**4.6.3. Web Applications Mock-ups**](#463-web-applications-mock-ups)
-            - [**4.6.4. Web Applications User Flow Diagrams**](#464-web-applications-user-flow-diagrams)
-        - [**4.7. Web Applications Prototyping**](#47-web-applications-prototyping)
-        - [**4.8. Domain-Driven Software Architecture**](#48-domain-driven-software-architecture)
-            - [**4.8.1. Software Architecture Context Diagram**](#481-software-architecture-context-diagram)
-            - [**4.8.2. Software Architecture Container Diagrams**](#482-software-architecture-container-diagrams)
-            - [**4.8.3. Software Architecture Components Diagrams**](#483-software-architecture-components-diagrams)
-        - [**4.9. Software Object-Oriented Design**](#49-software-object-oriented-design)
-            - [**4.9.1. Class Diagrams**](#491-class-diagrams)
-            - [**4.9.2. Class Dictionary**](#492-class-dictionary)
-        - [**4.10. Database Design**](#410-database-design)
-            - [**4.10.1. Relational/Non-Relational Database Diagram**](#4101-relationalnon-relational-database-diagram)
-    - [**Capítulo V: Product Implementation**](#capítulo-v-product-implementation)
-        - [**5.1. Software Configuration Management**](#51-software-configuration-management)
-            - [**5.1.1. Software Development Environment Configuration**](#511-software-development-environment-configuration)
-            - [**5.1.2. Source Code Management**](#512-source-code-management)
-            - [**5.1.3. Source Code Style Guide & Conventions**](#513-source-code-style-guide--conventions)
-            - [**5.1.4. Software Deployment Configuration**](#514-software-deployment-configuration)
-        - [**5.2. Product Implementation & Deployment**](#52-product-implementation--deployment)
-            - [**5.2.1. Sprint Backlogs**](#521-sprint-backlogs)
-            - [**5.2.2. Implemented Landing Page Evidence**](#522-implemented-landing-page-evidence)
-            - [**5.2.3. Implemented Frontend-Web Application Evidence**](#523-implemented-frontend-web-application-evidence)
-            - [**5.2.4. Acuerdo de Servicio - SaaS**](#524-acuerdo-de-servicio---saas)
-            - [**5.2.5. Implemented Native-Mobile Application Evidence**](#525-implemented-native-mobile-application-evidence)
-            - [**5.2.6. Implemented RESTful API and/or Serverless Backend Evidence**](#526-implemented-restful-api-andor-serverless-backend-evidence)
-            - [**5.2.7. RESTful API documentation**](#527-restful-api-documentation)
-            - [**5.2.8. Team Collaboration Insights**](#528-team-collaboration-insights)
-        - [**5.3. Video About-the-Product**](#53-video-about-the-product)
-    - [**Part II: Verification, Validation & Pipeline**](#part-ii-verification-validation--pipeline)
-    - [**Capítulo VI: Product Verification & Validation**](#capítulo-vi-product-verification--validation)
-        - [**6.1. Testing Suites & Validation**](#61-testing-suites--validation)
-            - [**6.1.1. Core Entities Unit Tests**](#611-core-entities-unit-tests)
-            - [**6.1.2. Core Integration Tests**](#612-core-integration-tests)
-            - [**6.1.3. Core Behavior-Driven Development**](#613-core-behavior-driven-development)
-            - [**6.1.4. Core System Tests**](#614-core-system-tests)
-        - [**6.2. Static testing & Verification**](#62-static-testing--verification)
-            - [**6.2.1. Static Code Analysis**](#621-static-code-analysis)
-                - [**6.2.1.1. Coding standard & Code conventions**](#6211-coding-standard--code-conventions)
-                - [**6.2.1.2. Code Quality & Code Security**](#6212-code-quality--code-security)
-            - [**6.2.2. Reviews**](#622-reviews)
-        - [**6.3. Validation Interviews**](#63-validation-interviews)
-            - [**6.3.1. Diseño de Entrevistas**](#631-diseño-de-entrevistas)
-            - [**6.3.2. Registro de Entrevistas**](#632-registro-de-entrevistas)
-            - [**6.3.3. Evaluaciones según heurísticas**](#633-evaluaciones-según-heurísticas)
-        - [**6.4. Auditoría de Experiencias de Usuario**](#64-auditoría-de-experiencias-de-usuario)
-            - [**6.4.1. Auditoría realizada**](#641-auditoría-realizada)
-                - [**6.4.1.1. Información del grupo auditado**](#6411-información-del-grupo-auditado)
-                - [**6.4.1.2. Cronograma de auditoría realizada**](#6412-cronograma-de-auditoría-realizada)
-                - [**6.4.1.3. Contenido de auditoría realizada**](#6413-contenido-de-auditoría-realizada)
-            - [**6.4.2. Auditoría recibida**](#642-auditoría-recibida)
-                - [**6.4.2.1. Información del grupo auditor**](#6421-información-del-grupo-auditor)
-                - [**6.4.2.2. Cronograma de auditoría recibida**](#6422-cronograma-de-auditoría-recibida)
-                - [**6.4.2.3. Contenido de auditoría recibida**](#6423-contenido-de-auditoría-recibida)
-                - [**6.4.2.4. Resumen de modificaciones para subsanar hallazgos**](#6424-resumen-de-modificaciones-para-subsanar-hallazgos)
-    - [**Capítulo VII: DevOps Practices**](#capítulo-vii-devops-practices)
-        - [**7.1. Continuous Integration**](#71-continuous-integration)
-            - [**7.1.1. Tools and Practices**](#711-tools-and-practices)
-            - [**7.1.2. Build & Test Suite Pipeline Components**](#712-build--test-suite-pipeline-components)
-        - [**7.2. Continuous Delivery**](#72-continuous-delivery)
-            - [**7.2.1. Tools and Practices**](#721-tools-and-practices)
-            - [**7.2.2. Stages Deployment Pipeline Components**](#722-stages-deployment-pipeline-components)
-        - [**7.3. Continuous deployment**](#73-continuous-deployment)
-            - [**7.3.1. Tools and Practices**](#731-tools-and-practices)
-            - [**7.3.2. Production Deployment Pipeline Components**](#732-production-deployment-pipeline-components)
-        - [**7.4. Continuous Monitoring**](#74-continuous-monitoring)
-            - [**7.4.1. Tools and Practices**](#741-tools-and-practices)
-            - [**7.4.2. Monitoring Pipeline Components**](#742-monitoring-pipeline-components)
-            - [**7.4.3. Alerting Pipeline Components**](#743-alerting-pipeline-components)
-            - [**7.4.4. Notification Pipeline Components**](#744-notification-pipeline-components)
-    - [**Part III: Experiment-Driven Lifecycle**](#part-iii-experiment-driven-lifecycle)
-    - [**Capítulo VIII: Experiment-Driven Development**](#capítulo-viii-experiment-driven-development)
-        - [**8.1. Experiment Planning**](#81-experiment-planning)
-            - [**8.1.1. As-Is Summary**](#811-as-is-summary)
-            - [**8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims**](#812-raw-material-assumptions-knowledge-gaps-ideas-claims)
-            - [**8.1.3. Experiment-Ready Questions**](#813-experiment-ready-questions)
-            - [**8.1.4. Question Backlog**](#814-question-backlog)
-            - [**8.1.5. Experiment Cards**](#815-experiment-cards)
-        - [**8.2. Experiment Design**](#82-experiment-design)
-            - [**8.2.1. Hypotheses**](#821-hypotheses)
-            - [**8.2.2. Domain Business Metrics**](#822-domain-business-metrics)
-            - [**8.2.3. Measures**](#823-measures)
-            - [**8.2.4. Conditions**](#824-conditions)
-            - [**8.2.5. Scale Calculations and Decisions**](#825-scale-calculations-and-decisions)
-            - [**8.2.6. Methods Selection**](#826-methods-selection)
-            - [**8.2.7. Data Analytics: Goals, KPIs and Metrics Selection**](#827-data-analytics-goals-kpis-and-metrics-selection)
-            - [**8.2.8. Web and Mobile Tracking Plan**](#828-web-and-mobile-tracking-plan)
-        - [**8.3. Experimentation**](#83-experimentation)
-            - [**8.3.1. To-Be User Stories**](#831-to-be-user-stories)
-            - [**8.3.2. To-Be Product Backlog**](#832-to-be-product-backlog)
-            - [**8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle**](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle)
-                - [**8.3.3.1. To-Be Sprint Backlogs**](#8331-to-be-sprint-backlogs)
-                - [**8.3.3.2. Implemented To-Be Landing Page Evidence**](#8332-implemented-to-be-landing-page-evidence)
-                - [**8.3.3.3. Implemented To-Be Frontend-Web Application Evidence**](#8333-implemented-to-be-frontend-web-application-evidence)
-                - [**8.3.3.4. Implemented To-Be Native-Mobile Application Evidence**](#8334-implemented-to-be-native-mobile-application-evidence)
-                - [**8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence**](#8335-implemented-to-be-restful-api-andor-serverless-backend-evidence)
-                - [**8.3.3.6. Team Collaboration Insights**](#8336-team-collaboration-insights)
-            - [**8.3.4. To-Be Validation Interviews**](#834-to-be-validation-interviews)
-                - [**8.3.4.1. Diseño de Entrevistas**](#8341-diseño-de-entrevistas)
-                - [**8.3.4.2. Registro de Entrevistas**](#8342-registro-de-entrevistas)
-        - [**8.4. Experiment Aftermath & Analysis**](#84-experiment-aftermath--analysis)
-            - [**8.4.1. Analysis and Interpretation of Results**](#841-analysis-and-interpretation-of-results)
-            - [**8.4.2. Re-scored and Re-prioritized Question Backlog**](#842-re-scored-and-re-prioritized-question-backlog)
-        - [**8.5. Continuous Learning**](#85-continuous-learning)
-            - [**8.5.1. Shareback Session Artifacts: Learning Workflow**](#851-shareback-session-artifacts-learning-workflow)
-        - [**8.6. To-Be Software Platform Pre-launch**](#86-to-be-software-platform-pre-launch)
-            - [**8.6.1. About-the-Product Intro Video**](#861-about-the-product-intro-video)
-    - [**Conclusiones**](#conclusiones)
-        - [**Conclusiones y recomendaciones**](#conclusiones-y-recomendaciones)
-        - [**Video App Validation**](#video-app-validation)
-        - [**Video About-the-Team**](#video-about-the-team)
-    - [**Bibliografía**](#bibliografía)
-    - [**Anexos**](#anexos)
+- [INFORME DE TRABAJO FINAL](#informe-de-trabajo-final)
+  - [Carátula](#carátula)
+  - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
+  - [Project Report Collaboration Insights](#project-report-collaboration-insights)
+  - [Contenido](#contenido)
+  - [Student Outcome](#student-outcome)
+- [PARTE I: AS-IS SOFTWARE PROJECT](#parte-i-as-is-software-project)
+  - [Capítulo I: Introducción](#capítulo-i-introducción)
+    - [1.1. Startup Profile](#11-startup-profile)
+      - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+      - [1.1.2. Perfiles de Integrantes del Equipo](#112-perfiles-de-integrantes-del-equipo)
+    - [1.2. Solution Profile](#12-solution-profile)
+      - [1.2.1. Antecedentes y Problemática](#121-antecedentes-y-problemática)
+      - [**Who (¿Quién?)**](#who-quién)
+      - [**What (¿Qué?)**](#what-qué)
+      - [**Where (¿Dónde?)**](#where-dónde)
+      - [**When (¿Cuándo?)**](#when-cuándo)
+      - [**Why (¿Por qué?)**](#why-por-qué)
+      - [**How (¿Cómo?)**](#how-cómo)
+      - [**How Much (¿Cuánto?)**](#how-much-cuánto)
+      - [1.2.2. Lean UX Process](#122-lean-ux-process)
+        - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+        - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+    - [**Business Assumptions**](#business-assumptions)
+    - [**User Assumptions**](#user-assumptions)
+        - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+    - [**Hypothesis 01**](#hypothesis-01)
+    - [**Hypothesis 02**](#hypothesis-02)
+    - [**Hypothesis 03**](#hypothesis-03)
+    - [**Hypothesis 04**](#hypothesis-04)
+        - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+    - [1.3. Segmentos Objetivo](#13-segmentos-objetivo)
+    - [**Segmento objetivo #1: Propietarios**](#segmento-objetivo-1-propietarios)
+    - [**Segmento objetivo #2: Mecánicos**](#segmento-objetivo-2-mecánicos)
+  - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
+    - [2.1. Competidores](#21-competidores)
+      - [2.1.1. Análisis Competitivo](#211-análisis-competitivo)
+      - [2.1.2. Estrategias y Tácticas Frente a Competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+    - [2.2. Entrevistas](#22-entrevistas)
+      - [2.2.1. Diseño de Entrevistas](#221-diseño-de-entrevistas)
+      - [2.2.2. Registro de Entrevistas](#222-registro-de-entrevistas)
+      - [2.2.3. Análisis de Entrevistas](#223-análisis-de-entrevistas)
+    - [2.3. Needfinding](#23-needfinding)
+      - [2.3.1. User Personas](#231-user-personas)
+      - [2.3.2. User Task Matrix](#232-user-task-matrix)
+      - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+      - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+      - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
+    - [2.4. Ubiquitous Language](#24-ubiquitous-language)
+  - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+    - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+    - [3.2. User Stories](#32-user-stories)
+    - [3.3. Product Backlog](#33-product-backlog)
+    - [3.4. Impact Mapping](#34-impact-mapping)
+  - [Capítulo IV: Product Design](#capítulo-iv-product-design)
+    - [4.1. Style Guidelines](#41-style-guidelines)
+      - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
+      - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
+      - [4.1.3. Mobile Style Guidelines](#413-mobile-style-guidelines)
+        - [4.1.3.1. iOS Mobile Style Guidelines](#4131-ios-mobile-style-guidelines)
+        - [4.1.3.2. Android Mobile Style Guidelines](#4132-android-mobile-style-guidelines)
+    - [4.2. Information Architecture](#42-information-architecture)
+      - [4.2.1. Organization Systems](#421-organization-systems)
+      - [4.2.2. Labeling Systems](#422-labeling-systems)
+      - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
+      - [4.2.4. Searching Systems](#424-searching-systems)
+      - [4.2.5. Navigation Systems](#425-navigation-systems)
+    - [4.3. Landing Page UI Design](#43-landing-page-ui-design)
+      - [4.3.1. Landing Page Wireframe](#431-landing-page-wireframe)
+      - [4.3.2. Landing Page Mock-up](#432-landing-page-mock-up)
+    - [4.4. Mobile Applications UX/UI Design](#44-mobile-applications-uxui-design)
+      - [4.4.1. Mobile Applications Wireframes](#441-mobile-applications-wireframes)
+      - [4.4.2. Mobile Applications Wireflow Diagrams](#442-mobile-applications-wireflow-diagrams)
+      - [4.4.3. Mobile Applications Mock-ups](#443-mobile-applications-mock-ups)
+      - [4.4.4. Mobile Applications User Flow Diagrams](#444-mobile-applications-user-flow-diagrams)
+    - [4.5. Mobile Applications Prototyping](#45-mobile-applications-prototyping)
+      - [4.5.1. Android Mobile Applications Prototyping](#451-android-mobile-applications-prototyping)
+      - [4.5.2. iOS Mobile Applications Prototyping](#452-ios-mobile-applications-prototyping)
+    - [4.6. Web Applications UX/UI Design](#46-web-applications-uxui-design)
+      - [4.6.1. Web Applications Wireframes](#461-web-applications-wireframes)
+      - [4.6.2. Web Applications Wireflow Diagrams](#462-web-applications-wireflow-diagrams)
+      - [4.6.3. Web Applications Mock-ups](#463-web-applications-mock-ups)
+      - [4.6.4. Web Applications User Flow Diagrams](#464-web-applications-user-flow-diagrams)
+    - [4.7. Web Applications Prototyping](#47-web-applications-prototyping)
+    - [4.8. Domain-Driven Software Architecture](#48-domain-driven-software-architecture)
+      - [4.8.1. Software Architecture Context Diagram](#481-software-architecture-context-diagram)
+      - [4.8.2. Software Architecture Container Diagrams](#482-software-architecture-container-diagrams)
+      - [4.8.3. Software Architecture Components Diagrams](#483-software-architecture-components-diagrams)
+    - [4.9. Software Object-Oriented Design](#49-software-object-oriented-design)
+      - [4.9.1. Class Diagrams](#491-class-diagrams)
+      - [4.9.2. Class Dictionary](#492-class-dictionary)
+    - [4.10. Database Design](#410-database-design)
+      - [4.10.1. Relational/Non-Relational Database Diagram](#4101-relationalnon-relational-database-diagram)
+  - [Capítulo V: Product Implementation](#capítulo-v-product-implementation)
+    - [5.1. Software Configuration Management](#51-software-configuration-management)
+      - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
+      - [5.1.2. Source Code Management](#512-source-code-management)
+      - [5.1.3. Source Code Style Guide \& Conventions](#513-source-code-style-guide--conventions)
+      - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
+    - [5.2. Product Implementation \& Deployment](#52-product-implementation--deployment)
+      - [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
+      - [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
+      - [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
+      - [5.2.4. Acuerdo de Servicio - SaaS](#524-acuerdo-de-servicio---saas)
+      - [5.2.5. Implemented Native-Mobile Application Evidence](#525-implemented-native-mobile-application-evidence)
+      - [5.2.6. Implemented RESTful API and/or Serverless Backend Evidence](#526-implemented-restful-api-andor-serverless-backend-evidence)
+      - [5.2.7. RESTful API Documentation](#527-restful-api-documentation)
+      - [5.2.8. Team Collaboration Insights](#528-team-collaboration-insights)
+    - [5.3. Video About-the-Product](#53-video-about-the-product)
+- [PARTE II: VERIFICATION, VALIDATION \& PIPELINE](#parte-ii-verification-validation--pipeline)
+  - [Capítulo VI: Product Verification \& Validation](#capítulo-vi-product-verification--validation)
+    - [6.1. Testing Suites \& Validation](#61-testing-suites--validation)
+  - [6.1.1 Core Entities Unit Tests](#611-core-entities-unit-tests)
+    - [Relación de Unit Tests](#relación-de-unit-tests)
+    - [Evidencia de ejecución](#evidencia-de-ejecución)
+    - [Testing Suite Evidence for Sprint Review](#testing-suite-evidence-for-sprint-review)
+  - [6.1.2 Core Integration Tests](#612-core-integration-tests)
+    - [Relación de Integration Tests](#relación-de-integration-tests)
+    - [Evidencia de ejecución](#evidencia-de-ejecución-1)
+    - [Testing Suite Evidence for Sprint Review](#testing-suite-evidence-for-sprint-review-1)
+      - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
+    - [Features implementados](#features-implementados)
+    - [Escenarios en Gherkin](#escenarios-en-gherkin)
+    - [Step Definitions implementados](#step-definitions-implementados)
+    - [Evidencia de BDD](#evidencia-de-bdd)
+    - [Testing Suite Evidence for Sprint Review](#testing-suite-evidence-for-sprint-review-2)
+      - [6.1.4. Core System Tests](#614-core-system-tests)
+    - [Alcance de las pruebas de sistema](#alcance-de-las-pruebas-de-sistema)
+    - [Preparación automatizada del entorno](#preparación-automatizada-del-entorno)
+    - [Evidencia de pruebas de sistema](#evidencia-de-pruebas-de-sistema)
+    - [Testing Suite Evidence for Sprint Review](#testing-suite-evidence-for-sprint-review-3)
+    - [6.2. Static Testing \& Verification](#62-static-testing--verification)
+      - [6.2.1. Static Code Analysis](#621-static-code-analysis)
+    - [Evidencia de configuración de análisis estático](#evidencia-de-configuración-de-análisis-estático)
+        - [6.2.1.1. Coding Standard \& Code Conventions](#6211-coding-standard--code-conventions)
+    - [Convenciones generales](#convenciones-generales)
+    - [Backend — Java + Spring Boot + DDD](#backend--java--spring-boot--ddd)
+    - [Frontend — Vue + TypeScript](#frontend--vue--typescript)
+    - [E2E — Cucumber + Playwright](#e2e--cucumber--playwright)
+        - [6.2.1.2. Code Quality \& Code Security](#6212-code-quality--code-security)
+    - [Calidad de código](#calidad-de-código)
+    - [Seguridad de código](#seguridad-de-código)
+    - [Evidencia sugerida](#evidencia-sugerida)
+      - [6.2.2. Reviews](#622-reviews)
+    - [Estrategia de revisión aplicada](#estrategia-de-revisión-aplicada)
+    - [Evidencia de Pull Requests y colaboración](#evidencia-de-pull-requests-y-colaboración)
+    - [Evidencia de revisión](#evidencia-de-revisión)
+    - [6.2. Static Testing \& Verification](#62-static-testing--verification-1)
+      - [6.2.1. Static Code Analysis](#621-static-code-analysis-1)
+        - [6.2.1.1. Coding Standard \& Code Conventions](#6211-coding-standard--code-conventions-1)
+        - [6.2.1.2. Code Quality \& Code Security](#6212-code-quality--code-security-1)
+      - [6.2.2. Reviews](#622-reviews-1)
+    - [6.3. Validation Interviews](#63-validation-interviews)
+      - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
+      - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+      - [6.3.3. Evaluaciones Según Heurísticas](#633-evaluaciones-según-heurísticas)
+    - [6.4. Auditoría de Experiencias de Usuario](#64-auditoría-de-experiencias-de-usuario)
+      - [6.4.1. Auditoría Realizada](#641-auditoría-realizada)
+        - [6.4.1.1. Información del Grupo Auditado](#6411-información-del-grupo-auditado)
+        - [6.4.1.2. Cronograma de Auditoría Realizada](#6412-cronograma-de-auditoría-realizada)
+        - [6.4.1.3. Contenido de Auditoría Realizada](#6413-contenido-de-auditoría-realizada)
+      - [6.4.2. Auditoría Recibida](#642-auditoría-recibida)
+        - [6.4.2.1. Información del Grupo Auditor](#6421-información-del-grupo-auditor)
+        - [6.4.2.2. Cronograma de Auditoría Recibida](#6422-cronograma-de-auditoría-recibida)
+        - [6.4.2.3. Contenido de Auditoría Recibida](#6423-contenido-de-auditoría-recibida)
+        - [6.4.2.4. Resumen de Modificaciones para Subsanar Hallazgos](#6424-resumen-de-modificaciones-para-subsanar-hallazgos)
+  - [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
+    - [7.1. Continuous Integration](#71-continuous-integration)
+      - [7.1.1. Tools and Practices](#711-tools-and-practices)
+      - [7.1.2. Build \& Test Suite Pipeline Components](#712-build--test-suite-pipeline-components)
+    - [7.2. Continuous Delivery](#72-continuous-delivery)
+      - [7.2.1. Tools and Practices](#721-tools-and-practices)
+      - [7.2.2. Stages Deployment Pipeline Components](#722-stages-deployment-pipeline-components)
+    - [7.3. Continuous Deployment](#73-continuous-deployment)
+      - [7.3.1. Tools and Practices](#731-tools-and-practices)
+      - [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
+    - [7.4. Continuous Monitoring](#74-continuous-monitoring)
+      - [7.4.1. Tools and Practices](#741-tools-and-practices)
+      - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
+      - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
+      - [7.4.4. Notification Pipeline Components](#744-notification-pipeline-components)
+- [PARTE III: EXPERIMENT-DRIVEN LIFECYCLE](#parte-iii-experiment-driven-lifecycle)
+  - [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)
+    - [8.1. Experiment Planning](#81-experiment-planning)
+      - [8.1.1. As-Is Summary](#811-as-is-summary)
+      - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims](#812-raw-material-assumptions-knowledge-gaps-ideas-claims)
+      - [8.1.3. Experiment-Ready Questions](#813-experiment-ready-questions)
+      - [8.1.4. Question Backlog](#814-question-backlog)
+      - [8.1.5. Experiment Cards](#815-experiment-cards)
+    - [8.2. Experiment Design](#82-experiment-design)
+      - [8.2.1. Hypotheses](#821-hypotheses)
+      - [8.2.2. Domain Business Metrics](#822-domain-business-metrics)
+      - [8.2.3. Measures](#823-measures)
+      - [8.2.4. Conditions](#824-conditions)
+      - [8.2.5. Scale Calculations and Decisions](#825-scale-calculations-and-decisions)
+      - [8.2.6. Methods Selection](#826-methods-selection)
+      - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection](#827-data-analytics-goals-kpis-and-metrics-selection)
+      - [8.2.8. Web and Mobile Tracking Plan](#828-web-and-mobile-tracking-plan)
+    - [8.3. Experimentation](#83-experimentation)
+      - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
+      - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
+      - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle)
+        - [8.3.3.1. To-Be Sprint Backlogs](#8331-to-be-sprint-backlogs)
+        - [8.3.3.2. Implemented To-Be Landing Page Evidence](#8332-implemented-to-be-landing-page-evidence)
+        - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
+        - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#8334-implemented-to-be-native-mobile-application-evidence)
+        - [8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#8335-implemented-to-be-restful-api-andor-serverless-backend-evidence)
+        - [8.3.3.6. Team Collaboration Insights](#8336-team-collaboration-insights)
+      - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
+        - [8.3.4.1. Diseño de Entrevistas](#8341-diseño-de-entrevistas)
+        - [8.3.4.2. Registro de Entrevistas](#8342-registro-de-entrevistas)
+      - [8.3.4. Experiment Aftermath \& Analysis](#834-experiment-aftermath--analysis)
+    - [8.4. Experiment Aftermath \& Analysis](#84-experiment-aftermath--analysis)
+      - [8.4.1. Analysis and Interpretation of Results](#841-analysis-and-interpretation-of-results)
+      - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
+    - [8.5. Continuous Learning](#85-continuous-learning)
+      - [8.5.1. Shareback Session Artifacts: Learning Workflow](#851-shareback-session-artifacts-learning-workflow)
+    - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
+      - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
+  - [Conclusiones](#conclusiones)
+    - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
+    - [Video App Validation](#video-app-validation)
+    - [Video About-the-Team](#video-about-the-team)
+  - [Bibliografía](#bibliografía)
+  - [Anexos](#anexos)
 
 <div style="page-break-after: always;"></div>
 
@@ -893,14 +941,362 @@ Código fuente de `WorkshopApplicationIntegrationTest.java` mostrando las anotac
 |---|---|---|---|---|---|
 | AutoNexo-Backend | feature/workshop-testing | 082c906 | test(workshop): add unit and integration tests for Workshop bounded context | — | 2026-05-11 |
 
-
 #### 6.1.3. Core Behavior-Driven Development
 
-[Pruebas BDD]
+En esta sección se presentan las pruebas de comportamiento (**BDD**) desarrolladas para validar los flujos principales de AutoNexo desde una perspectiva cercana al negocio. Las pruebas están implementadas con **Cucumber** usando archivos `.feature` en sintaxis **Gherkin**, mientras que la automatización de la interacción con la interfaz web se realiza con **Playwright**.
+
+El objetivo de estas pruebas es expresar el comportamiento esperado del sistema en un lenguaje legible para stakeholders técnicos y no técnicos, manteniendo trazabilidad entre los escenarios de negocio, los steps automatizados y los flujos core del producto.
+
+**Repositorio:** `AutoNexo-e2e`
+
+El script `pnpm e2e` ejecuta primero `pnpm e2e:setup`, encargado de registrar usuarios de prueba y preparar un taller de prueba mediante el backend API, y luego ejecuta `cucumber-js` con la configuración definida en `cucumber.cjs`.
+
+### Features implementados
+
+| Feature file | Escenario BDD | Flujo de negocio validado | Actor principal |
+|---|---|---|---|
+| `features/car_owner_create_request.feature` | `Car owner registers vehicle and creates a service request` | Registro de vehículo y creación de una solicitud de servicio para cambio de pastillas de freno. | Car owner |
+| `features/workshop_send_offer.feature` | `Workshop owner sends an offer for a new request` | Revisión de oportunidades cercanas por parte del taller y envío de una oferta. | Workshop owner |
+| `features/car_owner_accept_offer.feature` | `Car owner accepts workshop offer` | Revisión de la solicitud pendiente, aceptación de una oferta y visualización del comprobante de reserva. | Car owner |
+
+### Escenarios en Gherkin
+
+**Feature: Car owner creates service request**
+
+```gherkin
+Feature: Car owner creates service request
+
+  Scenario: Car owner registers vehicle and creates a service request
+    Given I am logged in as a car owner
+    When I register a new vehicle
+    And I create a service request with service "BRAKE_PAD_REPLACEMENT" at "-12.108527,-76.992718"
+    Then I see the request in "My Service Requests"
+```
+
+**Feature: Workshop sends offer**
+
+```gherkin
+Feature: Workshop sends offer
+
+  Scenario: Workshop owner sends an offer for a new request
+    Given I am logged in as a workshop owner
+    When I open "Requests" and view nearby opportunities
+    And I send an offer for the latest request
+    Then I see the offer in "My Active Services"
+```
+
+**Feature: Car owner accepts offer**
+
+```gherkin
+Feature: Car owner accepts offer
+
+  Scenario: Car owner accepts workshop offer
+    Given I am logged in as a car owner
+    When I open "My Service Requests"
+    And I view the latest pending request
+    And I accept the offer
+    Then I see the booking receipt
+```
+
+### Step Definitions implementados
+
+La implementación de los Step Definitions cubre completamente los pasos definidos en los archivos `.feature`. Estos steps utilizan locators de Playwright, navegación por rutas del frontend y assertions con `expect` para validar el comportamiento observable del sistema.
+
+| Archivo de steps | Steps implementados | Responsabilidad |
+|---|---|---|
+| `steps/auth.steps.ts` | `Given I am logged in as a car owner`, `Given I am logged in as a workshop owner` | Autenticación de usuarios de prueba generados por el setup automático. |
+| `steps/car_owner.steps.ts` | Registro de vehículo, creación de solicitud, apertura de solicitudes, vista de solicitud pendiente, aceptación de oferta y validación de recibo. | Automatización de los flujos del propietario del vehículo. |
+| `steps/workshop.steps.ts` | Apertura de solicitudes cercanas, envío de oferta y validación en servicios activos. | Automatización de los flujos del taller. |
+| `steps/common.steps.ts` | `When I wait for {int} seconds` | Utilidad común para esperas controladas durante debugging. |
+| `support/world.ts` | `CustomWorld` | Manejo del ciclo de vida de navegador, contexto, página, estado compartido y datos de setup. |
+| `support/hooks.ts` | `Before`, `After` | Inicialización y cierre de Playwright por escenario. |
+| `support/setup.ts` | Setup automático vía backend API | Registro de car owner, workshop manager, creación de taller, ubicación y plantilla de servicio. |
+
+### Evidencia de BDD
+
+Estructura del repositorio `AutoNexo-e2e` mostrando los archivos `.feature`, los Step Definitions y los archivos de soporte para Cucumber/Playwright.
+
+![bdd-folder](assets/images/screenshots/bdd-folder.png)
+
+Evidencia de ejecución de Cucumber mostrando los escenarios BDD ejecutados desde consola o IDE.
+
+![bdd-execution](assets/images/screenshots/bdd-execution.png)
+
+Evidencia de los Step Definitions implementados en TypeScript, incluyendo autenticación, creación de solicitud, envío de oferta y aceptación de oferta.
+
+![bdd-steps](assets/images/screenshots/bdd-steps.png)
+
+### Testing Suite Evidence for Sprint Review
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
+|---|---|---|---|---|---|
+| AutoNexo-e2e | main | 0854edc | feat: add Cucumber feature files for main user flows | Add three BDD scenarios: car owner creates a service request, workshop sends an offer, and car owner accepts the offer. | 2026-06-15 |
+| AutoNexo-e2e | main | 5ece805 | feat: add step definitions for e2e scenarios | Implement auth login steps, car owner steps, workshop steps and a common utility step for waiting. | 2026-06-15 |
+| AutoNexo-e2e | main | 1aa794c | feat: add Cucumber support layer (world, hooks, config) | Implement CustomWorld with Playwright browser/page lifecycle, Before/After hooks and typed config loaded from `.env.e2e`. | 2026-06-15 |
+| AutoNexo-e2e | main | a8d2988 | feat: add auto-registration setup script and API client | Introduce automated setup script that registers fresh test users and a workshop via the backend API on every run. | 2026-06-15 |
+
 
 #### 6.1.4. Core System Tests
 
-[Pruebas de sistema]
+Las pruebas de sistema de AutoNexo validan el comportamiento del producto de extremo a extremo, considerando la interacción entre frontend web, backend API, autenticación, gestión de vehículos, solicitudes de servicio, ofertas de talleres y reserva final. Estas pruebas complementan las pruebas unitarias e integración, ya que verifican que los componentes desplegados funcionen correctamente como un sistema completo desde la perspectiva del usuario.
+
+Para su automatización se utiliza el repositorio `AutoNexo-e2e`, donde los escenarios Cucumber son ejecutados por Playwright sobre la aplicación web. Antes de ejecutar los escenarios, el setup automático crea datos válidos y evita depender de información presembrada manualmente.
+
+### Alcance de las pruebas de sistema
+
+| ID | Flujo de sistema | Componentes involucrados | Resultado esperado |
+|---|---|---|---|
+| ST-01 | Login como propietario de vehículo | Frontend IAM, backend IAM, JWT, store de sesión | El usuario ingresa al dashboard autenticado. |
+| ST-02 | Registro de vehículo | Frontend Vehicles, backend Vehicle API, validaciones de formulario | El sistema muestra confirmación de vehículo registrado. |
+| ST-03 | Creación de solicitud de servicio | Frontend Matching, backend Service Request API, geolocalización, catálogo de servicios | La solicitud aparece en “My Service Requests”. |
+| ST-04 | Login como dueño de taller | Frontend IAM, backend IAM, JWT con `workshop_id` | El dueño de taller ingresa al dashboard correspondiente. |
+| ST-05 | Visualización de solicitudes cercanas | Frontend Workshop Requests, backend Matching API, ubicación del taller | El taller visualiza oportunidades cercanas disponibles. |
+| ST-06 | Envío de oferta por parte del taller | Frontend Offers, backend Offers API, request pendiente | La oferta enviada aparece en “My Active Services”. |
+| ST-07 | Aceptación de oferta por propietario | Frontend Service Request Detail, backend Booking API, Offers API | El propietario acepta la oferta y se genera la reserva. |
+| ST-08 | Visualización de booking receipt | Frontend Booking Receipt, backend Booking API | El sistema muestra el comprobante de reserva. |
+
+### Preparación automatizada del entorno
+
+El archivo `support/setup.ts` ejecuta las siguientes acciones antes de correr las pruebas:
+
+1. Registra un usuario propietario de vehículo con rol `CAR_OWNER`.
+2. Registra un usuario gestor de taller con rol `WORKSHOP_MANAGER`.
+3. Autentica al gestor del taller para obtener un token JWT inicial.
+4. Crea un taller de prueba mediante el backend API.
+5. Vuelve a autenticar al gestor para obtener un JWT con `workshop_id`.
+6. Agrega ubicación del taller usando coordenadas configuradas en `.env.e2e`.
+7. Agrega una plantilla de servicio para `BRAKE_PAD_REPLACEMENT`.
+8. Guarda los datos generados en `.e2e-setup.json` para que los steps los consuman durante la ejecución.
+
+Esta preparación reduce la fragilidad de las pruebas de sistema, ya que cada ejecución trabaja con usuarios, taller y servicio creados dinámicamente.
+
+### Evidencia de pruebas de sistema
+
+Ejecución de `pnpm e2e` mostrando el setup automático y la ejecución de los escenarios Cucumber.
+
+![system-test-execution](assets/images/screenshots/system-test-execution.png)
+
+Evidencia del flujo de propietario: registro de vehículo, creación de solicitud y visualización en “My Service Requests”.
+
+![system-test-car-owner](assets/images/screenshots/system-test-car-owner.png)
+
+Evidencia del flujo de taller: visualización de solicitudes cercanas y envío de oferta.
+
+![system-test-workshop](assets/images/screenshots/system-test-workshop.png)
+
+Evidencia del flujo final: aceptación de oferta y visualización del comprobante de reserva.
+
+![system-test-booking](assets/images/screenshots/system-test-booking.png)
+
+### Testing Suite Evidence for Sprint Review
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
+|---|---|---|---|---|---|
+| AutoNexo-e2e | main | 0854edc | feat: add Cucumber feature files for main user flows | Add three BDD scenarios: car owner creates a service request, workshop sends an offer, and car owner accepts the offer. | 2026-06-15 |
+| AutoNexo-e2e | main | 5ece805 | feat: add step definitions for e2e scenarios | Implement auth login steps, car owner steps, workshop steps and a common utility step for waiting. | 2026-06-15 |
+| AutoNexo-e2e | main | a8d2988 | feat: add auto-registration setup script and API client | Introduce automated setup script that registers fresh test users and a workshop via the backend API on every run. | 2026-06-15 |
+
+---
+
+### 6.2. Static Testing & Verification
+
+La verificación estática en AutoNexo se aplica antes y durante la ejecución de pruebas automatizadas. Su propósito es identificar errores de compilación, inconsistencias de tipos, incumplimiento de convenciones, configuraciones inseguras y defectos de mantenibilidad sin depender exclusivamente de pruebas manuales. Esta verificación se apoya en los compiladores y herramientas propias del stack: **Java 25 + Maven + Spring Boot** para backend, **TypeScript strict + Vue TSC + Vite** para frontend y **TypeScript + Cucumber/Playwright** para pruebas E2E.
+
+---
+
+#### 6.2.1. Static Code Analysis
+
+El análisis estático se ejecuta en tres niveles:
+
+| Componente | Herramienta o mecanismo | Comando / configuración | Propósito |
+|---|---|---|---|
+| Backend | Maven Compiler + Java 25 | `./mvnw test` | Compilar el backend, validar imports, tipos, anotaciones y ejecución de tests. |
+| Backend | Spring Boot Test + perfil `test` | `application-test.yml` | Validar que el contexto pueda inicializarse con configuración de pruebas y sin credenciales productivas. |
+| Frontend | TypeScript strict | `tsconfig.json` con `strict`, `noUnusedLocals`, `noUnusedParameters`, `noFallthroughCasesInSwitch` | Detectar errores de tipos, variables sin uso y ramas incompletas. |
+| Frontend | Vue TSC + Vite Build | `pnpm build` | Verificar tipos en componentes Vue y generar build productivo. |
+| E2E | TypeScript Compiler | `pnpm typecheck` | Verificar Step Definitions, soporte de Cucumber y configuración Playwright. |
+| CI/CD | GitHub Actions | `.github/workflows/pipeline.yml` | Ejecutar pruebas automáticamente en pull requests y pushes hacia ramas principales. |
+
+### Evidencia de configuración de análisis estático
+
+**Backend — Maven y Java 25**
+
+```xml
+<properties>
+    <java.version>25</java.version>
+    <maven.compiler.source>25</maven.compiler.source>
+    <maven.compiler.target>25</maven.compiler.target>
+</properties>
+```
+
+**Frontend — TypeScript strict**
+
+```json
+{
+  "compilerOptions": {
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "noEmit": true
+  }
+}
+```
+
+**Pipeline — ejecución automática de pruebas**
+
+```yaml
+name: CI/CD - Pipeline Principal
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [develop, main]
+
+jobs:
+  test:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK 25
+        uses: actions/setup-java@v4
+        with:
+          java-version: '25'
+          distribution: 'temurin'
+          cache: 'maven'
+      - name: Execute Tests
+        run: ./mvnw test
+```
+
+---
+
+##### 6.2.1.1. Coding Standard & Code Conventions
+
+AutoNexo aplica convenciones por tecnología y por arquitectura para mantener un código consistente, legible y alineado con Domain-Driven Design.
+
+### Convenciones generales
+
+- El código fuente se redacta principalmente en inglés para clases, métodos, variables, commits técnicos y archivos de prueba.
+- Los escenarios BDD se redactan con estructura `Given / When / Then`, de forma que puedan ser comprendidos por stakeholders técnicos y de negocio.
+- Se prioriza Clean Code: nombres descriptivos, métodos con responsabilidad única, eliminación de duplicidad y comentarios cuando agregan contexto de negocio o riesgo cubierto.
+- Los commits siguen una convención semántica como `feat`, `fix`, `test`, `docs`, `chore` y `refactor`.
+
+### Backend — Java + Spring Boot + DDD
+
+| Elemento | Convención aplicada |
+|---|---|
+| Clases | `PascalCase`, por ejemplo `WorkshopCommandServiceImpl`, `InvitationCommandServiceImpl`. |
+| Métodos y variables | `camelCase`, por ejemplo `createWorkshop`, `ownerUserId`, `workshopRepository`. |
+| Paquetes | Minúsculas y organizados por bounded context: `iam`, `workshop`, `matching`, `vehicle`, `trust`, `shared`. |
+| Arquitectura | Separación por capas: `domain`, `application`, `infrastructure`, `interfaces`. |
+| Pruebas | Nombres descriptivos con patrón `method_WhenCondition_ShouldExpectedResult`. |
+| Assertions | Uso de JUnit y Mockito para validar estado, excepciones e interacciones. |
+
+### Frontend — Vue + TypeScript
+
+| Elemento | Convención aplicada |
+|---|---|
+| Componentes Vue | `PascalCase` para archivos y componentes de vista. |
+| Servicios y stores | Organización por módulos funcionales: `iam`, `vehicles`, `matching`, `dashboard`. |
+| Tipado | Uso de TypeScript en modo `strict` para reducir errores en tiempo de compilación. |
+| Build | `vue-tsc && vite build` para validar tipos y empaquetado. |
+| Rutas y vistas | Separación de vistas, servicios y modelos por módulo del dominio. |
+
+### E2E — Cucumber + Playwright
+
+| Elemento | Convención aplicada |
+|---|---|
+| Archivos feature | Nombres descriptivos en `snake_case`, por ejemplo `car_owner_create_request.feature`. |
+| Escenarios | Redacción centrada en comportamiento observable del usuario. |
+| Steps | Separados por actor o responsabilidad: `auth.steps.ts`, `car_owner.steps.ts`, `workshop.steps.ts`. |
+| Estado compartido | Uso de `CustomWorld` para manejar navegador, página y datos generados por setup. |
+| Configuración | Variables en `.env.e2e` y archivos generados excluidos del repositorio. |
+
+---
+
+##### 6.2.1.2. Code Quality & Code Security
+
+La calidad y seguridad del código se aborda mediante buenas prácticas de arquitectura, manejo de errores, control de credenciales, ejecución automatizada de pruebas y reducción de acoplamiento.
+
+### Calidad de código
+
+| Práctica | Evidencia en AutoNexo | Beneficio |
+|---|---|---|
+| Domain-Driven Design | Bounded contexts como `iam`, `workshop`, `matching`, `vehicle` y `trust`. | Facilita mantenimiento, escalabilidad y separación de responsabilidades. |
+| Tests unitarios de dominio | `WorkshopDomainUnitTest` | Verifica invariantes críticas sin depender de infraestructura. |
+| Tests de integración de aplicación | `WorkshopApplicationIntegrationTest` | Valida coordinación entre servicios, repositorios y ACLs. |
+| BDD/E2E | `AutoNexo-e2e` con Cucumber y Playwright | Verifica flujos de negocio completos desde la perspectiva del usuario. |
+| TypeScript strict | `tsconfig.json` del frontend y E2E | Reduce errores por tipos incorrectos, variables sin uso y casos incompletos. |
+| CI/CD | GitHub Actions ejecutando `./mvnw test` | Evita integrar cambios que rompan la suite principal de backend. |
+
+### Seguridad de código
+
+| Riesgo | Medida aplicada | Evidencia |
+|---|---|---|
+| Uso de credenciales reales en pruebas | Uso de `.env.e2e` y `.env.e2e.example`; archivos generados `.e2e-setup.json` y `.e2e-state.json` son locales. | Repositorio `AutoNexo-e2e`. |
+| Acceso no autenticado | Autenticación mediante JWT y Spring Security en backend. | Módulo `iam` y filtros de autorización. |
+| Exposición de errores internos | Estandarización de respuestas de error en backend. | Commits de structured error handling en `AutoNexo-Backend`. |
+| Dependencia de datos productivos en E2E | Setup automático crea usuarios y taller de prueba por ejecución. | `support/setup.ts`. |
+| Flujos críticos sin validación | E2E cubre creación de solicitud, envío de oferta y aceptación de oferta. | Features Cucumber. |
+| Configuración de despliegue insegura | Uso de secrets en GitHub Actions para Fly.io (`FLY_API_TOKEN`). | `.github/workflows/pipeline.yml`. |
+
+### Evidencia sugerida
+
+Captura de TypeScript strict en `tsconfig.json` del frontend.
+
+![static-tsconfig](assets/images/screenshots/static-tsconfig.png)
+
+Captura del workflow de GitHub Actions ejecutando `./mvnw test` antes del despliegue.
+
+![static-github-actions](assets/images/screenshots/static-github-actions.png)
+
+Captura de `.env.e2e.example` y `.gitignore` evidenciando separación entre configuración de ejemplo y secretos locales.
+
+![static-env-security](assets/images/screenshots/static-env-security.png)
+
+
+#### 6.2.2. Reviews
+
+El proceso de revisión se realiza mediante el sistema de control de versiones de GitHub, utilizando ramas de feature, pull requests, merges hacia `develop` y posteriormente hacia `main`. Este flujo permite revisar cambios por contexto, mantener trazabilidad de commits y verificar que las modificaciones estén alineadas con las funcionalidades del sprint.
+
+### Estrategia de revisión aplicada
+
+1. Desarrollo en ramas separadas por funcionalidad o capítulo, por ejemplo `feature/workshop-testing`, `feature/chapter-VI`, `feature/authentication-error-handling` y `feature/e2e-deattach`.
+2. Creación de Pull Requests hacia `develop` para integrar cambios funcionales.
+3. Merge desde `develop` hacia `main` cuando los cambios ya están consolidados.
+4. Uso de commits semánticos para identificar el propósito del cambio.
+5. Ejecución del pipeline de pruebas en ramas principales y pull requests del backend.
+6. Revisión manual de archivos modificados, alcance del cambio y consistencia con los criterios del sprint.
+
+### Evidencia de Pull Requests y colaboración
+
+| Repositorio | PR | Rama origen | Rama destino | Descripción | Fecha de merge | Archivos / cambios relevantes |
+|---|---:|---|---|---|---|---|
+| AutoNexo-Backend | #4 | `feature/workshop-testing` | `develop` | Agrega pruebas unitarias e integración para el bounded context Workshop. | 2026-05-11 | `WorkshopDomainUnitTest.java`, `WorkshopApplicationIntegrationTest.java` |
+| AutoNexo-Backend | #5 | `develop` | `main` | Integra la suite de pruebas de Workshop en la rama principal. | 2026-05-11 | 790 líneas agregadas en pruebas. |
+| AutoNexo-Backend | #11 | `feature/iam-structured-error-handling` | `develop` | Alinea manejo de errores del backend con respuestas estandarizadas. | 2026-06-10 | Excepciones IAM, handlers y documentación. |
+| AutoNexo-Backend | #12 | `develop` | `main` | Integra mejoras de manejo de errores hacia producción. | 2026-06-10 | 19 archivos modificados. |
+| AutoNexo-Frontend | #6 | `feature/available-requests` | `develop` | Agrega vistas core para solicitudes, agenda, ofertas y comprobante de reserva. | 2026-05-11 | Vistas de matching, vehículos y dashboard. |
+| AutoNexo-Frontend | #7 | `develop` | `main` | Integra IAM, Workshop Management e infraestructura E2E inicial. | 2026-05-11 | Implementación funcional amplia del frontend. |
+| AutoNexo-Frontend | #12 | `feature/authentication-error-handling` | `develop` | Alinea frontend con contrato `ErrorResponse` del backend. | 2026-06-10 | `apiClient`, `apiError`, servicios IAM y store. |
+| AutoNexo-Frontend | #14 | `feature/e2e-deattach` | `develop` | Separa infraestructura E2E del frontend para mantener repositorio dedicado de pruebas. | 2026-06-15 | Features, steps y configuración E2E removidos del frontend y migrados. |
+
+### Evidencia de revisión
+
+Captura del Pull Request de pruebas Workshop en `AutoNexo-Backend`, mostrando archivos modificados y merge hacia `develop`.
+
+![review-backend-pr4](assets/images/screenshots/review-backend-pr4.png)
+
+Captura de Pull Request de frontend con vistas core de solicitudes, ofertas y booking receipt.
+
+![review-frontend-pr6](assets/images/screenshots/review-frontend-pr6.png)
+
+Captura del historial de commits del repositorio `AutoNexo-e2e`, mostrando commits para features Cucumber, Step Definitions, soporte y setup automático.
+
+![review-e2e-commits](assets/images/screenshots/review-e2e-commits.png)
 
 ### 6.2. Static Testing & Verification
 
