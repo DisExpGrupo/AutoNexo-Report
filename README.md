@@ -168,6 +168,18 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
   - [Carátula](#carátula)
   - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
   - [Project Report Collaboration Insights](#project-report-collaboration-insights)
+- [TB1](#tb1)
+  - [Tareas asignadas](#tareas-asignadas)
+  - [GitHub Collaboration Insights](#github-collaboration-insights)
+    - [Gráfico de commits por integrante:](#gráfico-de-commits-por-integrante)
+    - [Gráfico de red (network graph) de ramas en el repositorio de GitHub:](#gráfico-de-red-network-graph-de-ramas-en-el-repositorio-de-github)
+    - [Contribuciones de los integrantes:](#contribuciones-de-los-integrantes)
+- [TP1](#tp1)
+  - [Tareas asignadas](#tareas-asignadas-1)
+  - [GitHub Collaboration Insights](#github-collaboration-insights-1)
+    - [Gráfico de commits por integrante:](#gráfico-de-commits-por-integrante-1)
+    - [Gráfico de red (network graph) de ramas en el repositorio de GitHub:](#gráfico-de-red-network-graph-de-ramas-en-el-repositorio-de-github-1)
+    - [Contribuciones de los integrantes:](#contribuciones-de-los-integrantes-1)
   - [Contenido](#contenido)
   - [Student Outcome](#student-outcome)
 - [PARTE I: AS-IS SOFTWARE PROJECT](#parte-i-as-is-software-project)
@@ -202,8 +214,17 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
     - [2.1. Competidores](#21-competidores)
       - [2.1.1. Análisis Competitivo](#211-análisis-competitivo)
       - [2.1.2. Estrategias y Tácticas Frente a Competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+    - [Diferenciación por enfoque especializado en mantenimiento](#diferenciación-por-enfoque-especializado-en-mantenimiento)
+    - [Modelo de precios escalables y accesibles](#modelo-de-precios-escalables-y-accesibles)
+    - [Mejora progresiva del producto y adaptabilidad](#mejora-progresiva-del-producto-y-adaptabilidad)
+    - [Seguridad, confianza y cumplimiento](#seguridad-confianza-y-cumplimiento)
+    - [Ecosistema e integraciones](#ecosistema-e-integraciones)
+    - [Alianzas estratégicas](#alianzas-estratégicas)
+    - [Adquisición y retención por educación y valor continuo](#adquisición-y-retención-por-educación-y-valor-continuo)
     - [2.2. Entrevistas](#22-entrevistas)
       - [2.2.1. Diseño de Entrevistas](#221-diseño-de-entrevistas)
+      - [Segmento 1: Propietarios de vehículos](#segmento-1-propietarios-de-vehículos)
+      - [Segmento 2: Mecánicos](#segmento-2-mecánicos)
       - [2.2.2. Registro de Entrevistas](#222-registro-de-entrevistas)
       - [2.2.3. Análisis de Entrevistas](#223-análisis-de-entrevistas)
     - [2.3. Needfinding](#23-needfinding)
@@ -215,16 +236,40 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
     - [2.4. Ubiquitous Language](#24-ubiquitous-language)
   - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+      - [To-Be Scenario Mapping – User Persona: Marina Salinas (Propietaria de vehículo)](#to-be-scenario-mapping--user-persona-marina-salinas-propietaria-de-vehículo)
+      - [To-Be Scenario Mapping – User Persona: José Quispe (Mecánico)](#to-be-scenario-mapping--user-persona-josé-quispe-mecánico)
     - [3.2. User Stories](#32-user-stories)
     - [3.3. Product Backlog](#33-product-backlog)
     - [3.4. Impact Mapping](#34-impact-mapping)
   - [Capítulo IV: Product Design](#capítulo-iv-product-design)
     - [4.1. Style Guidelines](#41-style-guidelines)
       - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
-      - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
-      - [4.1.3. Mobile Style Guidelines](#413-mobile-style-guidelines)
-        - [4.1.3.1. iOS Mobile Style Guidelines](#4131-ios-mobile-style-guidelines)
-        - [4.1.3.2. Android Mobile Style Guidelines](#4132-android-mobile-style-guidelines)
+  - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
+    - [Paleta de Colores](#paleta-de-colores)
+    - [Tipografía Web](#tipografía-web)
+    - [Espaciado (Spacing Scale)](#espaciado-spacing-scale)
+    - [Grid System Web](#grid-system-web)
+    - [Componentes Web](#componentes-web)
+      - [Botones](#botones)
+      - [Inputs y Forms](#inputs-y-forms)
+      - [Navegación Web](#navegación-web)
+    - [Iconografía Web](#iconografía-web)
+    - [Feedback Visual](#feedback-visual)
+  - [4.1.3. Mobile Style Guidelines](#413-mobile-style-guidelines)
+    - [4.1.3.1. iOS Mobile Style Guidelines](#4131-ios-mobile-style-guidelines)
+      - [Paleta de Colores iOS](#paleta-de-colores-ios)
+      - [Tipografía iOS (San Francisco)](#tipografía-ios-san-francisco)
+      - [Layout iOS](#layout-ios)
+      - [Componentes iOS Nativos Utilizados](#componentes-ios-nativos-utilizados)
+      - [Gestos iOS](#gestos-ios)
+      - [Dark Mode iOS](#dark-mode-ios)
+    - [4.1.3.2. Android Mobile Style Guidelines](#4132-android-mobile-style-guidelines)
+      - [Paleta de Colores Android (Material You)](#paleta-de-colores-android-material-you)
+      - [Tipografía Android (Roboto / Google Fonts)](#tipografía-android-roboto--google-fonts)
+      - [Layout Android](#layout-android)
+      - [Componentes Android (Material 3)](#componentes-android-material-3)
+      - [Gestos Android](#gestos-android)
+      - [Dark Theme Android](#dark-theme-android)
     - [4.2. Information Architecture](#42-information-architecture)
       - [4.2.1. Organization Systems](#421-organization-systems)
       - [4.2.2. Labeling Systems](#422-labeling-systems)
@@ -249,30 +294,34 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
       - [4.6.4. Web Applications User Flow Diagrams](#464-web-applications-user-flow-diagrams)
     - [4.7. Web Applications Prototyping](#47-web-applications-prototyping)
     - [4.8. Domain-Driven Software Architecture](#48-domain-driven-software-architecture)
-      - [4.8.1. Software Architecture Context Diagram](#481-software-architecture-context-diagram)
-      - [4.8.2. Software Architecture Container Diagrams](#482-software-architecture-container-diagrams)
-      - [4.8.3. Software Architecture Components Diagrams](#483-software-architecture-components-diagrams)
+    - [4.8.1. Event Storming](#481-event-storming)
+      - [4.8.1.1. Candidate Context Discovery](#4811-candidate-context-discovery)
+      - [4.8.1.2. Domain Message Flows Modeling](#4812-domain-message-flows-modeling)
+      - [4.8.1.3 Bounded Context Canvases](#4813-bounded-context-canvases)
+    - [4.8.2. Context Mapping](#482-context-mapping)
+    - [4.8.3. Software Architecture Context Diagram](#483-software-architecture-context-diagram)
+    - [4.8.4. Software Architecture Container Diagrams](#484-software-architecture-container-diagrams)
+    - [4.8.5. Software Architecture Components Diagrams](#485-software-architecture-components-diagrams)
     - [4.9. Software Object-Oriented Design](#49-software-object-oriented-design)
       - [4.9.1. Class Diagrams](#491-class-diagrams)
-      - [4.9.2. Class Dictionary](#492-class-dictionary)
     - [4.10. Database Design](#410-database-design)
       - [4.10.1. Relational/Non-Relational Database Diagram](#4101-relationalnon-relational-database-diagram)
-  - [Capítulo V: Product Implementation](#capítulo-v-product-implementation)
-    - [5.1. Software Configuration Management](#51-software-configuration-management)
-      - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
-      - [5.1.2. Source Code Management](#512-source-code-management)
-      - [5.1.3. Source Code Style Guide \& Conventions](#513-source-code-style-guide--conventions)
-      - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-    - [5.2. Product Implementation \& Deployment](#52-product-implementation--deployment)
-      - [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
-      - [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
-      - [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
-      - [5.2.4. Acuerdo de Servicio - SaaS](#524-acuerdo-de-servicio---saas)
-      - [5.2.5. Implemented Native-Mobile Application Evidence](#525-implemented-native-mobile-application-evidence)
-      - [5.2.6. Implemented RESTful API and/or Serverless Backend Evidence](#526-implemented-restful-api-andor-serverless-backend-evidence)
-      - [5.2.7. RESTful API Documentation](#527-restful-api-documentation)
-      - [5.2.8. Team Collaboration Insights](#528-team-collaboration-insights)
-    - [5.3. Video About-the-Product](#53-video-about-the-product)
+- [Capítulo V: Product Implementation](#capítulo-v-product-implementation)
+  - [5.1. Software Configuration Management](#51-software-configuration-management)
+    - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
+    - [5.1.2. Source Code Management](#512-source-code-management)
+    - [5.1.3. Source Code Style Guide \& Conventions](#513-source-code-style-guide--conventions)
+    - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
+  - [5.2. Product Implementation \& Deployment](#52-product-implementation--deployment)
+    - [5.2.1. Sprint Backlogs (Continuación)](#521-sprint-backlogs-continuación)
+      - [Sprint 3](#sprint-3)
+    - [5.2.5. Implemented Mobile Application Evidence (Sprint 3)](#525-implemented-mobile-application-evidence-sprint-3)
+    - [5.2.6. Implemented RESTful API Evidence (Sprint 3)](#526-implemented-restful-api-evidence-sprint-3)
+    - [5.2.7. RESTful API Documentation \& Deployment](#527-restful-api-documentation--deployment)
+    - [5.2.8. Team Collaboration Insights](#528-team-collaboration-insights)
+      - [Participación en Repositorios:](#participación-en-repositorios)
+    - [Final Deployment Summary](#final-deployment-summary)
+  - [5.3. Video About-the-Product](#53-video-about-the-product)
 - [PARTE II: VERIFICATION, VALIDATION \& PIPELINE](#parte-ii-verification-validation--pipeline)
   - [Capítulo VI: Product Verification \& Validation](#capítulo-vi-product-verification--validation)
     - [6.1. Testing Suites \& Validation](#61-testing-suites--validation)
@@ -336,10 +385,26 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
       - [7.1.2. Build \& Test Suite Pipeline Components](#712-build--test-suite-pipeline-components)
     - [7.2. Continuous Delivery](#72-continuous-delivery)
       - [7.2.1. Tools and Practices](#721-tools-and-practices)
+    - [Prácticas Implementadas](#prácticas-implementadas)
+      - [Feature Branching y Pull Requests](#feature-branching-y-pull-requests)
+      - [Pipeline de Validación](#pipeline-de-validación)
+      - [Validación en Entornos de Staging](#validación-en-entornos-de-staging)
+      - [Despliegue Semiautomático](#despliegue-semiautomático)
+      - [Rollback Controlado](#rollback-controlado)
       - [7.2.2. Stages Deployment Pipeline Components](#722-stages-deployment-pipeline-components)
     - [7.3. Continuous Deployment](#73-continuous-deployment)
       - [7.3.1. Tools and Practices](#731-tools-and-practices)
+    - [Prácticas Implementadas](#prácticas-implementadas-1)
+      - [Feature Branching](#feature-branching)
+      - [Commit-Based Deployment](#commit-based-deployment)
+      - [Despliegue Automatizado](#despliegue-automatizado)
+      - [Rollback Controlado](#rollback-controlado-1)
+      - [Monitoreo Posterior al Despliegue](#monitoreo-posterior-al-despliegue)
       - [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
+      - [Componentes del Pipeline de Base de Datos (Railway)](#componentes-del-pipeline-de-base-de-datos-railway)
+      - [Componentes del Pipeline del Backend (Render + Spring Boot)](#componentes-del-pipeline-del-backend-render--spring-boot)
+      - [Componentes del Pipeline del Frontend (Firebase Hosting)](#componentes-del-pipeline-del-frontend-firebase-hosting)
+      - [Componentes del Pipeline de Landing Page (Netlify)](#componentes-del-pipeline-de-landing-page-netlify)
     - [7.4. Continuous Monitoring](#74-continuous-monitoring)
       - [7.4.1. Tools and Practices](#741-tools-and-practices)
       - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
@@ -350,43 +415,55 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
     - [8.1. Experiment Planning](#81-experiment-planning)
       - [8.1.1. As-Is Summary](#811-as-is-summary)
       - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims](#812-raw-material-assumptions-knowledge-gaps-ideas-claims)
+        - [Tema 1: Fricción en la creación de solicitudes de servicio](#tema-1-fricción-en-la-creación-de-solicitudes-de-servicio)
+        - [Tema 2: Confianza en la selección de ofertas](#tema-2-confianza-en-la-selección-de-ofertas)
+        - [Tema 3: Velocidad de respuesta del taller](#tema-3-velocidad-de-respuesta-del-taller)
+        - [Tema 4: Claridad posterior a la reserva](#tema-4-claridad-posterior-a-la-reserva)
+        - [Tema 5: Analítica y aprendizaje del producto](#tema-5-analítica-y-aprendizaje-del-producto)
       - [8.1.3. Experiment-Ready Questions](#813-experiment-ready-questions)
       - [8.1.4. Question Backlog](#814-question-backlog)
+        - [Backlog broad vs deep](#backlog-broad-vs-deep)
       - [8.1.5. Experiment Cards](#815-experiment-cards)
+        - [Experiment Card 1: Formulario guiado de solicitud de servicio](#experiment-card-1-formulario-guiado-de-solicitud-de-servicio)
+        - [Experiment Card 2: Oferta con trust score y señales de confianza](#experiment-card-2-oferta-con-trust-score-y-señales-de-confianza)
+        - [Experiment Card 3: Quick offer para talleres](#experiment-card-3-quick-offer-para-talleres)
+        - [Experiment Card 4: Booking receipt mejorado](#experiment-card-4-booking-receipt-mejorado)
     - [8.2. Experiment Design](#82-experiment-design)
       - [8.2.1. Hypotheses](#821-hypotheses)
-      - [8.2.2. Domain Business Metrics](#822-domain-business-metrics)
-      - [8.2.3. Measures](#823-measures)
-      - [8.2.4. Conditions](#824-conditions)
-      - [8.2.5. Scale Calculations and Decisions](#825-scale-calculations-and-decisions)
-      - [8.2.6. Methods Selection](#826-methods-selection)
-      - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection](#827-data-analytics-goals-kpis-and-metrics-selection)
-      - [8.2.8. Web and Mobile Tracking Plan](#828-web-and-mobile-tracking-plan)
+      - [8.2.2. Measures](#822-measures)
+        - [Domain Business Metrics](#domain-business-metrics)
+        - [Evidencia primaria y secundaria](#evidencia-primaria-y-secundaria)
+      - [8.2.3. Conditions](#823-conditions)
+        - [Condiciones para preguntas exploratorias](#condiciones-para-preguntas-exploratorias)
+      - [8.2.4. Scale Calculations and Decisions](#824-scale-calculations-and-decisions)
+        - [Criterios de escala](#criterios-de-escala)
+        - [Escala por método](#escala-por-método)
+        - [Cálculo simplificado para proporciones](#cálculo-simplificado-para-proporciones)
+      - [8.2.5. Methods Selection](#825-methods-selection)
+        - [Regla de no interferencia](#regla-de-no-interferencia)
+        - [Secuencia propuesta](#secuencia-propuesta)
+      - [8.2.6. Data Analytics: Goals, KPIs and Metrics Selection](#826-data-analytics-goals-kpis-and-metrics-selection)
+        - [Goals](#goals)
+        - [KPIs principales](#kpis-principales)
+        - [Métricas de apoyo](#métricas-de-apoyo)
+        - [Decisiones posibles según resultados](#decisiones-posibles-según-resultados)
+      - [8.2.7. Web and Mobile Tracking Plan](#827-web-and-mobile-tracking-plan)
+        - [Principios de tracking](#principios-de-tracking)
+        - [Eventos para Car Owner](#eventos-para-car-owner)
+        - [Eventos para Workshop](#eventos-para-workshop)
+        - [Propiedades comunes](#propiedades-comunes)
+        - [Mobile Tracking Plan](#mobile-tracking-plan)
+        - [Privacidad y seguridad](#privacidad-y-seguridad)
     - [8.3. Experimentation](#83-experimentation)
       - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
       - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
-      - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle)
-        - [8.3.3.1. To-Be Sprint Backlogs](#8331-to-be-sprint-backlogs)
-        - [8.3.3.2. Implemented To-Be Landing Page Evidence](#8332-implemented-to-be-landing-page-evidence)
-        - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
-        - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#8334-implemented-to-be-native-mobile-application-evidence)
-        - [8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#8335-implemented-to-be-restful-api-andor-serverless-backend-evidence)
-        - [8.3.3.6. Team Collaboration Insights](#8336-team-collaboration-insights)
-      - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
-        - [8.3.4.1. Diseño de Entrevistas](#8341-diseño-de-entrevistas)
-        - [8.3.4.2. Registro de Entrevistas](#8342-registro-de-entrevistas)
-      - [8.3.4. Experiment Aftermath \& Analysis](#834-experiment-aftermath--analysis)
-    - [8.4. Experiment Aftermath \& Analysis](#84-experiment-aftermath--analysis)
-      - [8.4.1. Analysis and Interpretation of Results](#841-analysis-and-interpretation-of-results)
-      - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
-    - [8.5. Continuous Learning](#85-continuous-learning)
-      - [8.5.1. Shareback Session Artifacts: Learning Workflow](#851-shareback-session-artifacts-learning-workflow)
-    - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
-      - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
-  - [Conclusiones](#conclusiones)
+        - [Priorización por objetivos del experimento](#priorización-por-objetivos-del-experimento)
+        - [Engineering Tasks sugeridas para el primer Sprint To-Be](#engineering-tasks-sugeridas-para-el-primer-sprint-to-be)
+        - [Definition of Done para historias To-Be](#definition-of-done-para-historias-to-be)
+        - [Resultado esperado del To-Be Backlog](#resultado-esperado-del-to-be-backlog)
     - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
-    - [Video App Validation](#video-app-validation)
-    - [Video About-the-Team](#video-about-the-team)
+  - [Conclusiones](#conclusiones)
+  - [Recomendaciones](#recomendaciones)
   - [Bibliografía](#bibliografía)
   - [Anexos](#anexos)
 
@@ -6203,135 +6280,572 @@ De esta manera, el equipo pudo responder rápidamente ante incidentes y mantener
 
 ### 8.1. Experiment Planning
 
+La planificación del experimento para AutoNexo se realiza sobre la base del **As-Is Software Platform**, es decir, la versión actual del sistema que ya cuenta con módulos funcionales para autenticación, registro de vehículos, gestión de talleres, solicitudes de servicio, ofertas, reservas, reseñas y trust score. El objetivo de esta fase no es proponer directamente nuevas funcionalidades, sino transformar ideas, supuestos y afirmaciones del equipo en **preguntas experimentables** que permitan tomar decisiones informadas sobre una versión **To-Be** del producto.
+
+El enfoque de Experiment-Driven Product Development aplicado en esta sección sigue la secuencia:
+
+1. Resumir el estado actual de la plataforma.
+2. Identificar materia prima: assumptions, knowledge gaps, ideas y claims.
+3. Convertir dicha materia prima en preguntas listas para experimentar.
+4. Priorizar las preguntas en un Question Backlog.
+5. Diseñar Experiment Cards como artefactos guía para ejecutar experimentos controlados.
+
 #### 8.1.1. As-Is Summary
 
-[Resumen del estado actual]
+AutoNexo es una plataforma orientada a conectar propietarios de vehículos con talleres mecánicos especializados, permitiendo que los usuarios registren sus vehículos, creen solicitudes de servicio, reciban ofertas de talleres, acepten una propuesta y generen una reserva de atención. Asimismo, los talleres pueden gestionar su perfil, ubicaciones, plantillas de servicios, oportunidades cercanas, ofertas y servicios activos.
+
+Desde la perspectiva del **As-Is Software Platform**, el sistema cuenta con los siguientes componentes implementados o documentados:
+
+| Componente As-Is | Estado actual | Valor entregado | Limitaciones u oportunidades detectadas |
+|---|---|---|---|
+| Autenticación e IAM | Implementado en backend y frontend. | Permite registro e inicio de sesión por roles: car owner, workshop manager y workshop employee. | Se requiere reducir fricción en el onboarding y asegurar mensajes de error claros. |
+| Registro de vehículos | Implementado en frontend web y backend. | El propietario puede registrar datos básicos del vehículo. | El usuario podría abandonar si no entiende qué datos son obligatorios o por qué se solicitan. |
+| Solicitudes de servicio | Implementado como flujo principal del car owner. | Permite seleccionar vehículo, servicio, ubicación, descripción y radio de búsqueda. | El formulario puede percibirse como largo si el usuario solo quiere cotizar rápidamente. |
+| Matching con talleres | Implementado mediante ubicación, servicios y radio de búsqueda. | Conecta solicitudes con talleres que pueden atender el servicio. | Falta evidencia sobre qué tan rápido esperan recibir ofertas los usuarios y qué información aumenta su confianza. |
+| Ofertas de talleres | Implementado para que el taller envíe una propuesta. | El taller puede responder a solicitudes y el usuario puede aceptar una oferta. | No se conoce si el trust score, reseñas o tiempos estimados influyen más en la aceptación. |
+| Reservas / booking receipt | Implementado como cierre del flujo. | El propietario obtiene un comprobante de reserva tras aceptar una oferta. | Se requiere validar si el comprobante contiene toda la información necesaria para reducir incertidumbre post-reserva. |
+| Reseñas y trust score | Implementado en backend y documentado como parte del sistema de confianza. | Permite construir reputación entre propietarios y talleres. | Falta validar cómo presentar esta información para influir en decisiones sin saturar la interfaz. |
+| Pipeline y pruebas | Backend con unit/integration tests, E2E con Cucumber/Playwright y CI/CD. | Brinda base técnica para experimentar de forma controlada. | El tracking analítico todavía debe definirse para medir comportamiento real. |
+
+A partir de este As-Is, se identifica que el proceso más crítico para la propuesta de valor es el flujo:
+
+```txt
+Car owner registra vehículo → crea solicitud de servicio → workshop envía oferta → car owner acepta oferta → se genera booking
+```
+
+Este flujo representa el núcleo del marketplace de AutoNexo. Si el usuario abandona el formulario, si el taller no responde rápido o si el propietario no confía en las ofertas, el sistema pierde valor para ambos segmentos. Por ello, la experimentación se enfocará en reducir fricción, aumentar confianza y mejorar la conversión de solicitudes en reservas.
+
+**Problema central identificado:**  
+Aunque AutoNexo ya permite conectar propietarios y talleres, aún no se sabe con suficiente evidencia qué elementos del flujo incrementan más la conversión: un formulario guiado, una cotización rápida, información de confianza visible, plantillas rápidas para talleres o confirmaciones más claras al final del proceso.
+
+**Oportunidad To-Be:**  
+Evolucionar AutoNexo hacia una experiencia de solicitud y oferta más guiada, confiable y medible, priorizando cambios mínimos que puedan ser evaluados mediante experimentos antes de comprometer desarrollo completo.
 
 #### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
 
-[Material bruto: supuestos, brechas de conocimiento, ideas, afirmaciones]
+Esta sección recopila la materia prima del proceso experimental. Se clasifica en **Assumptions**, **Knowledge Gaps**, **Ideas** y **Claims**. El objetivo no es validar directamente soluciones, sino identificar las premisas que deben ser probadas antes de desarrollar una versión To-Be más amplia.
+
+##### Tema 1: Fricción en la creación de solicitudes de servicio
+
+| Tipo | Material bruto |
+|---|---|
+| Assumption | Los propietarios de vehículos desean crear una solicitud de servicio en pocos minutos, sin completar información que perciban como innecesaria. |
+| Assumption | Si el formulario guía al usuario paso a paso y explica por qué cada dato es importante, aumentará la tasa de solicitudes completadas. |
+| Knowledge Gap | No se conoce en qué paso exacto del formulario los usuarios abandonan con mayor frecuencia: selección de vehículo, selección de servicio, ubicación, descripción o confirmación. |
+| Knowledge Gap | No se sabe si los usuarios prefieren describir el problema libremente o elegir síntomas frecuentes desde opciones predefinidas. |
+| Idea | Diseñar una versión guiada del formulario con progreso visual, campos obligatorios destacados y sugerencias de descripción del problema. |
+| Idea | Agregar una opción de “solicitud rápida” para servicios comunes como cambio de aceite, revisión de frenos o mantenimiento preventivo. |
+| Claim | Reducir la fricción del formulario debería aumentar la cantidad de solicitudes enviadas y disminuir el tiempo promedio de creación. |
+
+##### Tema 2: Confianza en la selección de ofertas
+
+| Tipo | Material bruto |
+|---|---|
+| Assumption | Los propietarios no aceptan necesariamente la oferta más barata; también consideran reputación, distancia, tiempo estimado y claridad de la propuesta. |
+| Assumption | Mostrar trust score, reseñas y número de servicios completados en la tarjeta de oferta aumenta la confianza percibida. |
+| Knowledge Gap | No se conoce qué señal de confianza pesa más en la decisión: calificación, cantidad de reseñas, precio, distancia, tiempo de respuesta o descripción del taller. |
+| Knowledge Gap | No se sabe si demasiada información en la tarjeta de oferta reduce claridad y aumenta carga cognitiva. |
+| Idea | Rediseñar la tarjeta de oferta mostrando trust score, rating, distancia, precio, tiempo estimado y badge de “taller verificado”. |
+| Idea | Agregar una comparación simple entre ofertas para que el usuario evalúe precio, reputación y distancia. |
+| Claim | Una oferta con señales visibles de confianza debería tener mayor probabilidad de aceptación que una oferta que solo muestra precio y descripción básica. |
+
+##### Tema 3: Velocidad de respuesta del taller
+
+| Tipo | Material bruto |
+|---|---|
+| Assumption | Los talleres responderán más rápido si cuentan con plantillas de oferta preconfiguradas por servicio. |
+| Assumption | El tiempo hasta la primera oferta es un factor crítico para que el propietario mantenga interés en la plataforma. |
+| Knowledge Gap | No se conoce cuántas solicitudes puede atender un taller manualmente antes de considerar el proceso repetitivo. |
+| Knowledge Gap | No se sabe si los talleres prefieren enviar ofertas manuales personalizadas o usar plantillas editables. |
+| Idea | Implementar una opción de “quick offer” para servicios frecuentes, precargando precio base, duración estimada y descripción. |
+| Idea | Mostrar al taller una lista priorizada de oportunidades cercanas según servicio, distancia y urgencia. |
+| Claim | Reducir el esfuerzo de enviar ofertas debería disminuir el tiempo hasta la primera oferta y aumentar el número de solicitudes con al menos una respuesta. |
+
+##### Tema 4: Claridad posterior a la reserva
+
+| Tipo | Material bruto |
+|---|---|
+| Assumption | Después de aceptar una oferta, el propietario necesita una confirmación clara con dirección, fecha, taller, servicio, precio y pasos siguientes. |
+| Assumption | Un booking receipt más claro reduce dudas y evita cancelaciones o contactos innecesarios. |
+| Knowledge Gap | No se conoce qué información considera indispensable el propietario después de aceptar una oferta. |
+| Knowledge Gap | No se sabe si el usuario espera recibir recordatorios o instrucciones previas al servicio. |
+| Idea | Mejorar el booking receipt con resumen visual, mapa, datos del taller, precio acordado, instrucciones y botón para contactar. |
+| Idea | Agregar recordatorio previo a la cita o checklist de preparación del vehículo. |
+| Claim | Una confirmación más clara debería aumentar la percepción de seguridad y reducir intención de cancelación. |
+
+##### Tema 5: Analítica y aprendizaje del producto
+
+| Tipo | Material bruto |
+|---|---|
+| Assumption | El equipo necesita tracking de eventos para tomar decisiones basadas en evidencia y no solo en opiniones. |
+| Assumption | Medir solo visitas o registros sería insuficiente; se requiere medir conversión por flujo y actor. |
+| Knowledge Gap | No se conoce actualmente el drop-off real en cada paso del flujo request-offer-booking. |
+| Knowledge Gap | No se sabe qué KPIs deben priorizarse por etapa del funnel. |
+| Idea | Implementar eventos analíticos para request form, offer view, offer accept, booking receipt y workshop offer sent. |
+| Claim | Un tracking plan enfocado en eventos de negocio permitirá evaluar experimentos con mayor precisión y evitar vanity metrics. |
 
 #### 8.1.3. Experiment-Ready Questions
 
-[Preguntas listas para experimento]
+A continuación se transforman las premisas anteriores en preguntas listas para experimentar. Se incluyen preguntas **belief-led** cuando existe una creencia previa que debe ser probada, y preguntas **exploratorias** cuando existe una brecha de conocimiento sin una hipótesis fuerte.
+
+| ID | Tipo de pregunta | Pregunta lista para experimento | W/H principal | Motivación |
+|---|---|---|---|---|
+| Q1 | Belief-led | ¿Un formulario guiado de solicitud de servicio aumenta la tasa de solicitudes completadas frente al formulario As-Is? | How | Reducir abandono en el flujo principal del car owner. |
+| Q2 | Exploratoria | ¿En qué paso del formulario de solicitud se produce mayor fricción o abandono? | Where | Identificar el punto exacto a mejorar antes de desarrollar cambios mayores. |
+| Q3 | Belief-led | ¿Mostrar trust score y reseñas en la tarjeta de oferta aumenta la tasa de aceptación de ofertas? | What | Validar si la confianza visible influye en la decisión del propietario. |
+| Q4 | Exploratoria | ¿Qué información compara primero el propietario al elegir entre ofertas: precio, distancia, reputación o tiempo estimado? | What | Priorizar la jerarquía visual de la tarjeta de oferta. |
+| Q5 | Belief-led | ¿Una plantilla de quick offer reduce el tiempo promedio que tarda un taller en enviar una propuesta? | How | Incrementar liquidez del marketplace y velocidad de respuesta. |
+| Q6 | Belief-led | ¿Un booking receipt más completo aumenta la claridad percibida después de aceptar una oferta? | How | Disminuir incertidumbre post-reserva. |
+| Q7 | Exploratoria | ¿Qué señales hacen que un car owner considere confiable a un taller desconocido? | Why | Entender criterios de confianza antes de escalar el sistema de reputación. |
+| Q8 | Exploratoria | ¿Qué métricas del flujo request-offer-booking deben ser rastreadas para evaluar conversión real? | What | Evitar vanity metrics y medir objetivos de negocio. |
+| Q9 | Belief-led | ¿Mostrar una estimación de tiempo de respuesta esperado incrementa la probabilidad de que el usuario espere ofertas en lugar de abandonar? | When | Reducir incertidumbre durante la espera de ofertas. |
+| Q10 | Belief-led | ¿Un resumen de solicitud antes de enviar reduce errores de información y solicitudes incompletas? | How | Mejorar calidad de datos recibidos por talleres. |
 
 #### 8.1.4. Question Backlog
 
-[Backlog de preguntas]
+El Question Backlog prioriza preguntas de investigación, no funcionalidades. Se usa una escala de 1 a 5 en cuatro criterios:
+
+- **Confianza:** qué tan seguros estamos actualmente de la respuesta. Menor confianza implica mayor necesidad de investigar.
+- **Riesgo:** impacto negativo si tomamos una decisión incorrecta sin evidencia.
+- **Impacto:** potencial efecto positivo en conversión, confianza o liquidez del marketplace.
+- **Interés:** valor de aprendizaje para el equipo y stakeholders.
+
+Para calcular prioridad se usa:
+
+```txt
+Priority Score = (6 - Confianza) + Riesgo + Impacto + Interés
+```
+
+En caso de empate, se prioriza la pregunta con mayor **Riesgo**, siguiendo el criterio indicado para XDPD.
+
+| Prioridad | ID | Pregunta | Confianza | Riesgo | Impacto | Interés | Score | Decisión |
+|---:|---|---|---:|---:|---:|---:|---:|---|
+| 1 | Q1 | ¿Un formulario guiado aumenta la tasa de solicitudes completadas frente al formulario As-Is? | 2 | 5 | 5 | 5 | 19 | Experimentar primero porque afecta el inicio del flujo core. |
+| 2 | Q3 | ¿Mostrar trust score y reseñas aumenta la tasa de aceptación de ofertas? | 2 | 5 | 5 | 4 | 18 | Prioridad alta porque impacta conversión a booking. |
+| 3 | Q5 | ¿Una plantilla de quick offer reduce el tiempo de respuesta del taller? | 2 | 4 | 5 | 4 | 17 | Prioridad alta para mejorar liquidez del marketplace. |
+| 4 | Q2 | ¿En qué paso del formulario se produce mayor fricción o abandono? | 1 | 4 | 4 | 5 | 18 | Se ejecuta como análisis complementario de Q1. |
+| 5 | Q4 | ¿Qué información compara primero el propietario al elegir entre ofertas? | 2 | 4 | 4 | 5 | 17 | Sirve para diseñar mejor la tarjeta de oferta. |
+| 6 | Q6 | ¿Un booking receipt más completo aumenta claridad percibida post-reserva? | 3 | 3 | 4 | 4 | 14 | Útil para reducir incertidumbre después del booking. |
+| 7 | Q9 | ¿Mostrar tiempo de respuesta esperado reduce abandono durante la espera? | 2 | 3 | 4 | 4 | 15 | Importante, pero depende de datos reales de respuesta. |
+| 8 | Q10 | ¿Un resumen antes de enviar reduce errores de información? | 3 | 3 | 3 | 4 | 13 | Puede integrarse al experimento del formulario guiado. |
+| 9 | Q7 | ¿Qué señales hacen confiable a un taller desconocido? | 2 | 3 | 4 | 5 | 16 | Exploratoria, útil para futuras iteraciones del trust score. |
+| 10 | Q8 | ¿Qué métricas deben rastrearse para evaluar conversión real? | 3 | 5 | 5 | 5 | 18 | Se atiende transversalmente en 8.2.6 y 8.2.7. |
+
+##### Backlog broad vs deep
+
+| Tipo de backlog | Contenido en AutoNexo | Uso |
+|---|---|---|
+| Broad backlog | Q1–Q10 cubriendo formulario, confianza, oferta, reserva y analítica. | Mantener una visión amplia de incertidumbres del producto. |
+| Deep backlog | Q1, Q2, Q3 y Q5. | Profundizar en los experimentos de mayor riesgo para el funnel request-offer-booking. |
+
+Para el ciclo actual se seleccionan como foco principal **Q1, Q3 y Q5**, porque cubren los tres momentos más críticos del marketplace: creación de solicitud, decisión de aceptación y velocidad de respuesta del taller.
+
 
 #### 8.1.5. Experiment Cards
 
-[Tarjetas de experimento]
+Las Experiment Cards resumen la información esencial antes de ejecutar un experimento. Cada tarjeta incluye el lado frontal —pregunta, por qué, hipótesis y Simplest Useful Thing— y el lado posterior medidas, condiciones y escala.
+
+##### Experiment Card 1: Formulario guiado de solicitud de servicio
+
+| Campo | Contenido |
+|---|---|
+| Pregunta | ¿Un formulario guiado de solicitud de servicio aumenta la tasa de solicitudes completadas frente al formulario As-Is? |
+| Por qué | La creación de solicitudes es el primer paso del flujo core. Si el usuario abandona aquí, no existen ofertas ni reservas. |
+| Hipótesis | Si el formulario muestra progreso, campos obligatorios claros y sugerencias de descripción, entonces aumentará la tasa de solicitudes completadas y disminuirá el tiempo promedio de envío. |
+| Simplest Useful Thing | Prototipo funcional o feature flag de formulario guiado en web con barra de progreso, validaciones visibles y resumen antes de enviar. |
+| Medidas | Request Completion Rate, Time to Submit Request, Form Drop-off Rate, Request Data Quality Score. |
+| Condición control | Formulario As-Is actual. |
+| Condición experimental | Formulario guiado To-Be. |
+| Escala | 20–30 car owners o pruebas moderadas con mínimo 10 participantes si el acceso a usuarios reales es limitado. |
+| Decisión esperada | Si mejora completion rate y reduce tiempo sin aumentar errores, se prioriza para To-Be backlog. |
+
+##### Experiment Card 2: Oferta con trust score y señales de confianza
+
+| Campo | Contenido |
+|---|---|
+| Pregunta | ¿Mostrar trust score y reseñas en la tarjeta de oferta aumenta la tasa de aceptación de ofertas? |
+| Por qué | La confianza es crítica cuando el propietario elige un taller desconocido. Sin confianza, el usuario puede abandonar aunque reciba ofertas. |
+| Hipótesis | Si la tarjeta de oferta muestra trust score, rating, reseñas y badge de taller verificado, entonces aumentará la tasa de aceptación de ofertas. |
+| Simplest Useful Thing | Rediseño de tarjeta de oferta usando datos ya disponibles o mockeados: trust score, rating, número de reseñas, distancia y precio. |
+| Medidas | Offer Acceptance Rate, Offer Card Interaction Rate, Trust Signal Recall, Perceived Trust Score. |
+| Condición control | Tarjeta de oferta As-Is con información básica. |
+| Condición experimental | Tarjeta To-Be con señales de confianza visibles. |
+| Escala | 20 usuarios en prueba de preferencia o A/B controlado con tráfico beta. |
+| Decisión esperada | Si aumenta aceptación o confianza percibida, se integra en la vista de ofertas. |
+
+##### Experiment Card 3: Quick offer para talleres
+
+| Campo | Contenido |
+|---|---|
+| Pregunta | ¿Una plantilla de quick offer reduce el tiempo promedio que tarda un taller en enviar una propuesta? |
+| Por qué | El marketplace necesita respuestas rápidas. Si los talleres tardan demasiado, el propietario puede perder interés o buscar alternativas externas. |
+| Hipótesis | Si el taller puede usar una plantilla editable por servicio, entonces disminuirá el tiempo hasta la primera oferta y aumentará el porcentaje de solicitudes con respuesta. |
+| Simplest Useful Thing | Botón “Use quick offer” para servicios frecuentes, precargando precio base, duración y descripción desde ServiceTemplate. |
+| Medidas | Time to First Offer, Workshop Offer Response Rate, Quick Offer Usage Rate, Offer Edit Rate. |
+| Condición control | Envío manual de oferta As-Is. |
+| Condición experimental | Oferta generada desde plantilla editable. |
+| Escala | 5–10 talleres o simulación controlada con perfiles de workshop owner durante pruebas E2E. |
+| Decisión esperada | Si reduce significativamente el tiempo sin disminuir calidad percibida, se prioriza como mejora del módulo de talleres. |
+
+##### Experiment Card 4: Booking receipt mejorado
+
+| Campo | Contenido |
+|---|---|
+| Pregunta | ¿Un booking receipt más completo aumenta la claridad percibida después de aceptar una oferta? |
+| Por qué | La etapa post-reserva debe confirmar al usuario que la decisión fue correcta y reducir dudas sobre próximos pasos. |
+| Hipótesis | Si el comprobante muestra dirección, servicio, precio, horario, contacto, instrucciones y mapa, entonces aumentará la claridad percibida y disminuirá la intención de cancelar. |
+| Simplest Useful Thing | Rediseño del booking receipt con resumen visual y checklist previo al servicio. |
+| Medidas | Booking Receipt View Rate, Post-booking Clarity Score, Contact Intent Rate, Cancellation Intent. |
+| Condición control | Booking receipt As-Is. |
+| Condición experimental | Booking receipt To-Be con resumen y pasos siguientes. |
+| Escala | 10–15 usuarios en prueba de comprensión o prueba moderada. |
+| Decisión esperada | Si mejora claridad sin sobrecargar la interfaz, se implementa en la vista de reserva. |
 
 ### 8.2. Experiment Design
 
+El diseño del experimento define cómo se obtendrá evidencia confiable para responder las preguntas priorizadas. Se establecen hipótesis, medidas, condiciones, escala, métodos y plan de analítica. El equipo no buscará “validar” una idea como verdadera, sino **probar hipótesis falsables** y tomar decisiones basadas en resultados observables.
+
+---
+
 #### 8.2.1. Hypotheses
 
-[Hipótesis]
+Las hipótesis se formulan como afirmaciones medibles y falsables. Para cada hipótesis alternativa se define una hipótesis nula.
 
-#### 8.2.2. Domain Business Metrics
+| ID | Pregunta asociada | Hipótesis alternativa H1 | Hipótesis nula H0 | Métrica principal |
+|---|---|---|---|---|
+| H1 | Q1 | El formulario guiado incrementará la tasa de solicitudes completadas en al menos 15% frente al formulario As-Is. | No habrá diferencia significativa en la tasa de solicitudes completadas entre el formulario guiado y el As-Is. | Request Completion Rate |
+| H2 | Q1/Q2 | El formulario guiado reducirá el tiempo promedio de creación de solicitud en al menos 20%. | El tiempo promedio de creación será igual o mayor que en el flujo As-Is. | Time to Submit Request |
+| H3 | Q3 | Mostrar trust score y reseñas en la tarjeta de oferta aumentará la tasa de aceptación de ofertas en al menos 10%. | La tarjeta con trust score y reseñas no aumentará la aceptación de ofertas frente a la tarjeta As-Is. | Offer Acceptance Rate |
+| H4 | Q5 | La plantilla de quick offer reducirá el Time to First Offer en al menos 25%. | La plantilla quick offer no reducirá el tiempo hasta la primera oferta. | Time to First Offer |
+| H5 | Q6 | Un booking receipt mejorado aumentará el Post-booking Clarity Score promedio en al menos 1 punto sobre 5. | El booking receipt mejorado no cambiará la claridad percibida frente al As-Is. | Post-booking Clarity Score |
 
-[Métricas de negocio del dominio]
+Estas hipótesis cumplen tres criterios:
 
-#### 8.2.3. Measures
+- **Falsables:** pueden fallar si los datos no muestran el cambio esperado.
+- **Testables:** pueden probarse con prototipos, feature flags, pruebas moderadas o beta controlada.
+- **Medibles:** cada una se vincula a métricas concretas predefinidas.
 
-[Medidas]
+#### 8.2.2. Measures
 
-#### 8.2.4. Conditions
+Las medidas seleccionadas buscan responder las preguntas experimentales usando solo los datos necesarios y durante el tiempo justo. Se evita depender de vanity metrics como visitas totales o cantidad de pantallas vistas si no explican conversión de negocio.
 
-[Condiciones]
+##### Domain Business Metrics
 
-#### 8.2.5. Scale Calculations and Decisions
+| Métrica | Fórmula | Técnica de recolección | Meta deseada | Experimentos que la usan |
+|---|---|---|---|---|
+| Request Completion Rate | Solicitudes enviadas / formularios iniciados × 100 | Eventos `request_form_started` y `request_submitted` | +15% vs control | E1 |
+| Form Drop-off Rate | Formularios abandonados / formularios iniciados × 100 | Eventos por paso del formulario | -15% vs control | E1 |
+| Time to Submit Request | Timestamp `request_submitted` - timestamp `request_form_started` | Tracking de eventos | -20% vs control | E1 |
+| Request Data Quality Score | Campos críticos completos / campos críticos esperados × 100 | Validación de payload y revisión de solicitud | ≥ 90% | E1 |
+| Offer Acceptance Rate | Ofertas aceptadas / ofertas vistas × 100 | Eventos `offer_viewed` y `offer_accepted` | +10% vs control | E2 |
+| Offer Card Interaction Rate | Clicks en detalles de oferta / ofertas vistas × 100 | Eventos de interacción UI | +10% vs control | E2 |
+| Perceived Trust Score | Promedio de respuestas Likert 1–5 sobre confianza | Encuesta post-tarea | ≥ 4.0/5 | E2 |
+| Time to First Offer | Timestamp primera oferta - timestamp solicitud creada | Backend logs + eventos | -25% vs control | E3 |
+| Workshop Offer Response Rate | Solicitudes con al menos una oferta / solicitudes visibles para talleres × 100 | Backend + eventos E2E | +15% vs control | E3 |
+| Quick Offer Usage Rate | Ofertas creadas con plantilla / total de ofertas × 100 | Evento `quick_offer_used` | ≥ 50% en talleres beta | E3 |
+| Booking Conversion Rate | Reservas generadas / solicitudes creadas × 100 | Eventos de funnel | +10% vs control | E1, E2, E3 |
+| Post-booking Clarity Score | Promedio Likert 1–5 sobre claridad del comprobante | Encuesta post-booking | ≥ 4.2/5 | E4 |
+| Cancellation Intent | Usuarios que indican intención de cancelar / usuarios con booking × 100 | Encuesta o evento de cancelación | -10% vs control | E4 |
 
-[Cálculos y decisiones de escala]
+##### Evidencia primaria y secundaria
 
-#### 8.2.6. Methods Selection
+| Experimento | Evidencia primaria | Evidencia secundaria |
+|---|---|---|
+| E1 Formulario guiado | Request Completion Rate | Tiempo de envío, drop-off por paso, calidad de datos. |
+| E2 Trust en oferta | Offer Acceptance Rate | Confianza percibida, interacción con detalles, recuerdo de señales de confianza. |
+| E3 Quick offer | Time to First Offer | Uso de plantilla, tasa de respuesta, edición manual posterior. |
+| E4 Booking receipt | Claridad percibida | Intención de cancelación, intención de contacto, comprensión de próximos pasos. |
 
-[Selección de métodos]
+---
 
-#### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection
+#### 8.2.3. Conditions
 
-[Análisis de datos: objetivos, KPIs y métricas]
+Las condiciones permiten comparar el comportamiento esperado bajo una versión As-Is y una versión To-Be o experimental. Para preguntas belief-led se define control y experimental. Para preguntas exploratorias se definen límites de observación.
 
-#### 8.2.8. Web and Mobile Tracking Plan
+| Experimento | Condición control | Condición experimental | Segmento objetivo | Restricciones |
+|---|---|---|---|---|
+| E1 Formulario guiado | Formulario actual de solicitud de servicio. | Formulario guiado con progreso, ayuda contextual y resumen previo. | Car owners que necesiten cotizar mantenimiento. | No modificar pricing ni matching para aislar efecto del formulario. |
+| E2 Trust en oferta | Tarjeta de oferta As-Is con información básica. | Tarjeta con trust score, rating, reseñas, distancia y badge de verificación. | Car owners con al menos una oferta recibida. | Mantener mismo precio y taller en comparaciones controladas. |
+| E3 Quick offer | Taller redacta oferta manualmente. | Taller usa plantilla editable desde ServiceTemplate. | Workshop managers o employees. | Mantener mismo tipo de servicio para comparar tiempos. |
+| E4 Booking receipt | Comprobante actual de reserva. | Comprobante con resumen visual, mapa, instrucciones y próximos pasos. | Car owners que aceptaron una oferta. | No agregar beneficios externos que alteren percepción de valor. |
 
-[Plan de seguimiento web y móvil]
+##### Condiciones para preguntas exploratorias
+
+| Pregunta | Condiciones de observación |
+|---|---|
+| Q2 Drop-off en formulario | Observar cada paso del formulario: vehículo, servicio, ubicación, descripción y confirmación. |
+| Q4 Información prioritaria en ofertas | Presentar tarjetas con precio, distancia, reputación y tiempo estimado; observar orden de atención y verbalizaciones. |
+| Q7 Señales de confianza | Entrevistas o prueba moderada con usuarios que no conocen previamente el taller. |
+| Q8 Métricas del funnel | Instrumentar eventos mínimos en web/E2E sin recolectar datos personales innecesarios. |
+
+#### 8.2.4. Scale Calculations and Decisions
+
+La escala del experimento se define considerando certeza, precisión, disponibilidad de usuarios y costo de ejecución. Dado que AutoNexo se encuentra en etapa académica y de validación temprana, se propone una combinación de pruebas moderadas, prototipos funcionales y beta controlada.
+
+##### Criterios de escala
+
+| Criterio | Decisión |
+|---|---|
+| Certeza esperada | Media. Se busca evidencia suficiente para decidir el backlog To-Be, no una prueba estadística de producción a gran escala. |
+| Precisión esperada | Detectar cambios prácticos de 10% a 25% en métricas del funnel. |
+| Riesgo de falso negativo | Aceptable en experimentos exploratorios; se complementa con evidencia cualitativa. |
+| Riesgo de falso positivo | Mitigado mediante condiciones de control y no ejecución simultánea de experimentos que afecten el mismo flujo. |
+| Unidad de análisis | Usuario car owner, workshop manager o evento de solicitud/oferta según experimento. |
+
+##### Escala por método
+
+| Experimento | Tamaño mínimo recomendado | Justificación | Decisión |
+|---|---:|---|---|
+| E1 Formulario guiado | 20–30 car owners o mínimo 10 pruebas moderadas | El formulario es crítico y requiere observar fricción real. | Ejecutar prototipo funcional con tracking básico. |
+| E2 Trust en oferta | 20 participantes en prueba de preferencia o beta con ofertas reales | Se busca detectar señales de confianza más relevantes. | Empezar con test de preferencia y luego beta controlada. |
+| E3 Quick offer | 5–10 talleres o simulación con usuarios representativos | El segmento workshop puede ser más difícil de reclutar. | Prueba moderada + medición de tiempo de tarea. |
+| E4 Booking receipt | 10–15 car owners | Se evalúa comprensión, no conversión masiva. | Prueba de usabilidad moderada. |
+
+##### Cálculo simplificado para proporciones
+
+Para estimar una muestra exploratoria de una proporción, se considera:
+
+```txt
+n ≈ (Z² × p × (1 - p)) / e²
+```
+
+Donde:
+
+- `Z = 1.64` para una certeza aproximada de 90%.
+- `p = 0.5` como máxima variabilidad cuando no se conoce proporción real.
+- `e = 0.2` para una precisión exploratoria de ±20%.
+
+```txt
+n ≈ (1.64² × 0.5 × 0.5) / 0.2²
+n ≈ 16.8 ≈ 17 participantes
+```
+
+Por ello, para experimentos tempranos de preferencia o conversión se plantea trabajar con **17–30 participantes** cuando sea viable. En pruebas de usabilidad moderada, se acepta una escala menor de **5–10 participantes por segmento** para detectar fricciones principales.
+
+#### 8.2.5. Methods Selection
+
+El método seleccionado debe ser la **Simplest Useful Thing**, es decir, la forma más simple que permita obtener evidencia útil sin construir innecesariamente una solución completa.
+
+| Experimento | Método seleccionado | Por qué es el método más simple y útil | Riesgos éticos o de validez |
+|---|---|---|---|
+| E1 Formulario guiado | Prototipo funcional con feature flag o test moderado de tarea. | Permite comparar tiempo, completion y fricción sin alterar todo el marketplace. | No recolectar datos sensibles innecesarios del vehículo. |
+| E2 Trust en oferta | Test A/B de tarjetas o prueba de preferencia moderada. | Permite aislar efecto de señales de confianza manteniendo constante precio y distancia. | Evitar mostrar reseñas falsas como si fueran reales; usar mock claramente controlado en prototipo. |
+| E3 Quick offer | Simulación con workshop owners + medición de tiempo. | Permite medir reducción de esfuerzo antes de desarrollar automatización completa. | No enviar ofertas reales a usuarios finales durante la prueba simulada. |
+| E4 Booking receipt | Prueba de comprensión post-tarea. | Permite evaluar claridad con prototipo de pantalla sin cambiar flujo productivo. | Evitar inducir confirmaciones reales si el servicio no será atendido. |
+
+##### Regla de no interferencia
+
+No se ejecutarán simultáneamente dos experimentos que modifiquen el mismo punto del funnel para el mismo usuario. Por ejemplo, si se prueba el formulario guiado, no se probará al mismo tiempo una nueva promesa de tiempo de respuesta en el mismo flujo, porque se perdería claridad sobre qué cambio causó el resultado.
+
+##### Secuencia propuesta
+
+1. Ejecutar E1 para mejorar creación de solicitudes.
+2. Ejecutar E3 para asegurar respuesta rápida de talleres.
+3. Ejecutar E2 para aumentar aceptación de ofertas.
+4. Ejecutar E4 para mejorar post-reserva.
+
+Esta secuencia sigue el funnel natural del marketplace.
+
+#### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection
+
+El plan analítico se organiza en metas de negocio, KPIs y métricas operativas. El objetivo es que cada experimento produzca evidencia accionable y no dependa de métricas irrelevantes.
+
+##### Goals
+
+| Goal | Descripción | Relación con producto |
+|---|---|---|
+| G1: Aumentar creación de solicitudes | Incrementar la proporción de usuarios que completan el formulario de servicio. | Mayor volumen de oportunidades para talleres. |
+| G2: Mejorar liquidez del marketplace | Reducir el tiempo que tarda una solicitud en recibir ofertas. | Mayor valor percibido por propietarios. |
+| G3: Aumentar confianza y aceptación | Incrementar la tasa de ofertas aceptadas. | Mayor conversión a bookings. |
+| G4: Reducir incertidumbre post-reserva | Aumentar claridad después de aceptar una oferta. | Menos cancelaciones y dudas. |
+| G5: Aprender con datos accionables | Implementar tracking enfocado en funnel y roles. | Decisiones basadas en evidencia. |
+
+##### KPIs principales
+
+| KPI | Fórmula | Meta experimental | Fuente |
+|---|---|---|---|
+| Service Request Conversion | Solicitudes enviadas / formularios iniciados × 100 | +15% | Frontend events + backend request created |
+| Booking Conversion Rate | Bookings generados / solicitudes creadas × 100 | +10% | Backend booking + frontend events |
+| Time to First Offer | Primera oferta creada - solicitud creada | -25% | Backend timestamps |
+| Offer Acceptance Rate | Ofertas aceptadas / ofertas vistas × 100 | +10% | Frontend offer events |
+| Post-booking Clarity | Promedio Likert 1–5 | ≥ 4.2/5 | Encuesta post-tarea |
+
+##### Métricas de apoyo
+
+| Métrica | Uso |
+|---|---|
+| Step Drop-off Rate | Detectar puntos de abandono en el formulario. |
+| Field Error Rate | Identificar campos con validaciones problemáticas. |
+| Offer Detail View Rate | Medir interés en información adicional de la oferta. |
+| Trust Signal Recall | Saber si el usuario recuerda rating, reseñas o trust score. |
+| Quick Offer Usage Rate | Medir adopción de plantilla por talleres. |
+| Offer Edit Rate | Saber si la plantilla necesita ajustes frecuentes. |
+| Booking Receipt View Rate | Confirmar que el usuario visualiza el comprobante final. |
+
+##### Decisiones posibles según resultados
+
+| Resultado | Decisión |
+|---|---|
+| Mejora clara en completion rate | Priorizar formulario guiado en To-Be backlog. |
+| No mejora completion pero sí reduce tiempo | Iterar copy, validaciones y pasos del formulario. |
+| Trust score aumenta aceptación | Integrar señales de confianza en oferta. |
+| Trust score no impacta aceptación | Investigar si precio, distancia o tiempo pesan más. |
+| Quick offer reduce tiempo | Implementar plantilla en módulo workshop. |
+| Quick offer no se usa | Revisar si los talleres necesitan personalización por caso. |
+
+#### 8.2.7. Web and Mobile Tracking Plan
+
+El tracking plan define los eventos mínimos necesarios para medir los experimentos en web y preparar compatibilidad con mobile. En la versión actual, la prioridad es el frontend web; para mobile se define un plan equivalente aplicable a una futura app o experiencia responsive.
+
+##### Principios de tracking
+
+- Registrar eventos relacionados con decisiones de negocio, no solo navegación.
+- Evitar recolectar información personal sensible innecesaria.
+- Usar identificadores anónimos o IDs internos cuando sea posible.
+- Diferenciar actor: `CAR_OWNER`, `WORKSHOP_MANAGER`, `WORKSHOP_EMPLOYEE`.
+- Registrar timestamps para medir duración entre pasos.
+- Mantener consistencia de nombres entre web y mobile.
+
+##### Eventos para Car Owner
+
+| Evento | Cuándo se dispara | Propiedades | Métrica asociada |
+|---|---|---|---|
+| `request_form_started` | Usuario abre formulario de nueva solicitud. | `userRole`, `deviceType`, `experimentVariant` | Request Completion Rate |
+| `request_step_completed` | Usuario completa un paso del formulario. | `stepName`, `stepIndex`, `timeSpent`, `experimentVariant` | Step Drop-off Rate |
+| `request_field_error` | Se produce error de validación. | `fieldName`, `errorType`, `stepName` | Field Error Rate |
+| `request_summary_viewed` | Usuario visualiza resumen antes de enviar. | `selectedService`, `hasVehicle`, `hasLocation` | Data Quality Score |
+| `request_submitted` | Solicitud creada exitosamente. | `requestId`, `selectedService`, `searchRadius`, `experimentVariant` | Request Completion Rate |
+| `offer_list_viewed` | Usuario ve ofertas recibidas. | `requestId`, `offersCount` | Offer View Rate |
+| `offer_card_viewed` | Una tarjeta de oferta es visible. | `offerId`, `workshopId`, `hasTrustScore`, `priceRange` | Offer Acceptance Rate |
+| `offer_detail_opened` | Usuario abre detalle de oferta. | `offerId`, `signalClicked` | Offer Card Interaction Rate |
+| `offer_accepted` | Usuario acepta una oferta. | `offerId`, `requestId`, `workshopId`, `experimentVariant` | Offer Acceptance Rate |
+| `booking_receipt_viewed` | Usuario visualiza comprobante de reserva. | `bookingId`, `hasMap`, `hasInstructions` | Booking Receipt View Rate |
+| `post_booking_feedback_submitted` | Usuario responde encuesta post-booking. | `clarityScore`, `trustScore`, `cancellationIntent` | Post-booking Clarity |
+
+##### Eventos para Workshop
+
+| Evento | Cuándo se dispara | Propiedades | Métrica asociada |
+|---|---|---|---|
+| `workshop_opportunities_viewed` | Taller abre vista de solicitudes cercanas. | `workshopId`, `opportunitiesCount`, `serviceFilter` | Workshop Response Rate |
+| `service_request_detail_viewed` | Taller abre detalle de una solicitud. | `requestId`, `serviceType`, `distanceKm` | Offer Funnel |
+| `offer_creation_started` | Taller inicia creación de oferta. | `requestId`, `source`, `experimentVariant` | Offer Creation Rate |
+| `quick_offer_used` | Taller usa plantilla rápida. | `requestId`, `templateId`, `serviceType` | Quick Offer Usage Rate |
+| `offer_field_edited` | Taller modifica campo precargado de plantilla. | `fieldName`, `templateId` | Offer Edit Rate |
+| `offer_sent` | Taller envía oferta. | `offerId`, `requestId`, `priceAmount`, `estimatedDuration` | Time to First Offer |
+| `active_services_viewed` | Taller revisa servicios activos. | `workshopId`, `activeServicesCount` | Operational Engagement |
+
+##### Propiedades comunes
+
+| Propiedad | Descripción |
+|---|---|
+| `anonymousUserId` | Identificador analítico sin exponer datos personales. |
+| `userRole` | Rol del usuario. |
+| `deviceType` | Web desktop, web mobile, tablet o app mobile futura. |
+| `experimentId` | Identificador del experimento. |
+| `experimentVariant` | `control` o `experimental`. |
+| `timestamp` | Fecha y hora del evento. |
+| `sessionId` | Sesión de navegación. |
+| `locale` | Idioma de la interfaz. |
+
+##### Mobile Tracking Plan
+
+Aunque la prioridad actual es web, el plan mobile mantiene paridad de eventos para que una futura aplicación móvil o versión responsive pueda compararse con web.
+
+| Flujo mobile | Eventos equivalentes | Consideración |
+|---|---|---|
+| Crear solicitud | `request_form_started`, `request_step_completed`, `request_submitted` | Medir fricción por pantalla y teclado móvil. |
+| Ver ofertas | `offer_list_viewed`, `offer_card_viewed`, `offer_detail_opened` | Medir si el usuario necesita menos información por tarjeta. |
+| Aceptar oferta | `offer_accepted`, `booking_receipt_viewed` | Medir claridad y confianza en pantalla pequeña. |
+| Enviar oferta taller | `offer_creation_started`, `quick_offer_used`, `offer_sent` | Evaluar si quick offer es más valioso en mobile. |
+
+##### Privacidad y seguridad
+
+- No registrar VIN, placa, teléfono, email ni dirección completa en eventos analíticos.
+- Usar IDs internos o hashes cuando se necesite correlación entre eventos.
+- Separar ambiente de pruebas y producción.
+- Documentar eventos antes de implementarlos para evitar métricas ad-hoc.
+- Permitir desactivar tracking en entornos locales o de desarrollo.
 
 ### 8.3. Experimentation
 
+La fase de experimentation traduce los aprendizajes planeados en elementos de producto To-Be. Las User Stories y el Product Backlog no se construyen únicamente desde ideas del equipo, sino desde preguntas priorizadas, hipótesis y métricas experimentales.
+
 #### 8.3.1. To-Be User Stories
 
-[User stories deseadas]
+Las siguientes User Stories representan el alcance To-Be asociado a los experimentos priorizados. Se redactan para habilitar aprendizaje medible y no solo entrega funcional.
+
+| ID | User Story | Criterios de aceptación | Experimento asociado | Métricas relacionadas |
+|---|---|---|---|---|
+| TB-US01 | Como propietario de vehículo, quiero crear una solicitud de servicio mediante un formulario guiado para completar mi solicitud con menos esfuerzo y mayor claridad. | El formulario muestra pasos, progreso, campos obligatorios, validaciones y resumen antes de enviar. | E1 | Request Completion Rate, Time to Submit Request, Form Drop-off Rate |
+| TB-US02 | Como propietario de vehículo, quiero recibir sugerencias de descripción según el servicio seleccionado para explicar mejor el problema de mi vehículo. | Al seleccionar un servicio, el sistema muestra ejemplos o prompts editables de descripción. | E1 | Request Data Quality Score, Field Error Rate |
+| TB-US03 | Como propietario de vehículo, quiero comparar ofertas usando precio, distancia, tiempo estimado y reputación para elegir un taller con mayor confianza. | La tarjeta de oferta muestra trust score, rating, reseñas, distancia, precio y tiempo estimado. | E2 | Offer Acceptance Rate, Perceived Trust Score |
+| TB-US04 | Como propietario de vehículo, quiero ver señales de confianza del taller antes de aceptar una oferta para reducir el riesgo percibido. | La vista de oferta incluye trust score, número de reseñas y badge de taller verificado cuando aplique. | E2 | Trust Signal Recall, Offer Detail View Rate |
+| TB-US05 | Como workshop manager, quiero crear una oferta rápida desde una plantilla de servicio para responder solicitudes en menor tiempo. | El taller puede usar una plantilla editable con precio base, duración y descripción. | E3 | Time to First Offer, Quick Offer Usage Rate |
+| TB-US06 | Como workshop manager, quiero ver oportunidades cercanas priorizadas para responder primero las solicitudes más relevantes. | La lista de oportunidades muestra servicio, distancia, urgencia y compatibilidad con plantillas del taller. | E3 | Workshop Offer Response Rate, Offer Creation Rate |
+| TB-US07 | Como propietario de vehículo, quiero recibir un booking receipt claro con próximos pasos para saber qué ocurrirá después de aceptar una oferta. | El comprobante muestra taller, dirección, servicio, precio, fecha, mapa, instrucciones y contacto. | E4 | Post-booking Clarity Score, Booking Receipt View Rate |
+| TB-US08 | Como equipo de producto, quiero registrar eventos analíticos del funnel request-offer-booking para medir los experimentos y decidir con evidencia. | El sistema registra eventos definidos en el tracking plan con `experimentId` y `experimentVariant`. | Transversal | Booking Conversion Rate, Funnel Drop-off |
+| TB-US09 | Como equipo de producto, quiero diferenciar variantes control y experimental para comparar resultados sin mezclar condiciones. | El sistema asigna variante por usuario o sesión y la registra en los eventos. | Transversal | Todas las métricas experimentales |
+| TB-US10 | Como propietario de vehículo, quiero conocer el tiempo estimado de respuesta de talleres para decidir si espero ofertas dentro de AutoNexo. | La solicitud muestra un mensaje de expectativa de respuesta basado en datos históricos o regla inicial. | Futuro experimento | Wait Retention Rate, Offer View Rate |
 
 #### 8.3.2. To-Be Product Backlog
 
-[Backlog de producto deseado]
+El To-Be Product Backlog prioriza historias en función del Question Backlog, impacto esperado y capacidad de medición. Se priorizan primero las historias que habilitan aprendizaje sobre el funnel core.
 
-#### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+| Prioridad | ID | Feature / Epic | User Story | Valor de negocio | Experimento | Story Points | Estado propuesto |
+|---:|---|---|---|---|---|---:|---|
+| 1 | TB-US08 | Analytics Foundation | Registrar eventos analíticos del funnel request-offer-booking. | Permite medir todos los experimentos y evitar decisiones sin datos. | Transversal | 5 | To Do |
+| 2 | TB-US09 | Experiment Infrastructure | Diferenciar variantes control y experimental. | Permite comparar resultados de forma confiable. | Transversal | 3 | To Do |
+| 3 | TB-US01 | Guided Request Form | Formulario guiado de solicitud de servicio. | Aumenta creación de solicitudes, primer paso del marketplace. | E1 | 8 | To Do |
+| 4 | TB-US02 | Request Assistance | Sugerencias de descripción por servicio. | Mejora calidad de solicitudes recibidas por talleres. | E1 | 5 | To Do |
+| 5 | TB-US05 | Quick Offer | Crear oferta rápida desde plantilla de servicio. | Reduce tiempo de respuesta del taller. | E3 | 8 | To Do |
+| 6 | TB-US06 | Workshop Opportunities | Priorización de oportunidades cercanas. | Incrementa probabilidad de respuesta y relevancia. | E3 | 5 | To Do |
+| 7 | TB-US03 | Trust Offer Card | Comparar ofertas con precio, distancia, tiempo y reputación. | Aumenta aceptación de ofertas y confianza. | E2 | 8 | To Do |
+| 8 | TB-US04 | Trust Signals | Mostrar señales de confianza del taller. | Reduce riesgo percibido al elegir taller. | E2 | 5 | To Do |
+| 9 | TB-US07 | Improved Booking Receipt | Comprobante de reserva con próximos pasos. | Reduce incertidumbre post-booking. | E4 | 5 | To Do |
+| 10 | TB-US10 | Expected Response Time | Mostrar tiempo estimado de respuesta. | Mantiene al usuario esperando dentro de AutoNexo. | Futuro | 5 | Backlog |
 
-[Ciclo de vida de plataforma de software dirigida por experimentos]
+##### Priorización por objetivos del experimento
 
-##### 8.3.3.1. To-Be Sprint Backlogs
+| Objetivo experimental | Historias relacionadas | Razón de prioridad |
+|---|---|---|
+| Medir comportamiento real | TB-US08, TB-US09 | Sin tracking ni variantes no se pueden comparar resultados. |
+| Aumentar solicitudes creadas | TB-US01, TB-US02 | El marketplace necesita volumen de solicitudes para generar ofertas. |
+| Reducir tiempo de respuesta | TB-US05, TB-US06 | La liquidez depende de que los talleres respondan rápido. |
+| Aumentar aceptación | TB-US03, TB-US04 | La confianza convierte ofertas en bookings. |
+| Mejorar post-reserva | TB-US07 | Reduce dudas y mejora experiencia final. |
 
-[Backlogs de sprints]
+##### Engineering Tasks sugeridas para el primer Sprint To-Be
 
-##### 8.3.3.2. Implemented To-Be Landing Page Evidence
+Para maximizar trazabilidad entre Product Backlog y ejecución, se propone un primer Sprint To-Be enfocado en instrumentación y formulario guiado. Cada tarea se estima entre 4 y 8 horas.
 
-[Evidencia de landing page implementada]
+| Task ID | User Story | Engineering Task | Responsable sugerido | Estimación |
+|---|---|---|---|---:|
+| ET-01 | TB-US08 | Definir contrato TypeScript de eventos analíticos y propiedades comunes. | Frontend | 4 h |
+| ET-02 | TB-US08 | Implementar servicio `analytics.service.ts` con modo mock/local. | Frontend | 6 h |
+| ET-03 | TB-US08 | Emitir eventos `request_form_started`, `request_step_completed` y `request_submitted`. | Frontend | 6 h |
+| ET-04 | TB-US09 | Agregar asignación de variante `control` / `experimental` por sesión. | Frontend | 4 h |
+| ET-05 | TB-US01 | Diseñar layout de formulario guiado con barra de progreso. | Frontend | 6 h |
+| ET-06 | TB-US01 | Implementar validaciones visibles por paso. | Frontend | 6 h |
+| ET-07 | TB-US01 | Implementar pantalla de resumen antes de enviar solicitud. | Frontend | 5 h |
+| ET-08 | TB-US02 | Agregar sugerencias de descripción según servicio seleccionado. | Frontend | 4 h |
+| ET-09 | TB-US01/TB-US02 | Actualizar pruebas E2E para cubrir variante experimental del formulario. | QA/E2E | 6 h |
+| ET-10 | TB-US08 | Documentar eventos en tracking plan y evidencias para sprint review. | Producto/QA | 4 h |
 
-##### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+##### Definition of Done para historias To-Be
 
-[Evidencia de aplicación web frontend]
+Una User Story To-Be se considera completada cuando:
 
-##### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+- Está asociada a una pregunta del Question Backlog.
+- Tiene experimento o métrica vinculada.
+- Incluye eventos del tracking plan si afecta el funnel.
+- Tiene criterios de aceptación verificables.
+- Cuenta con evidencia en repositorio mediante commit o pull request.
+- No introduce recolección innecesaria de datos personales.
+- Puede compararse con una condición As-Is o control.
 
-[Evidencia de aplicación móvil nativa]
+##### Resultado esperado del To-Be Backlog
 
-##### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
-
-[Evidencia de API RESTful y backend]
-
-##### 8.3.3.6. Team Collaboration Insights
-
-[Insights de colaboración del equipo]
-
-#### 8.3.4. To-Be Validation Interviews
-
-[Entrevistas de validación]
-
-##### 8.3.4.1. Diseño de Entrevistas
-
-[Diseño de entrevistas]
-
-##### 8.3.4.2. Registro de Entrevistas
-
-[Registro de entrevistas]
-
-#### 8.3.4. Experiment Aftermath & Analysis
-
-[Análisis posterior al experimento]
-
-### 8.4. Experiment Aftermath & Analysis
-
-#### 8.4.1. Analysis and Interpretation of Results
-
-[Análisis e interpretación de resultados]
-
-#### 8.4.2. Re-scored and Re-prioritized Question Backlog
-
-[Backlog de preguntas re-puntuado y re-priorizado]
-
-### 8.5. Continuous Learning
-
-#### 8.5.1. Shareback Session Artifacts: Learning Workflow
-
-[Artefactos de sesión de aprendizaje compartido]
-
-### 8.6. To-Be Software Platform Pre-launch
-
-#### 8.6.1. About-the-Product Intro Video
-
-[Video introductorio del producto]
+El backlog To-Be no busca implementar todas las ideas de una sola vez. Su objetivo es ordenar el aprendizaje del producto: primero medir, luego intervenir en el punto de mayor fricción, posteriormente mejorar la velocidad de respuesta del taller y finalmente optimizar confianza y post-reserva. Esta secuencia reduce riesgo y alinea el desarrollo con Experiment-Driven SDLC.
 
 <div style="page-break-after: always;"></div>
 
