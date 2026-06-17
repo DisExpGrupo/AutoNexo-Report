@@ -5558,17 +5558,22 @@ La implementación de los Step Definitions cubre completamente los pasos definid
 
 ### Evidencia de BDD
 
-Estructura del repositorio `AutoNexo-e2e` mostrando los archivos `.feature`, los Step Definitions y los archivos de soporte para Cucumber/Playwright.
-
+- Estructura del repositorio `AutoNexo-e2e` mostrando los archivos `.feature`, los Step Definitions y los archivos de soporte para Cucumber/Playwright.
 ![bdd-folder](assets/images/screenshots/bdd-folder.png)
 
-Evidencia de ejecución de Cucumber mostrando los escenarios BDD ejecutados desde consola o IDE.
-
+- Evidencia de ejecución de Cucumber mostrando los escenarios BDD ejecutados desde consola o IDE.
 ![bdd-execution](assets/images/screenshots/bdd-execution.png)
 
-Evidencia de los Step Definitions implementados en TypeScript, incluyendo autenticación, creación de solicitud, envío de oferta y aceptación de oferta.
-
-![bdd-steps](assets/images/screenshots/bdd-steps.png)
+- Evidencia de los Step Definitions implementados en TypeScript, incluyendo autenticación, creación de solicitud, envío de oferta y aceptación de oferta.
+![bdd-auth-steps](assets/images/screenshots/auth-steps.png)
+![bdd-car_owner-steps-1](assets/images/screenshots/car_owner-steps-1.png)
+![bdd-car_owner-steps-2](assets/images/screenshots/car_owner-steps-2.png)
+![bdd-workshop-steps-1](assets/images/screenshots/workshop-steps-1.png)
+![bdd-workshop-steps-2](assets/images/screenshots/workshop-steps-2.png)
+![bdd-workshop-steps-3](assets/images/screenshots/workshop-steps-3.png)
+![bdd-workshop-steps-4](assets/images/screenshots/workshop-steps-4.png)
+![bdd-workshop-steps-5](assets/images/screenshots/workshop-steps-5.png)
+![bdd-workshop-steps-6](assets/images/screenshots/workshop-steps-6.png)
 
 ### Testing Suite Evidence for Sprint Review
 
