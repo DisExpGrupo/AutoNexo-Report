@@ -375,11 +375,9 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
         - [Code Quality](#code-quality)
         - [Code Security](#code-security)
         - [Seguridad en pruebas E2E](#seguridad-en-pruebas-e2e)
-        - [Capturas recomendadas](#capturas-recomendadas-1)
       - [6.2.2. Reviews](#622-reviews-1)
         - [Estrategia de revisión](#estrategia-de-revisión)
         - [Pull Requests y commits relevantes](#pull-requests-y-commits-relevantes)
-        - [Evidencias](#evidencias-1)
         - [Conclusión de reviews](#conclusión-de-reviews)
     - [6.3. Validation Interviews](#63-validation-interviews)
       - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
@@ -389,10 +387,8 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
         - [Modalidad de entrevista](#modalidad-de-entrevista)
         - [Preguntas para propietarios de vehículos](#preguntas-para-propietarios-de-vehículos)
         - [Preguntas para mecánicos / representantes de talleres](#preguntas-para-mecánicos--representantes-de-talleres)
-        - [Escala de evaluación sugerida](#escala-de-evaluación-sugerida)
       - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
       - [6.3.3. Evaluaciones Según Heurísticas](#633-evaluaciones-según-heurísticas)
-        - [Escala de severidad](#escala-de-severidad)
         - [Matriz de evaluación heurística](#matriz-de-evaluación-heurística)
         - [Resultado esperado de la evaluación](#resultado-esperado-de-la-evaluación)
     - [6.4. Auditoría de Experiencias de Usuario](#64-auditoría-de-experiencias-de-usuario)
@@ -6130,18 +6126,6 @@ const workshopEmail = `e2e-workshop-${runId}@test.com`;
 
 Esto evita reutilizar cuentas productivas y permite ejecutar pruebas repetibles en entornos controlados.
 
-##### Capturas recomendadas
-
-```md
-![security-env-example](assets/images/screenshots/static-env-security.png)
-
-![security-gitignore](assets/images/screenshots/security-gitignore.png)
-
-![security-e2e-setup](assets/images/screenshots/security-e2e-setup.png)
-
-![security-error-response](assets/images/screenshots/security-error-response.png)
-```
-
 #### 6.2.2. Reviews
 
 Las revisiones de código se realizaron mediante GitHub, utilizando ramas de feature, commits semánticos y pull requests para integrar cambios hacia `develop` y posteriormente hacia `main`. Este proceso permite mantener trazabilidad del trabajo realizado, revisar archivos modificados y reducir el riesgo de integrar cambios incompletos o defectuosos.
@@ -6168,18 +6152,6 @@ Las revisiones de código se realizaron mediante GitHub, utilizando ramas de fea
 | AutoNexo-Frontend | PR #12 | `feature/authentication-error-handling` | `develop` | Alinea frontend con contrato de error del backend. | `apiClient`, `apiError`, servicios IAM. |
 | AutoNexo-e2e | Commit `0854edc` | `main` | `main` | Agrega features Cucumber para flujos principales. | `features/*.feature`. |
 | AutoNexo-e2e | Commit `5ece805` | `main` | `main` | Agrega Step Definitions para escenarios E2E. | `steps/*.ts`. |
-
-##### Evidencias
-
-```md
-![review-backend-pr4](assets/images/screenshots/review-backend-pr4.png)
-
-![review-backend-pr5](assets/images/screenshots/review-backend-pr5.png)
-
-![review-frontend-pr6](assets/images/screenshots/review-frontend-pr6.png)
-
-![review-e2e-commits](assets/images/screenshots/review-e2e-commits.png)
-```
 
 ##### Conclusión de reviews
 
@@ -6262,18 +6234,6 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 | 10 | Del 1 al 5, ¿qué tan útil considera la plataforma para captar clientes? | Medición cuantitativa de valor. |
 | 11 | ¿Qué funcionalidad agregaría para facilitar su trabajo diario? | Recoger oportunidades To-Be. |
 | 12 | ¿Recomendaría esta plataforma a otros talleres? ¿Por qué? | Evaluar intención de recomendación. |
-
-##### Escala de evaluación sugerida
-
-| Valor | Interpretación |
-|---:|---|
-| 1 | Muy bajo / Muy difícil / Nada útil |
-| 2 | Bajo / Difícil / Poco útil |
-| 3 | Regular / Neutral |
-| 4 | Alto / Fácil / Útil |
-| 5 | Muy alto / Muy fácil / Muy útil |
-
----
 
 #### 6.3.2. Registro de Entrevistas
 
@@ -6444,15 +6404,6 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 Para complementar las entrevistas de validación, se propone evaluar la experiencia de AutoNexo utilizando heurísticas de usabilidad basadas en los principios de Nielsen. Esta evaluación permite identificar problemas de interfaz, navegación, claridad y prevención de errores en los flujos principales del producto.
 
-##### Escala de severidad
-
-| Nivel | Severidad | Descripción |
-|---:|---|---|
-| 0 | Sin problema | No se detecta problema de usabilidad. |
-| 1 | Cosmético | No impide completar la tarea, pero puede mejorar visualmente. |
-| 2 | Menor | Genera fricción leve, pero el usuario puede continuar. |
-| 3 | Mayor | Dificulta completar la tarea o genera confusión importante. |
-| 4 | Crítico | Impide completar el flujo principal o causa error grave. |
 
 ##### Matriz de evaluación heurística
 
