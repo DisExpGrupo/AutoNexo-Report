@@ -5926,8 +5926,6 @@ Asimismo, se aplicaron prácticas de Desarrollo Orientado por Comportamiento (BD
 
 #### 7.1.2. Build & Test Suite Pipeline Components
 
-#### 7.1.2. Build & Test Suite Pipeline Components
-
 El pipeline de integración continua (CI) implementado para **AutoNexo** se encarga de validar automáticamente el estado del proyecto cada vez que se realiza un cambio en los repositorios principales del sistema. Este flujo permite al equipo detectar errores de compilación, fallos en pruebas unitarias, problemas de integración y errores de comportamiento antes de integrar nuevas funcionalidades a las ramas principales del proyecto.
 
 En AutoNexo, el pipeline considera los componentes del **backend**, **frontend web** y la suite **BDD/E2E**, asegurando que el flujo principal del producto —registro de vehículo, creación de solicitud, envío de oferta y generación de reserva— se mantenga estable durante el desarrollo.
