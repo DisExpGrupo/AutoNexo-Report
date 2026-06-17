@@ -120,14 +120,6 @@ En GitHub se presenta un timeline de las principales ramas creadas por cada inte
 
 ![Commits Graph](./assets/images/screenshots/commitsgraph.png)
 
-### Gráfico de red (network graph) de ramas en el repositorio de GitHub:
-
-![Network Graph](./assets/images/screenshots/networkgraph.png)
-
-### Contribuciones de los integrantes:
-
-![Contributors Image](./assets/images/screenshots/contributorsimage.png)
-
 ---
 
 # TP1
@@ -172,14 +164,12 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
   - [Tareas asignadas](#tareas-asignadas)
   - [GitHub Collaboration Insights](#github-collaboration-insights)
     - [Gráfico de commits por integrante:](#gráfico-de-commits-por-integrante)
-    - [Gráfico de red (network graph) de ramas en el repositorio de GitHub:](#gráfico-de-red-network-graph-de-ramas-en-el-repositorio-de-github)
-    - [Contribuciones de los integrantes:](#contribuciones-de-los-integrantes)
 - [TP1](#tp1)
   - [Tareas asignadas](#tareas-asignadas-1)
   - [GitHub Collaboration Insights](#github-collaboration-insights-1)
     - [Gráfico de commits por integrante:](#gráfico-de-commits-por-integrante-1)
-    - [Gráfico de red (network graph) de ramas en el repositorio de GitHub:](#gráfico-de-red-network-graph-de-ramas-en-el-repositorio-de-github-1)
-    - [Contribuciones de los integrantes:](#contribuciones-de-los-integrantes-1)
+    - [Gráfico de red (network graph) de ramas en el repositorio de GitHub:](#gráfico-de-red-network-graph-de-ramas-en-el-repositorio-de-github)
+    - [Contribuciones de los integrantes:](#contribuciones-de-los-integrantes)
   - [Contenido](#contenido)
   - [Student Outcome](#student-outcome)
 - [PARTE I: AS-IS SOFTWARE PROJECT](#parte-i-as-is-software-project)
