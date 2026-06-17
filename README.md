@@ -5748,7 +5748,7 @@ Esta preparación reduce la fragilidad de las pruebas de sistema, ya que cada ej
 
 Ejecución de `pnpm e2e` mostrando el setup automático y la ejecución de los escenarios Cucumber.
 
-![system-test-execution](assets/images/screenshots/system-test-execution.png)
+![bdd-execution](assets/images/screenshots/bdd-execution.png)
 
 Evidencia del flujo de propietario: registro de vehículo, creación de solicitud y visualización en “My Service Requests”.
 
@@ -5761,6 +5761,295 @@ Evidencia del flujo de taller: visualización de solicitudes cercanas y envío d
 Evidencia del flujo final: aceptación de oferta y visualización del comprobante de reserva.
 
 ![system-test-booking](assets/images/screenshots/system-test-booking.png)
+
+**REPORTE GENERADO EN .JSON:**
+```json
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "car-owner-creates-service-request;car-owner-registers-vehicle-and-creates-a-service-request",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Car owner registers vehicle and creates a service request",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1095163992
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in as a car owner",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/auth.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2226973463
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I register a new vehicle",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/car_owner.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2133044045
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I create a service request with service \"BRAKE_PAD_REPLACEMENT\" at the workshop coordinates",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/car_owner.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2440815356
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I see the request in \"My Service Requests\"",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/car_owner.steps.ts:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 530505235
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 653487683
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "car-owner-creates-service-request",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Car owner creates service request",
+    "tags": [],
+    "uri": "features/car_owner_create_request.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "workshop-sends-offer;workshop-owner-sends-an-offer-for-a-new-request",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Workshop owner sends an offer for a new request",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1325357653
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in as a workshop owner",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/auth.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2091416106
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I open \"Requests\" and view nearby opportunities",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/workshop.steps.ts:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 680448182
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I send an offer for the latest request",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/workshop.steps.ts:146"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7494782166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I see the offer in \"My Active Services\"",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/workshop.steps.ts:220"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10538294028
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1072066079
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "workshop-sends-offer",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Workshop sends offer",
+    "tags": [],
+    "uri": "features/workshop_send_offer.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "car-owner-accepts-offer;car-owner-accepts-workshop-offer",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Car owner accepts workshop offer",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1271020115
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in as a car owner",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/auth.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2095064220
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I open \"My Service Requests\"",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/car_owner.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 566591735
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I view the latest pending request",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/car_owner.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 462401645
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I accept the offer",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/car_owner.steps.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 366475537
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I see the booking receipt",
+            "match": {
+              "location": "file:/home/leonejo/projects/dis-exp/e2e/steps/car_owner.steps.ts:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3445347131
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 753208615
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "car-owner-accepts-offer",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Car owner accepts offer",
+    "tags": [],
+    "uri": "features/car_owner_accept_offer.feature"
+  }
+]
+```
 
 ### Testing Suite Evidence for Sprint Review
 
