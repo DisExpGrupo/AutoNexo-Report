@@ -2888,6 +2888,36 @@ Las historias de usuario constituyen una herramienta fundamental para traducir l
             <td>No corresponde</td>
             <td>TS01, TS02, TS03, TS04, TS05, TS06, TS07, TS08, TS09, TS10, TS11, TS12, TS13, TS14, TS15</td>
         </tr>
+        <tr>
+  <td>US-33</td>
+  <td>Crear Solicitud de Servicio</td>
+  <td>Como propietario, quiero crear una solicitud de servicio indicando el tipo de servicio y mi ubicación, para que los talleres cercanos puedan enviarme ofertas.</td>
+  <td>
+    <p><strong>Scenario 1 — Solicitud creada exitosamente:</strong><br>• Dado que el propietario ha registrado un vehículo<br>• Cuando selecciona un tipo de servicio y confirma su ubicación<br>• Entonces el sistema crea la solicitud con estado "pendiente" y la hace visible a talleres dentro del radio de búsqueda.</p>
+    <p><strong>Definition of Done (DoD)</strong><br>• La solicitud queda registrada en base de datos con estado PENDING.<br>• El sistema calcula automáticamente los talleres cercanos según el radio indicado.<br>• Se valida que el vehículo pertenezca al propietario autenticado.</p>
+  </td>
+  <td>EP-02</td>
+</tr>
+<tr>
+  <td>US-34</td>
+  <td>Enviar Oferta a Solicitud Cercana</td>
+  <td>Como taller, quiero ver las solicitudes de servicio cercanas y enviar una oferta con precio y fecha propuesta, para captar clientes potenciales.</td>
+  <td>
+    <p><strong>Scenario 1 — Oferta enviada exitosamente:</strong><br>• Dado que el taller visualiza una solicitud dentro de su radio de servicio<br>• Cuando ingresa precio, fecha propuesta y mensaje, y confirma el envío<br>• Entonces el sistema registra la oferta y la asocia a la solicitud con estado "pendiente".</p>
+    <p><strong>Definition of Done (DoD)</strong><br>• La oferta queda registrada en base de datos vinculada al workshop y a la solicitud.<br>• El propietario puede visualizar la oferta recibida en el detalle de su solicitud.</p>
+  </td>
+  <td>EP-02</td>
+</tr>
+<tr>
+  <td>US-35</td>
+  <td>Aceptar Oferta y Generar Reserva</td>
+  <td>Como propietario, quiero aceptar una oferta recibida, para confirmar el servicio y generar el comprobante de reserva.</td>
+  <td>
+    <p><strong>Scenario 1 — Oferta aceptada exitosamente:</strong><br>• Dado que el propietario tiene al menos una oferta pendiente para su solicitud<br>• Cuando selecciona una oferta y confirma la aceptación<br>• Entonces el sistema marca la oferta como "aceptada", genera la reserva (booking) y entrega el comprobante correspondiente.</p>
+    <p><strong>Definition of Done (DoD)</strong><br>• La reserva queda registrada y vinculada a la oferta aceptada.<br>• Las demás ofertas pendientes de la misma solicitud quedan marcadas como no disponibles.</p>
+  </td>
+  <td>EP-02</td>
+</tr>
   </tbody>
 </table>
   </tbody>
