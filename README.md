@@ -366,38 +366,22 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
     - [6.2. Static Testing \& Verification](#62-static-testing--verification)
       - [6.2.1. Static Code Analysis](#621-static-code-analysis)
         - [6.2.1.1. Coding Standard \& Code Conventions](#6211-coding-standard--code-conventions)
-    - [Convenciones generales](#convenciones-generales)
-    - [Backend — Java + Spring Boot + DDD](#backend--java--spring-boot--ddd)
-    - [Frontend — Vue + TypeScript](#frontend--vue--typescript)
-    - [E2E — Cucumber + Playwright](#e2e--cucumber--playwright)
+          - [Convenciones generales](#convenciones-generales)
+          - [Backend](#backend)
+          - [Frontend](#frontend)
+          - [E2E](#e2e)
         - [6.2.1.2. Code Quality \& Code Security](#6212-code-quality--code-security)
-    - [Calidad de código](#calidad-de-código)
-    - [Seguridad de código](#seguridad-de-código)
-    - [Evidencia sugerida](#evidencia-sugerida)
+          - [Code Quality](#code-quality)
+          - [Code Security](#code-security)
+          - [Evidencias](#evidencias)
       - [6.2.2. Reviews](#622-reviews)
-    - [Estrategia de revisión aplicada](#estrategia-de-revisión-aplicada)
-    - [Evidencia de Pull Requests y colaboración](#evidencia-de-pull-requests-y-colaboración)
-    - [Evidencia de revisión](#evidencia-de-revisión)
-    - [6.2. Static Testing \& Verification](#62-static-testing--verification-1)
-      - [6.2.1. Static Code Analysis](#621-static-code-analysis-1)
-        - [Evidencia técnica del backend](#evidencia-técnica-del-backend)
-        - [Evidencia técnica del frontend](#evidencia-técnica-del-frontend)
-        - [Evidencia técnica del pipeline](#evidencia-técnica-del-pipeline)
-        - [Capturas recomendadas](#capturas-recomendadas)
-        - [6.2.1.1. Coding Standard \& Code Conventions](#6211-coding-standard--code-conventions-1)
-        - [Convenciones generales del proyecto](#convenciones-generales-del-proyecto)
-        - [Backend: Java + Spring Boot + DDD](#backend-java--spring-boot--ddd)
-        - [Frontend: Vue + TypeScript](#frontend-vue--typescript)
-        - [BDD/E2E: Cucumber + Playwright](#bdde2e-cucumber--playwright)
-        - [Evidencias](#evidencias)
-        - [6.2.1.2. Code Quality \& Code Security](#6212-code-quality--code-security-1)
-        - [Code Quality](#code-quality)
-        - [Code Security](#code-security)
-        - [Seguridad en pruebas E2E](#seguridad-en-pruebas-e2e)
-      - [6.2.2. Reviews](#622-reviews-1)
-        - [Estrategia de revisión](#estrategia-de-revisión)
-        - [Pull Requests y commits relevantes](#pull-requests-y-commits-relevantes)
-        - [Conclusión de reviews](#conclusión-de-reviews)
+        - [Estrategia de revisión aplicada](#estrategia-de-revisión-aplicada)
+        - [Pull Requests y revisiones realizadas](#pull-requests-y-revisiones-realizadas)
+        - [Evidencia de revisiones](#evidencia-de-revisiones)
+          - [Pull Request del Backend](#pull-request-del-backend)
+          - [Pull Request del Frontend](#pull-request-del-frontend)
+          - [Historial de commits del repositorio AutoNexo-e2e](#historial-de-commits-del-repositorio-autonexo-e2e)
+        - [Conclusiones](#conclusiones)
     - [6.3. Validation Interviews](#63-validation-interviews)
       - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
         - [Objetivo general](#objetivo-general)
@@ -5468,13 +5452,13 @@ La estrategia de despliegue se divide según el componente del sistema para maxi
 |----|-------|----------------|-------------|--------|--------------|
 | US04 | Bounded Context: Offer Management | 5 | Victor Cruz | Done | 5 |
 | US05 | Bounded Context: Service Requests | 5 | Santiago Solis | Done | 5 |
-| US11 | Bounded Context: Service Booking | 6 | Amir Castro | Done | 8 |
+| US11 | Bounded Context: Service Booking | 6 | Amir Castro | Done | 5 |
 | US15 | Payment & Subscription System | 5 | Miguel Vidal | Done | 5 |
-| US17 | Workshop Management (Employees/Invites) | 6 | Alicia Navarro | Done | 8 |
+| US17 | Workshop Management (Employees/Invites) | 6 | Alicia Navarro | Done | 5 |
 | US18 | UI/UX Final: Auth & Profile (Android) | 4 | Victor Cruz | Done | 5 |
 | US19 | Dashboard & Navigation UI (Android) | 3 | Santiago Solis | Done | 3 |
 | US20 | Request-Offer Matching Engine | 4 | Amir Castro | Done | 5 |
-| FL01 | Flutter Core Implementation | 8 | Miguel Vidal | Done | 8 |
+| FL01 | Flutter Core Implementation | 8 | Miguel Vidal | Done | 5 |
 
 ---
 
@@ -7225,6 +7209,10 @@ International Organization for Standardization. (2022). *ISO 55000: Asset manage
 <div style="page-break-after: always;"></div>
 
 ## Anexos
+
+### Anexo A. Video About The Product
+
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310680_upc_edu_pe/IQDDj76g_XlWQ7Akt5AfG1YYATPbcJ4PjsgNfFwBhgciktQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=C8Kizc](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310680_upc_edu_pe/IQDDj76g_XlWQ7Akt5AfG1YYATPbcJ4PjsgNfFwBhgciktQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=C8Kizc)
 
 ### Anexo F. Matriz de Evaluación Ética y de Impacto
 
