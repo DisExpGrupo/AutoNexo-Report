@@ -6376,9 +6376,9 @@ En el desarrollo del proyecto se emplearon diversas herramientas y metodologías
 
 Asimismo, se aplicaron prácticas de Desarrollo Orientado por Comportamiento (BDD) y  Desarrollo Orientado por Pruebas (TDD) y pruebas automatizadas para asegurar que los componentes implementados funcionen correctamente antes de integrarse al entorno principal del proyecto.
 
-<img alt="test img" src="/assets/images/screenshots/devops-ci1.png"/>
+<img alt="test img" src="assets/images/screenshots/devops-ci1.png"/>
 <br>
-<img alt="test img" src="/assets/images/screenshots/devops-ci2.png"/>
+<img alt="test img" src="assets/images/screenshots/devops-ci2.png"/>
 
 #### 7.1.2. Build & Test Suite Pipeline Components
 
@@ -6507,7 +6507,7 @@ El pipeline de despliegue en producción estuvo compuesto por distintos componen
 | Validación de Esquema      | Se verificaba que las migraciones aplicadas mantuvieran correctamente la estructura y relaciones de la base de datos.               |
 | Actualización Continua     | Los cambios aprobados eran reflejados automáticamente en el entorno de producción.                                                  |
 
-<img alt="railway" src="/assets/logos/railway-logo.png"/>
+<img alt="railway" src="assets/logos/railway-logo.png"/>
 
 #### Componentes del Pipeline del Backend (Render + Spring Boot)
 
@@ -6519,7 +6519,7 @@ El pipeline de despliegue en producción estuvo compuesto por distintos componen
 | Despliegue Automático | Render desplegaba la nueva versión del backend en producción.                            |
 | Monitoreo y Alertas   | La plataforma supervisaba el estado del servicio y notificaba posibles errores o caídas. |
 
-<img alt="render" src="/assets/logos/render-logo.png"/>
+<img alt="render" src="assets/logos/render-logo.png"/>
 
 #### Componentes del Pipeline del Frontend (Firebase Hosting)
 
@@ -6531,7 +6531,7 @@ El pipeline de despliegue en producción estuvo compuesto por distintos componen
 | Distribución CDN      | El contenido era distribuido mediante una red CDN para mejorar el rendimiento global.                |
 | Invalidación de Caché | Firebase actualizaba automáticamente la caché para garantizar acceso a la última versión disponible. |
 
-<img alt="firebase" src="/assets/logos/firebase-logo.png"/>
+<img alt="firebase" src="assets/logos/firebase-logo.png"/>
 
 #### Componentes del Pipeline de Landing Page (Netlify)
 
@@ -6542,7 +6542,7 @@ El pipeline de despliegue en producción estuvo compuesto por distintos componen
 | CDN Global          | Netlify distribuía el contenido mediante una red CDN para optimizar tiempos de carga.          |
 | Monitoreo Básico    | La plataforma permitía verificar el estado y disponibilidad de la página desplegada.           |
 
-<img alt="netlify" src="/assets/logos/netlify-logo.png"/>
+<img alt="netlify" src="assets/logos/netlify-logo.png"/>
 
 ### 7.4. Continuous Monitoring
 
