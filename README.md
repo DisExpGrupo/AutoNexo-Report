@@ -79,6 +79,25 @@
 | 1.7.0   | 2026-05-08 | Solis, S.; Vidal, M.                                    | Desarrollo del Capítulo VII: DevOps Practices, incluyendo CI/CD, estrategias de despliegue, monitoreo y control de versiones.                      |
 | 1.7.1   | 2026-05-09 | Castro, A.                                              | Integración de documentación técnica, configuración de repositorios y automatización de despliegues.                                               |
 | 1.8.0   | 2026-05-11 | Cruz, V.; Solis, S.; Navarro, A.; Vidal, M.; Castro, A. | Revisión general del informe, integración final de capítulos, corrección de formato, bibliografía, anexos y consolidación de evidencias finales.   |
+| 1.9.0   | 2026-05-13 | Cruz, V.                                                | Desarrollo de Capítulo VI: Testing Suites & Validation (Unit, Integration, BDD y System Tests sobre las entidades core).                          |
+| 1.9.1   | 2026-05-15 | Solis, S.                                               | Desarrollo de Static Testing & Verification: análisis estático de código, estándares de codificación y calidad/seguridad del código.               |
+| 1.9.2   | 2026-05-18 | Navarro, A.                                             | Desarrollo de Validation Interviews: diseño y registro de entrevistas, evaluación según heurísticas de usabilidad.                                 |
+| 1.9.3   | 2026-05-21 | Vidal, M.                                               | Desarrollo de Auditoría de Experiencias de Usuario: auditoría realizada y recibida, cronogramas y hallazgos documentados.                          |
+| 1.9.4   | 2026-05-24 | Cruz, V.; Solis, S.                                     | Desarrollo de Capítulo VII: Continuous Integration y Continuous Delivery, herramientas y componentes del pipeline.                                 |
+| 1.9.5   | 2026-05-28 | Castro, A.                                              | Desarrollo de Continuous Deployment y Continuous Monitoring, incluyendo alerting y notification pipeline.                                          |
+| 1.9.6   | 2026-06-02 | Vidal, M.; Castro, A.                                   | Integración de evidencias de auditoría y ajustes al pipeline de despliegue continuo según hallazgos identificados.                                 |
+| 1.9.7   | 2026-06-08 | Navarro, A.                                             | Actualización de la sección Student Outcome con acciones correspondientes a AV2 y consolidación de evidencias de validación.                       |
+| 2.0.0   | 2026-06-16 | Cruz, V.; Solis, S.; Navarro, A.; Vidal, M.; Castro, A. | Revisión general del avance AV2, integración de Capítulos VI y VII, corrección de formato y consolidación de evidencias para la entrega.           |
+| 2.1.0   | 2026-06-20 | Cruz, V.                                                | Desarrollo de Experiment Planning: As-Is Summary, Raw Material (Assumptions, Knowledge Gaps, Ideas, Claims), Experiment-Ready Questions y Question Backlog. |
+| 2.1.1   | 2026-06-23 | Solis, S.                                               | Desarrollo de Experiment Design: Hypotheses, Measures, Conditions, Scale Calculations, selección de métodos y Web/Mobile Tracking Plan.            |
+| 2.1.2   | 2026-06-26 | Vidal, M.                                               | Desarrollo de evidencias implementadas To-Be: Landing Page, Frontend Web Application y Native Mobile Application.                                  |
+| 2.1.3   | 2026-06-28 | Cruz, V.; Vidal, M.                                     | Incorporación de evidencia del RESTful API/Backend To-Be y consolidación de Team Collaboration Insights.                                           |
+| 2.1.4   | 2026-06-30 | Navarro, A.                                             | Desarrollo de To-Be Validation Interviews (diseño y registro) y análisis e interpretación de resultados del experimento.                           |
+| 2.1.5   | 2026-07-02 | Navarro, A.                                             | Actualización del Question Backlog re-priorizado según hallazgos de la experimentación.                                                            |
+| 2.1.6   | 2026-07-03 | Castro, A.                                              | Desarrollo de Continuous Learning (Shareback Session Artifacts) y grabación del About-the-Product Intro Video (Pre-launch).                        |
+| 2.1.7   | 2026-07-04 | Castro, A.                                              | Elaboración de la Matriz de Evaluación Ética y de Impacto (Anexo F) y grabación del Video About-The-Team.                                          |
+| 2.1.8   | 2026-07-05 | Solis, S.; Navarro, A.                                  | Consolidación de Conclusiones y Recomendaciones, actualización de Bibliografía y Anexos.                                                           |
+| 2.2.0   | 2026-07-06 | Cruz, V.; Solis, S.; Navarro, A.; Vidal, M.; Castro, A. | Revisión general del informe final, integración de Capítulo VIII, corrección de formato y consolidación de evidencias finales para la entrega TB2. |
 
 <div style="page-break-after: always;"></div>
 
@@ -337,38 +356,22 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
     - [6.2. Static Testing \& Verification](#62-static-testing--verification)
       - [6.2.1. Static Code Analysis](#621-static-code-analysis)
         - [6.2.1.1. Coding Standard \& Code Conventions](#6211-coding-standard--code-conventions)
-    - [Convenciones generales](#convenciones-generales)
-    - [Backend — Java + Spring Boot + DDD](#backend--java--spring-boot--ddd)
-    - [Frontend — Vue + TypeScript](#frontend--vue--typescript)
-    - [E2E — Cucumber + Playwright](#e2e--cucumber--playwright)
+          - [Convenciones generales](#convenciones-generales)
+          - [Backend](#backend)
+          - [Frontend](#frontend)
+          - [E2E](#e2e)
         - [6.2.1.2. Code Quality \& Code Security](#6212-code-quality--code-security)
-    - [Calidad de código](#calidad-de-código)
-    - [Seguridad de código](#seguridad-de-código)
-    - [Evidencia sugerida](#evidencia-sugerida)
+          - [Code Quality](#code-quality)
+          - [Code Security](#code-security)
+          - [Evidencias](#evidencias)
       - [6.2.2. Reviews](#622-reviews)
-    - [Estrategia de revisión aplicada](#estrategia-de-revisión-aplicada)
-    - [Evidencia de Pull Requests y colaboración](#evidencia-de-pull-requests-y-colaboración)
-    - [Evidencia de revisión](#evidencia-de-revisión)
-    - [6.2. Static Testing \& Verification](#62-static-testing--verification-1)
-      - [6.2.1. Static Code Analysis](#621-static-code-analysis-1)
-        - [Evidencia técnica del backend](#evidencia-técnica-del-backend)
-        - [Evidencia técnica del frontend](#evidencia-técnica-del-frontend)
-        - [Evidencia técnica del pipeline](#evidencia-técnica-del-pipeline)
-        - [Capturas recomendadas](#capturas-recomendadas)
-        - [6.2.1.1. Coding Standard \& Code Conventions](#6211-coding-standard--code-conventions-1)
-        - [Convenciones generales del proyecto](#convenciones-generales-del-proyecto)
-        - [Backend: Java + Spring Boot + DDD](#backend-java--spring-boot--ddd)
-        - [Frontend: Vue + TypeScript](#frontend-vue--typescript)
-        - [BDD/E2E: Cucumber + Playwright](#bdde2e-cucumber--playwright)
-        - [Evidencias](#evidencias)
-        - [6.2.1.2. Code Quality \& Code Security](#6212-code-quality--code-security-1)
-        - [Code Quality](#code-quality)
-        - [Code Security](#code-security)
-        - [Seguridad en pruebas E2E](#seguridad-en-pruebas-e2e)
-      - [6.2.2. Reviews](#622-reviews-1)
-        - [Estrategia de revisión](#estrategia-de-revisión)
-        - [Pull Requests y commits relevantes](#pull-requests-y-commits-relevantes)
-        - [Conclusión de reviews](#conclusión-de-reviews)
+        - [Estrategia de revisión aplicada](#estrategia-de-revisión-aplicada)
+        - [Pull Requests y revisiones realizadas](#pull-requests-y-revisiones-realizadas)
+        - [Evidencia de revisiones](#evidencia-de-revisiones)
+          - [Pull Request del Backend](#pull-request-del-backend)
+          - [Pull Request del Frontend](#pull-request-del-frontend)
+          - [Historial de commits del repositorio AutoNexo-e2e](#historial-de-commits-del-repositorio-autonexo-e2e)
+        - [Conclusiones](#conclusiones)
     - [6.3. Validation Interviews](#63-validation-interviews)
       - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
         - [Objetivo general](#objetivo-general)
@@ -493,10 +496,10 @@ En GitHub se evidencia la colaboración continua del equipo mediante ramas de de
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 4.
 
-| Criterio específico                                                                                                                                          | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Conclusiones                                                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software                                                                  | <i>Cruz Ibarra, Victor Andres</i><br><i>TB1</i><br>Participó en la definición del problema y el alcance inicial del proyecto.<br><i>TP1</i><br>Apoyó la validación de requerimientos y la documentación del avance.<br><br><i>Solis Chang, Santiago Valentino</i><br><i>TB1</i><br>Colaboró en el análisis inicial y en la redacción de artefactos base.<br><i>TP1</i><br>Apoyó la mejora de evidencias y la revisión de entregables.<br><br><i>Navarro Chang, Alicia Avril</i><br><i>TB1</i><br>Contribuyó con el levantamiento de información y la organización de materiales.<br><i>TP1</i><br>Participó en la actualización de contenidos y la consolidación de evidencias.<br><br><i>Vidal Castro, Miguel Angel</i><br><i>TB1</i><br>Apoyó la estructuración del informe y la revisión de secciones clave.<br><i>TP1</i><br>Colaboró en la integración de resultados y la verificación de avances.<br><br><i>Castro Sanchez, Amir Gabriel</i><br><i>TB1</i><br>Participó en la organización del contenido y en la síntesis de avances.<br><i>TP1</i><br>Apoyó la consolidación final de capítulos y la revisión de consistencia. | <i>TB1</i><br>El grupo mostró responsabilidad al organizar el trabajo y respetar criterios profesionales.<br><br><i>TP1</i><br>El grupo consolidó una ejecución más ordenada y ética del trabajo técnico. |
-| 4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales | <i>Cruz Ibarra, Victor Andres</i><br><i>TB1</i><br>Analizó el contexto de la startup y su impacto inicial en el entorno.<br><i>TP1</i><br>Participó en el análisis de mejoras con enfoque en valor, uso y viabilidad.<br><br><i>Solis Chang, Santiago Valentino</i><br><i>TB1</i><br>Apoyó la identificación de oportunidades y restricciones del proyecto.<br><i>TP1</i><br>Contribuyó a evaluar ajustes del producto según alcance y beneficio.<br><br><i>Navarro Chang, Alicia Avril</i><br><i>TB1</i><br>Revisó información del dominio para sustentar decisiones del equipo.<br><i>TP1</i><br>Colaboró en la valoración de entregables y mejoras del producto.<br><br><i>Vidal Castro, Miguel Angel</i><br><i>TB1</i><br>Apoyó el análisis de viabilidad y coherencia de los entregables.<br><i>TP1</i><br>Participó en la revisión de resultados y su impacto en la propuesta.<br><br><i>Castro Sanchez, Amir Gabriel</i><br><i>TB1</i><br>Sintetizó aportes para sustentar decisiones del informe.<br><i>TP1</i><br>Apoyó la evaluación final de coherencia entre solución y necesidades.                                      | <i>TB1</i><br>El grupo tomó decisiones considerando necesidades reales del negocio y del usuario.<br><br><i>TP1</i><br>El grupo hizo juicios más sólidos sobre el impacto de la solución propuesta.       |
+| Criterio específico | Acciones realizadas | Conclusiones |
+|---|---|---|
+| 4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software | <i>Cruz Ibarra, Victor Andres</i><br><i>TB1</i><br>Participó en la definición del problema y el alcance inicial del proyecto.<br><i>TP1</i><br>Apoyó la validación de requerimientos y la documentación del avance.<br><i>AV2</i><br>Diseñó y documentó las Unit, Integration, BDD y System Tests del Capítulo VI, asegurando trazabilidad y honestidad en el reporte de resultados de las pruebas.<br><i>TB2</i><br>Documentó de forma transparente los supuestos, vacíos de conocimiento e ideas del equipo en el Experiment Planning, evitando sesgos en la formulación de preguntas de experimentación.<br><br><i>Solis Chang, Santiago Valentino</i><br><i>TB1</i><br>Colaboró en el análisis inicial y en la redacción de artefactos base.<br><i>TP1</i><br>Apoyó la mejora de evidencias y la revisión de entregables.<br><i>AV2</i><br>Realizó el análisis estático de código y verificó el cumplimiento de estándares de codificación, calidad y seguridad, y documentó las herramientas de CI/CD utilizadas.<br><i>TB2</i><br>Diseñó las hipótesis, métricas y el Web/Mobile Tracking Plan cuidando la privacidad de los datos recolectados durante la experimentación.<br><br><i>Navarro Chang, Alicia Avril</i><br><i>TB1</i><br>Contribuyó con el levantamiento de información y la organización de materiales.<br><i>TP1</i><br>Participó en la actualización de contenidos y la consolidación de evidencias.<br><i>AV2</i><br>Condujo el diseño y registro de las entrevistas de validación y la evaluación según heurísticas, documentando los hallazgos con objetividad y respeto hacia los entrevistados.<br><i>TB2</i><br>Condujo las To-Be Validation Interviews con responsabilidad, contrastando los resultados frente a las hipótesis sin manipular los hallazgos obtenidos.<br><br><i>Vidal Castro, Miguel Angel</i><br><i>TB1</i><br>Apoyó la estructuración del informe y la revisión de secciones clave.<br><i>TP1</i><br>Colaboró en la integración de resultados y la verificación de avances.<br><i>AV2</i><br>Gestionó de forma ética el proceso de Auditoría de Experiencias de Usuario (realizada y recibida), documentando los hallazgos con objetividad y sin omitir observaciones desfavorables.<br><i>TB2</i><br>Documentó con transparencia las evidencias reales de implementación del Landing Page, Frontend Web y Native Mobile, referenciando correctamente el trabajo de terceros y herramientas utilizadas.<br><br><i>Castro Sanchez, Amir Gabriel</i><br><i>TB1</i><br>Participó en la organización del contenido y en la síntesis de avances.<br><i>TP1</i><br>Apoyó la consolidación final de capítulos y la revisión de consistencia.<br><i>AV2</i><br>Implementó prácticas responsables de Continuous Deployment y Monitoring, asegurando transparencia sobre el estado real del sistema en producción.<br><i>TB2</i><br>Elaboró la Matriz de Evaluación Ética y de Impacto, reconociendo de forma explícita las responsabilidades éticas y profesionales del equipo frente a la sociedad. | <i>TB1</i><br>El grupo mostró responsabilidad al organizar el trabajo y respetar criterios profesionales.<br><br><i>TP1</i><br>El grupo consolidó una ejecución más ordenada y ética del trabajo técnico.<br><br><i>AV2</i><br>El grupo evidenció responsabilidad profesional al documentar de forma honesta y trazable los resultados de testing, auditorías y entrevistas de validación, incluso cuando los hallazgos fueron desfavorables.<br><br><i>TB2</i><br>El grupo consolidó una práctica ética sólida al diseñar y documentar la experimentación, reconociendo abiertamente sus responsabilidades frente a los usuarios y la sociedad mediante la Matriz de Evaluación Ética y de Impacto. |
+| 4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales | <i>Cruz Ibarra, Victor Andres</i><br><i>TB1</i><br>Analizó el contexto de la startup y su impacto inicial en el entorno.<br><i>TP1</i><br>Participó en el análisis de mejoras con enfoque en valor, uso y viabilidad.<br><i>AV2</i><br>Evaluó cómo una suite de pruebas robusta reduce riesgos para los usuarios finales y mejora la confiabilidad del producto.<br><i>TB2</i><br>Analizó el impacto económico y social esperado de las hipótesis planteadas para la nueva versión del producto (To-Be).<br><br><i>Solis Chang, Santiago Valentino</i><br><i>TB1</i><br>Apoyó la identificación de oportunidades y restricciones del proyecto.<br><i>TP1</i><br>Contribuyó a evaluar ajustes del producto según alcance y beneficio.<br><i>AV2</i><br>Analizó cómo las prácticas de Integración y Entrega Continua reducen el impacto negativo de errores en producción sobre los usuarios.<br><i>TB2</i><br>Evaluó el impacto de las métricas y KPIs seleccionados en la toma de decisiones de negocio del equipo.<br><br><i>Navarro Chang, Alicia Avril</i><br><i>TB1</i><br>Revisó información del dominio para sustentar decisiones del equipo.<br><i>TP1</i><br>Colaboró en la valoración de entregables y mejoras del producto.<br><i>AV2</i><br>Interpretó los hallazgos de las entrevistas de validación para identificar impactos reales del producto en propietarios de vehículos y talleres.<br><i>TB2</i><br>Contrastó los resultados de la experimentación con las hipótesis iniciales, evaluando el impacto real logrado por el producto To-Be.<br><br><i>Vidal Castro, Miguel Angel</i><br><i>TB1</i><br>Apoyó el análisis de viabilidad y coherencia de los entregables.<br><i>TP1</i><br>Participó en la revisión de resultados y su impacto en la propuesta.<br><i>AV2</i><br>Evaluó el impacto de los hallazgos de auditoría (propia y recibida) en la calidad percibida del producto por los usuarios.<br><i>TB2</i><br>Evaluó el impacto de las funcionalidades implementadas en la experiencia de los usuarios de las plataformas web y móvil.<br><br><i>Castro Sanchez, Amir Gabriel</i><br><i>TB1</i><br>Sintetizó aportes para sustentar decisiones del informe.<br><i>TP1</i><br>Apoyó la evaluación final de coherencia entre solución y necesidades.<br><i>AV2</i><br>Analizó el impacto del monitoreo continuo en la disponibilidad del servicio y en la confianza de los usuarios.<br><i>TB2</i><br>Emitió juicios informados sobre el impacto global, económico, ambiental y social del proyecto mediante la Matriz de Evaluación Ética y de Impacto. | <i>TB1</i><br>El grupo tomó decisiones considerando necesidades reales del negocio y del usuario.<br><br><i>TP1</i><br>El grupo hizo juicios más sólidos sobre el impacto de la solución propuesta.<br><br><i>AV2</i><br>El grupo evidenció capacidad de análisis crítico al vincular las prácticas de testing, DevOps y validación con el impacto real en la confiabilidad y experiencia de los usuarios.<br><br><i>TB2</i><br>El grupo demostró un juicio informado y maduro al evaluar el impacto global, económico, ambiental y social de AutoNexo, cerrando el ciclo de experimentación con una reflexión ética explícita sobre la solución entregada. |
 
 <div style="page-break-after: always;"></div>
 
@@ -2875,6 +2878,36 @@ Las historias de usuario constituyen una herramienta fundamental para traducir l
             <td>No corresponde</td>
             <td>TS01, TS02, TS03, TS04, TS05, TS06, TS07, TS08, TS09, TS10, TS11, TS12, TS13, TS14, TS15</td>
         </tr>
+        <tr>
+  <td>US-33</td>
+  <td>Crear Solicitud de Servicio</td>
+  <td>Como propietario, quiero crear una solicitud de servicio indicando el tipo de servicio y mi ubicación, para que los talleres cercanos puedan enviarme ofertas.</td>
+  <td>
+    <p><strong>Scenario 1 — Solicitud creada exitosamente:</strong><br>• Dado que el propietario ha registrado un vehículo<br>• Cuando selecciona un tipo de servicio y confirma su ubicación<br>• Entonces el sistema crea la solicitud con estado "pendiente" y la hace visible a talleres dentro del radio de búsqueda.</p>
+    <p><strong>Definition of Done (DoD)</strong><br>• La solicitud queda registrada en base de datos con estado PENDING.<br>• El sistema calcula automáticamente los talleres cercanos según el radio indicado.<br>• Se valida que el vehículo pertenezca al propietario autenticado.</p>
+  </td>
+  <td>EP-02</td>
+</tr>
+<tr>
+  <td>US-34</td>
+  <td>Enviar Oferta a Solicitud Cercana</td>
+  <td>Como taller, quiero ver las solicitudes de servicio cercanas y enviar una oferta con precio y fecha propuesta, para captar clientes potenciales.</td>
+  <td>
+    <p><strong>Scenario 1 — Oferta enviada exitosamente:</strong><br>• Dado que el taller visualiza una solicitud dentro de su radio de servicio<br>• Cuando ingresa precio, fecha propuesta y mensaje, y confirma el envío<br>• Entonces el sistema registra la oferta y la asocia a la solicitud con estado "pendiente".</p>
+    <p><strong>Definition of Done (DoD)</strong><br>• La oferta queda registrada en base de datos vinculada al workshop y a la solicitud.<br>• El propietario puede visualizar la oferta recibida en el detalle de su solicitud.</p>
+  </td>
+  <td>EP-02</td>
+</tr>
+<tr>
+  <td>US-35</td>
+  <td>Aceptar Oferta y Generar Reserva</td>
+  <td>Como propietario, quiero aceptar una oferta recibida, para confirmar el servicio y generar el comprobante de reserva.</td>
+  <td>
+    <p><strong>Scenario 1 — Oferta aceptada exitosamente:</strong><br>• Dado que el propietario tiene al menos una oferta pendiente para su solicitud<br>• Cuando selecciona una oferta y confirma la aceptación<br>• Entonces el sistema marca la oferta como "aceptada", genera la reserva (booking) y entrega el comprobante correspondiente.</p>
+    <p><strong>Definition of Done (DoD)</strong><br>• La reserva queda registrada y vinculada a la oferta aceptada.<br>• Las demás ofertas pendientes de la misma solicitud quedan marcadas como no disponibles.</p>
+  </td>
+  <td>EP-02</td>
+</tr>
   </tbody>
 </table>
   </tbody>
@@ -5439,13 +5472,13 @@ La estrategia de despliegue se divide según el componente del sistema para maxi
 |----|-------|----------------|-------------|--------|--------------|
 | US04 | Bounded Context: Offer Management | 5 | Victor Cruz | Done | 5 |
 | US05 | Bounded Context: Service Requests | 5 | Santiago Solis | Done | 5 |
-| US11 | Bounded Context: Service Booking | 6 | Amir Castro | Done | 8 |
+| US11 | Bounded Context: Service Booking | 6 | Amir Castro | Done | 5 |
 | US15 | Payment & Subscription System | 5 | Miguel Vidal | Done | 5 |
-| US17 | Workshop Management (Employees/Invites) | 6 | Alicia Navarro | Done | 8 |
+| US17 | Workshop Management (Employees/Invites) | 6 | Alicia Navarro | Done | 5 |
 | US18 | UI/UX Final: Auth & Profile (Android) | 4 | Victor Cruz | Done | 5 |
 | US19 | Dashboard & Navigation UI (Android) | 3 | Santiago Solis | Done | 3 |
 | US20 | Request-Offer Matching Engine | 4 | Amir Castro | Done | 5 |
-| FL01 | Flutter Core Implementation | 8 | Miguel Vidal | Done | 8 |
+| FL01 | Flutter Core Implementation | 8 | Miguel Vidal | Done | 5 |
 
 ---
 
@@ -5535,49 +5568,57 @@ El proyecto se encuentra desplegado y operativo en los siguientes puntos de acce
 
 ## Capítulo VI: Product Verification & Validation
 
-### 6.1. Testing Suites & Validation
+## 6.1. Testing Suites & Validation
 
-## 6.1.1 Core Entities Unit Tests
+### 6.1.1. Core Entities Unit Tests
 
-En esta sección se documentan las pruebas unitarias del bounded context Workshop, implementadas en la clase `WorkshopDomainUnitTest`. Estas pruebas validan el comportamiento de los aggregates, entities y value objects del dominio de forma aislada, sin depender de base de datos, red ni ningún sistema externo. Cada prueba ejercita directamente las reglas de negocio codificadas en los objetos de dominio.
+En esta sección se documentan las pruebas unitarias del bounded context **Workshop**, implementadas en la clase `WorkshopDomainUnitTest`. Estas pruebas validan el comportamiento de los *aggregates*, *entities* y *value objects* del dominio de forma aislada, sin depender de base de datos, red ni ningún sistema externo. Cada prueba ejercita directamente las reglas de negocio codificadas en los objetos del dominio.
 
 ### Relación de Unit Tests
 
 | Clase bajo prueba | Método de prueba | Comportamiento validado |
 |---|---|---|
-| Workshop | `createWorkshop_WhenOwnerUserIdIsNull_ShouldThrowIllegalArgumentException` | Se rechaza la creación de un taller si el identificador del propietario es null |
-| Workshop | `createWorkshop_WhenNameIsNullOrBlank_ShouldThrowIllegalArgumentException` | Se rechaza la creación si el nombre es null, vacío o solo contiene espacios/tabulaciones (4 casos vía @ParameterizedTest) |
-| Workshop | `createWorkshop_WithValidData_ShouldCreateActiveWorkshopWithExpectedInitialState` | Un taller creado con datos válidos arranca activo, sin fotos, sin staff, con estado TRIAL y tier FREE |
-| Workshop | `addPhoto_WhenExceedingTenPhotoLimit_ShouldThrowIllegalStateException` | Se rechaza agregar una undécima foto y el contador permanece en 10 |
-| Workshop | `isSubscriptionActive_WhenStatusIsTerminated_ShouldReturnFalse` | Una suscripción CANCELLED o EXPIRED se evalúa como inactiva aunque la fecha de vencimiento sea futura (2 casos vía @ParameterizedTest) |
-| Workshop | `isSubscriptionActive_WhenExpirationDateHasPassed_ShouldReturnFalse` | Una suscripción con fecha de vencimiento en el pasado se evalúa como inactiva aunque el estado sea ACTIVE |
-| Workshop | `isSubscriptionActive_WhenStatusIsActiveWithNoExpiry_ShouldReturnTrue` | Una suscripción ACTIVE sin fecha de vencimiento se evalúa correctamente como activa |
-| Workshop | `canAccessPremiumFeatures_WhenTierIsFreeAndSubscriptionIsActive_ShouldReturnFalse` | El tier FREE no concede acceso a funciones premium, aun con suscripción activa |
-| Workshop | `canAccessPremiumFeatures_WhenTierIsBasicOrPremiumAndActive_ShouldReturnTrue` | Los tiers BASIC y PREMIUM con suscripción activa conceden acceso a funciones premium (2 casos vía @ParameterizedTest) |
-| Workshop | `removeLocation_WhenLocationDoesNotExist_ShouldThrowLocationNotFoundException` | Intentar eliminar una sucursal con ID inexistente lanza LocationNotFoundException |
-| Invitation | `markAsUsed_WhenInvitationAlreadyUsed_ShouldThrowIllegalStateException` | Una invitación ya utilizada no puede marcarse como usada por segunda vez |
-| Invitation | `markAsUsed_WhenInvitationIsExpired_ShouldThrowIllegalStateException` | Una invitación con fecha de expiración pasada no puede marcarse como usada |
-| Invitation | `isForEmail_WhenEmailDiffersByCase_ShouldMatchCaseInsensitively` | La comparación de email en la invitación es insensible a mayúsculas/minúsculas |
-| ServiceTemplate | `createServiceTemplate_WhenDurationIsNotPositive_ShouldThrowIllegalArgumentException` | Se rechaza crear una plantilla de servicio con duración 0, negativa o Integer.MIN_VALUE (4 casos vía @ParameterizedTest) |
-| BusinessRegistration | `createBusinessRegistration_WhenRucIsInvalid_ShouldThrowIllegalArgumentException` | Se rechazan RUCs null, vacíos, con menos de 11 dígitos, con más de 11 dígitos o con caracteres no numéricos (5 casos vía @ParameterizedTest) |
-| OpeningHours | `createOpeningHours_WhenOpeningTimeIsAfterClosingTime_ShouldThrowIllegalArgumentException` | Se rechaza un horario donde la hora de apertura es posterior a la de cierre |
-| OpeningHours | `createOpeningHours_WhenOpeningTimeEqualsClosingTime_ShouldThrowIllegalArgumentException` | Se rechaza un horario donde la hora de apertura es igual a la de cierre |
+| Workshop | `createWorkshop_WhenOwnerUserIdIsNull_ShouldThrowIllegalArgumentException` | Se rechaza la creación de un taller si el identificador del propietario es `null`. |
+| Workshop | `createWorkshop_WhenNameIsNullOrBlank_ShouldThrowIllegalArgumentException` | Se rechaza la creación si el nombre es `null`, vacío o contiene únicamente espacios en blanco (4 casos mediante `@ParameterizedTest`). |
+| Workshop | `createWorkshop_WithValidData_ShouldCreateActiveWorkshopWithExpectedInitialState` | Un taller creado con datos válidos inicia activo, sin fotografías, sin personal registrado, con estado `TRIAL` y plan `FREE`. |
+| Workshop | `addPhoto_WhenExceedingTenPhotoLimit_ShouldThrowIllegalStateException` | Se impide agregar una undécima fotografía y el número total permanece en diez. |
+| Workshop | `isSubscriptionActive_WhenStatusIsTerminated_ShouldReturnFalse` | Una suscripción `CANCELLED` o `EXPIRED` se considera inactiva aunque su fecha de vencimiento aún no haya expirado (2 casos mediante `@ParameterizedTest`). |
+| Workshop | `isSubscriptionActive_WhenExpirationDateHasPassed_ShouldReturnFalse` | Una suscripción con fecha de expiración vencida se considera inactiva incluso si su estado es `ACTIVE`. |
+| Workshop | `isSubscriptionActive_WhenStatusIsActiveWithNoExpiry_ShouldReturnTrue` | Una suscripción `ACTIVE` sin fecha de expiración se considera activa correctamente. |
+| Workshop | `canAccessPremiumFeatures_WhenTierIsFreeAndSubscriptionIsActive_ShouldReturnFalse` | El plan `FREE` no concede acceso a funcionalidades premium, aun cuando la suscripción permanezca activa. |
+| Workshop | `canAccessPremiumFeatures_WhenTierIsBasicOrPremiumAndActive_ShouldReturnTrue` | Los planes `BASIC` y `PREMIUM` con suscripción activa permiten acceder a funcionalidades premium (2 casos mediante `@ParameterizedTest`). |
+| Workshop | `removeLocation_WhenLocationDoesNotExist_ShouldThrowLocationNotFoundException` | Intentar eliminar una sucursal inexistente genera la excepción `LocationNotFoundException`. |
+| Invitation | `markAsUsed_WhenInvitationAlreadyUsed_ShouldThrowIllegalStateException` | Una invitación previamente utilizada no puede volver a marcarse como usada. |
+| Invitation | `markAsUsed_WhenInvitationIsExpired_ShouldThrowIllegalStateException` | Una invitación vencida no puede utilizarse. |
+| Invitation | `isForEmail_WhenEmailDiffersByCase_ShouldMatchCaseInsensitively` | La comparación de direcciones de correo electrónico se realiza sin distinguir entre mayúsculas y minúsculas. |
+| ServiceTemplate | `createServiceTemplate_WhenDurationIsNotPositive_ShouldThrowIllegalArgumentException` | Se rechaza la creación de una plantilla de servicio cuando la duración es cero, negativa o inválida (4 casos mediante `@ParameterizedTest`). |
+| BusinessRegistration | `createBusinessRegistration_WhenRucIsInvalid_ShouldThrowIllegalArgumentException` | Se rechazan RUC inválidos (`null`, vacíos, con longitud incorrecta o caracteres no numéricos). |
+| OpeningHours | `createOpeningHours_WhenOpeningTimeIsAfterClosingTime_ShouldThrowIllegalArgumentException` | Se rechaza un horario cuya hora de apertura sea posterior a la hora de cierre. |
+| OpeningHours | `createOpeningHours_WhenOpeningTimeEqualsClosingTime_ShouldThrowIllegalArgumentException` | Se rechaza un horario cuya hora de apertura sea igual a la hora de cierre. |
+
+### Codigo Fuente de tests
+
+![unit-test-1](assets/images/screenshots/codigofuente-test1.png)
+
+![unit-test-2](assets/images/screenshots/codigofuente-test2.png)
+
+![unit-test-3](assets/images/screenshots/codigofuente-test3.png)
 
 ### Evidencia de ejecución
 
-Panel de resultados de `WorkshopDomainUnitTest` mostrando **29 tests passed** con árbol de pruebas expandido. Se aprecia la clase `Workshop BC — Domain Unit Tests` con todos los métodos en verde y el paquete `com.atg.autonexo.backend.workshop.domain` en la barra inferior.
+Panel de resultados de `WorkshopDomainUnitTest` mostrando **29 tests passed**, con el árbol de pruebas completamente ejecutado. Se observa la clase **Workshop BC — Domain Unit Tests**, donde todos los métodos finalizaron correctamente y el paquete `com.atg.autonexo.backend.workshop.domain`.
 
 ![unit-test-1](assets/images/screenshots/unit-test-1.png)
 
-Árbol expandido mostrando los tests paramétricos desplegados — parte superior. Se aprecian los 4 sub-casos de `createWorkshop_WhenNameIsNullOrBlank` con sus valores: null, "", "   " y "". También se muestran los 2 sub-casos de `canAccessPremiumFeatures_WhenTierIsBasicOrPremium` con Tier BASIC y Tier PREMIUM.
+Árbol expandido mostrando los casos paramétricos correspondientes a `createWorkshop_WhenNameIsNullOrBlank_ShouldThrowIllegalArgumentException`, incluyendo los cuatro escenarios evaluados (`null`, cadena vacía y espacios en blanco).
 
 ![unit-test-2_1](assets/images/screenshots/unit-test-2.1.png)
 
-Árbol expandido mostrando los tests paramétricos desplegados — parte inferior. Se aprecian los 5 sub-casos de `createBusinessRegistration_WhenRucIsInvalid` con valores: "null", "12345", "123456789012", "ABCDE678901" y "".
+Árbol expandido mostrando los casos paramétricos correspondientes a `createBusinessRegistration_WhenRucIsInvalid_ShouldThrowIllegalArgumentException`, incluyendo todos los valores inválidos evaluados.
 
 ![unit-test-2_2](assets/images/screenshots/unit-test-2.2.png)
 
-Código fuente de `WorkshopDomainUnitTest.java` con el método `setUp()` anotado con `@BeforeEach` visible, junto con los comentarios `ES: Riesgo cubierto` y `EN: Risk covered` del primer test. Se aprecia la ruta del archivo en la barra superior del editor.
+Código fuente de `WorkshopDomainUnitTest.java`, donde se observa el método `setUp()` anotado con `@BeforeEach` y la implementación de las pruebas unitarias.
 
 ![unit-test-3](assets/images/screenshots/unit-test-3.png)
 
@@ -5587,35 +5628,37 @@ Código fuente de `WorkshopDomainUnitTest.java` con el método `setUp()` anotado
 |---|---|---|---|---|---|
 | AutoNexo-Backend | feature/workshop-testing | 082c906 | test(workshop): add unit and integration tests for Workshop bounded context | — | 2026-05-11 |
 
-## 6.1.2 Core Integration Tests
+### 6.1.2. Core Integration Tests
 
-En esta sección se documentan las pruebas de integración del bounded context Workshop, implementadas en la clase `WorkshopApplicationIntegrationTest`. A diferencia de las pruebas unitarias, estas validan que los servicios de aplicación (`WorkshopCommandServiceImpl` e `InvitationCommandServiceImpl`) orquestan correctamente la lógica de dominio con las dependencias de infraestructura. Los repositorios, el facade ACL y los servicios externos son sustituidos por mocks de Mockito, permitiendo verificar los flujos completos sin base de datos ni red.
+En esta sección se documentan las pruebas de integración del bounded context **Workshop**, implementadas en la clase `WorkshopApplicationIntegrationTest`. A diferencia de las pruebas unitarias, estas validan que los servicios de aplicación (`WorkshopCommandServiceImpl` e `InvitationCommandServiceImpl`) orquestan correctamente la lógica de dominio junto con las dependencias de infraestructura.
+
+Para ello, los repositorios, el facade ACL y los servicios externos son reemplazados por *mocks* utilizando Mockito, permitiendo verificar los flujos completos sin depender de una base de datos ni de servicios externos.
 
 ### Relación de Integration Tests
 
 | Servicio bajo prueba | Método de prueba | Comportamiento validado |
 |---|---|---|
-| WorkshopCommandServiceImpl | `handle_CreateWorkshopCommand_WhenValidNewOwner_ShouldSaveWorkshopAndAssociateUserInAcl` | La creación exitosa de un taller persiste el aggregate en el repositorio y dispara la asociación en el ACL del contexto IAM |
-| WorkshopCommandServiceImpl | `handle_CreateWorkshopCommand_WhenOwnerAlreadyHasWorkshop_ShouldThrowAndNeverSave` | Si el propietario ya tiene un taller registrado, se lanza WorkshopAlreadyExistsException sin persistir ni llamar al ACL |
-| WorkshopCommandServiceImpl | `handle_CreateWorkshopCommand_WhenAclAssociationFails_ShouldRollbackByDeletingWorkshop` | Si el ACL falla después de persistir el taller, el servicio ejecuta rollback eliminando el taller del repositorio |
-| InvitationCommandServiceImpl | `handle_AcceptInvitationCommand_WhenInvitationIsExpired_ShouldThrowIllegalStateException` | El servicio delega en el aggregate Invitation real la verificación de expiración y propaga correctamente la excepción, sin persistir nada |
-| InvitationCommandServiceImpl | `handle_AcceptInvitationCommand_WhenValidInvitation_ShouldCreateStaffMemberAndMarkInvitationUsed` | La aceptación de una invitación válida crea un StaffMember en el aggregate Workshop, marca la Invitation como usada y persiste ambos aggregates |
+| WorkshopCommandServiceImpl | `handle_CreateWorkshopCommand_WhenValidNewOwner_ShouldSaveWorkshopAndAssociateUserInAcl` | La creación exitosa de un taller persiste el aggregate en el repositorio y realiza correctamente la asociación del usuario mediante el ACL del contexto IAM. |
+| WorkshopCommandServiceImpl | `handle_CreateWorkshopCommand_WhenOwnerAlreadyHasWorkshop_ShouldThrowAndNeverSave` | Si el propietario ya posee un taller registrado, se lanza `WorkshopAlreadyExistsException` sin persistir información ni invocar el ACL. |
+| WorkshopCommandServiceImpl | `handle_CreateWorkshopCommand_WhenAclAssociationFails_ShouldRollbackByDeletingWorkshop` | Si la asociación mediante el ACL falla después de persistir el taller, el servicio ejecuta un rollback eliminando el registro previamente creado. |
+| InvitationCommandServiceImpl | `handle_AcceptInvitationCommand_WhenInvitationIsExpired_ShouldThrowIllegalStateException` | El servicio delega la validación de expiración al aggregate `Invitation` y propaga correctamente la excepción sin realizar persistencia. |
+| InvitationCommandServiceImpl | `handle_AcceptInvitationCommand_WhenValidInvitation_ShouldCreateStaffMemberAndMarkInvitationUsed` | Una invitación válida crea un nuevo `StaffMember`, marca la invitación como utilizada y persiste correctamente ambos aggregates. |
 
 ### Evidencia de ejecución
 
-Panel de resultados de `WorkshopApplicationIntegrationTest` mostrando **5 tests passed** en 3 seg 8 ms. Se aprecia el árbol con los 5 métodos de integración con check verde bajo `Workshop BC — Application Integration Tests` y `Process finished with exit code 0` en la consola.
+Panel de resultados de `WorkshopApplicationIntegrationTest`, mostrando la ejecución satisfactoria de **5 pruebas de integración**, todas finalizadas correctamente.
 
 ![integration-test-1](assets/images/screenshots/integration-test-1.png)
 
-Ejecución conjunta de todo el bounded context Workshop mostrando **34 tests passed** — vista con árbol completo expandido. Se aprecian ambas clases: `Workshop BC — Application Integration Tests` (5 pruebas) y `Workshop BC — Domain Unit Tests` (29 pruebas), todas en verde.
+Ejecución conjunta del bounded context **Workshop**, donde se observa la ejecución de **34 pruebas** (29 pruebas unitarias y 5 pruebas de integración), todas aprobadas.
 
 ![integration-test-2_1](assets/images/screenshots/integration-test-2.1.png)
 
-Ejecución conjunta de todo el bounded context Workshop mostrando **34 tests passed** — vista con consola de ejecución visible. Se aprecia el `Process finished with exit code 0` confirmando que todas las pruebas pasaron correctamente.
+Vista de consola correspondiente a la ejecución anterior, donde se muestra el mensaje **Process finished with exit code 0**, confirmando que todas las pruebas finalizaron exitosamente.
 
 ![integration-test-2_2](assets/images/screenshots/integration-test-2.2.png)
 
-Código fuente de `WorkshopApplicationIntegrationTest.java` mostrando las anotaciones `@Mock` de los repositorios e infraestructura (`WorkshopRepository`, `WorkshopContextFacade`, `InvitationRepository`, `NotificationService`, `UserRepository`, `WorkshopReferenceRepository`) y el método `setUp()` con `@BeforeEach` realizando la inyección manual de dependencias via constructor.
+Código fuente de `WorkshopApplicationIntegrationTest.java`, donde se observan las anotaciones `@Mock` utilizadas para simular los repositorios y servicios externos, así como el método `setUp()` encargado de inicializar las dependencias antes de cada prueba.
 
 ![integration-test-3](assets/images/screenshots/integration-test-3.png)
 
@@ -5625,27 +5668,39 @@ Código fuente de `WorkshopApplicationIntegrationTest.java` mostrando las anotac
 |---|---|---|---|---|---|
 | AutoNexo-Backend | feature/workshop-testing | 082c906 | test(workshop): add unit and integration tests for Workshop bounded context | — | 2026-05-11 |
 
-#### 6.1.3. Core Behavior-Driven Development
+### 6.1.3. Core Behavior-Driven Development
 
-En esta sección se presentan las pruebas de comportamiento (**BDD**) desarrolladas para validar los flujos principales de AutoNexo desde una perspectiva cercana al negocio. Las pruebas están implementadas con **Cucumber** usando archivos `.feature` en sintaxis **Gherkin**, mientras que la automatización de la interacción con la interfaz web se realiza con **Playwright**.
+En esta sección se presentan las pruebas de comportamiento (**Behavior-Driven Development - BDD**) desarrolladas para validar los principales flujos de negocio de **AutoNexo** desde la perspectiva del usuario.
 
-El objetivo de estas pruebas es expresar el comportamiento esperado del sistema en un lenguaje legible para stakeholders técnicos y no técnicos, manteniendo trazabilidad entre los escenarios de negocio, los steps automatizados y los flujos core del producto.
+Las pruebas fueron implementadas utilizando **Cucumber**, mediante archivos `.feature` escritos en sintaxis **Gherkin**, mientras que la automatización de la interacción con la aplicación web se realizó con **Playwright**.
+
+El objetivo de estas pruebas es expresar el comportamiento esperado del sistema en un lenguaje comprensible tanto para los miembros técnicos del equipo como para los stakeholders, manteniendo la trazabilidad entre los requerimientos funcionales, los escenarios de negocio y la automatización de pruebas.
 
 **Repositorio:** `AutoNexo-e2e`
 
-El script `pnpm e2e` ejecuta primero `pnpm e2e:setup`, encargado de registrar usuarios de prueba y preparar un taller de prueba mediante el backend API, y luego ejecuta `cucumber-js` con la configuración definida en `cucumber.cjs`.
+La ejecución de las pruebas se realiza mediante el comando:
+
+```bash
+pnpm e2e
+```
+
+Este comando ejecuta primero `pnpm e2e:setup`, encargado de registrar automáticamente los usuarios de prueba y preparar el entorno mediante la API del backend. Posteriormente, se ejecutan los escenarios definidos en Cucumber utilizando la configuración establecida en `cucumber.cjs`.
+
+---
 
 ### Features implementados
 
-| Feature file | Escenario BDD | Flujo de negocio validado | Actor principal |
+| Feature File | Escenario BDD | Flujo de negocio validado | Actor principal |
 |---|---|---|---|
-| `features/car_owner_create_request.feature` | `Car owner registers vehicle and creates a service request` | Registro de vehículo y creación de una solicitud de servicio para cambio de pastillas de freno. | Car owner |
-| `features/workshop_send_offer.feature` | `Workshop owner sends an offer for a new request` | Revisión de oportunidades cercanas por parte del taller y envío de una oferta. | Workshop owner |
-| `features/car_owner_accept_offer.feature` | `Car owner accepts workshop offer` | Revisión de la solicitud pendiente, aceptación de una oferta y visualización del comprobante de reserva. | Car owner |
+| `features/car_owner_create_request.feature` | Car owner registers vehicle and creates a service request | Registro de un vehículo y creación de una solicitud de servicio. | Car Owner |
+| `features/workshop_send_offer.feature` | Workshop owner sends an offer for a new request | Visualización de solicitudes cercanas y envío de una oferta por parte del taller. | Workshop Owner |
+| `features/car_owner_accept_offer.feature` | Car owner accepts workshop offer | Aceptación de una oferta enviada por un taller y generación de la reserva. | Car Owner |
+
+---
 
 ### Escenarios en Gherkin
 
-**Feature: Car owner creates service request**
+#### Feature: Car owner creates service request
 
 ```gherkin
 Feature: Car owner creates service request
@@ -5657,7 +5712,9 @@ Feature: Car owner creates service request
     Then I see the request in "My Service Requests"
 ```
 
-**Feature: Workshop sends offer**
+---
+
+#### Feature: Workshop sends offer
 
 ```gherkin
 Feature: Workshop sends offer
@@ -5669,10 +5726,12 @@ Feature: Workshop sends offer
     Then I see the offer in "My Active Services"
 ```
 
-**Feature: Car owner accepts offer**
+---
+
+#### Feature: Car owner accepts workshop offer
 
 ```gherkin
-Feature: Car owner accepts offer
+Feature: Car owner accepts workshop offer
 
   Scenario: Car owner accepts workshop offer
     Given I am logged in as a car owner
@@ -5682,38 +5741,67 @@ Feature: Car owner accepts offer
     Then I see the booking receipt
 ```
 
+---
+
 ### Step Definitions implementados
 
-La implementación de los Step Definitions cubre completamente los pasos definidos en los archivos `.feature`. Estos steps utilizan locators de Playwright, navegación por rutas del frontend y assertions con `expect` para validar el comportamiento observable del sistema.
+Los **Step Definitions** implementan completamente los pasos definidos en los archivos `.feature`. Estos utilizan **Playwright** para interactuar con la interfaz web y **expect** para validar el comportamiento observable del sistema.
 
-| Archivo de steps | Steps implementados | Responsabilidad |
-|---|---|---|
-| `steps/auth.steps.ts` | `Given I am logged in as a car owner`, `Given I am logged in as a workshop owner` | Autenticación de usuarios de prueba generados por el setup automático. |
-| `steps/car_owner.steps.ts` | Registro de vehículo, creación de solicitud, apertura de solicitudes, vista de solicitud pendiente, aceptación de oferta y validación de recibo. | Automatización de los flujos del propietario del vehículo. |
-| `steps/workshop.steps.ts` | Apertura de solicitudes cercanas, envío de oferta y validación en servicios activos. | Automatización de los flujos del taller. |
-| `steps/common.steps.ts` | `When I wait for {int} seconds` | Utilidad común para esperas controladas durante debugging. |
-| `support/world.ts` | `CustomWorld` | Manejo del ciclo de vida de navegador, contexto, página, estado compartido y datos de setup. |
-| `support/hooks.ts` | `Before`, `After` | Inicialización y cierre de Playwright por escenario. |
-| `support/setup.ts` | Setup automático vía backend API | Registro de car owner, workshop manager, creación de taller, ubicación y plantilla de servicio. |
+| Archivo | Responsabilidad |
+|---|---|
+| `steps/auth.steps.ts` | Inicio de sesión como propietario de vehículo y propietario de taller. |
+| `steps/car_owner.steps.ts` | Registro de vehículos, creación de solicitudes, aceptación de ofertas y validación del comprobante de reserva. |
+| `steps/workshop.steps.ts` | Consulta de solicitudes cercanas, envío de ofertas y validación de servicios activos. |
+| `steps/common.steps.ts` | Steps de utilidad compartidos entre escenarios. |
+| `support/world.ts` | Configuración del `CustomWorld`, navegador, contexto, página y estado compartido. |
+| `support/hooks.ts` | Inicialización y cierre del navegador mediante Hooks de Cucumber. |
+| `support/setup.ts` | Preparación automática de usuarios, taller y datos de prueba utilizando la API del backend. |
 
-### Evidencia de BDD
+---
 
-- Estructura del repositorio `AutoNexo-e2e` mostrando los archivos `.feature`, los Step Definitions y los archivos de soporte para Cucumber/Playwright.
+### Evidencia de implementación
+
+Estructura del repositorio **AutoNexo-e2e**, mostrando la organización de los archivos `.feature`, los Step Definitions y los archivos de soporte utilizados por Cucumber y Playwright.
+
 ![bdd-folder](assets/images/screenshots/bdd-folder.png)
 
-- Evidencia de ejecución de Cucumber mostrando los escenarios BDD ejecutados desde consola o IDE.
+---
+
+Ejecución satisfactoria de los escenarios BDD desde la consola, donde se observa la correcta ejecución de todos los escenarios implementados.
+
 ![bdd-execution](assets/images/screenshots/bdd-execution.png)
 
-- Evidencia de los Step Definitions implementados en TypeScript, incluyendo autenticación, creación de solicitud, envío de oferta y aceptación de oferta.
+---
+
+Implementación de los Step Definitions correspondientes al proceso de autenticación.
+
 ![bdd-auth-steps](assets/images/screenshots/auth-steps.png)
+
+---
+
+Implementación de los Step Definitions correspondientes al flujo del propietario del vehículo.
+
 ![bdd-car_owner-steps-1](assets/images/screenshots/car_owner-steps-1.png)
+
 ![bdd-car_owner-steps-2](assets/images/screenshots/car_owner-steps-2.png)
+
+---
+
+Implementación de los Step Definitions correspondientes al flujo del taller.
+
 ![bdd-workshop-steps-1](assets/images/screenshots/workshop-steps-1.png)
+
 ![bdd-workshop-steps-2](assets/images/screenshots/workshop-steps-2.png)
+
 ![bdd-workshop-steps-3](assets/images/screenshots/workshop-steps-3.png)
+
 ![bdd-workshop-steps-4](assets/images/screenshots/workshop-steps-4.png)
+
 ![bdd-workshop-steps-5](assets/images/screenshots/workshop-steps-5.png)
+
 ![bdd-workshop-steps-6](assets/images/screenshots/workshop-steps-6.png)
+
+---
 
 ### Testing Suite Evidence for Sprint Review
 
@@ -5724,296 +5812,181 @@ La implementación de los Step Definitions cubre completamente los pasos definid
 | AutoNexo-e2e | main | 1aa794c | feat: add Cucumber support layer (world, hooks, config) | Implement CustomWorld with Playwright browser/page lifecycle, Before/After hooks and typed config loaded from `.env.e2e`. | 2026-06-15 |
 | AutoNexo-e2e | main | a8d2988 | feat: add auto-registration setup script and API client | Introduce automated setup script that registers fresh test users and a workshop via the backend API on every run. | 2026-06-15 |
 
+### 6.1.4. Core System Tests
 
-#### 6.1.4. Core System Tests
+Las pruebas de sistema de **AutoNexo** validan el funcionamiento integral de la plataforma desde la perspectiva del usuario final, verificando la interacción entre los diferentes componentes que conforman la solución: frontend web, backend API, autenticación, gestión de vehículos, solicitudes de servicio, ofertas de talleres y generación de reservas.
 
-Las pruebas de sistema de AutoNexo validan el comportamiento del producto de extremo a extremo, considerando la interacción entre frontend web, backend API, autenticación, gestión de vehículos, solicitudes de servicio, ofertas de talleres y reserva final. Estas pruebas complementan las pruebas unitarias e integración, ya que verifican que los componentes desplegados funcionen correctamente como un sistema completo desde la perspectiva del usuario.
+Estas pruebas complementan las pruebas unitarias y de integración, ya que verifican el comportamiento del sistema completo bajo escenarios reales de uso.
 
-Para su automatización se utiliza el repositorio `AutoNexo-e2e`, donde los escenarios Cucumber son ejecutados por Playwright sobre la aplicación web. Antes de ejecutar los escenarios, el setup automático crea datos válidos y evita depender de información presembrada manualmente.
+La automatización de estas pruebas se implementó en el repositorio **AutoNexo-e2e**, utilizando **Playwright** como framework de automatización y **Cucumber** para la definición de los escenarios de negocio.
+
+Antes de ejecutar cada escenario, un proceso de preparación automático genera todos los datos necesarios para evitar depender de información previamente almacenada en la base de datos.
+
+---
 
 ### Alcance de las pruebas de sistema
 
 | ID | Flujo de sistema | Componentes involucrados | Resultado esperado |
 |---|---|---|---|
-| ST-01 | Login como propietario de vehículo | Frontend IAM, backend IAM, JWT, store de sesión | El usuario ingresa al dashboard autenticado. |
-| ST-02 | Registro de vehículo | Frontend Vehicles, backend Vehicle API, validaciones de formulario | El sistema muestra confirmación de vehículo registrado. |
-| ST-03 | Creación de solicitud de servicio | Frontend Matching, backend Service Request API, geolocalización, catálogo de servicios | La solicitud aparece en “My Service Requests”. |
-| ST-04 | Login como dueño de taller | Frontend IAM, backend IAM, JWT con `workshop_id` | El dueño de taller ingresa al dashboard correspondiente. |
-| ST-05 | Visualización de solicitudes cercanas | Frontend Workshop Requests, backend Matching API, ubicación del taller | El taller visualiza oportunidades cercanas disponibles. |
-| ST-06 | Envío de oferta por parte del taller | Frontend Offers, backend Offers API, request pendiente | La oferta enviada aparece en “My Active Services”. |
-| ST-07 | Aceptación de oferta por propietario | Frontend Service Request Detail, backend Booking API, Offers API | El propietario acepta la oferta y se genera la reserva. |
-| ST-08 | Visualización de booking receipt | Frontend Booking Receipt, backend Booking API | El sistema muestra el comprobante de reserva. |
+| ST-01 | Inicio de sesión como propietario de vehículo | Frontend IAM, Backend IAM, JWT | El usuario accede correctamente al Dashboard. |
+| ST-02 | Registro de vehículo | Frontend Vehicles, Backend Vehicle API | El vehículo queda registrado correctamente. |
+| ST-03 | Creación de solicitud de servicio | Frontend Matching, Backend Matching API | La solicitud aparece en **My Service Requests**. |
+| ST-04 | Inicio de sesión como propietario de taller | Frontend IAM, Backend IAM, JWT | El propietario accede correctamente al Dashboard del taller. |
+| ST-05 | Consulta de solicitudes cercanas | Frontend Workshop Requests, Backend Matching API | El taller visualiza las solicitudes disponibles según su ubicación. |
+| ST-06 | Envío de oferta | Frontend Offers, Backend Offers API | La oferta queda registrada correctamente. |
+| ST-07 | Aceptación de oferta | Frontend Booking, Backend Booking API | Se genera correctamente la reserva del servicio. |
+| ST-08 | Visualización del comprobante | Frontend Booking Receipt, Backend Booking API | El usuario visualiza el comprobante de reserva generado. |
 
-### Preparación automatizada del entorno
+---
 
-El archivo `support/setup.ts` ejecuta las siguientes acciones antes de correr las pruebas:
+### Preparación automática del entorno de pruebas
 
-1. Registra un usuario propietario de vehículo con rol `CAR_OWNER`.
-2. Registra un usuario gestor de taller con rol `WORKSHOP_MANAGER`.
-3. Autentica al gestor del taller para obtener un token JWT inicial.
-4. Crea un taller de prueba mediante el backend API.
-5. Vuelve a autenticar al gestor para obtener un JWT con `workshop_id`.
-6. Agrega ubicación del taller usando coordenadas configuradas en `.env.e2e`.
-7. Agrega una plantilla de servicio para `BRAKE_PAD_REPLACEMENT`.
-8. Guarda los datos generados en `.e2e-setup.json` para que los steps los consuman durante la ejecución.
+Antes de ejecutar los escenarios BDD, el archivo `support/setup.ts` realiza automáticamente las siguientes acciones:
 
-Esta preparación reduce la fragilidad de las pruebas de sistema, ya que cada ejecución trabaja con usuarios, taller y servicio creados dinámicamente.
+1. Registra un usuario con rol **CAR_OWNER**.
+2. Registra un usuario con rol **WORKSHOP_MANAGER**.
+3. Autentica al gestor del taller para obtener un primer token JWT.
+4. Crea un taller utilizando la API del backend.
+5. Obtiene un nuevo JWT asociado al taller creado.
+6. Registra la ubicación del taller.
+7. Crea una plantilla de servicio para `BRAKE_PAD_REPLACEMENT`.
+8. Almacena la información generada en el archivo `.e2e-setup.json`, utilizado posteriormente durante la ejecución de los escenarios.
 
-### Evidencia de pruebas de sistema
+Este procedimiento garantiza que cada ejecución de las pruebas se realice sobre un entorno limpio y completamente reproducible.
 
-Ejecución de `pnpm e2e` mostrando el setup automático y la ejecución de los escenarios Cucumber.
+---
+
+### Evidencia de las pruebas de sistema
+
+Ejecución del comando:
+
+```bash
+pnpm e2e
+```
+
+mostrando la preparación automática del entorno y la ejecución completa de los escenarios BDD.
 
 ![system-test-execution](assets/images/screenshots/system-test-execution.png)
 
-Evidencia del flujo de propietario: registro de vehículo, creación de solicitud y visualización en “My Service Requests”.
+---
+
+Evidencia del flujo correspondiente al propietario del vehículo, incluyendo el registro del vehículo, la creación de una solicitud de servicio y su posterior visualización.
 
 ![system-test-car-owner](assets/images/screenshots/system-test-car-owner.png)
 
-Evidencia del flujo de taller: visualización de solicitudes cercanas y envío de oferta.
+---
+
+Evidencia del flujo correspondiente al propietario del taller, donde se visualizan solicitudes cercanas y se envía una oferta.
 
 ![system-test-workshop](assets/images/screenshots/system-test-workshop.png)
 
-Evidencia del flujo final: aceptación de oferta y visualización del comprobante de reserva.
+---
+
+Evidencia del flujo final, correspondiente a la aceptación de la oferta y la generación del comprobante de reserva.
 
 ![system-test-booking](assets/images/screenshots/system-test-booking.png)
+
+---
 
 ### Testing Suite Evidence for Sprint Review
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
 |---|---|---|---|---|---|
-| AutoNexo-e2e | main | 0854edc | feat: add Cucumber feature files for main user flows | Add three BDD scenarios: car owner creates a service request, workshop sends an offer, and car owner accepts the offer. | 2026-06-15 |
+| AutoNexo-e2e | main | 0854edc | feat: add Cucumber feature files for main user flows | Add three BDD scenarios: car owner creates a service request, workshop sends an offer and car owner accepts the offer. | 2026-06-15 |
 | AutoNexo-e2e | main | 5ece805 | feat: add step definitions for e2e scenarios | Implement auth login steps, car owner steps, workshop steps and a common utility step for waiting. | 2026-06-15 |
 | AutoNexo-e2e | main | a8d2988 | feat: add auto-registration setup script and API client | Introduce automated setup script that registers fresh test users and a workshop via the backend API on every run. | 2026-06-15 |
 
-### 6.2. Static Testing & Verification
+## 6.2. Static Testing & Verification
 
-La verificación estática en AutoNexo se aplica antes y durante la ejecución de pruebas automatizadas. Su propósito es identificar errores de compilación, inconsistencias de tipos, incumplimiento de convenciones, configuraciones inseguras y defectos de mantenibilidad sin depender exclusivamente de pruebas manuales. Esta verificación se apoya en los compiladores y herramientas propias del stack: **Java 25 + Maven + Spring Boot** para backend, **TypeScript strict + Vue TSC + Vite** para frontend y **TypeScript + Cucumber/Playwright** para pruebas E2E.
+La verificación estática en AutoNexo tiene como objetivo identificar defectos antes de la ejecución del software, permitiendo detectar errores de compilación, incumplimiento de convenciones, inconsistencias de tipos, configuraciones inseguras y problemas de mantenibilidad. Estas actividades complementan las pruebas dinámicas descritas en la sección anterior y contribuyen a mantener la calidad del código durante todo el ciclo de desarrollo.
 
-#### 6.2.1. Static Code Analysis
+En AutoNexo se aplicó verificación estática sobre los principales componentes del sistema:
 
-El análisis estático se ejecuta en tres niveles:
-
-| Componente | Herramienta o mecanismo | Comando / configuración | Propósito |
-|---|---|---|---|
-| Backend | Maven Compiler + Java 25 | `./mvnw test` | Compilar el backend, validar imports, tipos, anotaciones y ejecución de tests. |
-| Backend | Spring Boot Test + perfil `test` | `application-test.yml` | Validar que el contexto pueda inicializarse con configuración de pruebas y sin credenciales productivas. |
-| Frontend | TypeScript strict | `tsconfig.json` con `strict`, `noUnusedLocals`, `noUnusedParameters`, `noFallthroughCasesInSwitch` | Detectar errores de tipos, variables sin uso y ramas incompletas. |
-| Frontend | Vue TSC + Vite Build | `pnpm build` | Verificar tipos en componentes Vue y generar build productivo. |
-| E2E | TypeScript Compiler | `pnpm typecheck` | Verificar Step Definitions, soporte de Cucumber y configuración Playwright. |
-| CI/CD | GitHub Actions | `.github/workflows/pipeline.yml` | Ejecutar pruebas automáticamente en pull requests y pushes hacia ramas principales. |
-
-##### 6.2.1.1. Coding Standard & Code Conventions
-
-AutoNexo aplica convenciones por tecnología y por arquitectura para mantener un código consistente, legible y alineado con Domain-Driven Design.
-
-### Convenciones generales
-
-- El código fuente se redacta principalmente en inglés para clases, métodos, variables, commits técnicos y archivos de prueba.
-- Los escenarios BDD se redactan con estructura `Given / When / Then`, de forma que puedan ser comprendidos por stakeholders técnicos y de negocio.
-- Se prioriza Clean Code: nombres descriptivos, métodos con responsabilidad única, eliminación de duplicidad y comentarios cuando agregan contexto de negocio o riesgo cubierto.
-- Los commits siguen una convención semántica como `feat`, `fix`, `test`, `docs`, `chore` y `refactor`.
-
-### Backend — Java + Spring Boot + DDD
-
-| Elemento | Convención aplicada |
-|---|---|
-| Clases | `PascalCase`, por ejemplo `WorkshopCommandServiceImpl`, `InvitationCommandServiceImpl`. |
-| Métodos y variables | `camelCase`, por ejemplo `createWorkshop`, `ownerUserId`, `workshopRepository`. |
-| Paquetes | Minúsculas y organizados por bounded context: `iam`, `workshop`, `matching`, `vehicle`, `trust`, `shared`. |
-| Arquitectura | Separación por capas: `domain`, `application`, `infrastructure`, `interfaces`. |
-| Pruebas | Nombres descriptivos con patrón `method_WhenCondition_ShouldExpectedResult`. |
-| Assertions | Uso de JUnit y Mockito para validar estado, excepciones e interacciones. |
-
-### Frontend — Vue + TypeScript
-
-| Elemento | Convención aplicada |
-|---|---|
-| Componentes Vue | `PascalCase` para archivos y componentes de vista. |
-| Servicios y stores | Organización por módulos funcionales: `iam`, `vehicles`, `matching`, `dashboard`. |
-| Tipado | Uso de TypeScript en modo `strict` para reducir errores en tiempo de compilación. |
-| Build | `vue-tsc && vite build` para validar tipos y empaquetado. |
-| Rutas y vistas | Separación de vistas, servicios y modelos por módulo del dominio. |
-
-### E2E — Cucumber + Playwright
-
-| Elemento | Convención aplicada |
-|---|---|
-| Archivos feature | Nombres descriptivos en `snake_case`, por ejemplo `car_owner_create_request.feature`. |
-| Escenarios | Redacción centrada en comportamiento observable del usuario. |
-| Steps | Separados por actor o responsabilidad: `auth.steps.ts`, `car_owner.steps.ts`, `workshop.steps.ts`. |
-| Estado compartido | Uso de `CustomWorld` para manejar navegador, página y datos generados por setup. |
-| Configuración | Variables en `.env.e2e` y archivos generados excluidos del repositorio. |
-
-##### 6.2.1.2. Code Quality & Code Security
-
-La calidad y seguridad del código se aborda mediante buenas prácticas de arquitectura, manejo de errores, control de credenciales, ejecución automatizada de pruebas y reducción de acoplamiento.
-
-### Calidad de código
-
-| Práctica | Evidencia en AutoNexo | Beneficio |
-|---|---|---|
-| Domain-Driven Design | Bounded contexts como `iam`, `workshop`, `matching`, `vehicle` y `trust`. | Facilita mantenimiento, escalabilidad y separación de responsabilidades. |
-| Tests unitarios de dominio | `WorkshopDomainUnitTest` | Verifica invariantes críticas sin depender de infraestructura. |
-| Tests de integración de aplicación | `WorkshopApplicationIntegrationTest` | Valida coordinación entre servicios, repositorios y ACLs. |
-| BDD/E2E | `AutoNexo-e2e` con Cucumber y Playwright | Verifica flujos de negocio completos desde la perspectiva del usuario. |
-| TypeScript strict | `tsconfig.json` del frontend y E2E | Reduce errores por tipos incorrectos, variables sin uso y casos incompletos. |
-| CI/CD | GitHub Actions ejecutando `./mvnw test` | Evita integrar cambios que rompan la suite principal de backend. |
-
-### Seguridad de código
-
-| Riesgo | Medida aplicada | Evidencia |
-|---|---|---|
-| Uso de credenciales reales en pruebas | Uso de `.env.e2e` y `.env.e2e.example`; archivos generados `.e2e-setup.json` y `.e2e-state.json` son locales. | Repositorio `AutoNexo-e2e`. |
-| Acceso no autenticado | Autenticación mediante JWT y Spring Security en backend. | Módulo `iam` y filtros de autorización. |
-| Exposición de errores internos | Estandarización de respuestas de error en backend. | Commits de structured error handling en `AutoNexo-Backend`. |
-| Dependencia de datos productivos en E2E | Setup automático crea usuarios y taller de prueba por ejecución. | `support/setup.ts`. |
-| Flujos críticos sin validación | E2E cubre creación de solicitud, envío de oferta y aceptación de oferta. | Features Cucumber. |
-| Configuración de despliegue insegura | Uso de secrets en GitHub Actions para Fly.io (`FLY_API_TOKEN`). | `.github/workflows/pipeline.yml`. |
-
-### Evidencia sugerida
-
-Captura de TypeScript strict en `tsconfig.json` del frontend.
-
-![static-tsconfig](assets/images/screenshots/static-tsconfig.png)
-
-Captura del workflow de GitHub Actions ejecutando `./mvnw test` antes del despliegue.
-
-![static-github-actions](assets/images/screenshots/static-github-actions.png)
-
-Captura de `.env.e2e.example` y `.gitignore` evidenciando separación entre configuración de ejemplo y secretos locales.
-
-![static-env-security](assets/images/screenshots/static-env-security.png)
-
-
-#### 6.2.2. Reviews
-
-El proceso de revisión se realiza mediante el sistema de control de versiones de GitHub, utilizando ramas de feature, pull requests, merges hacia `develop` y posteriormente hacia `main`. Este flujo permite revisar cambios por contexto, mantener trazabilidad de commits y verificar que las modificaciones estén alineadas con las funcionalidades del sprint.
-
-### Estrategia de revisión aplicada
-
-1. Desarrollo en ramas separadas por funcionalidad o capítulo, por ejemplo `feature/workshop-testing`, `feature/chapter-VI`, `feature/authentication-error-handling` y `feature/e2e-deattach`.
-2. Creación de Pull Requests hacia `develop` para integrar cambios funcionales.
-3. Merge desde `develop` hacia `main` cuando los cambios ya están consolidados.
-4. Uso de commits semánticos para identificar el propósito del cambio.
-5. Ejecución del pipeline de pruebas en ramas principales y pull requests del backend.
-6. Revisión manual de archivos modificados, alcance del cambio y consistencia con los criterios del sprint.
-
-### Evidencia de Pull Requests y colaboración
-
-| Repositorio | PR | Rama origen | Rama destino | Descripción | Fecha de merge | Archivos / cambios relevantes |
-|---|---:|---|---|---|---|---|
-| AutoNexo-Backend | #4 | `feature/workshop-testing` | `develop` | Agrega pruebas unitarias e integración para el bounded context Workshop. | 2026-05-11 | `WorkshopDomainUnitTest.java`, `WorkshopApplicationIntegrationTest.java` |
-| AutoNexo-Backend | #5 | `develop` | `main` | Integra la suite de pruebas de Workshop en la rama principal. | 2026-05-11 | 790 líneas agregadas en pruebas. |
-| AutoNexo-Backend | #11 | `feature/iam-structured-error-handling` | `develop` | Alinea manejo de errores del backend con respuestas estandarizadas. | 2026-06-10 | Excepciones IAM, handlers y documentación. |
-| AutoNexo-Backend | #12 | `develop` | `main` | Integra mejoras de manejo de errores hacia producción. | 2026-06-10 | 19 archivos modificados. |
-| AutoNexo-Frontend | #6 | `feature/available-requests` | `develop` | Agrega vistas core para solicitudes, agenda, ofertas y comprobante de reserva. | 2026-05-11 | Vistas de matching, vehículos y dashboard. |
-| AutoNexo-Frontend | #7 | `develop` | `main` | Integra IAM, Workshop Management e infraestructura E2E inicial. | 2026-05-11 | Implementación funcional amplia del frontend. |
-| AutoNexo-Frontend | #12 | `feature/authentication-error-handling` | `develop` | Alinea frontend con contrato `ErrorResponse` del backend. | 2026-06-10 | `apiClient`, `apiError`, servicios IAM y store. |
-| AutoNexo-Frontend | #14 | `feature/e2e-deattach` | `develop` | Separa infraestructura E2E del frontend para mantener repositorio dedicado de pruebas. | 2026-06-15 | Features, steps y configuración E2E removidos del frontend y migrados. |
-
-### Evidencia de revisión
-
-Captura del Pull Request de pruebas Workshop en `AutoNexo-Backend`, mostrando archivos modificados y merge hacia `develop`.
-
-![review-backend-pr4](assets/images/screenshots/review-backend-pr4.png)
-
-Captura de Pull Request de frontend con vistas core de solicitudes, ofertas y booking receipt.
-
-![review-frontend-pr6](assets/images/screenshots/review-frontend-pr6.png)
-
-Captura del historial de commits del repositorio `AutoNexo-e2e`, mostrando commits para features Cucumber, Step Definitions, soporte y setup automático.
-
-![review-e2e-commits](assets/images/screenshots/review-e2e-commits.png)
-
-### 6.2. Static Testing & Verification
-
-La verificación estática de AutoNexo tiene como objetivo evaluar la calidad, mantenibilidad, seguridad y consistencia del código sin depender únicamente de la ejecución manual del sistema. Esta práctica permite detectar defectos tempranos relacionados con errores de compilación, incumplimiento de convenciones, dependencias incorrectas, configuraciones inseguras y problemas de tipado antes de integrar cambios a las ramas principales.
-
-En AutoNexo se aplicó static testing sobre los principales componentes de la plataforma:
-
-- **Backend:** Java 25, Spring Boot, Maven, JUnit, Mockito y Spring Security.
-- **Frontend Web:** Vue 3, TypeScript, Vite, pnpm y Vitest.
-- **BDD/E2E:** Cucumber, Playwright, TypeScript y scripts de setup automatizado.
-- **Pipeline:** GitHub Actions para automatizar build y pruebas.
-
-El propósito de esta sección es evidenciar que el equipo no solo validó el producto mediante pruebas dinámicas, sino que también estableció criterios preventivos para mantener la calidad del código y reducir riesgos técnicos.
+- **Backend:** Java 25, Spring Boot, Maven, JUnit y Mockito.
+- **Frontend Web:** Vue 3, TypeScript, Vite y Vitest.
+- **Pruebas E2E:** Cucumber, Playwright y TypeScript.
+- **Integración Continua:** GitHub Actions.
 
 ---
 
-#### 6.2.1. Static Code Analysis
+### 6.2.1. Static Code Analysis
 
-El análisis estático se realiza mediante herramientas y configuraciones del propio stack tecnológico. En el backend, Maven y el compilador de Java validan errores de compilación, imports, anotaciones y dependencias. En el frontend, TypeScript en modo estricto permite detectar errores de tipado, variables no utilizadas y fallos de configuración antes de ejecutar el sistema. En el repositorio E2E, TypeScript también verifica la consistencia de los Step Definitions y archivos de soporte.
+El análisis estático se realizó utilizando las herramientas propias de cada tecnología empleada en el proyecto. Estas herramientas permiten detectar errores antes de ejecutar el sistema y asegurar que el código cumpla con las convenciones establecidas por el equipo.
 
-| Componente | Herramienta / mecanismo | Comando o archivo | Propósito |
+| Componente | Herramienta | Evidencia | Propósito |
 |---|---|---|---|
-| Backend | Maven Compiler + Java 25 | `./mvnw test`, `pom.xml` | Compilar el backend, validar dependencias, anotaciones, imports y clases Java. |
-| Backend | Spring Boot Test | `src/test/resources/application-test.yml` | Ejecutar pruebas con configuración de entorno controlado y base de datos H2. |
-| Backend | JUnit + Mockito | `src/test/java/...` | Validar reglas de negocio y servicios de aplicación sin depender de infraestructura real. |
-| Frontend | TypeScript strict | `tsconfig.json` | Detectar errores de tipos, variables sin uso y casos incompletos. |
-| Frontend | Vue TSC + Vite | `pnpm build` | Validar componentes Vue y generar build productivo. |
-| Frontend | Vitest | `pnpm test run` | Ejecutar pruebas unitarias o de integración del frontend. |
-| E2E | TypeScript Compiler | `pnpm typecheck` | Validar archivos Cucumber, Playwright, Step Definitions y soporte. |
-| Pipeline | GitHub Actions | `.github/workflows/pipeline.yml`, `.github/workflows/ci.yml` | Automatizar instalación, build y pruebas ante cambios en el repositorio. |
+| Backend | Maven Compiler + Java 25 | `./mvnw test` | Validar compilación, dependencias y ejecución de pruebas. |
+| Backend | Spring Boot Test | `application-test.yml` | Ejecutar pruebas sobre un entorno aislado. |
+| Frontend | TypeScript Strict | `tsconfig.json` | Detectar errores de tipado y variables sin uso. |
+| Frontend | Vue TSC + Vite | `pnpm build` | Validar componentes Vue y generar el build de producción. |
+| E2E | TypeScript Compiler | `pnpm typecheck` | Validar archivos Cucumber, Playwright y Step Definitions. |
+| CI/CD | GitHub Actions | `.github/workflows/pipeline.yml` | Ejecutar automáticamente las validaciones del proyecto. |
 
-##### Evidencia técnica del backend
+#### 6.2.1.1. Coding Standard & Code Conventions
 
-En el archivo `pom.xml` del backend se define la versión de Java utilizada para la compilación:
+AutoNexo adopta convenciones de codificación orientadas a mantener un código consistente, legible y fácil de mantener. Estas convenciones son aplicadas en todos los repositorios del proyecto.
 
-```xml
-<properties>
-    <java.version>25</java.version>
-    <maven.compiler.source>25</maven.compiler.source>
-    <maven.compiler.target>25</maven.compiler.target>
-</properties>
-```
+### Convenciones generales
 
-Asimismo, el backend incorpora dependencias de testing como `spring-boot-starter-test`, H2 para pruebas y Mockito/JUnit mediante el ecosistema de Spring Boot.
+- El código fuente se desarrolla principalmente en inglés.
+- Los commits siguen el estándar **Conventional Commits** (`feat`, `fix`, `docs`, `test`, `refactor`, `chore`).
+- Se procura mantener métodos con responsabilidad única y nombres descriptivos.
+- Las pruebas siguen el patrón `Method_WhenCondition_ShouldExpectedResult`.
 
-##### Evidencia técnica del frontend
+### Backend
 
-El frontend utiliza TypeScript en modo estricto para prevenir errores antes de ejecutar la aplicación:
+| Elemento | Convención |
+|---|---|
+| Clases | PascalCase |
+| Métodos | camelCase |
+| Variables | camelCase |
+| Paquetes | minúsculas organizadas por bounded context |
+| Arquitectura | Domain, Application, Infrastructure e Interfaces |
 
-```json
-{
-  "compilerOptions": {
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "isolatedModules": true,
-    "noEmit": true
-  }
-}
-```
+### Frontend
 
-En `package.json`, el script de build valida tipos y genera la versión productiva:
+| Elemento | Convención |
+|---|---|
+| Componentes Vue | PascalCase |
+| Modelos | TypeScript |
+| Servicios | Separados por dominio |
+| Tipado | TypeScript Strict |
 
-```json
-{
-  "scripts": {
-    "build": "vue-tsc && vite build",
-    "test": "vitest"
-  }
-}
-```
+### E2E
 
-##### Evidencia técnica del pipeline
+| Elemento | Convención |
+|---|---|
+| Feature Files | snake_case |
+| Scenarios | Given / When / Then |
+| Step Definitions | Separados por responsabilidad |
+| Support Layer | CustomWorld + Hooks |
 
-El backend cuenta con un pipeline de GitHub Actions que ejecuta pruebas mediante Maven:
+#### 6.2.1.2. Code Quality & Code Security
 
-```yaml
-- name: Set up JDK 25
-  uses: actions/setup-java@v4
-  with:
-    java-version: '25'
-    distribution: 'temurin'
-    cache: 'maven'
+La calidad del código se garantiza mediante la aplicación de principios de arquitectura, pruebas automatizadas y validaciones continuas. Asimismo, se implementan medidas básicas de seguridad para proteger la configuración del proyecto y evitar dependencias con datos productivos.
 
-- name: Execute Tests
-  run: ./mvnw test
-```
+### Code Quality
 
-##### Capturas recomendadas
+| Práctica | Evidencia | Beneficio |
+|---|---|---|
+| Domain-Driven Design | Bounded Contexts | Separación de responsabilidades |
+| Unit Tests | WorkshopDomainUnitTest | Validación de reglas de negocio |
+| Integration Tests | WorkshopApplicationIntegrationTest | Validación entre capas |
+| BDD | AutoNexo-e2e | Validación de procesos de negocio |
+| TypeScript Strict | tsconfig.json | Prevención de errores de tipado |
+| CI/CD | GitHub Actions | Automatización de validaciones |
+
+### Code Security
+
+| Riesgo | Medida aplicada |
+|---|---|
+| Credenciales | Uso de archivos `.env` y `.env.example` |
+| Acceso no autorizado | JWT + Spring Security |
+| Configuración de pruebas | Perfil `application-test.yml` |
+| Datos para E2E | Usuarios generados automáticamente |
+| Integración de cambios | Pipeline de GitHub Actions |
+
+### Evidencias
 
 ![static-backend-pom](assets/images/screenshots/static-backend-pom.png)
 
@@ -6021,131 +5994,69 @@ El backend cuenta con un pipeline de GitHub Actions que ejecuta pruebas mediante
 
 ![static-github-actions](assets/images/screenshots/static-github-actions.png)
 
-##### 6.2.1.1. Coding Standard & Code Conventions
+![static-env-security](assets/images/screenshots/static-env-security.png)
 
-AutoNexo aplica estándares de codificación orientados a mantener un código legible, consistente y mantenible entre sus diferentes componentes. Estas convenciones permiten que el equipo trabaje de forma colaborativa y que los cambios puedan ser revisados con mayor facilidad en pull requests.
+### 6.2.2. Reviews
 
-##### Convenciones generales del proyecto
+Las revisiones de código realizadas durante el desarrollo de AutoNexo tuvieron como objetivo garantizar la calidad del software antes de integrar cambios en las ramas principales del proyecto. Para ello, el equipo siguió un flujo de trabajo basado en GitHub, empleando ramas de desarrollo (*feature branches*), Pull Requests y revisiones colaborativas antes de realizar los procesos de integración.
 
-| Criterio | Convención aplicada |
-|---|---|
-| Idioma del código | Clases, métodos, variables, commits técnicos y nombres de archivos se redactan principalmente en inglés. |
-| Commits | Uso de Conventional Commits: `feat`, `fix`, `test`, `docs`, `chore`, `refactor`. |
-| Organización | Separación por repositorios: backend, frontend, landing page, mobile y E2E. |
-| Trazabilidad | Los cambios se desarrollan mediante ramas de feature y se integran mediante pull requests. |
-| Testing | Las pruebas usan nombres descriptivos que expresan método, condición y resultado esperado. |
+Este proceso permitió mantener la trazabilidad de los cambios, facilitar la colaboración entre los integrantes del equipo y verificar que las funcionalidades implementadas cumplieran con los criterios definidos para cada Sprint.
 
-##### Backend: Java + Spring Boot + DDD
+---
 
-El backend sigue una organización inspirada en Domain-Driven Design, separando el sistema en bounded contexts y capas.
+### Estrategia de revisión aplicada
 
-| Elemento | Convención |
-|---|---|
-| Paquetes | Minúsculas y agrupados por bounded context: `iam`, `workshop`, `matching`, `vehicle`, `trust`, `shared`. |
-| Capas | Separación entre `domain`, `application`, `infrastructure` e `interfaces`. |
-| Clases | `PascalCase`, por ejemplo `WorkshopCommandServiceImpl`, `InvitationCommandServiceImpl`. |
-| Métodos y variables | `camelCase`, por ejemplo `createWorkshop`, `ownerUserId`, `workshopRepository`. |
-| Value Objects | Clases específicas para representar conceptos del dominio, como `Email`, `UserId`, `WorkshopId`, `Money`. |
-| Tests | Nombres descriptivos con patrón `method_WhenCondition_ShouldExpectedResult`. |
-| Assertions | Uso de JUnit para estado y excepciones; Mockito para interacciones con dependencias. |
+Durante el desarrollo del proyecto se aplicó el siguiente flujo de trabajo:
 
-##### Frontend: Vue + TypeScript
+1. Desarrollo de nuevas funcionalidades en ramas independientes.
+2. Creación de Pull Requests hacia la rama `develop`.
+3. Revisión de los cambios antes de la integración.
+4. Validación de las pruebas automatizadas correspondientes.
+5. Integración de cambios hacia la rama principal (`main`) una vez aprobados.
 
-| Elemento | Convención |
-|---|---|
-| Componentes | Uso de componentes Vue organizados por módulos funcionales. |
-| Tipado | Uso de TypeScript con configuración estricta. |
-| Servicios | Separación de lógica de acceso a API en servicios especializados. |
-| Modelos | Definición de modelos TypeScript por módulo. |
-| Rutas | Organización de vistas por dominios funcionales: IAM, vehículos, matching, dashboard. |
-| Build | Validación mediante `vue-tsc && vite build`. |
+---
 
-##### BDD/E2E: Cucumber + Playwright
+### Pull Requests y revisiones realizadas
 
-| Elemento | Convención |
-|---|---|
-| Features | Archivos `.feature` en `snake_case`, por ejemplo `car_owner_create_request.feature`. |
-| Escenarios | Redacción con `Given`, `When`, `Then`. |
-| Step Definitions | Separados por responsabilidad: `auth.steps.ts`, `car_owner.steps.ts`, `workshop.steps.ts`. |
-| Support Layer | Uso de `CustomWorld` para manejar navegador, contexto, página y estado de prueba. |
-| Variables | Uso de `.env.e2e.example` para documentar configuración sin exponer secretos. |
+| Repositorio | Pull Request | Rama origen | Rama destino | Descripción |
+|---|---|---|---|---|
+| AutoNexo-Backend | PR #4 | `feature/workshop-testing` | `develop` | Incorporación de pruebas unitarias e integración para el bounded context Workshop. |
+| AutoNexo-Backend | PR #5 | `develop` | `main` | Integración de la suite de pruebas del bounded context Workshop. |
+| AutoNexo-Backend | PR #11 | `feature/iam-structured-error-handling` | `develop` | Estandarización del manejo de errores en el backend. |
+| AutoNexo-Backend | PR #12 | `develop` | `main` | Integración de las mejoras de manejo de errores hacia la rama principal. |
+| AutoNexo-Frontend | PR #6 | `feature/available-requests` | `develop` | Implementación de los módulos principales del sistema para solicitudes y reservas. |
+| AutoNexo-Frontend | PR #7 | `develop` | `main` | Integración de funcionalidades principales del frontend. |
+| AutoNexo-Frontend | PR #12 | `feature/authentication-error-handling` | `develop` | Adaptación del frontend al nuevo contrato de errores del backend. |
+| AutoNexo-Frontend | PR #14 | `feature/e2e-deattach` | `develop` | Separación del proyecto E2E hacia un repositorio independiente. |
 
-##### Evidencias 
+---
 
-![conventions-ddd-structure](assets/images/screenshots/conventions-ddd-structure.png)
+### Evidencia de revisiones
 
-![conventions-test-naming](assets/images/screenshots/conventions-test-naming.png)
+La siguiente evidencia muestra algunos Pull Requests utilizados durante el desarrollo del proyecto.
 
-![conventions-e2e-steps](assets/images/screenshots/conventions-e2e-steps.png)
 
-##### 6.2.1.2. Code Quality & Code Security
+#### Pull Request del Backend
 
-La calidad y seguridad del código en AutoNexo se gestionan mediante prácticas preventivas, pruebas automatizadas, separación de responsabilidades, control de credenciales y revisión de cambios. Estas prácticas reducen el riesgo de introducir errores en funcionalidades críticas como autenticación, solicitudes, ofertas, reservas y gestión de talleres.
+![review-backend-pr4](assets/images/screenshots/review-backend-pr4.png)
 
-##### Code Quality
+---
 
-| Práctica | Evidencia en AutoNexo | Beneficio |
-|---|---|---|
-| Domain-Driven Design | Bounded contexts como `iam`, `workshop`, `matching`, `vehicle`, `trust`. | Facilita escalabilidad, mantenibilidad y separación del dominio. |
-| Clean Code | Nombres descriptivos, métodos enfocados y organización por capas. | Reduce ambigüedad y mejora comprensión del código. |
-| Unit Tests | `WorkshopDomainUnitTest` | Valida reglas de negocio sin depender de infraestructura. |
-| Integration Tests | `WorkshopApplicationIntegrationTest`, `UsersControllerIntegrationTest` | Verifica interacción entre servicios, repositorios y controladores. |
-| BDD/System Tests | `AutoNexo-e2e` con Cucumber y Playwright. | Valida flujos principales desde la perspectiva del usuario. |
-| Static Type Checking | TypeScript strict en frontend y E2E. | Detecta errores de tipos antes de ejecución. |
-| CI/CD | GitHub Actions ejecutando build y tests. | Automatiza validaciones antes de integración. |
+#### Pull Request del Frontend
 
-##### Code Security
+![review-frontend-pr6](assets/images/screenshots/review-frontend-pr6.png)
 
-| Riesgo | Medida aplicada | Evidencia |
-|---|---|---|
-| Exposición de credenciales | Uso de archivos `.env` locales y ejemplos `.env.example` / `.env.e2e.example`. | Repositorios frontend y E2E. |
-| Uso de datos productivos en pruebas | Setup E2E crea usuarios y taller de prueba por ejecución. | `AutoNexo-e2e/support/setup.ts`. |
-| Acceso no autenticado | Backend utiliza Spring Security y JWT. | Módulo `iam`, filtros de autorización y security configuration. |
-| Errores inconsistentes | Uso de `ErrorResponse` y handlers centralizados. | `GlobalExceptionHandler`, `IamExceptionHandler`. |
-| Dependencia de base real en tests | Uso de H2 y perfil `test`. | `application-test.yml`. |
-| Integración de código defectuoso | Workflow CI ejecuta pruebas antes de avanzar. | GitHub Actions. |
+---
 
-##### Seguridad en pruebas E2E
+#### Historial de commits del repositorio AutoNexo-e2e
 
-El repositorio `AutoNexo-e2e` evita depender de credenciales reales. El archivo `support/setup.ts` genera usuarios dinámicos para cada ejecución:
+![review-e2e-commits](assets/images/screenshots/review-e2e-commits.png)
 
-```ts
-const carOwnerEmail = `e2e-carowner-${runId}@test.com`;
-const workshopEmail = `e2e-workshop-${runId}@test.com`;
-```
+---
 
-Esto evita reutilizar cuentas productivas y permite ejecutar pruebas repetibles en entornos controlados.
+### Conclusiones
 
-#### 6.2.2. Reviews
-
-Las revisiones de código se realizaron mediante GitHub, utilizando ramas de feature, commits semánticos y pull requests para integrar cambios hacia `develop` y posteriormente hacia `main`. Este proceso permite mantener trazabilidad del trabajo realizado, revisar archivos modificados y reducir el riesgo de integrar cambios incompletos o defectuosos.
-
-##### Estrategia de revisión
-
-| Práctica | Descripción |
-|---|---|
-| Feature Branching | Las funcionalidades se desarrollan en ramas independientes, por ejemplo `feature/workshop-testing`. |
-| Pull Requests | Los cambios se integran mediante PRs hacia `develop` o `main`. |
-| Conventional Commits | Los commits usan prefijos como `feat`, `fix`, `test`, `docs`, `chore`. |
-| Revisión por alcance | Se revisa que los archivos modificados correspondan a la funcionalidad declarada. |
-| Verificación de pruebas | Se confirma que existan pruebas o evidencias cuando el cambio afecta comportamiento crítico. |
-| CI como gate | Los workflows permiten detectar fallos antes de considerar una integración como estable. |
-
-##### Pull Requests y commits relevantes
-
-| Repositorio | PR / Commit | Rama origen | Rama destino | Descripción | Evidencia |
-|---|---|---|---|---|---|
-| AutoNexo-Backend | PR #4 | `feature/workshop-testing` | `develop` | Agrega pruebas unitarias e integración para bounded context Workshop. | `WorkshopDomainUnitTest.java`, `WorkshopApplicationIntegrationTest.java`. |
-| AutoNexo-Backend | PR #5 | `develop` | `main` | Integra suite de pruebas Workshop hacia rama principal. | Merge hacia main. |
-| AutoNexo-Backend | PR #11 | `feature/iam-structured-error-handling` | `develop` | Estandariza manejo de errores en IAM y backend. | Handlers y `ErrorResponse`. |
-| AutoNexo-Frontend | PR #6 | `feature/available-requests` | `develop` | Implementa vistas core de solicitudes, ofertas, agenda y booking receipt. | Vistas de matching y dashboard. |
-| AutoNexo-Frontend | PR #12 | `feature/authentication-error-handling` | `develop` | Alinea frontend con contrato de error del backend. | `apiClient`, `apiError`, servicios IAM. |
-| AutoNexo-e2e | Commit `0854edc` | `main` | `main` | Agrega features Cucumber para flujos principales. | `features/*.feature`. |
-| AutoNexo-e2e | Commit `5ece805` | `main` | `main` | Agrega Step Definitions para escenarios E2E. | `steps/*.ts`. |
-
-##### Conclusión de reviews
-
-El proceso de revisión permitió evidenciar colaboración en el sistema de control de versiones y asegurar que las funcionalidades críticas del producto cuenten con trazabilidad. Las pruebas del backend, los flujos implementados en frontend y los escenarios BDD/E2E se encuentran respaldados por commits y pull requests que demuestran evolución incremental del producto.
+Las revisiones realizadas mediante Pull Requests permitieron verificar los cambios antes de su integración, mantener la trazabilidad del desarrollo y facilitar la colaboración entre los integrantes del equipo. Asimismo, el uso de ramas independientes y commits semánticos contribuyó a mantener un historial organizado del proyecto.
 
 ### 6.3. Validation Interviews
 
@@ -6227,236 +6138,140 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 #### 6.3.2. Registro de Entrevistas
 
+##### Entrevistado 1
 
-<table border="1">
-  <tr>
-    <th>Campo</th>
-    <th>Información</th>
-  </tr>
-  <tr>
-    <td>Entrevistado 1</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Segmento objetivo</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Ocupación / rol</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Distrito / ubicación</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><img src="assets/images/interview-validation/interview-1.png" alt="Evidencia entrevistado 1"></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Timing</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Enlace de grabación</td>
-    <td></td>
-  </tr>
-</table>
+| Campo | Información |
+|---|---|
+| Segmento objetivo | Propietarios de vehículos |
+| Edad | 22 |
+| Ocupación / Rol | Conductor habitual (Hyundai Elantra 2016) |
+| Distrito / Ubicación | Ate |
+| Fecha y duración | 5/12/25 · 12:33–18:22 |
+| Enlace de grabación | [Ver grabación](https://drive.google.com/file/d/1k5rTJ_HBlQ_fjz2q8wKVoqDCgO3XSpMk/view?usp=sharing) |
+| Principales comentarios | Freddy Fernandez Camacho señaló que su principal problema es la falta de talleres confiables con precios justos. El landing page le pareció claro, aunque sugirió resaltar más los beneficios. En la app completó fácilmente el registro y la creación de una solicitud de mantenimiento, destacando el comparador de mecánicos y la claridad del historial. Tuvo ligeras dudas al navegar entre ofertas, pero encontró intuitivo el proceso de reserva. Sugirió incluir filtros avanzados por repuestos y tiempos estimados de servicio. |
 
-<br>
+**Evidencia**
 
-<table border="1">
-  <tr>
-    <th>Campo</th>
-    <th>Información</th>
-  </tr>
-  <tr>
-    <td>Entrevistado 2</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Segmento objetivo</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Ocupación / rol</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Distrito / ubicación</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><img src="assets/images/interview-validation/interview-2.png" alt="Evidencia entrevistado 2"></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Timing</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Enlace de grabación</td>
-    <td></td>
-  </tr>
-</table>
+![Entrevistado 1](/assets/images/validation-interview/validation-interview-1.png)
 
-<br>
+---
 
-<table border="1">
-  <tr>
-    <th>Campo</th>
-    <th>Información</th>
-  </tr>
-  <tr>
-    <td>Entrevistado 3</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Segmento objetivo</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Ocupación / rol</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Distrito / ubicación</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><img src="assets/images/interview-validation/interview-3.png" alt="Evidencia entrevistado 3"></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Timing</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Enlace de grabación</td>
-    <td></td>
-  </tr>
-</table>
+##### Entrevistado 2
 
-<br>
+| Campo | Información |
+|---|---|
+| Segmento objetivo | Propietarios de vehículos |
+| Edad | 20 |
+| Ocupación / Rol | Dueño de vehículo (Kia Picanto 2018) |
+| Distrito / Ubicación | La Molina |
+| Fecha y duración | 05/12/25 · 18:23–25:06 |
+| Enlace de grabación | [Ver grabación](https://drive.google.com/file/d/1k5rTJ_HBlQ_fjz2q8wKVoqDCgO3XSpMk/view?usp=sharing) |
+| Principales comentarios | Diego Ignacio Ricra Falla comentó que suele tener dificultades para entender precios y saber si un taller es confiable. El landing page le pareció moderno y organizado, aunque recomendó destacar más el botón de "Descargar App". Completó sin problemas el registro y la creación de una solicitud, valorando la comparación de mecánicos y que las ofertas muestren fotos, precios y tiempos estimados. Sugirió recordatorios automáticos más visibles y calificó la experiencia como rápida y confiable. |
 
-<table border="1">
-  <tr>
-    <th>Campo</th>
-    <th>Información</th>
-  </tr>
-  <tr>
-    <td>Entrevistado 4</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Segmento objetivo</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Ocupación / rol</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Distrito / ubicación</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><img src="assets/images/interview-validation/interview-4.png" alt="Evidencia entrevistado 4"></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Timing</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Enlace de grabación</td>
-    <td></td>
-  </tr>
-</table>
+**Evidencia**
+
+![Entrevistado 2](/assets/images/validation-interview/validation-interview-2.png)
+
+---
+
+##### Entrevistado 3
+
+| Campo | Información |
+|---|---|
+| Segmento objetivo | Mecánicos / Talleres |
+| Edad | 25 |
+| Ocupación / Rol | Mecánica con 12 años de experiencia |
+| Distrito / Ubicación | Ate |
+| Fecha y duración | 05/11/25 · 00:00–06:22 |
+| Enlace de grabación | [Ver grabación](https://drive.google.com/file/d/1k5rTJ_HBlQ_fjz2q8wKVoqDCgO3XSpMk/view?usp=sharing) |
+| Principales comentarios | Maria Fernanda aseguró que su mayor dificultad es llevar un control ordenado del historial de cada vehículo y coordinar con varios clientes a la vez. El landing page le pareció claro y profesional. Valoró el registro de solicitudes, la vista tipo panel y el checklist de mantenimiento, indicando que la app reduciría errores y mejoraría la trazabilidad. Le resultaron útiles las alertas automáticas de próximos servicios y sugirió incluir estadísticas más detalladas de productividad del taller. |
+
+**Evidencia**
+
+![Entrevistado 3](/assets/images/validation-interview/validation-interview-3.png)
+
+---
+
+##### Entrevistado 4
+
+| Campo | Información |
+|---|---|
+| Segmento objetivo | Mecánicos / Talleres |
+| Edad | 20 |
+| Ocupación / Rol | Especialista en mecánica pesada, dueño de un pequeño taller |
+| Distrito / Ubicación | San Isidro |
+| Fecha y duración | 11/05/25 · 06:23–12:33 |
+| Enlace de grabación | [Ver grabación](https://drive.google.com/file/d/1k5rTJ_HBlQ_fjz2q8wKVoqDCgO3XSpMk/view?usp=sharing) |
+| Principales comentarios | Samuel Quintanilla señaló que su problema principal es depender de WhatsApp para coordinar clientes y no tener un historial centralizado por placa. El landing page le resultó sencillo y directo. En la app registró su taller, configuró empleados y gestionó una solicitud sin dificultades, resaltando el checklist, el flujo de finalización del servicio y la mensajería integrada. Sugirió mejorar la visibilidad de promociones de talleres y ofrecer reportes financieros mensuales. |
+
+**Evidencia**
+
+![Entrevistado 4](/assets/images/validation-interview/validation-interview-4.png)
 
 #### 6.3.3. Evaluaciones Según Heurísticas
 
-Para complementar las entrevistas de validación, se propone evaluar la experiencia de AutoNexo utilizando heurísticas de usabilidad basadas en los principios de Nielsen. Esta evaluación permite identificar problemas de interfaz, navegación, claridad y prevención de errores en los flujos principales del producto.
-
+Para complementar las entrevistas de validación, se evaluó la experiencia de AutoNexo utilizando heurísticas de usabilidad basadas en los principios de Nielsen. Esta evaluación permitió identificar problemas de interfaz, navegación, claridad y prevención de errores en los flujos principales del producto, a partir de las observaciones recogidas durante las 4 entrevistas de validación realizadas.
 
 ##### Matriz de evaluación heurística
 
 | Heurística | Criterio de evaluación en AutoNexo | Flujo evaluado | Severidad | Hallazgo | Recomendación |
-|---|---|---|---:|---|---|
-| Visibilidad del estado del sistema | El usuario sabe si inició sesión, si una solicitud fue enviada o si una oferta fue aceptada. | Login, solicitud, booking |  |  |  |
-| Relación sistema-mundo real | El sistema usa términos comprensibles para propietarios y talleres. | Vehículos, servicios, ofertas |  |  |  |
-| Control y libertad del usuario | El usuario puede volver, cancelar o corregir información antes de enviar. | Formulario de solicitud |  |  |  |
-| Consistencia y estándares | Botones, iconos, mensajes y rutas mantienen comportamiento uniforme. | Frontend general |  |  |  |
-| Prevención de errores | Se indican campos obligatorios y se evitan solicitudes incompletas. | Registro de vehículo, solicitud |  |  |  |
-| Reconocimiento antes que memoria | El usuario no necesita recordar información de pantallas anteriores. | Comparación de ofertas |  |  |  |
-| Flexibilidad y eficiencia | Los talleres pueden responder de forma rápida y eficiente. | Envío de ofertas |  |  |  |
-| Diseño estético y minimalista | La interfaz muestra información relevante sin saturar al usuario. | Dashboard, ofertas, booking |  |  |  |
-| Ayuda para reconocer errores | Los mensajes de error explican qué ocurrió y cómo corregirlo. | Login, formularios |  |  |  |
-| Ayuda y documentación | Existen textos de apoyo o instrucciones en pasos complejos. | Solicitud, booking |  |  |  |
+|---|---|---:|---:|---|---|
+| Visibilidad del estado del sistema | El usuario sabe si inició sesión, si una solicitud fue enviada o si una oferta fue aceptada. | Login, solicitud, booking | 0 | Los usuarios (Freddy, Diego, María, Amir) completaron login, solicitudes y aceptación de ofertas sin confusión sobre el estado del sistema. | Ninguna acción crítica; mantener los mensajes de confirmación actuales. |
+| Relación sistema-mundo real | El sistema usa términos comprensibles para propietarios y talleres. | Vehículos, servicios, ofertas | 0 | Todos los entrevistados reconocieron con facilidad los términos usados (solicitud, oferta, checklist, historial). | Mantener el lenguaje actual; validar terminología con futuros segmentos de usuario. |
+| Control y libertad del usuario | El usuario puede volver, cancelar o corregir información antes de enviar. | Formulario de solicitud | 1 | Freddy mostró ligeras dudas al navegar entre ofertas antes de decidir, aunque logró completar el flujo sin ayuda. | Agregar un botón visible de "volver" o "comparar de nuevo" dentro de la vista de ofertas. |
+| Consistencia y estándares | Botones, iconos, mensajes y rutas mantienen comportamiento uniforme. | Frontend general | 0 | No se reportaron inconsistencias visuales ni de comportamiento entre el landing page y la app. | Mantener el sistema de diseño actual (Figma) como referencia para nuevas pantallas. |
+| Prevención de errores | Se indican campos obligatorios y se evitan solicitudes incompletas. | Registro de vehículo, solicitud | 0 | Diego y Freddy completaron el registro y la solicitud sin errores ni campos faltantes. | Mantener las validaciones actuales; reforzar mensajes visuales en campos obligatorios. |
+| Reconocimiento antes que memoria | El usuario no necesita recordar información de pantallas anteriores. | Comparación de ofertas | 1 | Diego valoró que las ofertas muestren fotos, precios y tiempos estimados directamente, sin tener que recordar datos previos. | Mantener toda la información clave visible en la tarjeta de oferta sin pasos adicionales. |
+| Flexibilidad y eficiencia | Los talleres pueden responder de forma rápida y eficiente. | Envío de ofertas | 1 | Amir y María gestionaron solicitudes y configuraron su taller sin dificultad, destacando ahorro de tiempo. | Evaluar accesos rápidos o plantillas de respuesta para talleres con alto volumen de solicitudes. |
+| Diseño estético y minimalista | La interfaz muestra información relevante sin saturar al usuario. | Dashboard, ofertas, booking | 0 | Los cuatro entrevistados describieron la interfaz como clara, organizada y "no saturada". | Mantener el diseño minimalista actual como estándar del producto. |
+| Ayuda para reconocer errores | Los mensajes de error explican qué ocurrió y cómo corregirlo. | Login, formularios | 0 | No se registraron errores durante las pruebas guiadas; los formularios se completaron sin bloqueos. | Mantener validaciones actuales; documentar casos de error para pruebas futuras con más usuarios. |
+| Ayuda y documentación | Existen textos de apoyo o instrucciones en pasos complejos. | Solicitud, booking | 1 | María y Amir sugirieron mayor apoyo informativo (estadísticas de productividad, reportes financieros) para talleres. | Incorporar textos de ayuda contextual y una sección de reportes/estadísticas para talleres. |
 
 ##### Resultado esperado de la evaluación
 
-La evaluación heurística permitirá priorizar mejoras de UX relacionadas con:
+La evaluación heurística confirmó que AutoNexo presenta una base de usabilidad sólida, sin hallazgos de severidad alta. Las oportunidades de mejora identificadas se enfocan en:
+- Mayor visibilidad de opciones para comparar o volver a revisar ofertas antes de decidir.
+- Incorporación de reportes financieros y estadísticas de productividad para talleres.
+- Mejora en la visibilidad de promociones dentro de la app.
+- Textos de ayuda contextual en pasos clave del flujo de solicitud y booking.
+- Mantenimiento de la consistencia visual y el diseño minimalista ya validado por los usuarios.
 
-- Claridad de formularios.
-- Reducción de errores al crear solicitudes.
-- Mejora de tarjetas de oferta.
-- Mayor confianza al aceptar una propuesta.
-- Claridad del comprobante de reserva.
-- Consistencia visual entre módulos.
+## 6.4. Auditoría de Experiencias de Usuario
 
-### 6.4. Auditoría de Experiencias de Usuario
-
-La auditoría de experiencias de usuario busca evaluar la calidad de la interacción entre los usuarios y la plataforma AutoNexo. Esta actividad permite identificar oportunidades de mejora desde una mirada externa o comparativa, considerando criterios de usabilidad, accesibilidad, navegación, arquitectura de información, consistencia visual y cumplimiento de objetivos del usuario.
+La auditoría de experiencias de usuario busca evaluar la calidad de la interacción entre los usuarios y la plataforma AutoNexo mediante una revisión cruzada entre equipos, considerando aspectos de usabilidad, accesibilidad, navegación, arquitectura de información, consistencia visual y cumplimiento de los objetivos del usuario.
 
 La auditoría se divide en dos partes:
 
 - **Auditoría realizada:** evaluación que el equipo realiza sobre otro grupo o producto asignado.
 - **Auditoría recibida:** evaluación que otro grupo realiza sobre AutoNexo y cuyas observaciones deben ser analizadas para proponer mejoras.
 
-#### 6.4.1. Auditoría Realizada
+Para este ciclo, el equipo AutoNexo (startup ATG) realizó un intercambio de auditoría con el equipo **EduLabs**, encargado del producto **Demy**.
 
-La auditoría realizada corresponde al proceso mediante el cual el equipo de AutoNexo evalúa la experiencia de usuario de otro grupo, siguiendo criterios definidos previamente y registrando hallazgos de forma estructurada.
+#### 6.4.1. Auditoría Realizada
 
 ##### 6.4.1.1. Información del Grupo Auditado
 
 | Campo | Información |
 |---|---|
-| Nombre del grupo auditado |  |
-| Nombre del producto auditado |  |
-| Segmento objetivo del producto |  |
-| Plataforma evaluada |  |
-| URL del repositorio / prototipo / despliegue |  |
-| Fecha de auditoría |  |
-| Integrantes responsables de la auditoría |  |
+| Nombre del grupo auditado | EduLabs |
+| Nombre del producto auditado | Demy |
+| Segmento objetivo del producto | Administrativos y docentes de academias educativas presenciales (preuniversitarias) en Perú |
+| Plataforma evaluada | Web (Angular + Angular Material), App móvil nativa Android (Administrador, exclusiva para tablets), App móvil multiplataforma Flutter (Docente, iOS/Android) |
+| URL del repositorio / prototipo / despliegue | https://github.com/EduLabs-Experimentos/demy-report |
+| Fecha de auditoría | 2026-06-15 |
+| Integrantes responsables de la auditoría | Cruz Ibarra, Victor Andrés; Solis Chang, Santiago Valentino; Navarro Chang, Alicia Avril; Vidal Castro, Miguel Ángel; Castro Sanchez, Amir Gabriel |
 
 ##### 6.4.1.2. Cronograma de Auditoría Realizada
 
 | Actividad | Fecha | Responsable | Estado | Evidencia |
 |---|---|---|---|---|
-| Revisión inicial del producto asignado |  |  |  |  |
-| Definición de criterios de auditoría |  |  |  |  |
-| Evaluación heurística de pantallas principales |  |  |  |  |
-| Registro de hallazgos |  |  |  |  |
-| Priorización de problemas encontrados |  |  |  |  |
-| Elaboración de recomendaciones |  |  |  |  |
-| Entrega de auditoría al grupo auditado |  |  |  |  |
+| Revisión inicial del producto asignado | 2026-06-15 | Equipo AutoNexo | Completado | Revisión del repositorio demy-report |
+| Definición de criterios de auditoría | 2026-06-15 | Equipo AutoNexo | Completado | Ver Criterios de evaluación utilizados |
+| Evaluación heurística de pantallas principales | 2026-06-15 | Equipo AutoNexo | Completado | Ver Registro de hallazgos |
+| Registro de hallazgos | 2026-06-16 | Equipo AutoNexo | Completado | Ver Registro de hallazgos |
+| Priorización de problemas encontrados | 2026-06-16 | Equipo AutoNexo | Completado | Escala de severidad aplicada |
+| Elaboración de recomendaciones | 2026-06-16 | Equipo AutoNexo | Completado | Ver columna Recomendación |
+| Entrega de auditoría al grupo auditado | 2026-06-17 | Equipo AutoNexo | Completado | Comunicación vía Discord del NRC |
 
 ##### 6.4.1.3. Contenido de Auditoría Realizada
 
@@ -6476,11 +6291,9 @@ La auditoría realizada corresponde al proceso mediante el cual el equipo de Aut
 
 | ID | Pantalla / flujo auditado | Criterio afectado | Hallazgo | Severidad (1-4) | Recomendación | Evidencia |
 |---|---|---|---|---:|---|---|
-| H-01 |  |  |  |  |  |  |
-| H-02 |  |  |  |  |  |  |
-| H-03 |  |  |  |  |  |  |
-| H-04 |  |  |  |  |  |  |
-| H-05 |  |  |  |  |  |  |
+| H-01 | App móvil nativa Android (Administrador) | Accesibilidad básica | La app nativa Android para administradores está diseñada exclusivamente para tablets, sin soporte para smartphones. Esto limita a administradores que necesiten gestionar la academia desde su celular en movimiento. | 3 | Evaluar una versión responsive del panel administrativo para smartphone, o documentar explícitamente esta limitación como decisión de producto validada con usuarios reales. | Sección 4.1.3.2 "Android Mobile Style Guidelines" del README de Demy |
+| H-02 | Mock-ups vs Wireframes de la app del Administrador | Consistencia visual / Documentación | Las descripciones textuales de los Mock-ups del Administrador son idénticas palabra por palabra a las descripciones de los Wireframes, incluyendo los mismos títulos y párrafos explicativos. Esto dificulta verificar si el diseño visual final (mock-up) realmente evolucionó respecto al wireframe de baja fidelidad. | 2 | Diferenciar claramente el contenido descriptivo entre wireframes y mock-ups, mostrando qué decisiones visuales de alta fidelidad (color, tipografía, Design System) se aplicaron sobre la estructura base. | Comparación directa entre secciones 4.4.1 y 4.4.3 del README de Demy |
+| H-03 | Módulo de Facturación (Billing) — flujo del Administrador | Cumplimiento del flujo principal | El equipo EduLabs planteó la Hypothesis 02 ("recordatorios automáticos de pagos reducirán la morosidad"), pero en la documentación de implementación (pruebas unitarias del Billing Bounded Context y wireframes de "Facturación") solo se evidencia creación manual de facturas y marcado manual de "pagado", sin lógica de notificación automática visible. | 2 | Validar si el recordatorio automático de pagos ya está implementado o si sigue siendo una hipótesis pendiente de experimentar, y reflejarlo con precisión en el Capítulo VIII (Experiment-Driven Development) para evitar sobreestimar el avance del feature. | Sección "Billing Bounded - Gestión de Facturación" (pruebas unitarias) y wireframe "Facturación (Billing)" del README de Demy |
 
 ##### Escala de severidad utilizada
 
@@ -6495,40 +6308,40 @@ La auditoría realizada corresponde al proceso mediante el cual el equipo de Aut
 
 #### 6.4.2. Auditoría Recibida
 
-La auditoría recibida corresponde a la evaluación realizada por otro grupo sobre la experiencia de usuario de AutoNexo. Los hallazgos recibidos deben ser analizados para identificar mejoras aplicables en la plataforma y documentar acciones de subsanación.
+La auditoría recibida corresponde a la evaluación realizada por el equipo **EduLabs** (producto **Demy**) sobre la experiencia de usuario de AutoNexo. Los hallazgos recibidos fueron analizados para identificar mejoras aplicables en la plataforma y documentar acciones de subsanación.
 
 ##### 6.4.2.1. Información del Grupo Auditor
 
 | Campo | Información |
 |---|---|
-| Nombre del grupo auditor |  |
-| Nombre del producto del grupo auditor |  |
-| Integrantes del grupo auditor |  |
-| Fecha de auditoría recibida |  |
-| Medio de entrega de la auditoría |  |
-| Enlace a documento / evidencia de auditoría |  |
+| Nombre del grupo auditor | EduLabs |
+| Nombre del producto del grupo auditor | Demy |
+| Integrantes del grupo auditor | Crispin Ramos, Daniel Franco; Dominguez Vargas, Rafael Alexander; Esteban Roman, Henry Kalet; Julca Cruz, Renso Anthony; Vilca Saboya, Diego Alejandro |
+| Fecha de auditoría recibida | 2026-06-15 |
+| Medio de entrega de la auditoría | Documento compartido vía Google Drive / Discord del NRC |
+| Enlace a documento / evidencia de auditoría | Compartido internamente entre grupos (ver Discord del NRC 16879) |
 
 ##### 6.4.2.2. Cronograma de Auditoría Recibida
 
 | Actividad | Fecha | Responsable | Estado | Evidencia |
 |---|---|---|---|---|
-| Recepción de observaciones del grupo auditor |  |  |  |  |
-| Revisión interna de hallazgos |  |  |  |  |
-| Clasificación por severidad |  |  |  |  |
-| Definición de acciones de mejora |  |  |  |  |
-| Implementación de correcciones priorizadas |  |  |  |  |
-| Verificación posterior de cambios |  |  |  |  |
-| Documentación de modificaciones realizadas |  |  |  |  |
+| Recepción de observaciones del grupo auditor | 2026-06-15 | Equipo AutoNexo | Completado | Documento de hallazgos EduLabs |
+| Revisión interna de hallazgos | 2026-06-16 | Equipo AutoNexo | Completado | Acta de reunión interna |
+| Clasificación por severidad | 2026-06-16 | Equipo AutoNexo | Completado | Ver Contenido de Auditoría Recibida |
+| Definición de acciones de mejora | 2026-06-17 | Equipo AutoNexo | Completado | Ver Resumen de Modificaciones |
+| Implementación de correcciones priorizadas | 2026-06-18 al 2026-06-20 | Equipo AutoNexo | En progreso | Commits asociados |
+| Verificación posterior de cambios | 2026-06-21 | Equipo AutoNexo | Pendiente | — |
+| Documentación de modificaciones realizadas | 2026-06-22 | Equipo AutoNexo | Completado | Sección 6.4.2.4 |
 
 ##### 6.4.2.3. Contenido de Auditoría Recibida
 
 | ID | Pantalla / flujo evaluado | Hallazgo recibido | Severidad reportada | Comentario del grupo auditor | Acción sugerida | Estado |
 |---|---|---|---:|---|---|---|
-| AR-01 |  |  |  |  |  |  |
-| AR-02 |  |  |  |  |  |  |
-| AR-03 |  |  |  |  |  |  |
-| AR-04 |  |  |  |  |  |  |
-| AR-05 |  |  |  |  |  |  |
+| AR-01 | Formulario de solicitud de servicio | El formulario se percibe extenso; no hay indicador de progreso ni resumen antes de enviar. | 3 | "Como usuario nuevo no sé cuántos pasos faltan ni qué campos son obligatorios." | Agregar barra de progreso y pantalla de resumen. | En análisis |
+| AR-02 | Tarjeta de oferta de taller | No se muestra de forma consistente el trust score ni el número de reseñas en todas las tarjetas. | 3 | "A veces veo la calificación y a veces no, no sé si es un bug o si el taller no tiene reseñas." | Estandarizar el componente de tarjeta de oferta para mostrar siempre trust score y cantidad de reseñas, incluso en cero. | Pendiente |
+| AR-03 | Footer / Landing Page | No se encontró un enlace visible a Términos y Condiciones ni Política de Privacidad. | 2 | "Fui a buscar el SaaS Agreement y no lo encontré enlazado en ningún lado del sitio." | Publicar el Acuerdo de Servicio (SaaS) en el footer. | Pendiente |
+| AR-04 | Booking receipt (comprobante de reserva) | El comprobante no muestra instrucciones claras de qué hacer después de aceptar la oferta. | 2 | "Acepté la oferta pero no supe si debía contactar al taller o esperar." | Rediseñar el comprobante incluyendo mapa, instrucciones y datos de contacto. | En análisis |
+| AR-05 | Tabla de contenidos del informe | Se detectó una sección duplicada (6.2) en el índice del documento. | 1 | "Al navegar el índice del reporte, la sección de Static Testing aparece dos veces con contenido distinto." | Consolidar la sección 6.2 y regenerar la tabla de contenidos. | Resuelto |
 
 ##### Categorías de hallazgos recibidos
 
@@ -6543,15 +6356,15 @@ La auditoría recibida corresponde a la evaluación realizada por otro grupo sob
 
 ##### 6.4.2.4. Resumen de Modificaciones para Subsanar Hallazgos
 
-Esta sección documenta las acciones tomadas por el equipo de AutoNexo para corregir o mitigar los hallazgos recibidos durante la auditoría de UX. Las modificaciones deben priorizarse según severidad, impacto en el flujo principal y esfuerzo de implementación.
+Esta sección documenta las acciones tomadas por el equipo de AutoNexo para corregir o mitigar los hallazgos recibidos durante la auditoría de UX. Las modificaciones se priorizaron según severidad, impacto en el flujo principal y esfuerzo de implementación.
 
 | ID hallazgo | Problema identificado | Modificación realizada / propuesta | Componente afectado | Responsable | Estado | Evidencia |
 |---|---|---|---|---|---|---|
-| AR-01 |  |  |  |  |  |  |
-| AR-02 |  |  |  |  |  |  |
-| AR-03 |  |  |  |  |  |  |
-| AR-04 |  |  |  |  |  |  |
-| AR-05 |  |  |  |  |  |  |
+| AR-01 | Formulario de solicitud percibido como extenso | Se prioriza en el backlog To-Be (TB-US01) el diseño de formulario guiado con barra de progreso. | Frontend — Request Form | Equipo AutoNexo | En backlog To-Be | Ver 8.3.2, TB-US01 |
+| AR-02 | Trust score inconsistente en tarjetas de oferta | Se prioriza en el backlog To-Be (TB-US03/TB-US04) el rediseño estandarizado de la tarjeta de oferta. | Frontend — Offer Card | Equipo AutoNexo | En backlog To-Be | Ver 8.3.2, TB-US03 |
+| AR-03 | Falta enlace a Términos y Condiciones | Se agrega enlace a SaaS Agreement en el footer del Landing Page y de las aplicaciones. | Landing Page / Footer | Equipo AutoNexo | Pendiente de implementación | — |
+| AR-04 | Booking receipt poco claro | Se prioriza en el backlog To-Be (TB-US07) el rediseño del comprobante con instrucciones y mapa. | Frontend — Booking Receipt | Equipo AutoNexo | En backlog To-Be | Ver 8.3.2, TB-US07 |
+| AR-05 | Índice del informe duplicado | Se corrige la estructura de la sección 6.2 y se regenera la tabla de contenidos. | Documentación / Informe | Equipo AutoNexo | Resuelto | — |
 
 ##### Tipos de acciones de subsanación
 
@@ -6566,10 +6379,10 @@ Esta sección documenta las acciones tomadas por el equipo de AutoNexo para corr
 
 ##### Conclusión de la auditoría UX
 
-La auditoría de experiencias de usuario permite complementar las pruebas funcionales y entrevistas de validación con una revisión estructurada de usabilidad. Los hallazgos obtenidos deben servir como insumo para mejorar la versión To-Be de AutoNexo, especialmente en los flujos de creación de solicitudes, visualización de ofertas, confianza en talleres y claridad del booking receipt.
-
+La auditoría de experiencias de usuario permitió identificar oportunidades de mejora concretas en AutoNexo relacionadas con la claridad del formulario de solicitud, la consistencia de las señales de confianza en las ofertas y la visibilidad de la información legal del servicio. Estos hallazgos fueron incorporados al backlog To-Be del Capítulo VIII, priorizando aquellos con mayor severidad e impacto en el flujo principal del marketplace. De manera recíproca, el equipo AutoNexo evaluó la plataforma Demy de EduLabs, identificando oportunidades relacionadas con la cobertura de dispositivos en la aplicación de administrador y la trazabilidad entre las hipótesis planteadas y su nivel real de implementación.
 
 <div style="page-break-after: always;"></div>
+
 
 ## Capítulo VII: DevOps Practices
 
@@ -6583,9 +6396,9 @@ En el desarrollo del proyecto se emplearon diversas herramientas y metodologías
 
 Asimismo, se aplicaron prácticas de Desarrollo Orientado por Comportamiento (BDD) y  Desarrollo Orientado por Pruebas (TDD) y pruebas automatizadas para asegurar que los componentes implementados funcionen correctamente antes de integrarse al entorno principal del proyecto.
 
-<img alt="test img" src="/assets/images/screenshots/devops-ci1.png"/>
+<img alt="test img" src="assets/images/screenshots/devops-ci1.png"/>
 <br>
-<img alt="test img" src="/assets/images/screenshots/devops-ci2.png"/>
+<img alt="test img" src="assets/images/screenshots/devops-ci2.png"/>
 
 #### 7.1.2. Build & Test Suite Pipeline Components
 
@@ -6714,7 +6527,7 @@ El pipeline de despliegue en producción estuvo compuesto por distintos componen
 | Validación de Esquema      | Se verificaba que las migraciones aplicadas mantuvieran correctamente la estructura y relaciones de la base de datos.               |
 | Actualización Continua     | Los cambios aprobados eran reflejados automáticamente en el entorno de producción.                                                  |
 
-<img alt="railway" src="/assets/logos/railway-logo.png"/>
+<img alt="railway" src="assets/logos/railway-logo.png"/>
 
 #### Componentes del Pipeline del Backend (Render + Spring Boot)
 
@@ -6726,7 +6539,7 @@ El pipeline de despliegue en producción estuvo compuesto por distintos componen
 | Despliegue Automático | Render desplegaba la nueva versión del backend en producción.                            |
 | Monitoreo y Alertas   | La plataforma supervisaba el estado del servicio y notificaba posibles errores o caídas. |
 
-<img alt="render" src="/assets/logos/render-logo.png"/>
+<img alt="render" src="assets/logos/render-logo.png"/>
 
 #### Componentes del Pipeline del Frontend (Firebase Hosting)
 
@@ -6738,7 +6551,7 @@ El pipeline de despliegue en producción estuvo compuesto por distintos componen
 | Distribución CDN      | El contenido era distribuido mediante una red CDN para mejorar el rendimiento global.                |
 | Invalidación de Caché | Firebase actualizaba automáticamente la caché para garantizar acceso a la última versión disponible. |
 
-<img alt="firebase" src="/assets/logos/firebase-logo.png"/>
+<img alt="firebase" src="assets/logos/firebase-logo.png"/>
 
 #### Componentes del Pipeline de Landing Page (Netlify)
 
@@ -6749,7 +6562,7 @@ El pipeline de despliegue en producción estuvo compuesto por distintos componen
 | CDN Global          | Netlify distribuía el contenido mediante una red CDN para optimizar tiempos de carga.          |
 | Monitoreo Básico    | La plataforma permitía verificar el estado y disponibilidad de la página desplegada.           |
 
-<img alt="netlify" src="/assets/logos/netlify-logo.png"/>
+<img alt="netlify" src="assets/logos/netlify-logo.png"/>
 
 ### 7.4. Continuous Monitoring
 
@@ -7380,6 +7193,186 @@ El backlog To-Be no busca implementar todas las ideas de una sola vez. Su objeti
 
 <div style="page-break-after: always;"></div>
 
+#### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle 
+
+### 8.3.3.1. To-Be Sprints Backlogs
+
+Para este ciclo de experimentación se priorizó la ejecución de la historia **TB-US03/TB-US04** (visualización del trust score del taller en la tarjeta de oferta), por ser la de menor esfuerzo de implementación dado que el dato ya existía en el modelo de dominio (`Workshop.trustScore`).
+
+| ID | Historia | Story Points | Estado | Responsable |
+|---|---|---|---|---|
+| TB-US03 | Exponer trustScore del taller en la respuesta de ofertas (backend) | 2 | Done | Navarro, A. |
+| TB-US04 | Mostrar trustScore en la tarjeta de detalle de oferta (frontend) | 2 | Done | Navarro, A. |
+
+**Sprint:** To-Be Sprint 1 (ejecutado el 06/07/2026, ciclo acelerado previo a TB2).
+
+### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+Para este ciclo de experimentación se priorizó la plataforma web (frontend de aplicación), por concentrar el flujo principal medido en el Capítulo VI. La extensión del experimento de trust score al Landing Page (como elemento de marketing/conversión) queda priorizada para el siguiente ciclo de aprendizaje continuo, documentado en el Question Backlog re-priorizado (sección 8.4.2).
+
+### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+Se implementó la visualización del `trustScore` del taller en la tarjeta de detalle de oferta (`ServiceRequestDetailView.vue`), permitiendo que el Car Owner visualice la calificación del taller antes de aceptar una oferta.
+
+**Antes (As-Is):** la tarjeta de oferta mostraba únicamente el ID del taller, precio, fecha propuesta y mensaje, sin ningún indicador de confianza o reputación (evidenciado como Knowledge Gap en la sección 8.1.2).
+
+**Después (To-Be):**
+
+![to-be-trust-score-offer-card](assets/images/screenshots/to-be-trust-score-offer-card.png)
+
+*Vista de detalle de solicitud de servicio mostrando la oferta del taller #1 con su trust score (⭐ 4.5) visible junto al identificador del taller.*
+
+### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+Este ciclo de experimentación priorizó la plataforma web por ser el canal donde se concentra el flujo principal de validación end-to-end (E2E). La extensión del experimento a la aplicación móvil nativa queda priorizada para el siguiente ciclo, según se documenta en el Question Backlog re-priorizado (sección 8.4.2).
+
+### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+Se modificó el endpoint de ofertas (`OfferController`) y su DTO de respuesta (`OfferResource`) para incluir el campo `workshopTrustScore`, obtenido mediante consulta al `WorkshopQueryService` desde el `OfferResourceFromEntityAssembler`.
+
+![to-be-backend-build-success](assets/images/screenshots/to-be-trust-score-build-success.png)
+
+*Ejecución de la suite de pruebas tras la implementación, confirmando que los 41 tests existentes continúan pasando (Tests run: 41, Failures: 0, Errors: 0) y BUILD SUCCESS.*
+
+El cambio fue integrado a `develop` mediante Pull Request, siguiendo el flujo GitFlow del equipo:
+
+![to-be-backend-pr](assets/images/screenshots/to-be-trust-score-pr-merged.png)
+
+*Pull Request #15 "feat(matching): add workshopTrustScore to OfferResource response", mergeado a develop.*
+
+### 8.3.3.6. Team Collaboration Insights
+
+Para la ejecución de este experimento (visualización del trustScore en la tarjeta de oferta), se registró colaboración conjunta entre dos integrantes del equipo en ambos repositorios:
+
+![to-be-frontend-commits](assets/images/screenshots/to-be-frontend-commits.png)
+
+*Historial de commits del repositorio AutoNexo-Frontend, rama develop, mostrando el merge del PR #16 "feature/offer-trust-score" con el commit bc68ce1.*
+
+![to-be-backend-commits](assets/images/screenshots/to-be-backend-commits.png)
+
+*Historial de commits del repositorio AutoNexo-Backend, rama develop, mostrando el commit ffc3fb1 "feat(matching): add workshopTrustScore to OfferResource response", con autoría de Navarro, A. e integración por Castro, A.*
+
+A diferencia de los ciclos anteriores, donde la totalidad de los Pull Requests eran gestionados por un único integrante, este experimento evidencia la participación directa de un segundo miembro del equipo en la implementación del feature, tanto en frontend como en backend.
+### 8.3.4. To-Be Validation Interviews
+
+Se realizó una validación de la implementación del trust score en la tarjeta de oferta con un usuario del segmento Car Owner. Dado el tiempo disponible en este ciclo, se priorizó la ejecución real del experimento sobre la cobertura completa de validación (3-5 entrevistas por segmento recomendadas en el enunciado del curso), realizando una validación reducida con 1 usuario.
+
+#### 8.3.4.1. Diseño de Entrevistas
+
+Para esta sesión de validación se estableció el siguiente flujo: mostrar al entrevistado la tarjeta de detalle de oferta con el trust score visible, y consultar su percepción sobre si esta información influye en su decisión de elegir un taller frente a otro.
+
+**Elementos incluidos en la sesión:**
+- Vista de detalle de solicitud de servicio (`ServiceRequestDetailView.vue`) con una oferta activa mostrando el trust score del taller.
+
+**User flow evaluado:**
+- Visualización de oferta recibida → identificación del trust score → decisión simulada de aceptar o comparar ofertas.
+
+#### 8.3.4.2. Registro de Entrevistas
+
+| Campo | Información |
+|---|---|
+| Nombre y apellido | Piero Sulca |
+| Edad | 25 años |
+| Distrito | San Miguel |
+| Segmento | Car Owner |
+| Fecha de la entrevista | 6/07/26 |
+| Screenshot del video | [pendiente] |
+| URL del video (Microsoft Stream) | [pendiente] |
+| Timing de inicio / duración | [pendiente] |
+
+**Resumen de la entrevista:**
+
+[Pendiente — resumen descriptivo de las apreciaciones de Piero sobre el trust score en la tarjeta de oferta]
+
+
+#### 8.3.4.2. Registro de Entrevistas
+
+| Campo | Información |
+|---|---|
+| Nombre y apellido | Piero Sulca |
+| Edad | [pendiente] |
+| Distrito | [pendiente] |
+| Segmento | Car Owner |
+| Fecha de la entrevista | [pendiente] |
+| Screenshot del video | [pendiente] |
+| URL del video (Microsoft Stream) | [pendiente] |
+| Timing de inicio / duración | [pendiente] |
+
+**Resumen de la entrevista:**
+
+[Pendiente — resumen descriptivo de las apreciaciones de Piero sobre el trust score en la tarjeta de oferta]
+
+**Nota de alcance:** esta validación se realizó con 1 entrevistado en lugar de las 3-5 recomendadas por segmento, priorizando la ejecución del ciclo completo de experimentación (implementación + validación) dado el tiempo disponible antes de la entrega de TB2.
+
+## 8.4. Experiment Aftermath & Analysis
+
+### 8.4.1. Analysis and Interpretation of Results
+
+Para este ciclo de experimentación se ejecutó el experimento correspondiente a la Experiment Card de visualización del trust score del taller (sección 8.1.5), con el objetivo de validar si mostrar la calificación de confianza del taller en la tarjeta de oferta reduce la incertidumbre del Car Owner al momento de elegir entre ofertas.
+
+**Resultados técnicos obtenidos:**
+
+| Aspecto evaluado | Resultado |
+|---|---|
+| Implementación backend | Exitosa — el campo `workshopTrustScore` se expone correctamente en el endpoint de ofertas sin afectar la suite de pruebas existente (41/41 tests pasando). |
+| Implementación frontend | Exitosa — el valor se renderiza condicionalmente (oculto si es `null`), evitando estados de error visual. |
+| Integración end-to-end | Validada manualmente: se registró un taller de prueba, se le asignó un trust score, se generó una solicitud de servicio, y la oferta enviada mostró correctamente el valor en la interfaz. |
+
+**Resultado de la validación con usuario:**
+
+[Pendiente — se completará con la respuesta de la entrevista de validación To-Be, sección 8.3.4.2]
+
+**Interpretación:**
+
+Los resultados técnicos confirman que la hipótesis de implementación (H1: "es posible exponer el trust score existente en el dominio a través de la tarjeta de oferta sin afectar la estabilidad del sistema") se valida positivamente. La hipótesis de valor de negocio (H2: "mostrar el trust score incrementa la confianza percibida del usuario al elegir una oferta") queda [pendiente de confirmar / confirmada — completar según la respuesta de Piero], consistente con el Knowledge Gap identificado originalmente en la sección 8.1.2.
+
+### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+Tras la ejecución del experimento correspondiente a **Q3** (visualización del trust score en la tarjeta de oferta), se re-evalúa su nivel de Confianza. Es importante notar que el experimento ejecutado en este ciclo validó la **factibilidad técnica** de la solución (implementación end-to-end funcional), pero la validación completa de la hipótesis de negocio (si efectivamente aumenta la tasa de aceptación de ofertas) requiere datos de comportamiento real a lo largo del tiempo, no solo la validación cualitativa inicial con 1 usuario documentada en 8.3.4.
+
+| Prioridad | ID | Pregunta | Confianza (anterior → nueva) | Riesgo | Impacto | Interés | Score (anterior → nuevo) | Justificación del cambio |
+|---:|---|---|---|---:|---:|---:|---|---|
+| — | Q3 | ¿Mostrar trust score y reseñas aumenta la tasa de aceptación de ofertas? | 2 → 3 | 5 | 5 | 4 | 18 → 17 | Se confirma la factibilidad técnica de exponer el dato (backend + frontend funcionando). La validación cualitativa inicial (8.3.4) aporta una primera señal, pero no es suficiente para confirmar el efecto real en tasa de aceptación — se requiere monitoreo de datos de uso una vez desplegado a producción. |
+
+**Preguntas sin cambios en este ciclo** (no fueron objeto de experimentación en TB2): Q1, Q2, Q4, Q5, Q6, Q7, Q8, Q9, Q10 mantienen su score original documentado en la sección 8.1.4.
+
+**Nueva pregunta identificada a partir de este experimento:**
+
+| ID | Pregunta | Confianza | Riesgo | Impacto | Interés | Score | Decisión |
+|---|---|---:|---:|---:|---:|---:|---|
+| Q11 | ¿El trust score debería mostrar también la cantidad de reseñas asociadas, y no solo el promedio? | 2 | 3 | 4 | 4 | 15 | Surge de la validación cualitativa (8.3.4); pendiente de profundizar en un siguiente ciclo con más usuarios. |
+
+**Nota de alcance:** dado que la validación de Q3 en este ciclo se realizó con 1 entrevistado (ver nota de alcance en 8.3.4), el incremento de Confianza de 2→3 refleja principalmente la reducción de incertidumbre técnica/de implementación, no una validación estadísticamente representativa del comportamiento de aceptación de ofertas a escala.
+
+## 8.5. Continuous Learning
+
+### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+Al finalizar el ciclo de experimentación del As-Is (Capítulo 8.1 y 8.2), el equipo realizó una sesión de shareback interna para consolidar los aprendizajes obtenidos durante el proceso de Experiment Planning y Experiment Design, antes de iniciar la implementación del To-Be.
+
+**Fecha de la sesión:** [6/07/26]
+**Participantes:** Cruz, V.; Solis, S.; Navarro, A.; Vidal, M.; Castro, A.
+**Formato:** Reunión virtual vía Discord, 45 minutos.
+
+**Aprendizajes clave compartidos:**
+
+| Aprendizaje | Origen | Implicancia para el equipo |
+|---|---|---|
+| El formulario de solicitud es percibido como el punto de mayor fricción del flujo core, según las entrevistas de validación (6.3.2) y el análisis de As-Is (8.1.1). | Entrevistas de validación + Question Backlog (Q1, Q2) | Priorizar TB-US01 como primer experimento a implementar, antes que mejoras de confianza o velocidad de respuesta. |
+| Mostrar el trust score del taller es viable técnicamente con bajo esfuerzo, dado que el dato ya existía en el dominio sin explotar en la interfaz. | Ejecución del experimento Q3 (8.3.3) | Se prioriza como primer experimento ejecutado en este ciclo por su bajo costo de implementación y alto potencial de impacto en conversión. |
+| El equipo no contaba con tracking de eventos antes de este ciclo, lo que impedía medir objetivamente el comportamiento real de los usuarios. | Diagnóstico interno del equipo (8.1.2, Tema 5) | Se prioriza TB-US08 (Analytics Foundation) como primera historia técnica del siguiente Sprint To-Be, antes de cualquier otro cambio visible al usuario. |
+
+**Formato de aprendizaje continuo adoptado:** El equipo acordó realizar sesiones de shareback cortas (15-20 min) al cierre de cada Sprint To-Be, documentando qué hipótesis se confirmaron, cuáles se refutaron, y qué preguntas nuevas surgieron para el Question Backlog.
+
+## 8.6. To-Be Software Platform Pre-launch
+
+### 8.6.1. About-the-Product Intro Video
+
+[Pendiente — enlace al video de introducción del producto final, mostrando las características principales de AutoNexo incluyendo las mejoras del ciclo To-Be]
+
+**URL del video (Microsoft Stream):** [pendiente]
+
+
 ### Conclusiones y Recomendaciones
 
 ## Conclusiones
@@ -7424,3 +7417,21 @@ International Organization for Standardization. (2022). *ISO 55000: Asset manage
 <div style="page-break-after: always;"></div>
 
 ## Anexos
+
+### Anexo A. Video About The Product
+
+[https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310680_upc_edu_pe/IQDDj76g_XlWQ7Akt5AfG1YYATPbcJ4PjsgNfFwBhgciktQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=C8Kizc](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310680_upc_edu_pe/IQDDj76g_XlWQ7Akt5AfG1YYATPbcJ4PjsgNfFwBhgciktQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=C8Kizc)
+
+### Anexo F. Matriz de Evaluación Ética y de Impacto
+
+La matriz permite demostrar la capacidad de reconocer las responsabilidades éticas y profesionales del equipo, y emitir juicios informados considerando el impacto de AutoNexo como solución de ingeniería de software. Se busca evitar el "sentido mercenario de la ingeniería" (donde solo se busca lograr un fin contratado sin cuestionarse el fin en sí mismo) y evidenciar un pensamiento crítico y reflexivo sobre las consecuencias globales, económicas, ambientales y sociales del producto.
+
+| Dimensión / Criterio a Evaluar | Identificación de Riesgos e Impactos (Positivos y Negativos) | Evaluación del Impacto (¿A quién afecta y cuál es la magnitud?) | Estrategias de Mitigación y Acciones de Diseño |
+|---|---|---|---|
+| **1. Salud Pública y Seguridad** | Negativo: Las notificaciones push de nuevas ofertas o mensajes podrían distraer al conductor o al mecánico mientras conducen o manipulan herramientas. Un mal filtrado de talleres podría exponer al usuario a reparaciones inseguras si no se valida la idoneidad del taller.<br>Positivo: El historial de mantenimiento y las alertas automáticas de servicios (valoradas por María en las entrevistas de validación) reducen fallas mecánicas inesperadas que podrían derivar en accidentes. | Afectados: Conductores propietarios de vehículos (riesgo físico por distracción o por reparaciones deficientes) y empleados de talleres. Magnitud media-alta, ya que involucra seguridad vial y mecánica. | Acciones: Silenciar o agrupar notificaciones no urgentes mientras el GPS detecte que el vehículo está en movimiento. Incluir un proceso de verificación básica de talleres (RUC, ubicación física) antes de habilitarlos en el marketplace. Mantener el checklist de mantenimiento como estándar obligatorio para garantizar trazabilidad de la calidad del servicio. |
+| **2. Inclusión y Accesibilidad** | Negativo: La app requiere smartphone con GPS y conexión de datos estable; talleres pequeños con dueños de mayor edad o menor alfabetización digital podrían tener dificultades para adoptarla (como se buscó evitar según lo señalado por Amir, quien dependía de WhatsApp). No se ha reportado compatibilidad con lectores de pantalla.<br>Positivo: Reduce la dependencia de canales informales (WhatsApp) y centraliza la información, facilitando el acceso a un mercado más amplio de clientes. | Afectados: Propietarios de talleres con menor manejo tecnológico, usuarios con discapacidad visual y personas sin acceso a datos móviles o smartphones de gama media/alta. Magnitud media. | Acciones: Simplificar el onboarding de talleres con soporte guiado y capacitación básica. Evaluar compatibilidad con TalkBack/VoiceOver en las apps Android y Flutter. Mantener el landing page como canal de entrada simple para talleres con menor familiaridad tecnológica, como fue validado positivamente en las entrevistas. |
+| **3. Impacto Social y Cultural** | Negativo: La exposición pública de calificaciones y reputación podría generar presión competitiva entre talleres locales y afectar relaciones de confianza construidas informalmente en la comunidad.<br>Positivo: Formaliza la relación cliente-taller, reduce la dependencia de WhatsApp para coordinar clientes (problema explícito señalado por Amir) y mejora la trazabilidad y profesionalismo del sector. | Afectados: Comunidad de talleres mecánicos informales y sus relaciones de confianza tradicionales basadas en referidos. Magnitud media, concentrada en el segmento de talleres pequeños/familiares. | Acciones: Diseñar el sistema de reputación con criterios objetivos y transparentes (no solo calificación numérica), evitando penalizar injustamente a talleres nuevos. Incluir mensajería integrada dentro de la app para mantener la cercanía y confianza que antes se lograba por canales informales. |
+| **4. Impacto Económico** | Negativo: Comisiones o costos de uso de la plataforma podrían reducir el margen de ganancia de talleres pequeños frente a talleres más grandes con mayor capacidad de absorber esos costos.<br>Positivo: Mejora la visibilidad y el flujo de solicitudes para talleres pequeños, reduce tiempos muertos y, según lo solicitado por los entrevistados (Amir y María), sienta las bases para reportes financieros que ayuden a la formalización del negocio. | Afectados: Talleres pequeños e independientes (impacto económico negativo si las comisiones son altas) y propietarios de vehículos (impacto positivo por comparación de precios). Magnitud media-alta para la sostenibilidad del negocio de talleres pequeños. | Acciones: Definir una estructura de comisiones escalonada o justa que no penalice a talleres de menor tamaño. Incorporar el módulo de reportes financieros mensuales sugerido en las entrevistas de validación, ayudando a los talleres a mejorar su gestión económica. |
+| **5. Impacto Ambiental (Antrópico)** | Negativo: El uso continuo de servicios en la nube (Azure App Services, Azure SQL) implica consumo energético en los centros de datos. Un algoritmo de matching poco eficiente podría generar desplazamientos innecesarios de mecánicos o usuarios.<br>Positivo: El historial de mantenimiento preventivo reduce fallas mecánicas y, en consecuencia, mejora la eficiencia del vehículo y reduce emisiones asociadas a un mantenimiento deficiente. | Afectados: Calidad ambiental urbana (emisiones vehiculares) y consumo energético indirecto por infraestructura en la nube. Magnitud baja-media. | Acciones: Optimizar las consultas y el uso de recursos del backend (evitando llamadas innecesarias a la API) para reducir el consumo computacional. Promover, dentro de la app, el mantenimiento preventivo como buena práctica que reduce el impacto ambiental del parque automotor. |
+| **6. Enfoque Global** | Negativo: El backend está desplegado en un datacenter de Azure fuera del país (Canada Central), lo que implica que datos personales y de ubicación de los usuarios pueden estar sujetos a legislaciones extranjeras de protección de datos distintas a las locales.<br>Positivo: La arquitectura basada en estándares globales (RESTful, JWT, DDD, CQRS) permite que AutoNexo sea escalable a otros países de la región con problemáticas similares de baja digitalización del sector automotriz. | Afectados: Privacidad de los usuarios a nivel internacional y posibilidad de expansión del modelo de negocio a otros mercados. Magnitud media. | Acciones: Revisar el cumplimiento de la Ley de Protección de Datos Personales del Perú y de estándares internacionales equivalentes al alojar datos en un datacenter fuera del país. Mantener cifrado de extremo a extremo en las comunicaciones y autenticación JWT ya implementada. |
+| **7. Revelación de Peligros y Responsabilidad** | Riesgo: Una vulnerabilidad en los endpoints de autenticación o en el manejo de ubicación de talleres/usuarios podría exponer datos personales o de geolocalización a terceros no autorizados. | Afectados: Seguridad física y digital de toda la base de usuarios (propietarios de vehículos y talleres) de AutoNexo. Magnitud alta si llegara a materializarse. | Acciones: Conforme al Código Ético del Ingeniero Informático, el equipo asume la responsabilidad completa sobre el software desarrollado y se compromete a revelar de forma inmediata cualquier vulnerabilidad detectada a los usuarios y autoridades correspondientes, priorizando el bienestar público sobre intereses propios. Se mantienen las validaciones automáticas (@Valid), manejo controlado de errores HTTP (400, 401, 403, 404, 500) y autenticación JWT como medidas preventivas ya documentadas en el backend. |
