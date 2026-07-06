@@ -49,7 +49,7 @@
 </div>
 
 <p align="center">
-    <strong>Mayo, 2026</strong>
+    <strong>Julio, 2026</strong>
 </p>
 <br>
 
