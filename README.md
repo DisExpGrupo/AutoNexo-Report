@@ -5576,6 +5576,14 @@ En esta sección se documentan las pruebas unitarias del bounded context **Works
 | OpeningHours | `createOpeningHours_WhenOpeningTimeIsAfterClosingTime_ShouldThrowIllegalArgumentException` | Se rechaza un horario cuya hora de apertura sea posterior a la hora de cierre. |
 | OpeningHours | `createOpeningHours_WhenOpeningTimeEqualsClosingTime_ShouldThrowIllegalArgumentException` | Se rechaza un horario cuya hora de apertura sea igual a la hora de cierre. |
 
+### Codigo Fuente de tests
+
+![unit-test-1](assets/images/screenshots/codigofuente-test1.png)
+
+![unit-test-2](assets/images/screenshots/codigofuente-test2.png)
+
+![unit-test-3](assets/images/screenshots/codigofuente-test3.png)
+
 ### Evidencia de ejecución
 
 Panel de resultados de `WorkshopDomainUnitTest` mostrando **29 tests passed**, con el árbol de pruebas completamente ejecutado. Se observa la clase **Workshop BC — Domain Unit Tests**, donde todos los métodos finalizaron correctamente y el paquete `com.atg.autonexo.backend.workshop.domain`.
