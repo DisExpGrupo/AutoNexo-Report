@@ -7368,9 +7368,7 @@ Al finalizar el ciclo de experimentación del As-Is (Capítulo 8.1 y 8.2), el eq
 
 ### 8.6.1. About-the-Product Intro Video
 
-[Pendiente — enlace al video de introducción del producto final, mostrando las características principales de AutoNexo incluyendo las mejoras del ciclo To-Be]
-
-**URL del video (Microsoft Stream):** [pendiente]
+**URL del video (Microsoft Stream):** [ENLACE A MICROSOFT STEAM](https://upcedupe-my.sharepoint.com/personal/u202310680_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202310680%5Fupc%5Fedu%5Fpe%2FDocuments%2Fabout%2Dthe%2Dproduct%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7ddc3c63%2De2c0%2D4d5c%2Db810%2D45c0a91810b8&isDarkMode=false)
 
 
 ### Conclusiones y Recomendaciones
