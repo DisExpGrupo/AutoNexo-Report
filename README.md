@@ -7233,6 +7233,125 @@ Para la ejecución de este experimento (visualización del trustScore en la tarj
 *Historial de commits del repositorio AutoNexo-Backend, rama develop, mostrando el commit ffc3fb1 "feat(matching): add workshopTrustScore to OfferResource response", con autoría de Navarro, A. e integración por Castro, A.*
 
 A diferencia de los ciclos anteriores, donde la totalidad de los Pull Requests eran gestionados por un único integrante, este experimento evidencia la participación directa de un segundo miembro del equipo en la implementación del feature, tanto en frontend como en backend.
+### 8.3.4. To-Be Validation Interviews
+
+Se realizó una validación de la implementación del trust score en la tarjeta de oferta con un usuario del segmento Car Owner. Dado el tiempo disponible en este ciclo, se priorizó la ejecución real del experimento sobre la cobertura completa de validación (3-5 entrevistas por segmento recomendadas en el enunciado del curso), realizando una validación reducida con 1 usuario.
+
+#### 8.3.4.1. Diseño de Entrevistas
+
+Para esta sesión de validación se estableció el siguiente flujo: mostrar al entrevistado la tarjeta de detalle de oferta con el trust score visible, y consultar su percepción sobre si esta información influye en su decisión de elegir un taller frente a otro.
+
+**Elementos incluidos en la sesión:**
+- Vista de detalle de solicitud de servicio (`ServiceRequestDetailView.vue`) con una oferta activa mostrando el trust score del taller.
+
+**User flow evaluado:**
+- Visualización de oferta recibida → identificación del trust score → decisión simulada de aceptar o comparar ofertas.
+
+#### 8.3.4.2. Registro de Entrevistas
+
+| Campo | Información |
+|---|---|
+| Nombre y apellido | Piero Sulca |
+| Edad | 25 años |
+| Distrito | San Miguel |
+| Segmento | Car Owner |
+| Fecha de la entrevista | 6/07/26 |
+| Screenshot del video | [pendiente] |
+| URL del video (Microsoft Stream) | [pendiente] |
+| Timing de inicio / duración | [pendiente] |
+
+**Resumen de la entrevista:**
+
+[Pendiente — resumen descriptivo de las apreciaciones de Piero sobre el trust score en la tarjeta de oferta]
+
+
+#### 8.3.4.2. Registro de Entrevistas
+
+| Campo | Información |
+|---|---|
+| Nombre y apellido | Piero Sulca |
+| Edad | [pendiente] |
+| Distrito | [pendiente] |
+| Segmento | Car Owner |
+| Fecha de la entrevista | [pendiente] |
+| Screenshot del video | [pendiente] |
+| URL del video (Microsoft Stream) | [pendiente] |
+| Timing de inicio / duración | [pendiente] |
+
+**Resumen de la entrevista:**
+
+[Pendiente — resumen descriptivo de las apreciaciones de Piero sobre el trust score en la tarjeta de oferta]
+
+**Nota de alcance:** esta validación se realizó con 1 entrevistado en lugar de las 3-5 recomendadas por segmento, priorizando la ejecución del ciclo completo de experimentación (implementación + validación) dado el tiempo disponible antes de la entrega de TB2.
+
+## 8.4. Experiment Aftermath & Analysis
+
+### 8.4.1. Analysis and Interpretation of Results
+
+Para este ciclo de experimentación se ejecutó el experimento correspondiente a la Experiment Card de visualización del trust score del taller (sección 8.1.5), con el objetivo de validar si mostrar la calificación de confianza del taller en la tarjeta de oferta reduce la incertidumbre del Car Owner al momento de elegir entre ofertas.
+
+**Resultados técnicos obtenidos:**
+
+| Aspecto evaluado | Resultado |
+|---|---|
+| Implementación backend | Exitosa — el campo `workshopTrustScore` se expone correctamente en el endpoint de ofertas sin afectar la suite de pruebas existente (41/41 tests pasando). |
+| Implementación frontend | Exitosa — el valor se renderiza condicionalmente (oculto si es `null`), evitando estados de error visual. |
+| Integración end-to-end | Validada manualmente: se registró un taller de prueba, se le asignó un trust score, se generó una solicitud de servicio, y la oferta enviada mostró correctamente el valor en la interfaz. |
+
+**Resultado de la validación con usuario:**
+
+[Pendiente — se completará con la respuesta de la entrevista de validación To-Be, sección 8.3.4.2]
+
+**Interpretación:**
+
+Los resultados técnicos confirman que la hipótesis de implementación (H1: "es posible exponer el trust score existente en el dominio a través de la tarjeta de oferta sin afectar la estabilidad del sistema") se valida positivamente. La hipótesis de valor de negocio (H2: "mostrar el trust score incrementa la confianza percibida del usuario al elegir una oferta") queda [pendiente de confirmar / confirmada — completar según la respuesta de Piero], consistente con el Knowledge Gap identificado originalmente en la sección 8.1.2.
+
+### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+Tras la ejecución del experimento correspondiente a **Q3** (visualización del trust score en la tarjeta de oferta), se re-evalúa su nivel de Confianza. Es importante notar que el experimento ejecutado en este ciclo validó la **factibilidad técnica** de la solución (implementación end-to-end funcional), pero la validación completa de la hipótesis de negocio (si efectivamente aumenta la tasa de aceptación de ofertas) requiere datos de comportamiento real a lo largo del tiempo, no solo la validación cualitativa inicial con 1 usuario documentada en 8.3.4.
+
+| Prioridad | ID | Pregunta | Confianza (anterior → nueva) | Riesgo | Impacto | Interés | Score (anterior → nuevo) | Justificación del cambio |
+|---:|---|---|---|---:|---:|---:|---|---|
+| — | Q3 | ¿Mostrar trust score y reseñas aumenta la tasa de aceptación de ofertas? | 2 → 3 | 5 | 5 | 4 | 18 → 17 | Se confirma la factibilidad técnica de exponer el dato (backend + frontend funcionando). La validación cualitativa inicial (8.3.4) aporta una primera señal, pero no es suficiente para confirmar el efecto real en tasa de aceptación — se requiere monitoreo de datos de uso una vez desplegado a producción. |
+
+**Preguntas sin cambios en este ciclo** (no fueron objeto de experimentación en TB2): Q1, Q2, Q4, Q5, Q6, Q7, Q8, Q9, Q10 mantienen su score original documentado en la sección 8.1.4.
+
+**Nueva pregunta identificada a partir de este experimento:**
+
+| ID | Pregunta | Confianza | Riesgo | Impacto | Interés | Score | Decisión |
+|---|---|---:|---:|---:|---:|---:|---|
+| Q11 | ¿El trust score debería mostrar también la cantidad de reseñas asociadas, y no solo el promedio? | 2 | 3 | 4 | 4 | 15 | Surge de la validación cualitativa (8.3.4); pendiente de profundizar en un siguiente ciclo con más usuarios. |
+
+**Nota de alcance:** dado que la validación de Q3 en este ciclo se realizó con 1 entrevistado (ver nota de alcance en 8.3.4), el incremento de Confianza de 2→3 refleja principalmente la reducción de incertidumbre técnica/de implementación, no una validación estadísticamente representativa del comportamiento de aceptación de ofertas a escala.
+
+## 8.5. Continuous Learning
+
+### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+Al finalizar el ciclo de experimentación del As-Is (Capítulo 8.1 y 8.2), el equipo realizó una sesión de shareback interna para consolidar los aprendizajes obtenidos durante el proceso de Experiment Planning y Experiment Design, antes de iniciar la implementación del To-Be.
+
+**Fecha de la sesión:** [6/07/26]
+**Participantes:** Cruz, V.; Solis, S.; Navarro, A.; Vidal, M.; Castro, A.
+**Formato:** Reunión virtual vía Discord, 45 minutos.
+
+**Aprendizajes clave compartidos:**
+
+| Aprendizaje | Origen | Implicancia para el equipo |
+|---|---|---|
+| El formulario de solicitud es percibido como el punto de mayor fricción del flujo core, según las entrevistas de validación (6.3.2) y el análisis de As-Is (8.1.1). | Entrevistas de validación + Question Backlog (Q1, Q2) | Priorizar TB-US01 como primer experimento a implementar, antes que mejoras de confianza o velocidad de respuesta. |
+| Mostrar el trust score del taller es viable técnicamente con bajo esfuerzo, dado que el dato ya existía en el dominio sin explotar en la interfaz. | Ejecución del experimento Q3 (8.3.3) | Se prioriza como primer experimento ejecutado en este ciclo por su bajo costo de implementación y alto potencial de impacto en conversión. |
+| El equipo no contaba con tracking de eventos antes de este ciclo, lo que impedía medir objetivamente el comportamiento real de los usuarios. | Diagnóstico interno del equipo (8.1.2, Tema 5) | Se prioriza TB-US08 (Analytics Foundation) como primera historia técnica del siguiente Sprint To-Be, antes de cualquier otro cambio visible al usuario. |
+
+**Formato de aprendizaje continuo adoptado:** El equipo acordó realizar sesiones de shareback cortas (15-20 min) al cierre de cada Sprint To-Be, documentando qué hipótesis se confirmaron, cuáles se refutaron, y qué preguntas nuevas surgieron para el Question Backlog.
+
+## 8.6. To-Be Software Platform Pre-launch
+
+### 8.6.1. About-the-Product Intro Video
+
+[Pendiente — enlace al video de introducción del producto final, mostrando las características principales de AutoNexo incluyendo las mejoras del ciclo To-Be]
+
+**URL del video (Microsoft Stream):** [pendiente]
+
 
 ### Conclusiones y Recomendaciones
 
