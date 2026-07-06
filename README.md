@@ -7173,6 +7173,67 @@ El backlog To-Be no busca implementar todas las ideas de una sola vez. Su objeti
 
 <div style="page-break-after: always;"></div>
 
+#### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle 
+
+### 8.3.3.1. To-Be Sprints Backlogs
+
+Para este ciclo de experimentación se priorizó la ejecución de la historia **TB-US03/TB-US04** (visualización del trust score del taller en la tarjeta de oferta), por ser la de menor esfuerzo de implementación dado que el dato ya existía en el modelo de dominio (`Workshop.trustScore`).
+
+| ID | Historia | Story Points | Estado | Responsable |
+|---|---|---|---|---|
+| TB-US03 | Exponer trustScore del taller en la respuesta de ofertas (backend) | 2 | Done | Navarro, A. |
+| TB-US04 | Mostrar trustScore en la tarjeta de detalle de oferta (frontend) | 2 | Done | Navarro, A. |
+
+**Sprint:** To-Be Sprint 1 (ejecutado el 06/07/2026, ciclo acelerado previo a TB2).
+
+### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+Para este ciclo de experimentación se priorizó la plataforma web (frontend de aplicación), por concentrar el flujo principal medido en el Capítulo VI. La extensión del experimento de trust score al Landing Page (como elemento de marketing/conversión) queda priorizada para el siguiente ciclo de aprendizaje continuo, documentado en el Question Backlog re-priorizado (sección 8.4.2).
+
+### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+Se implementó la visualización del `trustScore` del taller en la tarjeta de detalle de oferta (`ServiceRequestDetailView.vue`), permitiendo que el Car Owner visualice la calificación del taller antes de aceptar una oferta.
+
+**Antes (As-Is):** la tarjeta de oferta mostraba únicamente el ID del taller, precio, fecha propuesta y mensaje, sin ningún indicador de confianza o reputación (evidenciado como Knowledge Gap en la sección 8.1.2).
+
+**Después (To-Be):**
+
+![to-be-trust-score-offer-card](assets/images/screenshots/to-be-trust-score-offer-card.png)
+
+*Vista de detalle de solicitud de servicio mostrando la oferta del taller #1 con su trust score (⭐ 4.5) visible junto al identificador del taller.*
+
+### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+Este ciclo de experimentación priorizó la plataforma web por ser el canal donde se concentra el flujo principal de validación end-to-end (E2E). La extensión del experimento a la aplicación móvil nativa queda priorizada para el siguiente ciclo, según se documenta en el Question Backlog re-priorizado (sección 8.4.2).
+
+### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+Se modificó el endpoint de ofertas (`OfferController`) y su DTO de respuesta (`OfferResource`) para incluir el campo `workshopTrustScore`, obtenido mediante consulta al `WorkshopQueryService` desde el `OfferResourceFromEntityAssembler`.
+
+![to-be-backend-build-success](assets/images/screenshots/to-be-trust-score-build-success.png)
+
+*Ejecución de la suite de pruebas tras la implementación, confirmando que los 41 tests existentes continúan pasando (Tests run: 41, Failures: 0, Errors: 0) y BUILD SUCCESS.*
+
+El cambio fue integrado a `develop` mediante Pull Request, siguiendo el flujo GitFlow del equipo:
+
+![to-be-backend-pr](assets/images/screenshots/to-be-trust-score-pr-merged.png)
+
+*Pull Request #15 "feat(matching): add workshopTrustScore to OfferResource response", mergeado a develop.*
+
+### 8.3.3.6. Team Collaboration Insights
+
+Para la ejecución de este experimento (visualización del trustScore en la tarjeta de oferta), se registró colaboración conjunta entre dos integrantes del equipo en ambos repositorios:
+
+![to-be-frontend-commits](assets/images/screenshots/to-be-frontend-commits.png)
+
+*Historial de commits del repositorio AutoNexo-Frontend, rama develop, mostrando el merge del PR #16 "feature/offer-trust-score" con el commit bc68ce1.*
+
+![to-be-backend-commits](assets/images/screenshots/to-be-backend-commits.png)
+
+*Historial de commits del repositorio AutoNexo-Backend, rama develop, mostrando el commit ffc3fb1 "feat(matching): add workshopTrustScore to OfferResource response", con autoría de Navarro, A. e integración por Castro, A.*
+
+A diferencia de los ciclos anteriores, donde la totalidad de los Pull Requests eran gestionados por un único integrante, este experimento evidencia la participación directa de un segundo miembro del equipo en la implementación del feature, tanto en frontend como en backend.
+
 ### Conclusiones y Recomendaciones
 
 ## Conclusiones
