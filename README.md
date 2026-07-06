@@ -5957,8 +5957,6 @@ La calidad del código se garantiza mediante la aplicación de principios de arq
 
 ### Evidencias
 
-> ⚠ **Pendiente:** Verificar que las siguientes imágenes existan en la ruta indicada.
-
 ![static-backend-pom](assets/images/screenshots/static-backend-pom.png)
 
 ![static-tsconfig](assets/images/screenshots/static-tsconfig.png)
@@ -6006,7 +6004,6 @@ Durante el desarrollo del proyecto se aplicó el siguiente flujo de trabajo:
 
 La siguiente evidencia muestra algunos Pull Requests utilizados durante el desarrollo del proyecto.
 
-> ⚠ **Pendiente:** Verificar que las siguientes imágenes existan dentro de la carpeta indicada. Si alguna no aparece en el documento generado, revisar el nombre del archivo o la ruta correspondiente.
 
 #### Pull Request del Backend
 
