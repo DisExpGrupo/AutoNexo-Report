@@ -6123,8 +6123,6 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 ![Entrevistado 1](/assets/images/validation-interview/validation-interview-1.png)
 
-![review-e2e-commits](assets/images/screenshots/review-e2e-commits.png)
-
 ---
 
 ##### Entrevistado 2
@@ -6141,7 +6139,7 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 **Evidencia**
 
-![Entrevistado 2](assets/images/validation-interview/validation-interview-2.png)
+![Entrevistado 2](/assets/images/validation-interview/validation-interview-2.png)
 
 ---
 
@@ -6159,7 +6157,7 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 **Evidencia**
 
-![Entrevistado 3](assets/images/validation-interview/validation-interview-3.png)
+![Entrevistado 3](/assets/images/validation-interview/validation-interview-3.png)
 
 ---
 
@@ -6177,7 +6175,7 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 **Evidencia**
 
-![Entrevistado 4](assets/images/validation-interview/validation-interview-4.png)
+![Entrevistado 4](/assets/images/validation-interview/validation-interview-4.png)
 
 #### 6.3.3. Evaluaciones Según Heurísticas
 
