@@ -6179,33 +6179,31 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 #### 6.3.3. Evaluaciones Según Heurísticas
 
-Para complementar las entrevistas de validación, se propone evaluar la experiencia de AutoNexo utilizando heurísticas de usabilidad basadas en los principios de Nielsen. Esta evaluación permitirá identificar problemas de interfaz, navegación, claridad y prevención de errores en los flujos principales del producto.
+Para complementar las entrevistas de validación, se evaluó la experiencia de AutoNexo utilizando heurísticas de usabilidad basadas en los principios de Nielsen. Esta evaluación permitió identificar problemas de interfaz, navegación, claridad y prevención de errores en los flujos principales del producto, a partir de las observaciones recogidas durante las 4 entrevistas de validación realizadas.
 
 ##### Matriz de evaluación heurística
 
 | Heurística | Criterio de evaluación en AutoNexo | Flujo evaluado | Severidad | Hallazgo | Recomendación |
-|---|---|---|---:|---|---|
-| Visibilidad del estado del sistema | El usuario sabe si inició sesión, si una solicitud fue enviada o si una oferta fue aceptada. | Login, solicitud, booking | | | |
-| Relación sistema-mundo real | El sistema usa términos comprensibles para propietarios y talleres. | Vehículos, servicios, ofertas | | | |
-| Control y libertad del usuario | El usuario puede volver, cancelar o corregir información antes de enviar. | Formulario de solicitud | | | |
-| Consistencia y estándares | Botones, iconos, mensajes y rutas mantienen comportamiento uniforme. | Frontend general | | | |
-| Prevención de errores | Se indican campos obligatorios y se evitan solicitudes incompletas. | Registro de vehículo, solicitud | | | |
-| Reconocimiento antes que memoria | El usuario no necesita recordar información de pantallas anteriores. | Comparación de ofertas | | | |
-| Flexibilidad y eficiencia | Los talleres pueden responder de forma rápida y eficiente. | Envío de ofertas | | | |
-| Diseño estético y minimalista | La interfaz muestra información relevante sin saturar al usuario. | Dashboard, ofertas, booking | | | |
-| Ayuda para reconocer errores | Los mensajes de error explican qué ocurrió y cómo corregirlo. | Login, formularios | | | |
-| Ayuda y documentación | Existen textos de apoyo o instrucciones en pasos complejos. | Solicitud, booking | | | |
+|---|---|---:|---:|---|---|
+| Visibilidad del estado del sistema | El usuario sabe si inició sesión, si una solicitud fue enviada o si una oferta fue aceptada. | Login, solicitud, booking | 0 | Los usuarios (Freddy, Diego, María, Amir) completaron login, solicitudes y aceptación de ofertas sin confusión sobre el estado del sistema. | Ninguna acción crítica; mantener los mensajes de confirmación actuales. |
+| Relación sistema-mundo real | El sistema usa términos comprensibles para propietarios y talleres. | Vehículos, servicios, ofertas | 0 | Todos los entrevistados reconocieron con facilidad los términos usados (solicitud, oferta, checklist, historial). | Mantener el lenguaje actual; validar terminología con futuros segmentos de usuario. |
+| Control y libertad del usuario | El usuario puede volver, cancelar o corregir información antes de enviar. | Formulario de solicitud | 1 | Freddy mostró ligeras dudas al navegar entre ofertas antes de decidir, aunque logró completar el flujo sin ayuda. | Agregar un botón visible de "volver" o "comparar de nuevo" dentro de la vista de ofertas. |
+| Consistencia y estándares | Botones, iconos, mensajes y rutas mantienen comportamiento uniforme. | Frontend general | 0 | No se reportaron inconsistencias visuales ni de comportamiento entre el landing page y la app. | Mantener el sistema de diseño actual (Figma) como referencia para nuevas pantallas. |
+| Prevención de errores | Se indican campos obligatorios y se evitan solicitudes incompletas. | Registro de vehículo, solicitud | 0 | Diego y Freddy completaron el registro y la solicitud sin errores ni campos faltantes. | Mantener las validaciones actuales; reforzar mensajes visuales en campos obligatorios. |
+| Reconocimiento antes que memoria | El usuario no necesita recordar información de pantallas anteriores. | Comparación de ofertas | 1 | Diego valoró que las ofertas muestren fotos, precios y tiempos estimados directamente, sin tener que recordar datos previos. | Mantener toda la información clave visible en la tarjeta de oferta sin pasos adicionales. |
+| Flexibilidad y eficiencia | Los talleres pueden responder de forma rápida y eficiente. | Envío de ofertas | 1 | Amir y María gestionaron solicitudes y configuraron su taller sin dificultad, destacando ahorro de tiempo. | Evaluar accesos rápidos o plantillas de respuesta para talleres con alto volumen de solicitudes. |
+| Diseño estético y minimalista | La interfaz muestra información relevante sin saturar al usuario. | Dashboard, ofertas, booking | 0 | Los cuatro entrevistados describieron la interfaz como clara, organizada y "no saturada". | Mantener el diseño minimalista actual como estándar del producto. |
+| Ayuda para reconocer errores | Los mensajes de error explican qué ocurrió y cómo corregirlo. | Login, formularios | 0 | No se registraron errores durante las pruebas guiadas; los formularios se completaron sin bloqueos. | Mantener validaciones actuales; documentar casos de error para pruebas futuras con más usuarios. |
+| Ayuda y documentación | Existen textos de apoyo o instrucciones en pasos complejos. | Solicitud, booking | 1 | María y Amir sugirieron mayor apoyo informativo (estadísticas de productividad, reportes financieros) para talleres. | Incorporar textos de ayuda contextual y una sección de reportes/estadísticas para talleres. |
 
 ##### Resultado esperado de la evaluación
 
-La evaluación heurística permitirá priorizar mejoras de UX relacionadas con:
-
-- Claridad de formularios.
-- Reducción de errores al crear solicitudes.
-- Mejora de tarjetas de oferta.
-- Mayor confianza al aceptar una propuesta.
-- Claridad del comprobante de reserva.
-- Consistencia visual entre módulos.
+La evaluación heurística confirmó que AutoNexo presenta una base de usabilidad sólida, sin hallazgos de severidad alta. Las oportunidades de mejora identificadas se enfocan en:
+- Mayor visibilidad de opciones para comparar o volver a revisar ofertas antes de decidir.
+- Incorporación de reportes financieros y estadísticas de productividad para talleres.
+- Mejora en la visibilidad de promociones dentro de la app.
+- Textos de ayuda contextual en pasos clave del flujo de solicitud y booking.
+- Mantenimiento de la consistencia visual y el diseño minimalista ya validado por los usuarios.
 
 ## 6.4. Auditoría de Experiencias de Usuario
 
