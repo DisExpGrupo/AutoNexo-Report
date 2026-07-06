@@ -6107,25 +6107,21 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 #### 6.3.2. Registro de Entrevistas
 
-> ⚠ **Pendiente:** Al momento de elaborar esta versión del informe, las entrevistas de validación aún no habían sido registradas. Una vez realizadas, esta sección deberá completarse con la información de cada entrevistado, su evidencia y el enlace a la grabación correspondiente.
-
 ##### Entrevistado 1
 
 | Campo | Información |
 |---|---|
-| Segmento objetivo | ⚠ Pendiente |
-| Edad | ⚠ Pendiente |
-| Ocupación / Rol | ⚠ Pendiente |
-| Distrito / Ubicación | ⚠ Pendiente |
-| Fecha y duración | ⚠ Pendiente |
-| Enlace de grabación | ⚠ Pendiente |
-| Principales comentarios | ⚠ Pendiente |
+| Segmento objetivo | Propietarios de vehículos |
+| Edad | 22 |
+| Ocupación / Rol | Conductor habitual (Hyundai Elantra 2016) |
+| Distrito / Ubicación | Ate |
+| Fecha y duración | 5/12/25 · 12:33–18:22 |
+| Enlace de grabación | [Ver grabación](https://drive.google.com/file/d/1k5rTJ_HBlQ_fjz2q8wKVoqDCgO3XSpMk/view?usp=sharing) |
+| Principales comentarios | Freddy Fernandez Camacho señaló que su principal problema es la falta de talleres confiables con precios justos. El landing page le pareció claro, aunque sugirió resaltar más los beneficios. En la app completó fácilmente el registro y la creación de una solicitud de mantenimiento, destacando el comparador de mecánicos y la claridad del historial. Tuvo ligeras dudas al navegar entre ofertas, pero encontró intuitivo el proceso de reserva. Sugirió incluir filtros avanzados por repuestos y tiempos estimados de servicio. |
 
 **Evidencia**
 
-> ⚠ Pendiente: insertar fotografía o captura de pantalla de la entrevista.
-
-![Entrevistado 1](assets/images/interview-validation/interview-1.png)
+![Entrevistado 1](assets/images/interview-validation/validation-interview-1.png)
 
 ---
 
@@ -6133,19 +6129,17 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 | Campo | Información |
 |---|---|
-| Segmento objetivo | ⚠ Pendiente |
-| Edad | ⚠ Pendiente |
-| Ocupación / Rol | ⚠ Pendiente |
-| Distrito / Ubicación | ⚠ Pendiente |
-| Fecha y duración | ⚠ Pendiente |
-| Enlace de grabación | ⚠ Pendiente |
-| Principales comentarios | ⚠ Pendiente |
+| Segmento objetivo | Propietarios de vehículos |
+| Edad | 20 |
+| Ocupación / Rol | Dueño de vehículo (Kia Picanto 2018) |
+| Distrito / Ubicación | La Molina |
+| Fecha y duración | 05/12/25 · 18:23–25:06 |
+| Enlace de grabación | [Ver grabación](https://drive.google.com/file/d/1k5rTJ_HBlQ_fjz2q8wKVoqDCgO3XSpMk/view?usp=sharing) |
+| Principales comentarios | Diego Ignacio Ricra Falla comentó que suele tener dificultades para entender precios y saber si un taller es confiable. El landing page le pareció moderno y organizado, aunque recomendó destacar más el botón de "Descargar App". Completó sin problemas el registro y la creación de una solicitud, valorando la comparación de mecánicos y que las ofertas muestren fotos, precios y tiempos estimados. Sugirió recordatorios automáticos más visibles y calificó la experiencia como rápida y confiable. |
 
 **Evidencia**
 
-> ⚠ Pendiente: insertar fotografía o captura de pantalla de la entrevista.
-
-![Entrevistado 2](assets/images/interview-validation/interview-2.png)
+![Entrevistado 2](assets/images/interview-validation/validation-interview-2.png)
 
 ---
 
@@ -6153,19 +6147,17 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 | Campo | Información |
 |---|---|
-| Segmento objetivo | ⚠ Pendiente |
-| Edad | ⚠ Pendiente |
-| Ocupación / Rol | ⚠ Pendiente |
-| Distrito / Ubicación | ⚠ Pendiente |
-| Fecha y duración | ⚠ Pendiente |
-| Enlace de grabación | ⚠ Pendiente |
-| Principales comentarios | ⚠ Pendiente |
+| Segmento objetivo | Mecánicos / Talleres |
+| Edad | 25 |
+| Ocupación / Rol | Mecánica con 12 años de experiencia |
+| Distrito / Ubicación | Ate |
+| Fecha y duración | 05/11/25 · 00:00–06:22 |
+| Enlace de grabación | [Ver grabación](https://drive.google.com/file/d/1k5rTJ_HBlQ_fjz2q8wKVoqDCgO3XSpMk/view?usp=sharing) |
+| Principales comentarios | Maria Fernanda aseguró que su mayor dificultad es llevar un control ordenado del historial de cada vehículo y coordinar con varios clientes a la vez. El landing page le pareció claro y profesional. Valoró el registro de solicitudes, la vista tipo panel y el checklist de mantenimiento, indicando que la app reduciría errores y mejoraría la trazabilidad. Le resultaron útiles las alertas automáticas de próximos servicios y sugirió incluir estadísticas más detalladas de productividad del taller. |
 
 **Evidencia**
 
-> ⚠ Pendiente: insertar fotografía o captura de pantalla de la entrevista.
-
-![Entrevistado 3](assets/images/interview-validation/interview-3.png)
+![Entrevistado 3](assets/images/interview-validation/validation-interview-3.png)
 
 ---
 
@@ -6173,19 +6165,17 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 | Campo | Información |
 |---|---|
-| Segmento objetivo | ⚠ Pendiente |
-| Edad | ⚠ Pendiente |
-| Ocupación / Rol | ⚠ Pendiente |
-| Distrito / Ubicación | ⚠ Pendiente |
-| Fecha y duración | ⚠ Pendiente |
-| Enlace de grabación | ⚠ Pendiente |
-| Principales comentarios | ⚠ Pendiente |
+| Segmento objetivo | Mecánicos / Talleres |
+| Edad | 20 |
+| Ocupación / Rol | Especialista en mecánica pesada, dueño de un pequeño taller |
+| Distrito / Ubicación | San Isidro |
+| Fecha y duración | 11/05/25 · 06:23–12:33 |
+| Enlace de grabación | [Ver grabación](https://drive.google.com/file/d/1k5rTJ_HBlQ_fjz2q8wKVoqDCgO3XSpMk/view?usp=sharing) |
+| Principales comentarios | Samuel Quintanilla señaló que su problema principal es depender de WhatsApp para coordinar clientes y no tener un historial centralizado por placa. El landing page le resultó sencillo y directo. En la app registró su taller, configuró empleados y gestionó una solicitud sin dificultades, resaltando el checklist, el flujo de finalización del servicio y la mensajería integrada. Sugirió mejorar la visibilidad de promociones de talleres y ofrecer reportes financieros mensuales. |
 
 **Evidencia**
 
-> ⚠ Pendiente: insertar fotografía o captura de pantalla de la entrevista.
-
-![Entrevistado 4](assets/images/interview-validation/interview-4.png)
+![Entrevistado 4](assets/images/interview-validation/validation-interview-4.png)
 
 #### 6.3.3. Evaluaciones Según Heurísticas
 
