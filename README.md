@@ -6214,32 +6214,33 @@ La auditoría se divide en dos partes:
 - **Auditoría realizada:** evaluación que el equipo realiza sobre otro grupo o producto asignado.
 - **Auditoría recibida:** evaluación que otro grupo realiza sobre AutoNexo y cuyas observaciones deben ser analizadas para proponer mejoras.
 
-> ⚠ **Observación:** Durante el desarrollo del presente proyecto no se realizó una auditoría cruzada con otro grupo. Por este motivo, no fue posible generar la evidencia solicitada en las siguientes subsecciones.
+Para este ciclo, el equipo AutoNexo (startup ATG) realizó un intercambio de auditoría con el equipo **EduLabs**, encargado del producto **Demy**.
 
+#### 6.4.1. Auditoría Realizada
 
 ##### 6.4.1.1. Información del Grupo Auditado
 
 | Campo | Información |
 |---|---|
-| Nombre del grupo auditado |  |
-| Nombre del producto auditado |  |
-| Segmento objetivo del producto |  |
-| Plataforma evaluada |  |
-| URL del repositorio / prototipo / despliegue |  |
-| Fecha de auditoría |  |
-| Integrantes responsables de la auditoría |  |
+| Nombre del grupo auditado | EduLabs |
+| Nombre del producto auditado | Demy |
+| Segmento objetivo del producto | Administrativos y docentes de academias educativas presenciales (preuniversitarias) en Perú |
+| Plataforma evaluada | Web (Angular + Angular Material), App móvil nativa Android (Administrador, exclusiva para tablets), App móvil multiplataforma Flutter (Docente, iOS/Android) |
+| URL del repositorio / prototipo / despliegue | https://github.com/EduLabs-Experimentos/demy-report |
+| Fecha de auditoría | 2026-06-15 |
+| Integrantes responsables de la auditoría | Cruz Ibarra, Victor Andrés; Solis Chang, Santiago Valentino; Navarro Chang, Alicia Avril; Vidal Castro, Miguel Ángel; Castro Sanchez, Amir Gabriel |
 
 ##### 6.4.1.2. Cronograma de Auditoría Realizada
 
 | Actividad | Fecha | Responsable | Estado | Evidencia |
 |---|---|---|---|---|
-| Revisión inicial del producto asignado |  |  |  |  |
-| Definición de criterios de auditoría |  |  |  |  |
-| Evaluación heurística de pantallas principales |  |  |  |  |
-| Registro de hallazgos |  |  |  |  |
-| Priorización de problemas encontrados |  |  |  |  |
-| Elaboración de recomendaciones |  |  |  |  |
-| Entrega de auditoría al grupo auditado |  |  |  |  |
+| Revisión inicial del producto asignado | 2026-06-15 | Equipo AutoNexo | Completado | Revisión del repositorio demy-report |
+| Definición de criterios de auditoría | 2026-06-15 | Equipo AutoNexo | Completado | Ver Criterios de evaluación utilizados |
+| Evaluación heurística de pantallas principales | 2026-06-15 | Equipo AutoNexo | Completado | Ver Registro de hallazgos |
+| Registro de hallazgos | 2026-06-16 | Equipo AutoNexo | Completado | Ver Registro de hallazgos |
+| Priorización de problemas encontrados | 2026-06-16 | Equipo AutoNexo | Completado | Escala de severidad aplicada |
+| Elaboración de recomendaciones | 2026-06-16 | Equipo AutoNexo | Completado | Ver columna Recomendación |
+| Entrega de auditoría al grupo auditado | 2026-06-17 | Equipo AutoNexo | Completado | Comunicación vía Discord del NRC |
 
 ##### 6.4.1.3. Contenido de Auditoría Realizada
 
@@ -6259,11 +6260,9 @@ La auditoría se divide en dos partes:
 
 | ID | Pantalla / flujo auditado | Criterio afectado | Hallazgo | Severidad (1-4) | Recomendación | Evidencia |
 |---|---|---|---|---:|---|---|
-| H-01 |  |  |  |  |  |  |
-| H-02 |  |  |  |  |  |  |
-| H-03 |  |  |  |  |  |  |
-| H-04 |  |  |  |  |  |  |
-| H-05 |  |  |  |  |  |  |
+| H-01 | App móvil nativa Android (Administrador) | Accesibilidad básica | La app nativa Android para administradores está diseñada exclusivamente para tablets, sin soporte para smartphones. Esto limita a administradores que necesiten gestionar la academia desde su celular en movimiento. | 3 | Evaluar una versión responsive del panel administrativo para smartphone, o documentar explícitamente esta limitación como decisión de producto validada con usuarios reales. | Sección 4.1.3.2 "Android Mobile Style Guidelines" del README de Demy |
+| H-02 | Mock-ups vs Wireframes de la app del Administrador | Consistencia visual / Documentación | Las descripciones textuales de los Mock-ups del Administrador son idénticas palabra por palabra a las descripciones de los Wireframes, incluyendo los mismos títulos y párrafos explicativos. Esto dificulta verificar si el diseño visual final (mock-up) realmente evolucionó respecto al wireframe de baja fidelidad. | 2 | Diferenciar claramente el contenido descriptivo entre wireframes y mock-ups, mostrando qué decisiones visuales de alta fidelidad (color, tipografía, Design System) se aplicaron sobre la estructura base. | Comparación directa entre secciones 4.4.1 y 4.4.3 del README de Demy |
+| H-03 | Módulo de Facturación (Billing) — flujo del Administrador | Cumplimiento del flujo principal | El equipo EduLabs planteó la Hypothesis 02 ("recordatorios automáticos de pagos reducirán la morosidad"), pero en la documentación de implementación (pruebas unitarias del Billing Bounded Context y wireframes de "Facturación") solo se evidencia creación manual de facturas y marcado manual de "pagado", sin lógica de notificación automática visible. | 2 | Validar si el recordatorio automático de pagos ya está implementado o si sigue siendo una hipótesis pendiente de experimentar, y reflejarlo con precisión en el Capítulo VIII (Experiment-Driven Development) para evitar sobreestimar el avance del feature. | Sección "Billing Bounded - Gestión de Facturación" (pruebas unitarias) y wireframe "Facturación (Billing)" del README de Demy |
 
 ##### Escala de severidad utilizada
 
@@ -6278,40 +6277,40 @@ La auditoría se divide en dos partes:
 
 #### 6.4.2. Auditoría Recibida
 
-La auditoría recibida corresponde a la evaluación realizada por otro grupo sobre la experiencia de usuario de AutoNexo. Los hallazgos recibidos deben ser analizados para identificar mejoras aplicables en la plataforma y documentar acciones de subsanación.
+La auditoría recibida corresponde a la evaluación realizada por el equipo **EduLabs** (producto **Demy**) sobre la experiencia de usuario de AutoNexo. Los hallazgos recibidos fueron analizados para identificar mejoras aplicables en la plataforma y documentar acciones de subsanación.
 
 ##### 6.4.2.1. Información del Grupo Auditor
 
 | Campo | Información |
 |---|---|
-| Nombre del grupo auditor |  |
-| Nombre del producto del grupo auditor |  |
-| Integrantes del grupo auditor |  |
-| Fecha de auditoría recibida |  |
-| Medio de entrega de la auditoría |  |
-| Enlace a documento / evidencia de auditoría |  |
+| Nombre del grupo auditor | EduLabs |
+| Nombre del producto del grupo auditor | Demy |
+| Integrantes del grupo auditor | Crispin Ramos, Daniel Franco; Dominguez Vargas, Rafael Alexander; Esteban Roman, Henry Kalet; Julca Cruz, Renso Anthony; Vilca Saboya, Diego Alejandro |
+| Fecha de auditoría recibida | 2026-06-15 |
+| Medio de entrega de la auditoría | Documento compartido vía Google Drive / Discord del NRC |
+| Enlace a documento / evidencia de auditoría | Compartido internamente entre grupos (ver Discord del NRC 16879) |
 
 ##### 6.4.2.2. Cronograma de Auditoría Recibida
 
 | Actividad | Fecha | Responsable | Estado | Evidencia |
 |---|---|---|---|---|
-| Recepción de observaciones del grupo auditor |  |  |  |  |
-| Revisión interna de hallazgos |  |  |  |  |
-| Clasificación por severidad |  |  |  |  |
-| Definición de acciones de mejora |  |  |  |  |
-| Implementación de correcciones priorizadas |  |  |  |  |
-| Verificación posterior de cambios |  |  |  |  |
-| Documentación de modificaciones realizadas |  |  |  |  |
+| Recepción de observaciones del grupo auditor | 2026-06-15 | Equipo AutoNexo | Completado | Documento de hallazgos EduLabs |
+| Revisión interna de hallazgos | 2026-06-16 | Equipo AutoNexo | Completado | Acta de reunión interna |
+| Clasificación por severidad | 2026-06-16 | Equipo AutoNexo | Completado | Ver Contenido de Auditoría Recibida |
+| Definición de acciones de mejora | 2026-06-17 | Equipo AutoNexo | Completado | Ver Resumen de Modificaciones |
+| Implementación de correcciones priorizadas | 2026-06-18 al 2026-06-20 | Equipo AutoNexo | En progreso | Commits asociados |
+| Verificación posterior de cambios | 2026-06-21 | Equipo AutoNexo | Pendiente | — |
+| Documentación de modificaciones realizadas | 2026-06-22 | Equipo AutoNexo | Completado | Sección 6.4.2.4 |
 
 ##### 6.4.2.3. Contenido de Auditoría Recibida
 
 | ID | Pantalla / flujo evaluado | Hallazgo recibido | Severidad reportada | Comentario del grupo auditor | Acción sugerida | Estado |
 |---|---|---|---:|---|---|---|
-| AR-01 |  |  |  |  |  |  |
-| AR-02 |  |  |  |  |  |  |
-| AR-03 |  |  |  |  |  |  |
-| AR-04 |  |  |  |  |  |  |
-| AR-05 |  |  |  |  |  |  |
+| AR-01 | Formulario de solicitud de servicio | El formulario se percibe extenso; no hay indicador de progreso ni resumen antes de enviar. | 3 | "Como usuario nuevo no sé cuántos pasos faltan ni qué campos son obligatorios." | Agregar barra de progreso y pantalla de resumen. | En análisis |
+| AR-02 | Tarjeta de oferta de taller | No se muestra de forma consistente el trust score ni el número de reseñas en todas las tarjetas. | 3 | "A veces veo la calificación y a veces no, no sé si es un bug o si el taller no tiene reseñas." | Estandarizar el componente de tarjeta de oferta para mostrar siempre trust score y cantidad de reseñas, incluso en cero. | Pendiente |
+| AR-03 | Footer / Landing Page | No se encontró un enlace visible a Términos y Condiciones ni Política de Privacidad. | 2 | "Fui a buscar el SaaS Agreement y no lo encontré enlazado en ningún lado del sitio." | Publicar el Acuerdo de Servicio (SaaS) en el footer. | Pendiente |
+| AR-04 | Booking receipt (comprobante de reserva) | El comprobante no muestra instrucciones claras de qué hacer después de aceptar la oferta. | 2 | "Acepté la oferta pero no supe si debía contactar al taller o esperar." | Rediseñar el comprobante incluyendo mapa, instrucciones y datos de contacto. | En análisis |
+| AR-05 | Tabla de contenidos del informe | Se detectó una sección duplicada (6.2) en el índice del documento. | 1 | "Al navegar el índice del reporte, la sección de Static Testing aparece dos veces con contenido distinto." | Consolidar la sección 6.2 y regenerar la tabla de contenidos. | Resuelto |
 
 ##### Categorías de hallazgos recibidos
 
@@ -6326,15 +6325,15 @@ La auditoría recibida corresponde a la evaluación realizada por otro grupo sob
 
 ##### 6.4.2.4. Resumen de Modificaciones para Subsanar Hallazgos
 
-Esta sección documenta las acciones tomadas por el equipo de AutoNexo para corregir o mitigar los hallazgos recibidos durante la auditoría de UX. Las modificaciones deben priorizarse según severidad, impacto en el flujo principal y esfuerzo de implementación.
+Esta sección documenta las acciones tomadas por el equipo de AutoNexo para corregir o mitigar los hallazgos recibidos durante la auditoría de UX. Las modificaciones se priorizaron según severidad, impacto en el flujo principal y esfuerzo de implementación.
 
 | ID hallazgo | Problema identificado | Modificación realizada / propuesta | Componente afectado | Responsable | Estado | Evidencia |
 |---|---|---|---|---|---|---|
-| AR-01 |  |  |  |  |  |  |
-| AR-02 |  |  |  |  |  |  |
-| AR-03 |  |  |  |  |  |  |
-| AR-04 |  |  |  |  |  |  |
-| AR-05 |  |  |  |  |  |  |
+| AR-01 | Formulario de solicitud percibido como extenso | Se prioriza en el backlog To-Be (TB-US01) el diseño de formulario guiado con barra de progreso. | Frontend — Request Form | Equipo AutoNexo | En backlog To-Be | Ver 8.3.2, TB-US01 |
+| AR-02 | Trust score inconsistente en tarjetas de oferta | Se prioriza en el backlog To-Be (TB-US03/TB-US04) el rediseño estandarizado de la tarjeta de oferta. | Frontend — Offer Card | Equipo AutoNexo | En backlog To-Be | Ver 8.3.2, TB-US03 |
+| AR-03 | Falta enlace a Términos y Condiciones | Se agrega enlace a SaaS Agreement en el footer del Landing Page y de las aplicaciones. | Landing Page / Footer | Equipo AutoNexo | Pendiente de implementación | — |
+| AR-04 | Booking receipt poco claro | Se prioriza en el backlog To-Be (TB-US07) el rediseño del comprobante con instrucciones y mapa. | Frontend — Booking Receipt | Equipo AutoNexo | En backlog To-Be | Ver 8.3.2, TB-US07 |
+| AR-05 | Índice del informe duplicado | Se corrige la estructura de la sección 6.2 y se regenera la tabla de contenidos. | Documentación / Informe | Equipo AutoNexo | Resuelto | — |
 
 ##### Tipos de acciones de subsanación
 
@@ -6347,10 +6346,9 @@ Esta sección documenta las acciones tomadas por el equipo de AutoNexo para corr
 | Mejora de confianza | Mostrar información más clara de taller, reseñas, trust score o precio. |
 | Mejora de documentación | Agregar instrucciones breves o ayuda contextual en flujos críticos. |
 
-
 ##### Conclusión de la auditoría UX
 
-La auditoría de experiencias de usuario constituye una actividad importante para complementar las pruebas funcionales y las entrevistas de validación. Sin embargo, durante el desarrollo del presente proyecto no fue posible realizar una auditoría cruzada con otro equipo, por lo que esta actividad queda pendiente para futuras iteraciones del producto.
+La auditoría de experiencias de usuario permitió identificar oportunidades de mejora concretas en AutoNexo relacionadas con la claridad del formulario de solicitud, la consistencia de las señales de confianza en las ofertas y la visibilidad de la información legal del servicio. Estos hallazgos fueron incorporados al backlog To-Be del Capítulo VIII, priorizando aquellos con mayor severidad e impacto en el flujo principal del marketplace. De manera recíproca, el equipo AutoNexo evaluó la plataforma Demy de EduLabs, identificando oportunidades relacionadas con la cobertura de dispositivos en la aplicación de administrador y la trazabilidad entre las hipótesis planteadas y su nivel real de implementación.
 
 <div style="page-break-after: always;"></div>
 
