@@ -6121,7 +6121,9 @@ Validar la utilidad, claridad, confianza y facilidad de uso de AutoNexo en los f
 
 **Evidencia**
 
-![Entrevistado 1](assets/images/validation-interview/validation-interview-1.png)
+![Entrevistado 1](/assets/images/validation-interview/validation-interview-1.png)
+
+![review-e2e-commits](assets/images/screenshots/review-e2e-commits.png)
 
 ---
 
